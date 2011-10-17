@@ -28,17 +28,80 @@ class FloeTemplate extends QuickTemplate {
 		// suppress warnings to prevent notices about missing indexes in $this->data
 		wfSuppressWarnings();
  
-		$this->html( 'headelement' );
+ 		$this->html( 'headelement' );
+		
 ?>
+	<!-- head>
+	<title><?php echo $this->mHTMLtitle; ?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="MediaWiki 1.16.0" />
+	<link rel="alternate" type="application/x-wiki" title="Edit" href="/index.php?title=Techniques&amp;action=edit" />
+	<link rel="edit" title="Edit" href="/index.php?title=Techniques&amp;action=edit" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Inclusive Learning Handbook (en)" />
+	<link rel="alternate" type="application/atom+xml" title="Inclusive Learning Handbook Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+	<link rel="stylesheet" href="/skins/common/shared.css?270" media="screen" />
+	<link rel="stylesheet" href="/skins/common/commonPrint.css?270" media="print" />
+	<link rel="stylesheet" href="/skins/floe/main.css?270" media="screen" />
+	<link rel="stylesheet" href="/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+	<link rel="stylesheet" href="/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print" />
+	
+	<link rel="stylesheet" href="/index.php?title=MediaWiki:Floe.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+	<link rel="stylesheet" href="/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" />
+	<script type="text/javascript">
+	var skin="floe",
+	stylepath="/skins",
+	wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+	wgArticlePath="/index.php/$1",
+	wgScriptPath="",
+	wgScriptExtension=".php",
+	wgScript="/index.php",
+	wgVariantArticlePath=false,
+	wgActionPaths={},
+	wgServer="http://dev.handbook.floeproject.org",
+	wgCanonicalNamespace="",
+	wgCanonicalSpecialPageName=false,
+	wgNamespaceNumber=0,
+	wgPageName="Techniques",
+	wgTitle="Techniques",
+	wgAction="view",
+	wgArticleId=3,
+	wgIsArticle=true,
+	wgUserName=null,
+	wgUserGroups=null,
+	wgUserLanguage="en",
+	wgContentLanguage="en",
+	wgBreakFrames=false,
+	wgCurRevisionId=72,
+	wgVersion="1.16.0",
+	wgEnableAPI=true,
+	wgEnableWriteAPI=true,
+	wgSeparatorTransformTable=["", ""],
+	wgDigitTransformTable=["", ""],
+	wgMainPageTitle="Introduction",
+	wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Inclusive Learning Handbook", "5": "Inclusive Learning Handbook talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk"},
+	wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "inclusive_learning_handbook": 4, "inclusive_learning_handbook_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "image": 6, "image_talk": 7},
+	wgSiteName="Inclusive Learning Handbook",
+	wgCategories=[],
+	wgRestrictionEdit=[],
+	wgRestrictionMove=[];
+	</script>
+	<script src="/skins/common/wikibits.js?270" type="text/javascript"></script>
+	<script src="/skins/common/ajax.js?270" type="text/javascript"></script>
+	<script src="/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=floe&amp;270" type="text/javascript"></script>
+	
+	</head -->
 
+<div class="fl-container-flex75 fl-centered">
 	<div id="jump-links">
 		<?php if( $this->data['showjumplinks'] ) { ?><?php $this->msg('jumpto') ?> <a href="#site-toc">Table of Contents</a>, <a href="#tocontent">Content</a><?php } ?>
 	</div>
-	<div id="header">
-		<h1><?php $this->msg('tagline') ?></h1>
-		<div id="top-links">
+	<div id="header" class="fl-col-flex2">
+		<div class="fl-col">
 			<a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']); ?>" id="logo"><img src="<?php echo htmlspecialchars($this->data['logopath']); ?>" alt="floe logo" /></a>
-			
+			<h1><?php $this->msg('tagline') ?></h1>
+		</div>
+		<div class="fl-col">
 			<span class="links-header">User Links:</span>
 			<ul id="user-links">
 			<?php foreach($this->data['personal_urls'] as $key => $item) { ?>
@@ -50,19 +113,28 @@ class FloeTemplate extends QuickTemplate {
 		</div>	
 	</div>
 		
-	<div id="site-toc">
-		<h2>Table of Contents</h2>
-		<a name="site-toc"></a><ul>
-		<?php 
-		$pages = array("Introduction", "Why is this important?", "Who is this for?", "What is the approach?", "Techniques", "Your answers and input", "Evolving research" );
-		foreach($pages as $page) { 
-			echo "<li><a href='/index.php?title=".str_replace(' ','_',$page)."'>".$page."</a></li>";
-		} ?>
-		</ul>
-	</div>
-	<div id="container">		
+	<div class="fl-col-mixed-200">	
+		<div id="site-toc" class="fl-col-fixed fl-force-left">
+			<h2>Table of Contents</h2>
+			<a name="site-toc"></a><ul>
+			<?php 
+			$pages = array("Introduction", "Why is this important?", "Who is this for?", "What is the approach?", "Techniques" );
+			foreach($pages as $page) { 
+				echo "<li><a href='/index.php?title=".str_replace(' ','_',$page)."'>".$page."</a></li>";
+			} ?>
+			</ul>
+			
+			<h2>Tools</h2>
+			<ul>
+			<?php
+			wfRunHooks( 'MonoBookTemplateToolboxEnd', array( &$this ) );
+			wfRunHooks( 'SkinTemplateToolboxEnd', array( &$this ) );
+			echo "<li><a href='".htmlspecialchars($this->data['nav_urls']['mainpage']['href'])."&action=pdfbook'>Export PDF Book</a></li>";
+			?>
+			</ul>
+		</div>
 		
-		<div id="content">
+		<div class="fl-col-flex">					
 			<span class="links-header">Page Links:</span>
 			<ul id="page-links"><?php
 			foreach( $this->data['content_actions'] as $key => $tab ) { 
@@ -76,15 +148,14 @@ class FloeTemplate extends QuickTemplate {
 		
 			<h2><?php $this->html('title'); ?></h2>
 			<?php $this->html('bodytext') ?>
-		</div>
-		
-		<div id="footer">         
-          The FLOE Inclusive Learning Handbook, part of the <a href="http://floeproject.org" class="external text" rel="nofollow">FLOE Project</a>, is produced by the <a href="http://idrc.ocad.ca" class="external text" rel="nofollow">Inclusive Design Research Centre</a> at <a href="http://ocad.ca" class="external text" rel="nofollow">OCAD University</a>. FLOE is funded by a grant from <a href="http://www.hewlett.org" class="external text" rel="nofollow">The William and Flora Hewlett Foundation</a>.
-        </div>
+		</div>	
+	</div>		
+	<div id="footer">         
+	  The FLOE Inclusive Learning Handbook, part of the <a href="http://floeproject.org" class="external text" rel="nofollow">FLOE Project</a>, is produced by the <a href="http://idrc.ocad.ca" class="external text" rel="nofollow">Inclusive Design Research Centre</a> at <a href="http://ocad.ca" class="external text" rel="nofollow">OCAD University</a>. FLOE is funded by a grant from <a href="http://www.hewlett.org" class="external text" rel="nofollow">The William and Flora Hewlett Foundation</a>.
 	</div>
 	
-		<?php $this->html('bottomscripts'); /* JS call to runBodyOnloadHook */ ?>
-
+	<?php $this->html('bottomscripts'); /* JS call to runBodyOnloadHook */ ?>
+</div>
 		</body>
 		</html>
 		<?php
@@ -103,6 +174,14 @@ class SkinFloe extends SkinTemplate {
 
 	function setupSkinUserCss( OutputPage $out ){
 		parent::setupSkinUserCss( $out );
+		
+		/* fss */
+		$fss_loc = "/extensions/infusion-1.2/framework/fss/css/";
+		$out->addStyle($fss_loc.'fss-reset.css', 'screen');
+		$out->addStyle($fss_loc.'fss-layout.css', 'screen');
+		$out->addStyle($fss_loc.'fss-text.css', 'screen');
+		/*$out->addStyle($fss_loc.'fss-theme-coal.css', 'screen');*/
+		
 		$out->addStyle( 'floe/main.css', 'screen' );
 		$out->addStyle( 'floe/rtl.css', '', '', 'rtl' );
 	}

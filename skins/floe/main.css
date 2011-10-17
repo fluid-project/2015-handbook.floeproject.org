@@ -61,17 +61,14 @@ a#logo {
 }
 
 /* Layout */
-#container {
+/*#container {
 	width: 65%;
 	min-width: 50em;
 	margin: 0 auto 0 15em;
-}
+}*/
 
 #site-toc {
-	float:left;	
-	margin-top:5.6em;
-	margin-left:2em;
-	border: 1px solid #ED1E79;
+	background-color: #f3f9fb;
 	padding: 10px;
 }
 
@@ -80,19 +77,25 @@ a#logo {
 	font-size: 1.2em;
 	border: 0px;
 }
-
-
 #site-toc ul {
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+#site-toc ul li {
 	list-style:none;
-	margin-left:-40px;
-	margin-bottom: 0px;
 }
 
 /* header */
 #header {
-	width: 65%;
-	min-width: 50em;
-	margin: 0 -1em 0 15em;
+	border-bottom: 3px solid #0091b0;
+}
+
+div#header-left {
+	float:left;
+}
+
+div#header-right {
+	float:right;
 }
 
 
@@ -100,37 +103,26 @@ a#logo {
 }
 
 h1 { 
-	margin-top: 1em;
 	padding-bottom: 0px;
 	font-weight: 0;
+	margin: 7px 0px 25px 0px;
 }
 
 h2 {
-	clear: right;
-	border-top: 6px solid #ccc;
-	border-bottom: 2px solid #ccc;
 	font-weight:bold;
-	padding: 33px 0px 14px 0px;
+	padding:25px 0 10px 0;
 	margin:0px;
-	margin-bottom:5px;
 }
 
 h3 {
 	color: #1a1a1a;
 	font-weight:bold;
-	border-bottom: 1px dotted #ED1E79;
 	margin-bottom: 5px;
 	margin-top: 25px;
 	padding-bottom: 5px;
 }
 
 /* menus */
-
-div#top-links {
-	margin: 0 auto;
-	margin-top: -6em;
-	width: 100%;
-}
 
 ul#user-links {
 	float:right;
@@ -143,13 +135,13 @@ ul#user-links li {
 }
 
 ul#page-links {
-	margin:45px 0px 5px -40px;
-	list-style: none;
+	margin:0px 0px 5px 0px;
 	float:right;
 }
 ul#page-links li {
 	display:inline;
 	margin-left:7px;
+	list-style:none;
 }
 
 .links-header {
@@ -412,7 +404,8 @@ div.tocindent {
 
 div#toc {
   display:table;
-  border: 8px solid #E6E6E6;
+  border-top: 3px solid #000000;
+  border-bottom: 1px solid #000000;
   text-align: left;
   padding: 17px 17px 2px 17px;
   margin: 10px 0px 10px 0px;
@@ -427,13 +420,13 @@ div#toc {
 }
 
 #toc ul {
-	list-style:none;
-	margin-left:-40px;
 	font-weight: normal;
 	font-size: 1em;
+	margin-left: 0px;
 }
 
 #toc li {
+	list-style:none;
 	margin-bottom: 10px;
 	line-height: normal;
 }
@@ -543,7 +536,6 @@ div.printfooter {
 #preftoc {
     float: left;
     margin: 1em;
-    width: 13em;
 }
 #preftoc li {
 }
