@@ -28,7 +28,7 @@ span.texhtml { font-family: serif; }
 #wikiPreview.ontop { margin-bottom: 1em; }
 
 /* Stop floats from intruding into edit area in previews */
-#editform, #toolbar, #wpTextbox1 { clear: both; }
+/*#editform, #toolbar, #wpTextbox1 { clear: both; } */
 
 div#mw-js-message {
 	margin: 1em 5%;
@@ -627,7 +627,7 @@ table.collapsed tr.collapsable {
 }
 
 .visualClear {
-	clear: both;
+	/*clear: both; */
 }
 
 #mw_trackbacks {
