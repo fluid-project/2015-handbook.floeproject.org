@@ -29,7 +29,6 @@ class FloeTemplate extends QuickTemplate {
 		wfSuppressWarnings();
  
  		$this->html( 'headelement' );
-		
 ?>
 	<!-- head>
 	<title><?php echo $this->mHTMLtitle; ?></title>
@@ -89,13 +88,58 @@ class FloeTemplate extends QuickTemplate {
 	<script src="/skins/common/wikibits.js?270" type="text/javascript"></script>
 	<script src="/skins/common/ajax.js?270" type="text/javascript"></script>
 	<script src="/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=floe&amp;270" type="text/javascript"></script>
-	
 	</head -->
 
 <div class="fl-container-flex75 fl-centered">
 	<div id="jump-links">
 		<?php if( $this->data['showjumplinks'] ) { ?><?php $this->msg('jumpto') ?> <a href="#site-toc">Table of Contents</a>, <a href="#tocontent">Content</a><?php } ?>
 	</div>
+	
+    <!-- div for the UI Options fat panel -->
+    <div class="flc-uiOptions-fatPanel fl-uiOptions-fatPanel">
+        <!-- This is the div that will contain the UI Options component -->
+        <div id="myUIOptions" class="flc-slidingPanel-panel flc-uiOptions-iframe"></div>     
+    
+        <!-- This div is for the sliding panel that shows and hides the UI Options controls -->
+        <div class="fl-panelBar">
+            <button class="flc-slidingPanel-toggleButton fl-toggleButton">The show/hide button label will go here</button>
+        </div>
+    </div>  
+
+       <script type="text/javascript">
+            var demo = demo || {};
+
+            // Define the functions that will be used by the demo
+            (function ($, fluid) {
+                demo.initPageEnhancer = function () {
+                    fluid.pageEnhancer({
+                        // Tell UIEnhancer where to find the table of contents' template URL
+                        tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; ?>/extensions/infusion/components/tableOfContents/html/TableOfContents.html"
+                    });
+                };
+                
+                demo.initUIOptions = function () {
+                    fluid.uiOptions.fatPanel(".flc-uiOptions-fatPanel", {
+                        // Tell UIOptions where to find all the templates, relative to this file
+                        prefix: "<?php global $wgScriptPath; echo $wgScriptPath; ?>/extensions/infusion/components/uiOptions/html/"
+                        
+                    });
+                };    
+            })(jQuery, fluid);
+        </script>
+
+
+        <?php $this->html('bottomscripts'); /* JS call to runBodyOnloadHook */ ?>
+
+        <script type="text/javascript">
+            // Initialize the page enhancer right away
+            demo.initPageEnhancer();
+            demo.initUIOptions();
+        </script>
+
+    <!-- div for the table of contents, used by UI Options -->
+    <div class="flc-toc-tocContainer toc"> </div>
+
 	<div id="header" class="fl-col-flex2">
 		<div class="fl-col">
 			<a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']); ?>" id="logo"><img src="<?php echo htmlspecialchars($this->data['logopath']); ?>" alt="floe logo" /></a>
@@ -154,7 +198,6 @@ class FloeTemplate extends QuickTemplate {
 	  The FLOE Inclusive Learning Handbook, part of the <a href="http://floeproject.org" class="external text" rel="nofollow">FLOE Project</a>, is produced by the <a href="http://idrc.ocad.ca" class="external text" rel="nofollow">Inclusive Design Research Centre</a> at <a href="http://ocad.ca" class="external text" rel="nofollow">OCAD University</a>. FLOE is funded by a grant from <a href="http://www.hewlett.org" class="external text" rel="nofollow">The William and Flora Hewlett Foundation</a>.
 	</div>
 	
-	<?php $this->html('bottomscripts'); /* JS call to runBodyOnloadHook */ ?>
 </div>
 		</body>
 		</html>
@@ -176,12 +219,21 @@ class SkinFloe extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 		
 		/* fss */
-		$fss_loc = "/extensions/infusion-1.2/framework/fss/css/";
+		$fss_loc = "/extensions/infusion/framework/fss/css/";
 		$out->addStyle($fss_loc.'fss-reset.css', 'screen');
 		$out->addStyle($fss_loc.'fss-layout.css', 'screen');
 		$out->addStyle($fss_loc.'fss-text.css', 'screen');
 		/*$out->addStyle($fss_loc.'fss-theme-coal.css', 'screen');*/
-		
+
+		/* UIO CSS files */
+        $uio_loc = "/extensions/infusion/components/uiOptions/css/";
+        $out->addStyle($uio_loc.'fss/fss-theme-bw-uio.css', 'screen');
+        $out->addStyle($uio_loc.'fss/fss-theme-wb-uio.css', 'screen');
+        $out->addStyle($uio_loc.'fss/fss-theme-yb-uio.css', 'screen');
+        $out->addStyle($uio_loc.'fss/fss-theme-by-uio.css', 'screen');
+        $out->addStyle($uio_loc.'fss/fss-text-uio.css', 'screen');
+        $out->addStyle($uio_loc.'FatPanelUIOptions.css', 'screen');
+
 		$out->addStyle( 'floe/main.css', 'screen' );
 		$out->addStyle( 'floe/rtl.css', '', '', 'rtl' );
 	}
@@ -191,6 +243,10 @@ class SkinFloe extends SkinTemplate {
 		$this->skinname  = 'floe';
 		$this->stylename = 'floe';
 		$this->template  = 'FloeTemplate';
+
+        /* UIO JS dependencies */
+        $infusion_loc = "/extensions/infusion/";
+        $out->addScriptFile($infusion_loc.'MyInfusion.js');
 	}
 
 	function tocList($toc) {
