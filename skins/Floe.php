@@ -142,7 +142,7 @@ class FloeTemplate extends QuickTemplate {
         </script>
 
 <div class="fl-container-flex75 fl-centered">
-	<div id="jump-links">
+	<div id="jump-links" class="fl-hidden-accessible">
 		<?php if( $this->data['showjumplinks'] ) { ?><?php $this->msg('jumpto') ?> <a href="#site-toc">Table of Contents</a>, <a href="#tocontent">Content</a><?php } ?>
 	</div>
 	

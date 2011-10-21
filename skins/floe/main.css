@@ -552,17 +552,6 @@ div.htmlform-tip {
 	padding: 0.2em;
 }
 
-#jump-links {
-	color: #fff;
-	display:inline;
-	float: left;
-}
-
-#jump-links a {
-	color: #fff;
-}
-
-
 table.collapsed tr.collapsable {
 	display: none;
 }
@@ -588,7 +577,7 @@ table.collapsed tr.collapsable {
     border: none;
 }
 .fl-uiOptions-fatPanel-iframe {
-    border: solid 1px grey;
+    border: solid 1px gray;
 }
 .fl-uiOptions-fatPanel .fl-panelBar {
     width: 75%;
