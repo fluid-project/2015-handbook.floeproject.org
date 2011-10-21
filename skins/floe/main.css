@@ -4,7 +4,6 @@
 body {
 	color: #1a1a1a;
 	font: 14px/1.5em "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
-	margin-top: 10px;
 }
 
 h1 { font-size: 2.55em; }
@@ -98,9 +97,6 @@ div#header-right {
 	float:right;
 }
 
-
-#jump-links {
-}
 
 h1 { 
 	padding-bottom: 0px;
@@ -559,6 +555,7 @@ div.htmlform-tip {
 #jump-links {
 	color: #fff;
 	display:inline;
+	float: left;
 }
 
 #jump-links a {
@@ -572,3 +569,24 @@ table.collapsed tr.collapsable {
 
 .templatesUsed { margin-top: 1.5em; }
 
+
+
+/* custom styling for UIO "show" button */
+.fl-uiOptions-fatPanel .fl-toggleButton {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 0;
+    font-weight: normal;
+    text-transform: none;
+    background-image: url('/skins/floe/images/icon-+-a.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+    margin-right: 0;
+}
+.fl-uiOptions-fatPanel .fl-panelBar {
+    border: none;
+}
+.fl-uiOptions-fatPanel-iframe {
+    border: solid 1px grey;
+}

@@ -96,7 +96,7 @@ class FloeTemplate extends QuickTemplate {
 	</div>
 	
     <!-- div for the UI Options fat panel -->
-    <div class="flc-uiOptions-fatPanel fl-uiOptions-fatPanel">
+    <div class="flc-uiOptions-fatPanel fl-uiOptions-fatPanel fl-clearfix">
         <!-- This is the div that will contain the UI Options component -->
         <div id="myUIOptions" class="flc-slidingPanel-panel flc-uiOptions-iframe"></div>     
     
@@ -121,7 +121,16 @@ class FloeTemplate extends QuickTemplate {
                 demo.initUIOptions = function () {
                     fluid.uiOptions.fatPanel(".flc-uiOptions-fatPanel", {
                         // Tell UIOptions where to find all the templates, relative to this file
-                        prefix: "<?php global $wgScriptPath; echo $wgScriptPath; ?>/extensions/infusion/components/uiOptions/html/"
+                        prefix: "<?php global $wgScriptPath; echo $wgScriptPath; ?>/extensions/infusion/components/uiOptions/html/",
+                        // Provide custom strings for slidingPanel button
+                        slidingPanel: {
+                            options: {
+                                strings: {
+                                    showText: "Display Preferences",
+                                    hideText: "Display Preferences"
+                                }
+                            }
+                        }
                         
                     });
                 };    
@@ -140,23 +149,25 @@ class FloeTemplate extends QuickTemplate {
     <!-- div for the table of contents, used by UI Options -->
     <div class="flc-toc-tocContainer toc"> </div>
 
-	<div id="header" class="fl-col-flex2">
-		<div class="fl-col">
-			<a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']); ?>" id="logo"><img src="<?php echo htmlspecialchars($this->data['logopath']); ?>" alt="floe logo" /></a>
-			<h1><?php $this->msg('tagline') ?></h1>
-		</div>
-		<div class="fl-col">
-			<span class="links-header">User Links:</span>
-			<ul id="user-links">
-			<?php foreach($this->data['personal_urls'] as $key => $item) { ?>
-				<li id="<?php echo Sanitizer::escapeId( "pt-$key" ) ?>"<?php if ($item['active']) { ?> class="active"<?php } ?>>
-				<a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskey('pt-'.$key) ?>
-				<?php if( !empty( $item['class'] ) ) { ?> class="<?php echo htmlspecialchars( $item['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $item['text'] ) ?></a></li>
-			<?php } ?>
-			</ul>
-		</div>	
-	</div>
-		
+    <div id="header" class="fl-col-flex2">
+        <div class="fl-fix">
+            <span class="links-header">User Links:</span>
+            <ul id="user-links">
+            <?php foreach($this->data['personal_urls'] as $key => $item) { ?>
+                <li id="<?php echo Sanitizer::escapeId( "pt-$key" ) ?>"<?php if ($item['active']) { ?> class="active"<?php } ?>>
+                <a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskey('pt-'.$key) ?>
+                <?php if( !empty( $item['class'] ) ) { ?> class="<?php echo htmlspecialchars( $item['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $item['text'] ) ?></a></li>
+            <?php } ?>
+            </ul>
+        </div>  
+        <div class="fl-col-mixed-200">
+            <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']); ?>" id="logo"><img src="<?php echo htmlspecialchars($this->data['logopath']); ?>" alt="floe logo" /></a>
+            <h1><?php $this->msg('tagline') ?></h1>
+        </div>
+    </div>
+
+
+
 	<div class="fl-col-mixed-200">	
 		<div id="site-toc" class="fl-col-fixed fl-force-left">
 			<h2>Table of Contents</h2>
