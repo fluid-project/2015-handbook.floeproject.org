@@ -90,18 +90,13 @@ class FloeTemplate extends QuickTemplate {
 	<script src="/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=floe&amp;270" type="text/javascript"></script>
 	</head -->
 
-<div class="fl-container-flex75 fl-centered">
-	<div id="jump-links">
-		<?php if( $this->data['showjumplinks'] ) { ?><?php $this->msg('jumpto') ?> <a href="#site-toc">Table of Contents</a>, <a href="#tocontent">Content</a><?php } ?>
-	</div>
-	
     <!-- div for the UI Options fat panel -->
     <div class="flc-uiOptions-fatPanel fl-uiOptions-fatPanel fl-clearfix">
         <!-- This is the div that will contain the UI Options component -->
         <div id="myUIOptions" class="flc-slidingPanel-panel flc-uiOptions-iframe"></div>     
     
         <!-- This div is for the sliding panel that shows and hides the UI Options controls -->
-        <div class="fl-panelBar">
+        <div class="fl-panelBar fl-container-flex75 fl-centered">
             <button class="flc-slidingPanel-toggleButton fl-toggleButton">The show/hide button label will go here</button>
         </div>
     </div>  
@@ -145,6 +140,12 @@ class FloeTemplate extends QuickTemplate {
             demo.initPageEnhancer();
             demo.initUIOptions();
         </script>
+
+<div class="fl-container-flex75 fl-centered">
+	<div id="jump-links">
+		<?php if( $this->data['showjumplinks'] ) { ?><?php $this->msg('jumpto') ?> <a href="#site-toc">Table of Contents</a>, <a href="#tocontent">Content</a><?php } ?>
+	</div>
+	
 
     <!-- div for the table of contents, used by UI Options -->
     <div class="flc-toc-tocContainer toc"> </div>

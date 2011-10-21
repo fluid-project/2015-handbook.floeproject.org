@@ -590,3 +590,6 @@ table.collapsed tr.collapsable {
 .fl-uiOptions-fatPanel-iframe {
     border: solid 1px grey;
 }
+.fl-uiOptions-fatPanel .fl-panelBar {
+    width: 75%;
+}
