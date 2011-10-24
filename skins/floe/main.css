@@ -567,11 +567,16 @@ table.collapsed tr.collapsable {
     border-radius: 0;
     font-weight: normal;
     text-transform: none;
-    background-image: url('/skins/floe/images/icon-+-a.png');
-    background-repeat: no-repeat;
-    background-position: left center;
     padding-left: 50px;
     margin-right: 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonShow {
+    background-image: url('/skins/floe/images/icon-+-a.png');
+}
+.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonHide {
+    background-image: url('/skins/floe/images/icon---a.png');
 }
 .fl-uiOptions-fatPanel .fl-panelBar {
     border: none;

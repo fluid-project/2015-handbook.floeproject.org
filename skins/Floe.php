@@ -97,7 +97,7 @@ class FloeTemplate extends QuickTemplate {
     
         <!-- This div is for the sliding panel that shows and hides the UI Options controls -->
         <div class="fl-panelBar fl-container-flex75 fl-centered">
-            <button class="flc-slidingPanel-toggleButton fl-toggleButton">The show/hide button label will go here</button>
+            <button class="flc-slidingPanel-toggleButton fl-toggleButton fl-toggleButtonShow">The show/hide button label will go here</button>
         </div>
     </div>  
 
@@ -113,16 +113,31 @@ class FloeTemplate extends QuickTemplate {
                     });
                 };
                 
+                var toggleButtonStyle = function (that) {
+                    that.locate("toggleButton").toggleClass(that.options.styles.toggleButtonShow)
+                                                .toggleClass(that.options.styles.toggleButtonHide);
+                };
+
                 demo.initUIOptions = function () {
                     fluid.uiOptions.fatPanel(".flc-uiOptions-fatPanel", {
                         // Tell UIOptions where to find all the templates, relative to this file
                         prefix: "<?php global $wgScriptPath; echo $wgScriptPath; ?>/extensions/infusion/components/uiOptions/html/",
-                        // Provide custom strings for slidingPanel button
                         slidingPanel: {
                             options: {
+                                // Provide custom strings for slidingPanel button
                                 strings: {
                                     showText: "Display Preferences",
                                     hideText: "Display Preferences"
+                                },
+                                // define styles for button (see http://issues.fluidproject.org/browse/FLUID-4410)
+                                styles: {
+                                    toggleButtonShow: "fl-toggleButtonShow",
+                                    toggleButtonHide: "fl-toggleButtonHide"
+                                },
+                                // listeners to to toggle styles for button (see http://issues.fluidproject.org/browse/FLUID-4410)
+                                listeners: {
+                                    onPanelShow: toggleButtonStyle,
+                                    onPanelHide: toggleButtonStyle
                                 }
                             }
                         }
