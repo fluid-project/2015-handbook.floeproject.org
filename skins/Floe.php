@@ -105,23 +105,24 @@ class FloeTemplate extends QuickTemplate {
     </div>  
 
        <script type="text/javascript">
-            var demo = demo || {};
+            var floejs = floejs || {};
 
-            // Define the functions that will be used by the demo
             (function ($, fluid) {
-                demo.initPageEnhancer = function () {
+                floejs.initPageEnhancer = function () {
                     fluid.pageEnhancer({
                         // Tell UIEnhancer where to find the table of contents' template URL
                         tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/tableOfContents/html/TableOfContents.html"
                     });
                 };
                 
+                // event listener so toggle styles for the show/hide button
+                // (see http://issues.fluidproject.org/browse/FLUID-4410)
                 var toggleButtonStyle = function (that) {
                     that.locate("toggleButton").toggleClass(that.options.styles.toggleButtonShow)
                                                 .toggleClass(that.options.styles.toggleButtonHide);
                 };
 
-                demo.initUIOptions = function () {
+                floejs.initUIOptions = function () {
                     fluid.uiOptions.fatPanel(".flc-uiOptions-fatPanel", {
                         // Tell UIOptions where to find all the templates, relative to this file
                         prefix: "<?php global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/uiOptions/html/",
@@ -137,7 +138,6 @@ class FloeTemplate extends QuickTemplate {
                                     toggleButtonShow: "fl-toggleButtonShow",
                                     toggleButtonHide: "fl-toggleButtonHide"
                                 },
-                                // listeners to to toggle styles for button (see http://issues.fluidproject.org/browse/FLUID-4410)
                                 listeners: {
                                     onPanelShow: toggleButtonStyle,
                                     onPanelHide: toggleButtonStyle
@@ -155,8 +155,8 @@ class FloeTemplate extends QuickTemplate {
 
         <script type="text/javascript">
             // Initialize the page enhancer right away
-            demo.initPageEnhancer();
-            demo.initUIOptions();
+            floejs.initPageEnhancer();
+            floejs.initUIOptions();
         </script>
 
 <div class="fl-container-flex75 fl-centered">
@@ -273,6 +273,7 @@ class SkinFloe extends SkinTemplate {
 
         /* UIO JS dependencies */
         $out->addScriptFile(INFUSION_LOC.'MyInfusion.js');
+        $out->addScriptFile('../floe/Floe.js');
 	}
 
 	function tocList($toc) {
