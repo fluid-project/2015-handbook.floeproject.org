@@ -273,7 +273,6 @@ class SkinFloe extends SkinTemplate {
 
         /* UIO JS dependencies */
         $out->addScriptFile(INFUSION_LOC.'MyInfusion.js');
-        $out->addScriptFile('../floe/Floe.js');
 	}
 
 	function tocList($toc) {
