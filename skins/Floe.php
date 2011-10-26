@@ -13,6 +13,9 @@ if( !defined( 'MEDIAWIKI' ) )
 //require_once( dirname(__FILE__) . '/MonoBook.php' );
 
 
+define('INFUSION_LOC', "/extensions/infusion/");
+define('FSS_LOC', INFUSION_LOC . "framework/fss/css/");
+define('UIO_CSS_LOC', INFUSION_LOC . "components/uiOptions/css/");
 
 class FloeTemplate extends QuickTemplate {
 	/**
@@ -109,7 +112,7 @@ class FloeTemplate extends QuickTemplate {
                 demo.initPageEnhancer = function () {
                     fluid.pageEnhancer({
                         // Tell UIEnhancer where to find the table of contents' template URL
-                        tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; ?>/extensions/infusion/components/tableOfContents/html/TableOfContents.html"
+                        tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/tableOfContents/html/TableOfContents.html"
                     });
                 };
                 
@@ -121,7 +124,7 @@ class FloeTemplate extends QuickTemplate {
                 demo.initUIOptions = function () {
                     fluid.uiOptions.fatPanel(".flc-uiOptions-fatPanel", {
                         // Tell UIOptions where to find all the templates, relative to this file
-                        prefix: "<?php global $wgScriptPath; echo $wgScriptPath; ?>/extensions/infusion/components/uiOptions/html/",
+                        prefix: "<?php global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/uiOptions/html/",
                         slidingPanel: {
                             options: {
                                 // Provide custom strings for slidingPanel button
@@ -246,20 +249,17 @@ class SkinFloe extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 		
 		/* fss */
-		$fss_loc = "/extensions/infusion/framework/fss/css/";
-		$out->addStyle($fss_loc.'fss-reset.css', 'screen');
-		$out->addStyle($fss_loc.'fss-layout.css', 'screen');
-		$out->addStyle($fss_loc.'fss-text.css', 'screen');
-		/*$out->addStyle($fss_loc.'fss-theme-coal.css', 'screen');*/
+		$out->addStyle(FSS_LOC.'fss-reset.css', 'screen');
+		$out->addStyle(FSS_LOC.'fss-layout.css', 'screen');
+		$out->addStyle(FSS_LOC.'fss-text.css', 'screen');
 
 		/* UIO CSS files */
-        $uio_loc = "/extensions/infusion/components/uiOptions/css/";
-        $out->addStyle($uio_loc.'fss/fss-theme-bw-uio.css', 'screen');
-        $out->addStyle($uio_loc.'fss/fss-theme-wb-uio.css', 'screen');
-        $out->addStyle($uio_loc.'fss/fss-theme-yb-uio.css', 'screen');
-        $out->addStyle($uio_loc.'fss/fss-theme-by-uio.css', 'screen');
-        $out->addStyle($uio_loc.'fss/fss-text-uio.css', 'screen');
-        $out->addStyle($uio_loc.'FatPanelUIOptions.css', 'screen');
+        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-bw-uio.css', 'screen');
+        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-wb-uio.css', 'screen');
+        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-yb-uio.css', 'screen');
+        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-by-uio.css', 'screen');
+        $out->addStyle(UIO_CSS_LOC.'fss/fss-text-uio.css', 'screen');
+        $out->addStyle(UIO_CSS_LOC.'FatPanelUIOptions.css', 'screen');
 
 		$out->addStyle( 'floe/main.css', 'screen' );
 		$out->addStyle( 'floe/rtl.css', '', '', 'rtl' );
@@ -272,8 +272,7 @@ class SkinFloe extends SkinTemplate {
 		$this->template  = 'FloeTemplate';
 
         /* UIO JS dependencies */
-        $infusion_loc = "/extensions/infusion/";
-        $out->addScriptFile($infusion_loc.'MyInfusion.js');
+        $out->addScriptFile(INFUSION_LOC.'MyInfusion.js');
 	}
 
 	function tocList($toc) {
