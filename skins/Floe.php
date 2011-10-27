@@ -133,15 +133,6 @@ class FloeTemplate extends QuickTemplate {
                         echo "<li><a href='/index.php?title=".str_replace(' ','_',$page)."'>".$page."</a></li>";
                     } ?>
                     </ul>
-                    
-                    <h2>Tools</h2>
-                    <ul>
-                    <?php
-                    wfRunHooks( 'MonoBookTemplateToolboxEnd', array( &$this ) );
-                    wfRunHooks( 'SkinTemplateToolboxEnd', array( &$this ) );
-                    echo "<li><a href='".htmlspecialchars($this->data['nav_urls']['mainpage']['href'])."&action=pdfbook'>Export PDF Book</a></li>";
-                    ?>
-                    </ul>
                 </div>
                 
                 <div class="fl-col-flex">                    
