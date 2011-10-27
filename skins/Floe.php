@@ -148,13 +148,8 @@ class FloeTemplate extends QuickTemplate {
                     });
                 };    
             })(jQuery, fluid);
-        </script>
-
-
-        <?php $this->html('bottomscripts'); /* JS call to runBodyOnloadHook */ ?>
-
-        <script type="text/javascript">
-            // Initialize the page enhancer right away
+ 
+             // Initialize the page enhancer right away
             floejs.initPageEnhancer();
             floejs.initUIOptions();
         </script>
@@ -229,6 +224,8 @@ class FloeTemplate extends QuickTemplate {
 	</div>
 	
 </div>
+        <?php $this->html('bottomscripts'); /* JS call to runBodyOnloadHook */ ?>
+
 		</body>
 		</html>
 		<?php
