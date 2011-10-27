@@ -33,65 +33,6 @@ class FloeTemplate extends QuickTemplate {
  
  		$this->html( 'headelement' );
 ?>
-	<!-- head>
-	<title><?php echo $this->mHTMLtitle; ?></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="generator" content="MediaWiki 1.16.0" />
-	<link rel="alternate" type="application/x-wiki" title="Edit" href="/index.php?title=Techniques&amp;action=edit" />
-	<link rel="edit" title="Edit" href="/index.php?title=Techniques&amp;action=edit" />
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Inclusive Learning Handbook (en)" />
-	<link rel="alternate" type="application/atom+xml" title="Inclusive Learning Handbook Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
-	<link rel="stylesheet" href="/skins/common/shared.css?270" media="screen" />
-	<link rel="stylesheet" href="/skins/common/commonPrint.css?270" media="print" />
-	<link rel="stylesheet" href="/skins/floe/main.css?270" media="screen" />
-	<link rel="stylesheet" href="/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
-	<link rel="stylesheet" href="/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print" />
-	
-	<link rel="stylesheet" href="/index.php?title=MediaWiki:Floe.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
-	<link rel="stylesheet" href="/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" />
-	<script type="text/javascript">
-	var skin="floe",
-	stylepath="/skins",
-	wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
-	wgArticlePath="/index.php/$1",
-	wgScriptPath="",
-	wgScriptExtension=".php",
-	wgScript="/index.php",
-	wgVariantArticlePath=false,
-	wgActionPaths={},
-	wgServer="http://dev.handbook.floeproject.org",
-	wgCanonicalNamespace="",
-	wgCanonicalSpecialPageName=false,
-	wgNamespaceNumber=0,
-	wgPageName="Techniques",
-	wgTitle="Techniques",
-	wgAction="view",
-	wgArticleId=3,
-	wgIsArticle=true,
-	wgUserName=null,
-	wgUserGroups=null,
-	wgUserLanguage="en",
-	wgContentLanguage="en",
-	wgBreakFrames=false,
-	wgCurRevisionId=72,
-	wgVersion="1.16.0",
-	wgEnableAPI=true,
-	wgEnableWriteAPI=true,
-	wgSeparatorTransformTable=["", ""],
-	wgDigitTransformTable=["", ""],
-	wgMainPageTitle="Introduction",
-	wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Inclusive Learning Handbook", "5": "Inclusive Learning Handbook talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk"},
-	wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "inclusive_learning_handbook": 4, "inclusive_learning_handbook_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "image": 6, "image_talk": 7},
-	wgSiteName="Inclusive Learning Handbook",
-	wgCategories=[],
-	wgRestrictionEdit=[],
-	wgRestrictionMove=[];
-	</script>
-	<script src="/skins/common/wikibits.js?270" type="text/javascript"></script>
-	<script src="/skins/common/ajax.js?270" type="text/javascript"></script>
-	<script src="/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=floe&amp;270" type="text/javascript"></script>
-	</head -->
 
     <!-- div for the UI Options fat panel -->
     <div class="flc-uiOptions-fatPanel fl-uiOptions-fatPanel fl-clearfix">
@@ -105,10 +46,10 @@ class FloeTemplate extends QuickTemplate {
     </div>  
 
        <script type="text/javascript">
-            var floejs = floejs || {};
+            var floe = floe || {};
 
             (function ($, fluid) {
-                floejs.initPageEnhancer = function () {
+                floe.initPageEnhancer = function () {
                     fluid.pageEnhancer({
                         // Tell UIEnhancer where to find the table of contents' template URL
                         tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/tableOfContents/html/TableOfContents.html"
@@ -122,7 +63,7 @@ class FloeTemplate extends QuickTemplate {
                                                 .toggleClass(that.options.styles.toggleButtonHide);
                 };
 
-                floejs.initUIOptions = function () {
+                floe.initUIOptions = function () {
                     fluid.uiOptions.fatPanel(".flc-uiOptions-fatPanel", {
                         // Tell UIOptions where to find all the templates, relative to this file
                         prefix: "<?php global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/uiOptions/html/",
@@ -150,8 +91,8 @@ class FloeTemplate extends QuickTemplate {
             })(jQuery, fluid);
  
              // Initialize the page enhancer right away
-            floejs.initPageEnhancer();
-            floejs.initUIOptions();
+            floe.initPageEnhancer();
+            floe.initUIOptions();
         </script>
 
 <div class="fl-container-flex75 fl-centered">
