@@ -4,7 +4,6 @@
 body {
 	color: #1a1a1a;
 	font: 14px/1.5em "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
-	margin-top: 10px;
 }
 
 h1 { font-size: 2.55em; }
@@ -61,17 +60,14 @@ a#logo {
 }
 
 /* Layout */
-#container {
+/*#container {
 	width: 65%;
 	min-width: 50em;
 	margin: 0 auto 0 15em;
-}
+}*/
 
 #site-toc {
-	float:left;	
-	margin-top:5.6em;
-	margin-left:2em;
-	border: 1px solid #ED1E79;
+	background-color: #f3f9fb;
 	padding: 10px;
 }
 
@@ -80,57 +76,49 @@ a#logo {
 	font-size: 1.2em;
 	border: 0px;
 }
-
-
 #site-toc ul {
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+#site-toc ul li {
 	list-style:none;
-	margin-left:-40px;
-	margin-bottom: 0px;
 }
 
 /* header */
 #header {
-	width: 65%;
-	min-width: 50em;
-	margin: 0 -1em 0 15em;
+	border-bottom: 3px solid #0091b0;
 }
 
-
-#jump-links {
+div#header-left {
+	float:left;
 }
+
+div#header-right {
+	float:right;
+}
+
 
 h1 { 
-	margin-top: 1em;
 	padding-bottom: 0px;
 	font-weight: 0;
+	margin: 7px 0px 25px 0px;
 }
 
 h2 {
-	clear: right;
-	border-top: 6px solid #ccc;
-	border-bottom: 2px solid #ccc;
 	font-weight:bold;
-	padding: 33px 0px 14px 0px;
+	padding:25px 0 10px 0;
 	margin:0px;
-	margin-bottom:5px;
 }
 
 h3 {
 	color: #1a1a1a;
 	font-weight:bold;
-	border-bottom: 1px dotted #ED1E79;
 	margin-bottom: 5px;
 	margin-top: 25px;
 	padding-bottom: 5px;
 }
 
 /* menus */
-
-div#top-links {
-	margin: 0 auto;
-	margin-top: -6em;
-	width: 100%;
-}
 
 ul#user-links {
 	float:right;
@@ -143,13 +131,13 @@ ul#user-links li {
 }
 
 ul#page-links {
-	margin:45px 0px 5px -40px;
-	list-style: none;
+	margin:0px 0px 5px 0px;
 	float:right;
 }
 ul#page-links li {
 	display:inline;
 	margin-left:7px;
+	list-style:none;
 }
 
 .links-header {
@@ -412,7 +400,8 @@ div.tocindent {
 
 div#toc {
   display:table;
-  border: 8px solid #E6E6E6;
+  border-top: 3px solid #000000;
+  border-bottom: 1px solid #000000;
   text-align: left;
   padding: 17px 17px 2px 17px;
   margin: 10px 0px 10px 0px;
@@ -427,13 +416,13 @@ div#toc {
 }
 
 #toc ul {
-	list-style:none;
-	margin-left:-40px;
 	font-weight: normal;
 	font-size: 1em;
+	margin-left: 0px;
 }
 
 #toc li {
+	list-style:none;
 	margin-bottom: 10px;
 	line-height: normal;
 }
@@ -543,7 +532,6 @@ div.printfooter {
 #preftoc {
     float: left;
     margin: 1em;
-    width: 13em;
 }
 #preftoc li {
 }
@@ -564,19 +552,38 @@ div.htmlform-tip {
 	padding: 0.2em;
 }
 
-#jump-links {
-	color: #fff;
-	display:inline;
-}
-
-#jump-links a {
-	color: #fff;
-}
-
-
 table.collapsed tr.collapsable {
 	display: none;
 }
 
 .templatesUsed { margin-top: 1.5em; }
 
+
+
+/* custom styling for UIO "show" button */
+.fl-uiOptions-fatPanel .fl-toggleButton {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 0;
+    font-weight: normal;
+    text-transform: none;
+    padding-left: 50px;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonShow {
+    background-image: url('/skins/floe/images/icon-+-a.png');
+}
+.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonHide {
+    background-image: url('/skins/floe/images/icon---a.png');
+}
+.fl-uiOptions-fatPanel .fl-panelBar {
+    border: none;
+}
+.fl-uiOptions-fatPanel-iframe {
+    border: solid 1px gray;
+}
+.fl-uiOptions-fatPanel .fl-panelBar {
+    width: 75%;
+}
