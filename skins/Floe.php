@@ -280,39 +280,5 @@ class SkinFloe extends SkinTemplate {
 
 		return "<div id='toc'><h3>Contents</h3>".$toc."</ul></div><a name='tocontent'></a>";
 	}
-	
-	function prevNextLink($dir) {
-		$title = $this->mTitle;
-		
-		$pages = array("Introduction", "Why is this important?", "Who is this for?", "What is the approach?", "Techniques" );
-		
-		/* get list of high level pages from db */
-		$dbr = &wfGetDB(DB_SLAVE);
-        $pageTable = $dbr->tableName('page');
-                
-       //	$res = $dbr->query("SELECT * FROM page WHERE page_namespace=0 ORDER BY page_id DESC");				
-		
-		$loc = array_search($title, $pages);
-		
-		if ($title=="Table of Contents") {
-			if ($dir=="previous")
-				return false;
-			else
-				return "<a href='/index.php?title=Introduction'>Introduction</a>";
-				
-		} else if ($dir == "previous" && $loc>0) {
-			return "<a href='/index.php?title=".str_replace(' ','_',$pages[$loc-1])."'>".$pages[$loc-1]."</a>";
-			
-		} else if ($dir == "next" && $loc+1<count($pages)) {
-			return "<a href='/index.php?title=".str_replace(' ','_',$pages[$loc+1])."'>".$pages[$loc+1]."</a>";
-			
-		} else if ($dir == "current") {
-			return "<a href='/index.php?title=".str_replace(' ','_',$pages[$loc])."'>".$pages[$loc]."</a>";
-			
-		} else {
-			return false;
-		}
-	}
-	
 }
 ?>
