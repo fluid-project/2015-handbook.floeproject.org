@@ -1,0 +1,2 @@
+This version of Infusion is a custom build of version 1.4, created to include only
+the UI Options component and its supporting files.

@@ -4,7 +4,6 @@
 body {
 	color: #1a1a1a;
 	font: 14px/1.5em "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
-	margin-top: 10px;
 }
 
 h1 { font-size: 2.55em; }
@@ -98,9 +97,6 @@ div#header-right {
 	float:right;
 }
 
-
-#jump-links {
-}
 
 h1 { 
 	padding-bottom: 0px;
@@ -556,19 +552,38 @@ div.htmlform-tip {
 	padding: 0.2em;
 }
 
-#jump-links {
-	color: #fff;
-	display:inline;
-}
-
-#jump-links a {
-	color: #fff;
-}
-
-
 table.collapsed tr.collapsable {
 	display: none;
 }
 
 .templatesUsed { margin-top: 1.5em; }
 
+
+
+/* custom styling for UIO "show" button */
+.fl-uiOptions-fatPanel .fl-toggleButton {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 0;
+    font-weight: normal;
+    text-transform: none;
+    padding-left: 50px;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonShow {
+    background-image: url('/skins/floe/images/icon-+-a.png');
+}
+.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonHide {
+    background-image: url('/skins/floe/images/icon---a.png');
+}
+.fl-uiOptions-fatPanel .fl-panelBar {
+    border: none;
+}
+.fl-uiOptions-fatPanel-iframe {
+    border: solid 1px gray;
+}
+.fl-uiOptions-fatPanel .fl-panelBar {
+    width: 75%;
+}
