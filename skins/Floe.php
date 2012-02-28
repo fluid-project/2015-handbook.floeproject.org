@@ -121,17 +121,55 @@ class FloeTemplate extends QuickTemplate {
                 </div>
             </div>
         
-        
-        
             <div class="fl-col-mixed-200">    
                 <div id="site-toc" class="fl-col-fixed fl-force-left">
                     <h2>Table of Contents</h2>
                     <a name="site-toc"></a><ul>
                     <?php 
-                    $pages = array("Introduction", "Why is this important?", "Who is this for?", "What is the approach?", "Techniques" );
-                    foreach($pages as $page) { 
-                        echo "<li><a href='/index.php?title=".str_replace(' ','_',$page)."'>".$page."</a></li>";
-                    } ?>
+                    $pages = array("Home" => 
+                                       array("is_link" => true),
+                                   "Introduction" => 
+                                       array("is_link" => false,
+                                             "children" => array("Why is this important?" => array("is_link" => true),
+                                                                 "What is the approach?" => array("is_link" => true)
+                                                                )
+                                            ),
+                                   "Body/techniques/something?" => 
+                                       array("is_link" => false,
+                                             "children" => array("Inclusive learning" => array("is_link" => true),
+                                                                 "Accessibility principles" => array("is_link" => true),
+                                                                 "Learner needs and preferences" => array("is_link" => true),
+                                                                 "Video content and learning" => array("is_link" => true),
+                                                                 "Audio content and learning" => array("is_link" => true),
+                                                                 "Authoring of content" => array("is_link" => true),
+                                                                 "Content simplification" => array("is_link" => true)
+                                                                )
+                                             )
+                             );
+                    
+                    /**
+                     * Print table of content recursively
+                     * @param Array $pages  An array of the items that are listed on the table of content.
+                     *        Example: (title => array("is_link" => [true|false], "children" => [array with the same example structure]))
+                     * @param Integer $depth  The level to start with
+                     */
+                    function printTOC($pages, $depth) {
+                        // Exit if the given menu is not an array with elements
+                        if (!is_array($pages) || count($pages) == 0) return;
+                        
+                        foreach ($pages as $title => $attr) {
+                            if ($attr["is_link"]) {
+                                echo "<li class='site-toclevel-".$depth."'><a href='/index.php?title=".str_replace(' ','_',$title)."'>".$title."</a></span><br />";
+                            } else {
+                                echo "<li class='site-toclevel-".$depth."'>".$title."</span><br />";
+                            }
+                            
+                            printTOC($attr["children"], $depth+1);
+                        }
+                    }
+                    
+                    printTOC($pages, 0);
+                    ?>
                     </ul>
                 </div>
                 
