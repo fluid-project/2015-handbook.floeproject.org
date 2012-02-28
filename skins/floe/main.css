@@ -89,6 +89,10 @@ span.toc-item-0: {
 	list-style:none;
 }
 
+#site-toc li.site-toclevel-0 {
+	font-weight:bold;
+}
+
 #site-toc li.site-toclevel-1 {
 	margin-left: 1.5em;
 }
