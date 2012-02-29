@@ -45,6 +45,10 @@ class FloeTemplate extends QuickTemplate {
         </div>
     </div>  
 
+       <!-- MyInfusion.js was being included at the bottom of every generated page in
+            MediaWiki 1.18.1 so addScriptFile in line #246 is not being used at the 
+            moment, and the script is being included below.  Investigate this issue. -->
+       <script src="/extensions/infusion/MyInfusion.js"></script>
        <script type="text/javascript">
             var floe = floe || {};
 
@@ -239,7 +243,7 @@ class SkinFloe extends SkinTemplate {
         $this->template  = 'FloeTemplate';
 
         /* UIO JS dependencies */
-        $out->addScriptFile(INFUSION_LOC.'MyInfusion.js');
+        // $out->addScriptFile(INFUSION_LOC.'MyInfusion.js');
     }
 
     function tocList($toc) {
