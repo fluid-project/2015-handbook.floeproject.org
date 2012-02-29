@@ -142,7 +142,7 @@ class FloeTemplate extends QuickTemplate {
                                                                  "Video content and learning" => array("is_link" => true),
                                                                  "Audio content and learning" => array("is_link" => true),
                                                                  "Authoring of content" => array("is_link" => true),
-                                                                 "Content simplification" => array("is_link" => true)
+                                                                 "Cognitive considerations" => array("is_link" => true)
                                                                 )
                                              )
                              );
