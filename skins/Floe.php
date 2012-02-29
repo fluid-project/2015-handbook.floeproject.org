@@ -110,7 +110,7 @@ class FloeTemplate extends QuickTemplate {
                     <ul id="user-links">
                     <?php foreach($this->data['personal_urls'] as $key => $item) { ?>
                         <li id="<?php echo Sanitizer::escapeId( "pt-$key" ) ?>"<?php if ($item['active']) { ?> class="active"<?php } ?>>
-                        <a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskey('pt-'.$key) ?>
+                        <a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskeyAttribs('pt-'.$key) ?>
                         <?php if( !empty( $item['class'] ) ) { ?> class="<?php echo htmlspecialchars( $item['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $item['text'] ) ?></a></li>
                     <?php } ?>
                     </ul>
@@ -181,7 +181,7 @@ class FloeTemplate extends QuickTemplate {
                         if ( $tab['class'] ) {
                             echo ' class="', htmlspecialchars($tab['class']), '"';
                         }
-                        echo '><a href="', htmlspecialchars($tab['href']), '"', $skin->tooltipAndAccesskey('ca-'.$key), '>', htmlspecialchars($tab['text']), '</a></li>';
+                        echo '><a href="', htmlspecialchars($tab['href']), '"', $skin->tooltipAndAccesskeyAttribs('ca-'.$key), '>', htmlspecialchars($tab['text']), '</a></li>';
                     }?>
                     </ul>
                 
