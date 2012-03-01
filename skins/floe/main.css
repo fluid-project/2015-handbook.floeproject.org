@@ -1,8 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
+
 /* For clarity, explicitly state some recommendations from <http://www.w3.org/
    TR/CSS21/sample.html> to make sure the editsection links scale right */
 
 body {
-	color: #1a1a1a;
+	color: #444444;
 	font: 14px/1.5em "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
@@ -14,6 +16,47 @@ h6 { font-size: .75em; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
 /* Now the custom parts */
+
+html {
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    color: #237ba1;
+}
+
+#header h1 {
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    color: #0A212B;
+}
+
+.subtitle p {
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    color: #888888;
+    font-size: 0.9em;
+}
+
+.fl-col-mixed-250 .fl-col-flex {
+    padding: 0 0 0 1.6em;
+}
+
+.storycard {
+    width: 20em;
+    background: #F3F9FB;
+    margin: 0 0 1em 1em;
+    padding: 1em;
+    float: right;
+}
+.storycard h3 {
+    margin-top: 0;
+    text-transform: none;
+}
+
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+    margin: 0 0 0 1em;
+}
 
 /* Make edit sections (which are inside h# tags) normal-sized */
 .editsection {
@@ -47,12 +90,10 @@ a:link, a:visited, a.new {
   color: #000;
 }
 
-/*
 a:hover, a:active {
-  background-color: #fdeef5;
-  color: #000;
+  background-color: #fffb91;
 }
-*/
+
 
 a#logo {
 	background-color: transparent;
@@ -67,14 +108,15 @@ a#logo {
 }*/
 
 #site-toc {
-	background-color: #f3f9fb;
+	background-color: #F0F7EB;
 	padding: 10px;
 }
 
 #site-toc h2 {
-	display:inline;
 	font-size: 1.2em;
 	border: 0px;
+	font-weight: normal;
+	color: #46948c;
 }
 
 span.toc-item-0: {
@@ -87,19 +129,24 @@ span.toc-item-0: {
 }
 #site-toc ul li {
 	list-style:none;
+	margin-bottom: 0.5em;
 }
 
 #site-toc li.site-toclevel-0 {
-	font-weight:bold;
+	margin-top: 1em;
+    color: #777777;
+    text-transform: uppercase;
 }
 
 #site-toc li.site-toclevel-1 {
 	margin-left: 1.5em;
+    list-style-type: circle;
+    font-size: 0.9em;
 }
 
 /* header */
 #header {
-	border-bottom: 3px solid #0091b0;
+	border-bottom: 8px solid #46948C;
 }
 
 div#header-left {
@@ -118,17 +165,19 @@ h1 {
 }
 
 h2 {
+    color: #1D2E4C;
 	font-weight:bold;
-	padding:25px 0 10px 0;
+	padding:1em 0 0.2em 0;
 	margin:0px;
+	line-height: 1em;
 }
 
 h3 {
-	color: #1a1a1a;
+    text-transform: uppercase;
 	font-weight:bold;
-	margin-bottom: 5px;
-	margin-top: 25px;
-	padding-bottom: 5px;
+	margin-bottom: 0.5em;
+	margin-top: 1.5em;
+    font-size: 1.15em;
 }
 
 /* menus */
@@ -240,11 +289,8 @@ img {
 }
 
 p {
-    margin: 15px 0px 5px 0px;
-    line-height: 2em;
+    margin: 0 0 1em 0;
 }
-
-li { line-height: 2em; }
 
 p img { margin: 0; }
 
@@ -491,6 +537,8 @@ html .thumbcaption {
     text-align: left;
     line-height: 1.4;
     padding: 0.3em 0 0.1em 0;
+    font-weight: bold;
+    color: #333333;
 }
 div.magnify {
     float: right;

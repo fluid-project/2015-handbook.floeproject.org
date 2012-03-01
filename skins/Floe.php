@@ -55,6 +55,9 @@ class FloeTemplate extends QuickTemplate {
             (function ($, fluid) {
                 floe.initPageEnhancer = function () {
                     fluid.pageEnhancer({
+                        defaultSiteSettings: {
+                            lineSpacing: 1
+                        },
                         // Tell UIEnhancer where to find the table of contents' template URL
                         tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/tableOfContents/html/TableOfContents.html"
                     });
@@ -125,7 +128,7 @@ class FloeTemplate extends QuickTemplate {
                 </div>
             </div>
         
-            <div class="fl-col-mixed-200">    
+            <div class="fl-col-mixed-250">
                 <div id="site-toc" class="fl-col-fixed fl-force-left">
                     <h2>Table of Contents</h2>
                     <a name="site-toc"></a><ul>
