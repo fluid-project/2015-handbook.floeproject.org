@@ -45,12 +45,19 @@ class FloeTemplate extends QuickTemplate {
         </div>
     </div>  
 
+       <!-- MyInfusion.js was being included at the bottom of every generated page in
+            MediaWiki 1.18.1 so addScriptFile in line #246 is not being used at the 
+            moment, and the script is being included below.  Investigate this issue. -->
+       <script src="/extensions/infusion/MyInfusion.js"></script>
        <script type="text/javascript">
             var floe = floe || {};
 
             (function ($, fluid) {
                 floe.initPageEnhancer = function () {
                     fluid.pageEnhancer({
+                        defaultSiteSettings: {
+                            lineSpacing: 1
+                        },
                         // Tell UIEnhancer where to find the table of contents' template URL
                         tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/tableOfContents/html/TableOfContents.html"
                     });
@@ -110,7 +117,7 @@ class FloeTemplate extends QuickTemplate {
                     <ul id="user-links">
                     <?php foreach($this->data['personal_urls'] as $key => $item) { ?>
                         <li id="<?php echo Sanitizer::escapeId( "pt-$key" ) ?>"<?php if ($item['active']) { ?> class="active"<?php } ?>>
-                        <a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskey('pt-'.$key) ?>
+                        <a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskeyAttribs('pt-'.$key) ?>
                         <?php if( !empty( $item['class'] ) ) { ?> class="<?php echo htmlspecialchars( $item['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $item['text'] ) ?></a></li>
                     <?php } ?>
                     </ul>
@@ -121,7 +128,7 @@ class FloeTemplate extends QuickTemplate {
                 </div>
             </div>
         
-            <div class="fl-col-mixed-200">    
+            <div class="fl-col-mixed-250">
                 <div id="site-toc" class="fl-col-fixed fl-force-left">
                     <h2>Table of Contents</h2>
                     <a name="site-toc"></a><ul>
@@ -134,7 +141,7 @@ class FloeTemplate extends QuickTemplate {
                                                                  "What is the approach?" => array("is_link" => true)
                                                                 )
                                             ),
-                                   "Body/techniques/something?" => 
+                                   "Techniques" => 
                                        array("is_link" => false,
                                              "children" => array("Inclusive learning" => array("is_link" => true),
                                                                  "Accessibility principles" => array("is_link" => true),
@@ -181,7 +188,7 @@ class FloeTemplate extends QuickTemplate {
                         if ( $tab['class'] ) {
                             echo ' class="', htmlspecialchars($tab['class']), '"';
                         }
-                        echo '><a href="', htmlspecialchars($tab['href']), '"', $skin->tooltipAndAccesskey('ca-'.$key), '>', htmlspecialchars($tab['text']), '</a></li>';
+                        echo '><a href="', htmlspecialchars($tab['href']), '"', $skin->tooltipAndAccesskeyAttribs('ca-'.$key), '>', htmlspecialchars($tab['text']), '</a></li>';
                     }?>
                     </ul>
                 
@@ -239,7 +246,7 @@ class SkinFloe extends SkinTemplate {
         $this->template  = 'FloeTemplate';
 
         /* UIO JS dependencies */
-        $out->addScriptFile(INFUSION_LOC.'MyInfusion.js');
+        // $out->addScriptFile(INFUSION_LOC.'MyInfusion.js');
     }
 
     function tocList($toc) {

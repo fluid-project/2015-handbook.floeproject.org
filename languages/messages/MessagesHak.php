@@ -25,8 +25,7 @@ $messages = array(
 'tog-editsection'             => 'Yún-chún thûng-ko tiám-kit [phiên-siá] lièn-kiet phiên-cho thon-lo̍k',
 'tog-editsectiononrightclick' => 'Yún-chún yu-kit phêu-thì phiên-chho thon-lo̍k （JavaScript）',
 'tog-showtoc'                 => 'Hién-sṳ muk-liu̍k （chṳ̂m-tui yit-chông chhêu-ko sâm-ke phêu-thì ke vùn-chông）',
-'tog-rememberpassword'        => 'Hâ-yit-chhṳ tên-ngi̍p ki-he̍t me̍t-me̍t',
-'tog-editwidth'               => 'Phiên-cho làn-vi yí-kîn yû chui-thai khôn-yùng',
+'tog-rememberpassword'        => 'Hâ-yit-chhṳ tên-ngi̍p ki-he̍t me̍t-me̍t (for a maximum of $1 {{PLURAL:$1|day|days}})',
 'tog-watchcreations'          => 'Chiông ngô chhóng-chho ke vùn-chông kâ-thiâm to ngô-ke kam-sṳ lie̍t-péu chûng',
 'tog-watchdefault'            => 'Chiông ngô kiên-kói ke vùn-chông kâ-thiâm to ngô-ke kam-sṳ lie̍t-péu chûng',
 'tog-watchmoves'              => 'Chiông ngô yì-thung ke vùn-chông kâ-ngi̍p ngô-ke kam-sṳ lie̍t-péu',
@@ -56,6 +55,9 @@ $messages = array(
 'underline-always'  => 'Chúng-he sṳ́-yung',
 'underline-never'   => 'Chhiùng put sṳ́-yung',
 'underline-default' => 'Hi-khí yi-thin',
+
+# Font style option in Special:Preferences
+'editfont-default' => 'Hi-khí yi-thin',
 
 # Dates
 'sunday'        => 'Lî-pai-ngit',
@@ -117,15 +119,6 @@ $messages = array(
 'hidden-categories'      => '$1-ke Yún-chhòng fûn-lui',
 'listingcontinuesabbrev' => 'Chhṳ̀-siu̍k',
 
-'mainpagetext'      => "'''Yí-kîn sṳ̀n-kûng ôn-chông MediaWiki.'''",
-'mainpagedocfooter' => 'chhiáng fóng-mun [http://meta.wikimedia.org/wiki/Help:Contents Yung-fu sú-chhak] yî-khi̍p sṳ́-yung chhṳ́ wiki ngiôn-khien ke sin-sit！
-
-== Ngi̍p-mùn  ==
-
-* [http://www.mediawiki.org/wiki/Manual:Configuration_settings MediaWiki Phi-chṳ sat-thin chhîn-tân]
-* [http://www.mediawiki.org/wiki/Manual:FAQ MediaWiki Phìn-sòng mun-thì kié-tap]
-* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki fat-phu email chhîn-tân]',
-
 'about'         => 'Kôan-yî',
 'article'       => 'Vùn-chông',
 'newwindow'     => '（chhai sîn sṳ-chhûng chûng tá-khôi）',
@@ -148,6 +141,15 @@ $messages = array(
 'faq'            => 'Sòng-kien mun-thì kié-tap',
 'faqpage'        => 'Project:Sòng-kien mun-thì kié-tap',
 
+# Vector skin
+'vector-action-delete'    => 'Chhù-thet',
+'vector-action-move'      => 'Yì-thung',
+'vector-action-protect'   => 'Pó-fu',
+'vector-action-unprotect' => 'Kié-chhù pó-fu',
+'vector-view-create'      => 'Tshóng-kien',
+'vector-view-edit'        => 'Phiên-siá',
+'vector-view-viewsource'  => 'Ngièn-sṳ́-tóng',
+
 'errorpagetitle'    => 'Chho-ngu',
 'returnto'          => 'Fán-fì to $1.',
 'tagline'           => 'Chhut-chhṳ {{SITENAME}}',
@@ -159,7 +161,6 @@ $messages = array(
 'history'           => 'Vùn-chông li̍t-sṳ́',
 'history_short'     => 'Li̍t-sṳ́',
 'updatedmarker'     => 'Ngô song-chhṳ fóng-mun yî-lòi ke siû-kói',
-'info_short'        => 'Chṳ̂-liau',
 'printableversion'  => 'Khó-lie̍t yin-pán',
 'permalink'         => 'Yún-kiú lièn-kiet',
 'print'             => 'Lie̍t-yin',
@@ -333,13 +334,14 @@ Ngì khó-yî ki-siu̍k yî ngia̍k-miàng fông-sṳt sṳ́-yung {{SITENAME}},
 'yourname'                   => 'Yung-fu-miàng',
 'yourpassword'               => 'Me̍t-ma:',
 'yourpasswordagain'          => 'Chai-chhṳ sû-ngi̍p me̍t-ma:',
-'remembermypassword'         => 'Hâ-chhṳ tên-ngi̍p ki-he̍t pi-me̍t.',
+'remembermypassword'         => 'Hâ-chhṳ tên-ngi̍p ki-he̍t pi-me̍t (for a maximum of $1 {{PLURAL:$1|day|days}})',
 'yourdomainname'             => 'Ngì ke mióng',
 'externaldberror'            => 'Liá-ke khó-nèn he chhut-yì ngoi-phu ngiam-chṳn chṳ̂-liau-khu chho-ngu fe̍t-chá ngì pûn-ngìn kim-chṳ́ kiên-sîn ngì-ke ngoi-phu chong-ho.',
 'login'                      => 'Tên-ngi̍p',
 'nav-login-createaccount'    => 'Tên-ngi̍p / Kien-li̍p sîn chong-ho',
 'loginprompt'                => 'Yeu tên-ngi̍p to {{SITENAME}}, ngì pit-sî khí-yung cookie kûng-nèn',
 'userlogin'                  => 'Tên-ngi̍p / Kien-li̍p sîn chong-ho',
+'userloginnocreate'          => 'Tên-ngi̍p',
 'logout'                     => 'Tên-chhut',
 'userlogout'                 => 'Tên-chhut',
 'notloggedin'                => 'Hàn-mò tên-ngi̍p',
@@ -349,6 +351,7 @@ Ngì khó-yî ki-siu̍k yî ngia̍k-miàng fông-sṳt sṳ́-yung {{SITENAME}},
 'gotaccount'                 => "Yí-kîn yúng-yû chong-ho? '''$1'''.",
 'gotaccountlink'             => 'Tên-ngi̍p',
 'createaccountmail'          => 'thûng-ko e-mail',
+'createaccountreason'        => 'Ngièn-yîn:',
 'badretype'                  => 'Ngì só sû-ngi̍p ke pi-me̍t pin mò siông-thùng.',
 'userexists'                 => 'Ngì sû-ngi̍p ke yung-fu miàng-chhṳ̂n yí-kîn chhùn-chhai, chhiáng nang-ngoi sién yit-ke.',
 'loginerror'                 => 'Tên-liu̍k chho-ngu',
@@ -358,7 +361,7 @@ Ngì khó-yî ki-siu̍k yî ngia̍k-miàng fông-sṳt sṳ́-yung {{SITENAME}},
 'loginsuccesstitle'          => 'Tên-ngi̍p sṳ̀n-kûng',
 'loginsuccess'               => "'''Ngì hien-chhai yî \"\$1\" ke sṳ̂n-fun tên-ngi̍p {{SITENAME}}.'''",
 'nosuchuser'                 => 'Chhìm-cháu put-to yung-fu "$1". Kiám-chhà ngì-ke piang-siá, fe̍t-chá yung ha-mien ke péu-kak kien-li̍p yit-ke sîn chong-ho.',
-'nosuchusershort'            => 'Mò-yû yit-ke miàng vi "<nowiki>$1</nowiki>" ke yung-fu. Chhiáng kiám-chhà ngì-ke sû-ngi̍p ke vùn-sṳ he-féu yû chho-ngu.',
+'nosuchusershort'            => 'Mò-yû yit-ke miàng vi "$1" ke yung-fu. Chhiáng kiám-chhà ngì-ke sû-ngi̍p ke vùn-sṳ he-féu yû chho-ngu.',
 'nouserspecified'            => 'Ngì sî-yeu chṳ́-thin yit-ke yung-fu-miàng.',
 'wrongpassword'              => 'Ngì sû-ngi̍p ke me̍t-me̍t chho-ngu, chhiáng chai chhṳ yit-chhṳ.',
 'wrongpasswordempty'         => 'Hàn-mò sû-ngi̍p me̍t-me̍t! chhiáng chhûng-chhṳ.',
@@ -383,17 +386,22 @@ Ngì khó-yî ki-siu̍k yî ngia̍k-miàng fông-sṳt sṳ́-yung {{SITENAME}},
 'createaccount-title'        => 'Chhai {{SITENAME}} tsûng-kiên kien-li̍p sîn tsong-ho',
 'loginlanguagelabel'         => 'Ngî-ngièn: $1',
 
-# Password reset dialog
-'resetpass'           => 'Chhûng-sat chong-fu me̍t-me̍t',
-'resetpass_announce'  => 'Ngì he theu-ko yit-ke lìm-sṳ̀ ke fat-sung to email chûng ke chhí-me̍t tên-ngi̍p ke. Yeu vàn-sṳ̀n tên-ngi̍p,  ngì pit-sî chhai liá-piên sat-thin yit-ke sîn me̍t-me̍t:',
-'resetpass_text'      => '<!-- Chhai chhṳ́-chhu kâ-ngi̍p vùn-sṳ -->',
-'resetpass_header'    => 'Chhùng-sat me̍t-me̍t',
-'oldpassword'         => 'Khiu pi-me̍t:',
-'newpassword'         => 'Sîn pi-me̍t:',
-'retypenew'           => 'Khok-ngin me̍t-me̍t:',
-'resetpass_submit'    => 'Sat-thin  me̍t-me̍t pin tên-ngi̍p',
-'resetpass_success'   => 'Ngì-ke me̍t-me̍t yí-kîn pûn sṳ̀n-kûng kiên-kói! Hien-ha chang vi ngì tên-ngi̍p...',
-'resetpass_forbidden' => 'Mò-fap chhai chhṳ́ wiki sông kiên-kói me̍t-me̍',
+# Change password dialog
+'resetpass'                 => 'Kiên-kói me̍t-me̍t',
+'resetpass_announce'        => 'Ngì he theu-ko yit-ke lìm-sṳ̀ ke fat-sung to email chûng ke chhí-me̍t tên-ngi̍p ke. Yeu vàn-sṳ̀n tên-ngi̍p,  ngì pit-sî chhai liá-piên sat-thin yit-ke sîn me̍t-me̍t:',
+'resetpass_text'            => '<!-- Chhai chhṳ́-chhu kâ-ngi̍p vùn-sṳ -->',
+'resetpass_header'          => 'Chhùng-sat me̍t-me̍t',
+'oldpassword'               => 'Khiu pi-me̍t:',
+'newpassword'               => 'Sîn pi-me̍t:',
+'retypenew'                 => 'Khok-ngin me̍t-me̍t:',
+'resetpass_submit'          => 'Sat-thin  me̍t-me̍t pin tên-ngi̍p',
+'resetpass_success'         => 'Ngì-ke me̍t-me̍t yí-kîn pûn sṳ̀n-kûng kiên-kói! Hien-ha chang vi ngì tên-ngi̍p...',
+'resetpass_forbidden'       => 'Mò-fap chhai chhṳ́ wiki sông kiên-kói me̍t-me̍',
+'resetpass-submit-loggedin' => 'Kiên-kói me̍t-me̍t',
+'resetpass-submit-cancel'   => 'Chhí-sêu',
+
+# Special:PasswordReset
+'passwordreset-username' => 'Yung-fu-miàng',
 
 # Edit page toolbar
 'bold_sample'     => 'Chhû-thí vùn-sṳ',
@@ -406,8 +414,6 @@ Ngì khó-yî ki-siu̍k yî ngia̍k-miàng fông-sṳt sṳ́-yung {{SITENAME}},
 'extlink_tip'     => 'Ngoi-phu lièn-kiet （ki-tet http://）',
 'headline_sample' => 'Thai-phêu-thì vùn-sṳ',
 'headline_tip'    => 'Ngi-khi̍p phêu-thì vùn-sṳ',
-'math_sample'     => 'Chhai-chhṳ́chhap-ngi̍p sṳ-ho̍k kûng-sṳt',
-'math_tip'        => 'Chhap-ngi̍p sṳ-ho̍k kûng-sṳt （LaTeX）',
 'nowiki_sample'   => 'Chhai-chhṳ́ chhap-ngi̍p fui kak-sṳt vùn-sṳ',
 'nowiki_tip'      => 'Chhap-ngi̍p fui kak-sṳt vùn-sṳ',
 'image_tip'       => 'Chhṳ̀m-ngi̍ thù-hiong',
@@ -454,14 +460,14 @@ Yeu kien-chho ke vùn-chông, chhiáng chhai ha-mien ke phiên-cho-khiông chûn
 Kó-yèn ngì-he put-séu-sîm to chhṳ́ hong-mien, chhṳ̍t-chiap tiám-kit ngì hi-khí chûng ke "fì-chón" on-néu fán-fì.',
 'anontalkpagetext'                 => "---- ''Liá-he yit-ke hàn-mò kien-li̍p chong-ho ke ngia̍k-miàng yung-fu ke tui-fa-hong. Só-yî chṳ́-nèn yung IP thi-tiám lòi lâu kí lièn-lo̍k. Ke-IP thi-tiám khó-nèn yù-chhai kí-miàng yung-fu khiung-hióng. Kó-yèn ngì-he yit-miàng ngia̍k-miàng yung-fu ngin-vì pún-hong song ke phìn-lî kiên ngì mò-kôan, chhiáng [[Special:UserLogin|Chhóng-kien sîn chong-ho fe̍t-chá Tên-ngi̍p]] khó-yî phit-miên lòi-yì khì-thâ ngia̍k-miàng yung-fu ke fun-lon.''",
 'noarticletext'                    => 'Chhṳ́-chông muk-chhièn hàn-mò nui-yùng, ngì khó-yî chhai khì-thâ hong [[Special:Search/{{PAGENAME}}|sêu-chhà chhṳ́-chông phêu-thì]] fe̍t-chá [{{fullurl:{{NAMESPACE}}:{{PAGENAME}}|action=edit}} phiên-chho chhṳ́-chông].',
-'userpage-userdoesnotexist'        => 'Sṳ́-yung-tsá tsong-ho "$1" hàn-mò kien-li̍p. 
+'userpage-userdoesnotexist'        => 'Sṳ́-yung-tsá tsong-ho "<nowiki>$1</nowiki>" hàn-mò kien-li̍p.
 Tshiáng chhai kien-li̍p／piên-sip liá-ke vùn-tsông tshièn siên kiám-tshà yit-ha-é.',
 'clearyourcache'                   => "'''Chu-yi:''' Chhai tú-chhùn yî-heu, ngì pit-sî khoai chhái-chhí chhîn-chhù hi-khí chhòi-nèn khon-tó chok-chhut ke kói-pien. '''Mozilla / Firefox / Safari:''' on-tén ''Shift'' chai tiám-kit '' Chhùng-sîn chṳ́n-lî ''（fe̍t-chá on-hâ ''Ctrl-Shift-R'', chhai Phìn-kó Mac song on-hâ ''Cmd-Shift-R''）; '''IE:''' on-tén ''Ctrl'' chai tiám-kit ''Chhùng-sîn chṳ́n-lî'', fe̍t-he on-hâ ''Ctrl-F5''；'''Konqueror:''' chak  sî-yeu tiám-kit ''Chhùng-sîn chṳ́n-lî''; '''Opera:''' yung-fu sî-yeu chhai ''kûng-khí-sat-thin'' chûng vàn-cháng-thi chhîn-chhù ke khoai-chhí.",
 'usercssyoucanpreview'             => "'''Thì-sṳ:''' Chhai pó-chhùn chhièn chhiáng yung 'hién-sṳ yi-ko' on-néu lòi chhet-chhṳ ngì sîn-ke CSS.",
 'userjsyoucanpreview'              => "'''Thì-sṳ:''' Chhai pó-chhùn chhièn chhiáng yung 'hién-sṳ yi-ko' on-néu lòi chhet-chhṳ ngì sîn-ke JS.",
 'usercsspreview'                   => "'''Chu-yi ngì chak-he chhai yi-liau ngì ke-ngìn CSS, hàn-mò tú-chhùn!'''",
 'userjspreview'                    => "'''Chu-yi ngì chak-he chhai chhet-chhṳ ／ yi-liau ngì ke-ngìn JavaScript, hàn-mò tú-chhùn!'''",
-'userinvalidcssjstitle'            => "'''Kín-ko:''' Put chhùn-chhai mien-pán \"\$1\". chu-yi chhṳ-thin ke .css lâu .js hong yeu sṳ́-yung séu-siá phêu-thì, yì-yi, {{ns:user}}:Foo/monobook.css put-thùng yî  {{ns:user}}:Foo/Monobook.css.",
+'userinvalidcssjstitle'            => "'''Kín-ko:''' Put chhùn-chhai mien-pán \"\$1\". chu-yi chhṳ-thin ke .css lâu .js hong yeu sṳ́-yung séu-siá phêu-thì, yì-yi, {{ns:user}}:Foo/vector.css put-thùng yî  {{ns:user}}:Foo/Vector.css.",
 'updated'                          => '（Yí-kîn kiên-sîn）',
 'note'                             => "'''Chu-yi:'''",
 'previewnote'                      => "'''Chhiáng ki-he̍t liá-ke chak-he yi-liau, nui-yùng hàn-mò pó-chhùn!'''",
@@ -478,7 +484,7 @@ Tshiáng chhai kien-li̍p／piên-sip liá-ke vùn-tsông tshièn siên kiám-ts
 Song-mien ke vùn-sṳ khiông-nui he hién-sṳ muk-chhièn pún-chông ke nui-yùng.
 Ngì só-cho ke siù-chho hién-sṳ chhai ha-mien ke vùn-sṳ khiông-chûng.
 Ngì yin-tông chiông ngì só-cho ke siù-chho kâ-ngi̍p hien-yû ke nui-yùng chûng.
-'''Chṳ́-yû''' chhai song-mien vùn-sṳ khiông-chûng ke nui-yùng chiông-voi chhai ngì tiám-kit \"Pó-chhùn pún-chông\" heu pûn pó-chhùn.",
+'''Chṳ́-yû''' chhai song-mien vùn-sṳ khiông-chûng ke nui-yùng chiông-voi chhai ngì tiám-kit \"{{int:savearticle}}\" heu pûn pó-chhùn.",
 'yourtext'                         => 'Ngì-ke vùn-sṳ',
 'storedversion'                    => 'Yí-kîn pó-chhùn ke pán-pún',
 'nonunicodebrowser'                => "'''Kín-ko: Ngì-ke hi-khí put-nèn kiâm-yùng Unicode phiên-ho. Liá-piên yû yit-ke kûng-chok-khî chiông-voi hó-sṳ́ ngì nèn ôn-chhiòn-thi phiên-siá vùn-chông: fi ASCII sṳ-kûng chiông-yung sṳ̍p-liuk chin-chṳ phiên-ho mù-hìn chhut-hien chhai phiên-siá khiông-chûng.'''",
@@ -486,10 +492,9 @@ Ngì yin-tông chiông ngì só-cho ke siù-chho kâ-ngi̍p hien-yû ke nui-yùn
 'yourdiff'                         => 'chhâ-yi',
 'copyrightwarning'                 => "Chhiáng chu-yi ngì tui {{SITENAME}} ke só-yû kung-hien tû pûn-ngìn ngin-vì he chhai $2-hâ fat-phu, chhiáng chhà-khon chhai $1-ke se-chiet. Kó-yèn ngì chhin-mò hî-mong ngì-ke vùn-sṳ pûn-ngìn ngim-yi siù-chho lâu chai san-pu, chhiáng mò-yeu thì-kâu.<br /> Ngì thùng-sṳ̀ ya-yeu hiong Wikimedia pó-chṳn ngì só thì-kâu ke nui-yùng he chhṳ-kí só chok, fe̍t-chá lòi-chhṳ yit-ke mò-su pán-khièn pó-fu fe̍t-he siông-thùng chhṳ-yù ke lòi-ngièn. '''Mò-yeu chhai hàn-mò su-khièn ke chhìn-khóng-hâ fat-péu！'''<br />",
 'copyrightwarning2'                => "Chhiáng chu-yi ngì tui {{SITENAME}} ke só-yû kung-hien tû khó-nèn pûn khì-thâ kung-hien-chá phiên-cho, siû-kói fe̍t-he chhù-thet.
-Kó-yèn ngì chhin-mò hî-mong ngì-ke ngì-ke vùn-sṳ pûn-ngìn ngim-yi chhùng-siû lâu chai san-pu, chhiáng mò-yeu thì-kâu.<br /> 
+Kó-yèn ngì chhin-mò hî-mong ngì-ke ngì-ke vùn-sṳ pûn-ngìn ngim-yi chhùng-siû lâu chai san-pu, chhiáng mò-yeu thì-kâu.<br />
 Ngì thùng-sṳ̀ ya-yeu hiong Wikimedia pó-chṳn ngì só thì-kâu ke nui-yùng he chhṳ-kí só chok，fe̍t-chá lòi-chhṳ yit-ke mò-su pán-khièn pó-fu fe̍t-he he siông-thùng chhṳ-yù ke lòi-ngièn （Chhâm-siòng $1 ke se-chiet）.
 ''' Mò-yeu chhai hàn-mò su-khièn ke chhìn-khóng-hâ fat-péu！'''",
-'longpagewarning'                  => "'''Kín-ko: Pún-chông chhòng-thu tha̍t-tó $1 kB；mêu-chúng hi-khí chiông-voi mò-fap phiên-chhut chhòng-ko 32 kB ke vùn-chông. Chhiáng kháu-li chiông pún-chông chhiet kot-sṳ̀n kí-ke séu thon-lo̍k.'''",
 'longpageerror'                    => "'''Chho-ngu: Ngì só thì-kâu ke vùn-sṳ chhòng-thu yû $1KB, liá thai-yî $2KB ke chui-thai chhṳ̍t, ke-vùn-chông put-nèn pûn tú-chhùn.'''",
 'readonlywarning'                  => "'''Kín-ko: chṳ̂-liau-khu pûn-ngìn fûng-só yîn-vi chin-hàng vì-fu, só-yî muk-chhièn mò-fap pó-chhùn ngì-ke siù-chho. Ngì fe̍t-hí hî-mong chhai-siên chiông pún-thon vùn-sṳ fu̍k-chṳ pin pó-chhùn to vùn-sṳ vùn-khien, yèn-heu tén-yit-ha chai siù-chho.'''",
 'protectedpagewarning'             => "'''Kín-ko: Pún-chông yí-kîn pûn pó-fu, chṳ́-yû yúng-yû Kón-lî-yèn hí-khó-khièn ke yung-fu chhòi-nèn siù-chho.'''",
@@ -664,7 +669,6 @@ Tông-tsûng pûn $3 fûng-só ke ngièn-yîn he ''$2''",
 'changepassword'        => 'Kiên-kói me̍t-me̍t',
 'prefs-skin'            => 'Mien-pán',
 'skin-preview'          => 'Yi-ko',
-'prefs-math'            => 'Sṳ-ho̍k kûng-sṳt',
 'datedefault'           => 'Yi-sat-chhṳ̍t',
 'prefs-datetime'        => 'Ngit-khì khi̍p sṳ̀-kiên',
 'prefs-personal'        => 'Yung-fu chṳ̂-liau',
@@ -680,8 +684,6 @@ Tông-tsûng pûn $3 fûng-só ke ngièn-yîn he ''$2''",
 'columns'               => 'Lie̍t-su:',
 'searchresultshead'     => 'Chhìm-cháu kiet-kó sat-thin',
 'resultsperpage'        => 'Mî-chông hién-sṳ lièn-kiet su:',
-'contextlines'          => 'Mî lièn-kiet hàng-su:',
-'contextchars'          => 'Mî-hàng ke sṳ-su:',
 'stub-threshold'        => 'Tón vùn-chông hién-sṳ kî-pún han-chṳ',
 'recentchangesdays'     => 'Chui-khiûn kiên-kói chûng ke hién-sṳ ngit-su:',
 'recentchangescount'    => 'Chui-khiûn kiên-kói chûng ke phiên-siá chúng-su:',
@@ -819,12 +821,11 @@ Chhiáng sién-chet yit-ke put-thùng ke miàng-sṳ.",
 'fileexists-thumbnail-yes'    => "Liá-ke tóng-on chhin-chhiong he yit-pu thù-hìn ke suk-thù pán-pún ''（suk-thù）''. [[$1|thumb]]
 Chhiáng kiám-chhà chhîn-chhú ke tóng-on '''<tt>[[:$1]]</tt>'''.
 Kó-yèn kiám-chhà heu ke tóng-on he khiung-thùng ngièn-pún thù-hiong ke thai-séu he yit-yong, chhiu put-yung song-chhòn tô yit-puk suk-thù.",
-'file-thumbnail-no'           => "Ke tóng-on he yî '''<tt>$1</tt>''' khôi-sṳ́. 
+'file-thumbnail-no'           => "Ke tóng-on he yî '''<tt>$1</tt>''' khôi-sṳ́.
 Hó-chhiong yit-puk thù-hìn ke suk-thù pán-pún ''（thù-hìn）''.
 Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 'fileexists-forbidden'        => 'Yí-kîn chhùn-chhai ke siông-thùng miàng-chhṳ̂n ke tóng-on; chhiáng fì-chón pin yung yit-ke sîn-ke  miàng-chhṳ̂n lòi song-chhòn chhṳ́ tóng-on.[[File:$1|thumb|center|$1]]',
 'fileexists-shared-forbidden' => 'Chhai khiung-hióng tóng-on-khu chûng yí-kîn chhùn-chhai chhṳ́ miàng-chhṳ̂n ke tóng-on; Chhiáng fì-chón pin yung yit-ke sîn-ke miàng-chhṳ̂n lòi song-chhòn chhṳ́ tóng-on. [[File:$1|thumb|center|$1]]',
-'successfulupload'            => 'Sông-chhòn sṳ̀n-kûng',
 'uploadwarning'               => 'Sông-chai kín-ko',
 'savefile'                    => 'Pó-chhùn vùn-khien',
 'uploadedimage'               => 'yí-kîn song-chhòn "[[$1]]"',
@@ -836,6 +837,7 @@ Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 'destfilename'                => 'Muk-phêu tóng-on miàng',
 'watchthisupload'             => 'Kam-sṳ pún tóng-on',
 'filewasdeleted'              => 'Chṳ̂-chhièn yí-kîn yû yit-ke thùng-miàng tóng-on pûn song-chhòn heu yu-pûn chhù-thet. Chhai song-chhòn  chhṳ́ tóng-on chṳ̂-chhièn sî-yeu kiám-chhà $1.',
+'upload-success-subj'         => 'Sông-chhòn sṳ̀n-kûng',
 
 'upload-proto-error'      => 'Hia̍p-ngi chho-ngu',
 'upload-proto-error-text' => 'Yén-chhàng song-chhòn yêu-khiù URL yung <code>http://</code> fe̍t-chá  <code>ftp://</code> khôi-thèu.',
@@ -1009,7 +1011,9 @@ Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 
 # Special:Categories
 'categories'         => 'Hong-mien fûn-lui',
-'categoriespagetext' => 'Yî-ha lie̍t-chhut só-yû ke hong-mien fûn-lui.',
+'categoriespagetext' => 'Yî-ha lie̍t-chhut só-yû ke hong-mien fûn-lui.
+[[Special:UnusedCategories|Unused categories]] are not shown here.
+Also see [[Special:WantedCategories|wanted categories]].',
 
 # Special:LinkSearch
 'linksearch'    => 'Ngoi-phu lièn-chiap',
@@ -1052,14 +1056,11 @@ Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 # Watchlist
 'watchlist'            => 'Kam-sṳ lie̍t-péu',
 'mywatchlist'          => 'Ngài-ke kam-sṳ lie̍t-péu',
-'watchlistfor'         => "（'''$1''' ke kam-sṳ lie̍t-péu）",
 'nowatchlist'          => 'Ngì ke kam-sṳ lie̍t-péu he khûng-hî.',
 'watchlistanontext'    => 'Chhiáng $1 yî kiám-sṳ fe̍t-chá phiên-chho ngì-ke kam-sṳ lie̍t-péu.',
 'watchnologin'         => 'Hàn-mò tên-ngi̍p',
 'watchnologintext'     => 'Ngì pit-sî siên [[Special:UserLogin|tên-ngi̍p]] chhòi-nèn kiên-kói ngì-ke kam-sṳ lie̍t-péu.',
-'addedwatch'           => 'Kâ-ngi̍p to kam-sṳ lie̍t-péu',
 'addedwatchtext'       => "Hong-mien \"[[:\$1]]\" yí-kîn pûn kâ-ngi̍p to ngì-ke [[Special:Watchlist|Kam-sṳ chhîn-tân]] chûng. Chiông-lòi yû-kôan chhṳ́ hong-mien khi̍p khì-thâ thó-lun-hong ke ngim-hò siû-cháng chiông-voi chhai hong-mien lie̍t-chhut, song-chhiá hàn-voi chhai [[Special:RecentChanges|Chui-khiûn ke kiên-kói]] chûng ke '''chhû-thí''' hìn-sṳt lie̍t-chhut. Kó-yèn  ngì heu-lòi sióng chhiùng hong-mien kam-sṳ chhîn-tân chûng chhîn-chhù, hí-khó tiám-kit thô-hòng thiàu-chûng \"thìn-chṳ́ kam-sṳ\" ke lièn-kiet。",
-'removedwatch'         => 'Yí-kîn thìn-chṳ́ kam-sṳ',
 'removedwatchtext'     => 'Vùn-chông "[[:$1]]" yí-kîn chhiùng Ngì kekam-sṳ lie̍t-péu mien-chûng yì-chhù.',
 'watch'                => 'Kam-sṳ',
 'watchthispage'        => 'Kam-sṳ pún-chông',
@@ -1092,7 +1093,7 @@ Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 'enotif_lastvisited'           => 'Kiám-sṳ ngì song-chhṳ fóng-mun heu ke só-yû kiên-kói chhián chhâm-siòng $1.',
 'enotif_lastdiff'              => 'Kiám-chhà kiên-kói chhiáng chhâm-siòng $1.',
 'enotif_anon_editor'           => 'ngia̍k-miàng yung-fu $1',
-'enotif_body'                  => 'Chhîn-oi ke $WATCHINGUSERNAME, $PAGEEDITOR yí-kîn chhai $PAGEEDITDATE $CHANGEDORCREATED{{SITENAME}} ke $PAGETITLE vùn-chông, chhiáng-to $PAGETITLE_URL kiám-sṳ siên-chhièn pán-pún.  $NEWPAGE phiên-si̍p chak-yeu: $PAGESUMMARY $PAGEMINOREDIT lièn-kiê chhṳ́ phiên-si̍p-chá: email: $PAGEEDITOR_EMAIL pún-chham: $PAGEEDITOR_WIKI chhai ngì fóng-mun chhṳ́-chông chṳ̂-chhièn, chiông-lòi ke kiên-kói vù-nèn hiong ngì thûng-tî. Ngì khó-yî chhûng-sat ngì só-yû kam-sṳ vùn-chông ke thûng-tî phêu-ki. {{SITENAME}} thûng-tî ne-thúng -- yeu kói-pien ngì-ke kam-sṳ lie̍t-péu sat-thin, chhiáng chhâm-siòng {{fullurl:{{#special:Watchlist}}/edit}} chin-yit-phu ke pông-chhu: {{fullurl:{{MediaWiki:Helppage}}}}',
+'enotif_body'                  => 'Chhîn-oi ke $WATCHINGUSERNAME, $PAGEEDITOR yí-kîn chhai $PAGEEDITDATE $CHANGEDORCREATED{{SITENAME}} ke $PAGETITLE vùn-chông, chhiáng-to $PAGETITLE_URL kiám-sṳ siên-chhièn pán-pún.  $NEWPAGE phiên-si̍p chak-yeu: $PAGESUMMARY $PAGEMINOREDIT lièn-kiê chhṳ́ phiên-si̍p-chá: email: $PAGEEDITOR_EMAIL pún-chham: $PAGEEDITOR_WIKI chhai ngì fóng-mun chhṳ́-chông chṳ̂-chhièn, chiông-lòi ke kiên-kói vù-nèn hiong ngì thûng-tî. Ngì khó-yî chhûng-sat ngì só-yû kam-sṳ vùn-chông ke thûng-tî phêu-ki. {{SITENAME}} thûng-tî ne-thúng -- yeu kói-pien ngì-ke kam-sṳ lie̍t-péu sat-thin, chhiáng chhâm-siòng {{canonicalurl:{{#special:EditWatchlist}}}} chin-yit-phu ke pông-chhu: {{canonicalurl:{{MediaWiki:Helppage}}}}',
 
 # Delete
 'deletepage'            => 'Chhù-thet hong-mien',
@@ -1105,7 +1106,7 @@ Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 'historywarning'        => 'Kín-ko: Ngì chiông-yeu chhù-hi ke chông-nui hàm-yû li̍t-sṳ́:',
 'confirmdeletetext'     => 'Ngì chiông-voi chhiùng chṳ̂-liau-khu chûng yún-yén chhù-thet yit-ke vùn-chông fe̍t-chá thù-chhiong yî-khi̍p li̍t-sṳ́. Chhiáng khok-thin ngì-yeu chin-hàng chhâu-chok, pin liáu-kié heu-kó, thùng-sṳ̀ ngì-ke hàng-vì fù-ha̍p [[{{MediaWiki:Policy-url}}]].',
 'actioncomplete'        => 'Chhâu-chok vàn-sṳ̀n',
-'deletedtext'           => '"<nowiki>$1</nowiki>" yí-kîn pûn chhù-thet. Chui-khiûn chhù-hi ke ki-liu̍k chhiáng chhâm-siòng $2.',
+'deletedtext'           => '"$1" yí-kîn pûn chhù-thet. Chui-khiûn chhù-hi ke ki-liu̍k chhiáng chhâm-siòng $2.',
 'deletedarticle'        => 'Yí-kîn chhù-thet "[[$1]]"',
 'dellogpage'            => 'Chhù-chhiang ki-liu̍k',
 'dellogpagetext'        => 'Yî-ha he chui-khiûn chhù-thet ke ki-liu̍k lie̍t-péu.',
@@ -1124,6 +1125,8 @@ Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 'alreadyrolled'  => 'Mò-fap fî-fu̍k yù [[User:$2|$2]] （[[User talk:$2|thó-lun]]） chin-hàng ke [[$1]] ke chui-heu phiên-si̍p; khì-thâ ngìn yí-kîn phiên-siá fe̍t-he fî-fu̍k liáu ke-hong. Chui-heu phiên-si̍p-chá: [[User:$3|$3]] （[[User talk:$3|Thó-lun]]）。',
 'editcomment'    => "Phiên-siá sot-mìn he: \"''\$1''\"。",
 'revertpage'     => 'Fî-fu̍k yù [[Special:Contributions/$2|$2]] （[[User talk:$2|tui-fa]]） ke phiên-cho; kiên-kói fì-fu̍k [[User:$1|$1]] ke chui-heu yit-ke pán-pún',
+
+# Edit tokens
 'sessionfailure' => 'Ngì-ke tên-ngi̍p sṳ-fû yû mun-thì, vi-liáu fòng-chṳ́ sêu-sit pûn làn-chiet, pún-chhṳ chhâu-chok yí-kîn chhí-sêu, chhiáng-on "song-yit-chông" chhùng-sîn chai-ngi̍p.',
 
 # Protect
@@ -1139,7 +1142,7 @@ Kó-yèn ngì yû liá-ke thù-hìn ke vàn-cháng thai-séu.",
 'protectexpiry'               => 'Chûng-chṳ́ sṳ̀-kiên',
 'protect_expiry_invalid'      => 'Sû-ngi̍p ke chûng-chṳ́ sṳ̀-kiên mò-háu.',
 'protect_expiry_old'          => 'Chûng-chṳ́ sṳ̀-kiên yí-kîn ko-hi.',
-'protect-text'                => "Ngì khó-yî chhai liá-piên chhùng-siû tui vùn-chông '''<nowiki>$1</nowiki>''' ke pó-fu kip-phe̍t.",
+'protect-text'                => "Ngì khó-yî chhai liá-piên chhùng-siû tui vùn-chông '''$1''' ke pó-fu kip-phe̍t.",
 'protect-locked-blocked'      => "Ngì put-nèn chhai pûn chhà-fûng sṳ̀ kiên-kói pó-fu khi̍p-phe̍t. Yî-ha he '''$1''' hien-sṳ̀ ke pó-fu khi̍p-phe̍t:",
 'protect-locked-dblock'       => "Chhai chṳ̂-liau-khu só-thin sṳ̀ mò-fap kiên-kói pó-fu khi̍p-phe̍t.
 Yî-ha he '''$1''' hien-sṳ̀ ke pó-fu khi̍p-phe̍t:",
@@ -1246,7 +1249,6 @@ Chhiáng chhâm-kháu [[Special:Log/delete|chhù-hi ngit-ki]] lòi chhà-chhut c
 # Block/unblock
 'blockip'                     => 'chhà-fûng IP thi-tiám',
 'blockiptext'                 => 'Yung ha-mien ke péu-tân kim-chṳ́ lòi-chhṳ mêu-yit thi̍t-thin IP thi-tiám ke kiên-kói hí-khó-khièn. Chṳ́-yû chhai-vi fòng-chṳ́ pho-fái, khi̍p fù-ha̍p [[{{MediaWiki:Policy-url}}|Sú-chet]] ke chhìn-khóng hâ chhòi khó chhái-chhí chhṳ́ hàng-thung. Chhiáng chhai ha-mien sû-ngi̍p yit-ke khí-thí ke lî-yù （chhiong-he yîn-sut yit-ke pûn-ngìn pho-fái ke hong-mien）.',
-'ipaddress'                   => 'IP thi-tiám',
 'ipadressorusername'          => 'IP thi-tiám fe̍t-he yung-fu-miàng',
 'ipbexpiry'                   => 'Khì-han:',
 'ipbreason'                   => 'Ngièn-yîn:',
@@ -1259,7 +1261,6 @@ Chhiáng chhâm-kháu [[Special:Log/delete|chhù-hi ngit-ki]] lòi chhà-chhut c
 ** Mò-lî ke hàng-vì, kûng-kit/sâu-yéu phe̍t-ngìn
 ** Lam-yung tô-ke chong-ho
 ** Put-nèn chiap-su ke yung-fu-miàng',
-'ipbanononly'                 => 'Chak kim-chṳ́ ngia̍k-mià yung-fu phiên-cho',
 'ipbcreateaccount'            => 'Chú-chṳ́ chhóng-li̍p sîn chong-ho',
 'ipbenableautoblock'          => 'Chhṳ-thung chhà-fûng ke-yung-fu sṳ́-yung-ko ke IP thi-tiám',
 'ipbsubmit'                   => 'Chhà-fûng ke-yung-fu',
@@ -1274,7 +1275,6 @@ Chhiáng chhâm-kháu [[Special:Log/delete|chhù-hi ngit-ki]] lòi chhà-chhut c
 'ipb-edit-dropdown'           => 'Phiên-siá chhà-fûng ngièn-yîn',
 'ipb-unblock-addr'            => 'Kié-chhù fûng-kim $1',
 'ipb-unblock'                 => 'Kié-chhù kim-fûng yung-fu miàng fe̍t-chá IP thi-tiám',
-'ipb-blocklist-addr'          => 'Chhà-chhut $1-ke fûng-kim ki-liu̍k',
 'ipb-blocklist'               => 'Kiám-sṳ fûng-kim lie̍t-péu',
 'unblockip'                   => 'Kié-chhù kim-fûng IP thi-tiám',
 'unblockiptext'               => 'Yung ha-mien ke péu-tân lòi fî-fu̍k siên-chhièn pûn kim-fûng ke IP thi-tiám ke siá-sû-khièn.',
@@ -1283,7 +1283,6 @@ Chhiáng chhâm-kháu [[Special:Log/delete|chhù-hi ngit-ki]] lòi chhà-chhut c
 'unblocked-id'                => 'Fûng-kim $1 yí-kîn pûn yì-chhù',
 'ipblocklist'                 => 'Pûn fûng IP thi-tiám lie̍t-péu',
 'ipblocklist-submit'          => 'Chhìm-cháu',
-'blocklistline'               => '$1，$2 kim-fûng $3 （$4）',
 'infiniteblock'               => 'yún-kiú',
 'expiringblock'               => '$1 $2 to-khì',
 'anononlyblock'               => 'Han-chṳ ngia̍k-miàng yung-fu.',
@@ -1298,7 +1297,7 @@ Chhiáng chhâm-kháu [[Special:Log/delete|chhù-hi ngit-ki]] lòi chhà-chhut c
 'autoblocker'                 => 'Ngì-ke IP lâu pûn fûng-liáu ke "$1" he yit-yong ke. Fûng-só ngièn-yîn: "$2".',
 'blocklogpage'                => 'Fûng-só ki-liu̍k',
 'blocklogentry'               => '"[[$1]]" yí-kîn pûn chhà-fûng $3, chûng-chṳ́ sṳ̀-kiên he $2',
-'blocklogtext'                => 'Liá-he kôan-yî yung-fu fûng-kim lâu kié-chhù fûng-kim chhâu-chok ke ki-liu̍k. Pûn chhṳ-thung fûng-kim ke IP thi-tiám mò-yû lie̍t-chhut. Chhiáng chhâm-kháu [[Special:IPBlockList|Pûn chhà-fûng ke IP thi-tiám lâu yung-fu lie̍t-péu]].',
+'blocklogtext'                => 'Liá-he kôan-yî yung-fu fûng-kim lâu kié-chhù fûng-kim chhâu-chok ke ki-liu̍k. Pûn chhṳ-thung fûng-kim ke IP thi-tiám mò-yû lie̍t-chhut. Chhiáng chhâm-kháu [[Special:BlockList|Pûn chhà-fûng ke IP thi-tiám lâu yung-fu lie̍t-péu]].',
 'unblocklogentry'             => '"$1" yí-kîn pûn kié-fûng',
 'block-log-flags-anononly'    => 'Han-chṳ ngia̍k-miàng ke yung-fu',
 'block-log-flags-nocreate'    => 'Kim-chṳ́ chhṳ́ IP/Yung-fu kien-li̍p sîn chong-fu',
@@ -1326,7 +1325,7 @@ Chhiáng chhâm-kháu [[Special:Log/delete|chhù-hi ngit-ki]] lòi chhà-chhut c
 'locknoconfirm'       => 'Ngì pin mò-yû kiêu-sién khok-ngin on-néu.',
 'lockdbsuccesssub'    => 'Chṳ̂-liau-khu sṳ̀n-kûng sông-só',
 'unlockdbsuccesssub'  => 'Chṳ̂-liau-khu khôi-fong',
-'lockdbsuccesstext'   => '{{SITENAME}} chṳ̂-liau-khu yí-kîn sông-só. 
+'lockdbsuccesstext'   => '{{SITENAME}} chṳ̂-liau-khu yí-kîn sông-só.
 <br /> Chhiáng ki-he̍t chhai vì-fu vàn-sṳ̀n heu chhùng-sîn khôi-fong chṳ̂-liau-khu.',
 'unlockdbsuccesstext' => '{{SITENAME}} chṳ̂-liau-khu chhùng-sîn khôi-fong.',
 'lockfilenotwritable' => 'Chṳ̂-liau-khu só-thin tóng-on put-hí-khó siá-ngi̍p. Yeu só-thin lâu kié-só chṳ̂-liau-khu, ke-tóng-on pit-sî tui mióng-lu fu̍k-vu-hi khó siá-ngi̍p.',
@@ -1338,13 +1337,13 @@ Chhiáng chhâm-kháu [[Special:Log/delete|chhù-hi ngit-ki]] lòi chhà-chhut c
 Ló-ke vùn-chông chiông sṳ̀n-vì sîn vùn-chông ke chhûng-thin hong-mien.
 Lièn-kiet to ló vùn-chông ke lièn-kiet pin-mò chhṳ-thung kiên-kói;
 chhiáng kiám-chhà sûng-chhûng fe̍t-he sún-fái chhûng-thin-hiong lièn-kiet.
-Yin-tông fu-chit khok-thin só-yû lièn-kiet chiông-voi lièn-to chṳ́-thin ke vùn-chông. 
+Yin-tông fu-chit khok-thin só-yû lièn-kiet chiông-voi lièn-to chṳ́-thin ke vùn-chông.
 
 Chu-yi kó-yèn sîn vùn-chông yí-kîn yû nui-yùng, vùn-chông chiông '''put-voi''' pûn yì-thung, chhù-fî sîn vùn-chông mò nui-yùng fe̍t-he chhûng-thin-hiong, yì-yèn mò-yû siû-thin li̍t-sṳ́.
-Ngì chai pit-yeu sṳ̀ khó-yî chhai yì-thung to sîn vùn-chông heu chai yì-fì ló-ke vùn-chông, thùng-sṳ̀ ya-he vù-fap koi-hien yû hong-mien. 
+Ngì chai pit-yeu sṳ̀ khó-yî chhai yì-thung to sîn vùn-chông heu chai yì-fì ló-ke vùn-chông, thùng-sṳ̀ ya-he vù-fap koi-hien yû hong-mien.
 
 '''Kín-ko!'''
-Tui yit-ke kîn-sòng pûn fóng-mun ke vùn-chông lòi ngièn, liá khó-nèn he yit-ke chṳ̂n-thai khi̍p thòng-thu̍t ke kiên-kói; 
+Tui yit-ke kîn-sòng pûn fóng-mun ke vùn-chông lòi ngièn, liá khó-nèn he yit-ke chṳ̂n-thai khi̍p thòng-thu̍t ke kiên-kói;
 chhiáng chhai hàng-thung chṳ̂-chhièn siên liáu-kié khì-thâ khó-nèn tai-lòi ke heu-kó.",
 'movepagetalktext'        => "Yû-kôan ke tui-fa-hiong chiông-voi pûn chhṳ-thung lâu ke-vùn-chông yit-hí yì-thung, '''chhù-fî'''：
 *Ngì chiông vùn-chông yì-thung to siông-thùng ke miàng-sṳ, fe̍t-chá
@@ -1398,7 +1397,7 @@ Nang-ngoi ngì hí-khó li-yung lièn-kiet thô-chhut tóng-on, yì-yi ngì hí-
 'allmessagesdefault'        => 'Yi-sat ke vùn-sṳ',
 'allmessagescurrent'        => 'Tông-chhièn ke vùn-sṳ',
 'allmessagestext'           => 'Liá-piên lie̍t-chhut só-yû hí-khó thin-chṳ ke ne-thúng kie-mien.
-Please visit [http://www.mediawiki.org/wiki/Localisation MediaWiki Localisation] and [http://translatewiki.net translatewiki.net] if you wish to contribute to the generic MediaWiki localisation.',
+Please visit [//www.mediawiki.org/wiki/Localisation MediaWiki Localisation] and [//translatewiki.net translatewiki.net] if you wish to contribute to the generic MediaWiki localisation.',
 'allmessagesnotsupportedDB' => 'Ne-thúng kie-mien kûng-yung chhu-yî kôan-pit chong-thai （wgUseDatabaseMessages）。',
 
 # Thumbnails
@@ -1511,9 +1510,7 @@ Please visit [http://www.mediawiki.org/wiki/Localisation MediaWiki Localisation]
 'monobook.js' => '/* Yí-kîn put-chai sṳ́-yung; chhiáng-yung [[MediaWiki:common.js]] */',
 
 # Metadata
-'nodublincore'      => 'Dublin Core RDF ngièn su-kí chhai ke-fu̍k-vu hi put-hí-khó sṳ́-yung.',
-'nocreativecommons' => 'Creative Commons RDF ngièn su-kí chhai ke-fu̍k-vu hi put-hí-khó sṳ́-yung.',
-'notacceptable'     => 'Ke-mióng-chham fu̍k-vu-hi put-nèn thì-kiûng ngì-ke hak-fu tôn-nèn sṳt-phe̍t ke su-kí kak-sṳt.',
+'notacceptable' => 'Ke-mióng-chham fu̍k-vu-hi put-nèn thì-kiûng ngì-ke hak-fu tôn-nèn sṳt-phe̍t ke su-kí kak-sṳt.',
 
 # Attribution
 'anonymous'        => '{{SITENAME}} ke ngia̍k-miàng yung-fu',
@@ -1532,33 +1529,6 @@ Please visit [http://www.mediawiki.org/wiki/Localisation MediaWiki Localisation]
 'spambot_username'    => 'MediaWiki kóng-ko chhîn-chhù',
 'spam_reverting'      => 'Fî-fu̍k to put pâu-hàm lièn-kiet chṳ $1 ke chui-khiûn pán-pún',
 'spam_blanking'       => 'Só-yû pâu-hàm lièn-kiet chṳ $1 ke siû-thin, chhîn-v',
-
-# Info page
-'infosubtitle'   => 'Thiàu-muk sêu-sit',
-'numedits'       => 'Phiên-chho su-liòng （vùn-chông）: $1',
-'numtalkedits'   => 'Phiên-chho su-liòng （Thó-lun-chông）: $1',
-'numwatchers'    => 'Kam-sṳ-chá su-muk: $1',
-'numauthors'     => 'Chok-chá su-liòng （vùn-chông）: $1',
-'numtalkauthors' => 'Chok-chá su-liòng （thó-lun-chông）: $1',
-
-# Math options
-'mw_math_png'    => 'Yún-yén sṳ́-yung PNG thù-chhiong',
-'mw_math_simple' => 'Kó-yèn he kién-tân ke kûng-sṳt sṳ́-yung HTML, feu-chet sṳ́-yung PNG thù-chhiong',
-'mw_math_html'   => 'Chhin khó-nèn chhái-yung HTML, fe̍t-he yung PNG thù-tóng',
-'mw_math_source' => 'Hién-sṳ TeX thoi-ho （sṳ́-yung vùn-sṳ hi-khí sṳ̀）',
-'mw_math_modern' => 'Chhûi-chien sîn-pán hi-khí sṳ́-yung',
-'mw_math_mathml' => 'Chhin khó-nèn sṳ́-yung MathML （sṳ-ngiam chûng）',
-
-# Math errors
-'math_failure'          => 'Kié-sak sṳt-phai',
-'math_unknown_error'    => 'Mò-tî chho-ngu',
-'math_unknown_function' => 'Mò-tî chhṳ-su',
-'math_lexing_error'     => 'ki-fap chho-ngu',
-'math_syntax_error'     => 'ngî-fap chho-ngu',
-'math_image_error'      => 'PNG chón-von sṳt-phai; chhiáng kiám-chhà he-feu chṳn-khok ôn-chông latex, dvips, gs lâu convert',
-'math_bad_tmpdir'       => 'Mò-fap siá-ngi̍p fe̍t-chá kien-li̍p su-ho̍k kûng-sṳt lìm-sṳ̀ muk-liu̍k',
-'math_bad_output'       => 'Mò-fap siá-ngi̍p fe̍t-chá kien-li̍p su-ho̍k kûng-sṳt sû-chhut muk-liu̍k',
-'math_notexvc'          => 'Mò-fap chṳp-hàng "texvc"; chhiáng chhâm-cheu math/README chin-hàng phi-chṳ.',
 
 # Patrolling
 'markaspatrolleddiff'                 => 'Phêu-ki sṳ̀n-vì yí-kîn kiám-chhà',
@@ -1584,15 +1554,14 @@ Please visit [http://www.mediawiki.org/wiki/Localisation MediaWiki Localisation]
 'nextdiff'     => 'Hâ-yit pán-pún →',
 
 # Media information
-'mediawarning'         => "'''Kín-ko''': Ke-tóng-on khó-nèn pâu-hàm ok-yi am-ho, chṳp-hàng kì khó-nèn tui ngì-ke ne-thúng tai-lòi ngùi-hiám.",
-'imagemaxsize'         => 'Chhai thù-chhiong mèu-siá chông tui thù-chhiong thai-séu han-chṳ he:',
-'thumbsize'            => 'Lio̍k-thù thai-séu:',
-'file-info'            => '（tóng-on thai-séu: $1, MIME lui-hìn: $2）',
-'file-info-size'       => '（$1 × $2 chhiong-su, tóng-on thai-séu:$3 ，MIME lui-hìn:$4）',
-'file-nohires'         => '<small>Mò kien-kô kié-chhiong-thu khó-yî thì-kiûng.</small>',
-'svg-long-desc'        => '(SVG tóng-on, péu-mien thai-séu: $1 × $2 siong-su, tóng-on thai-séu: $3)',
-'show-big-image'       => 'Vàn-cháng ke kié-chhiong-thu',
-'show-big-image-thumb' => '<small>Liá-ke puk-suk-thù ke kié-chhiong-thu he: $1 × $2 chhiong-su</small>',
+'mediawarning'   => "'''Kín-ko''': Ke-tóng-on khó-nèn pâu-hàm ok-yi am-ho, chṳp-hàng kì khó-nèn tui ngì-ke ne-thúng tai-lòi ngùi-hiám.",
+'imagemaxsize'   => 'Chhai thù-chhiong mèu-siá chông tui thù-chhiong thai-séu han-chṳ he:',
+'thumbsize'      => 'Lio̍k-thù thai-séu:',
+'file-info'      => 'tóng-on thai-séu: $1, MIME lui-hìn: $2',
+'file-info-size' => '$1 × $2 chhiong-su, tóng-on thai-séu:$3 ，MIME lui-hìn:$4',
+'file-nohires'   => '<small>Mò kien-kô kié-chhiong-thu khó-yî thì-kiûng.</small>',
+'svg-long-desc'  => 'SVG tóng-on, péu-mien thai-séu: $1 × $2 siong-su, tóng-on thai-séu: $3',
+'show-big-image' => 'Vàn-cháng ke kié-chhiong-thu',
 
 # Special:NewFiles
 'newimages'             => 'Sîn-kien thù-chhiong ke va̍k-lòng',
@@ -1621,18 +1590,22 @@ yèn-heu thùng yit-hòng heu-fông ke lièn-chiap chiông-voi pûn sṳ-vì li-
 * exposuretime
 * fnumber
 * isospeedratings
-* focallength',
+* focallength
+* artist
+* copyright
+* imagedescription
+* gpslatitude
+* gpslongitude
+* gpsaltitude',
 
 # External editor support
 'edit-externally'      => 'Yung ngoi-phu chhàng-sṳt phiên-siá chhṳ́ tóng-on',
-'edit-externally-help' => 'Chhiáng chhâm-siòng [http://www.mediawiki.org/wiki/Manual:External_editors sat-thin phu] liáu-kié siòng-se sin-sit.',
+'edit-externally-help' => 'Chhiáng chhâm-siòng [//www.mediawiki.org/wiki/Manual:External_editors sat-thin phu] liáu-kié siòng-se sin-sit.',
 
 # 'all' in various places, this might be different for inflected languages
-'recentchangesall' => 'Chhiòn-phu',
-'imagelistall'     => 'chhiòn-phu',
-'watchlistall2'    => 'chhiòn-phu',
-'namespacesall'    => 'Chhiòn-phu',
-'monthsall'        => 'chhiòn-phu',
+'watchlistall2' => 'chhiòn-phu',
+'namespacesall' => 'Chhiòn-phu',
+'monthsall'     => 'chhiòn-phu',
 
 # E-mail address confirmation
 'confirmemail'            => 'Khok-ngin email thi-tiám',
@@ -1652,9 +1625,9 @@ Email chhòn-sung-yèn fì-yin: $1',
 'confirmemail_loggedin'   => 'Ngì-ke sin-siông thi-tiám hien-ha yí-kîn pûn khok-ngin.',
 'confirmemail_error'      => 'Ngì-ke khok-ngin ko-chhàng fat-sên chho-ngu.',
 'confirmemail_subject'    => '{{SITENAME}} sin-siông thi-tiám khok-ngin',
-'confirmemail_body'       => 'Yúng-yû IP thi-tiám $1 ke yung-fu （khó-nèn he ngì） chhai {{SITENAME}} chhóng-chho liáu chong-fu  "$2", pin thì-kâu liáu ngì-ke email sin-siông thi-tiám. 
+'confirmemail_body'       => 'Yúng-yû IP thi-tiám $1 ke yung-fu （khó-nèn he ngì） chhai {{SITENAME}} chhóng-chho liáu chong-fu  "$2", pin thì-kâu liáu ngì-ke email sin-siông thi-tiám.
 
-Chhiáng khok-ngin liá-ke chong-fu  he su̍k-yî ngì-ke, pin thùng-sṳ̀ khí-yung chhai {{SITENAME}} sông ke email sin-siông kûng-nèn. Chhiáng chhai hi-khí chûng tá-khôi ha-mien ke lièn-kiet: $3 
+Chhiáng khok-ngin liá-ke chong-fu  he su̍k-yî ngì-ke, pin thùng-sṳ̀ khí-yung chhai {{SITENAME}} sông ke email sin-siông kûng-nèn. Chhiáng chhai hi-khí chûng tá-khôi ha-mien ke lièn-kiet: $3
 
 Kó-yèn ngì *mò-yû* thì-chhut liá-ke chhiáng-khiù,  chhiáng put-yeu tiám-kit Chhṳ́ lièn-kiet. Khok-ngin me̍t-me̍t chiông-voi chhai $4 ko-khì.',
 
