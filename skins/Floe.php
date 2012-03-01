@@ -138,7 +138,7 @@ class FloeTemplate extends QuickTemplate {
                                                                  "What is the approach?" => array("is_link" => true)
                                                                 )
                                             ),
-                                   "Body/techniques/something?" => 
+                                   "Techniques" => 
                                        array("is_link" => false,
                                              "children" => array("Inclusive learning" => array("is_link" => true),
                                                                  "Accessibility principles" => array("is_link" => true),
