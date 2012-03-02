@@ -1,11 +1,66 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
+/* Fonts */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Crimson Text'), local('CrimsonText-Roman'), url('fonts/CrimsonText-Roman.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url('fonts/Lato-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url('fonts/Lato-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('fonts/Lato-BlackItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url('fonts/Lato-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url('fonts/Lato-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url('fonts/Lato-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url('fonts/Lato-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('fonts/Lato-BoldItalic.woff') format('woff');
+}
 
 /* For clarity, explicitly state some recommendations from <http://www.w3.org/
    TR/CSS21/sample.html> to make sure the editsection links scale right */
 
 body {
 	color: #444444;
-	font: 14px/1.5em "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
+	font: 14px/1.5em "Lato", "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
 
 h1 { font-size: 2.55em; }
@@ -18,7 +73,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 /* Now the custom parts */
 
 html {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -26,9 +81,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 {
-    font-family: "Merriweather", serif;
-    font-weight: bold;
-    color: #0A212B;
+    font-family: "Crimson Text", serif;
+    color: #555555;
 }
 
 .subtitle p {
@@ -87,10 +141,11 @@ div.center {
 /* Links */
 
 a:link, a:visited, a.new {
-  color: #000;
+    color: #05A2C6;
 }
 
-a:hover, a:active {
+a:hover, a:active,
+a.external:hover, a.external:active {
   background-color: #fffb91;
 }
 
@@ -136,6 +191,7 @@ span.toc-item-0: {
 	margin-top: 1em;
     color: #777777;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 #site-toc li.site-toclevel-1 {
@@ -166,15 +222,15 @@ h1 {
 
 h2 {
     color: #1D2E4C;
-	font-weight:bold;
-	padding:1em 0 0.2em 0;
+	font-weight:900;
+	padding:0.5em 0 0.2em 0;
 	margin:0px;
 	line-height: 1em;
 }
 
 h3 {
     text-transform: uppercase;
-	font-weight:bold;
+	font-weight:700;
 	margin-bottom: 0.5em;
 	margin-top: 1.5em;
     font-size: 1.15em;
@@ -186,6 +242,7 @@ ul#user-links {
 	float:right;
 	list-style: none;
 	margin:0px;
+	margin-top: 0.5em;
 }
 ul#user-links li {
 	display:inline;
@@ -271,7 +328,7 @@ div#top-nav #toc-link a {
 
 /* hide tabs */
 
-#ca-history, #ca-delete, #ca-move, #ca-protect, #ca-watch { display:none!important; }
+#ca-history, #ca-delete, #ca-move, #ca-protect, #ca-watch, #ca-talk, #ca-nstab-main { display:none!important; }
 #pt-userpage, #pt-mytalk, #pt-watchlist, #pt-mycontris, #pt-anonuserpage, #pt-anontalk { display:none!important; }
 
 #pt-anonlogin {
@@ -400,35 +457,17 @@ pre {
 }
 
 
-#bodyContent a[href ^="http://"],
-#bodyContent a[href ^="gopher://"] {
-    background: url("external.png") center right no-repeat;
+/*
+a[href ^="http://"],
+a[href ^="gopher://"] {
+*/
+a.external {
+    background: url("/images/9x9-right-arrow.png") center right no-repeat;
     padding-right: 13px;
 }
-#bodyContent a[href ^="https://"],
-.link-https {
-    background: url("lock_icon.gif") center right no-repeat;
-    padding-right: 16px;
-}
-#bodyContent a[href ^="mailto:"],
-.link-mailto {
-    background: url("mail_icon.gif") center right no-repeat;
-    padding-right: 18px;
-}
-#bodyContent a[href ^="news://"] {
-    background: url("news_icon.png") center right no-repeat;
-    padding-right: 18px;
-}
-#bodyContent a[href ^="ftp://"],
-.link-ftp {
-    background: url("file_icon.gif") center right no-repeat;
-    padding-right: 18px;
-}
-#bodyContent a[href ^="irc://"],
-#bodyContent a.extiw[href ^="irc://"],
-.link-irc {
-    background: url("discussionitem_icon.gif")  center right no-repeat;
-    padding-right: 18px;
+#footer a.external {
+    background: none;
+    padding-right: 0;
 }
 
 #bodyContent a.extiw,
