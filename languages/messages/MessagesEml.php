@@ -89,7 +89,7 @@ Nutêv ca alcuni pàgini i putrèbber cuntinuèr a cràdder ca vueter a-sîv dis
 'anontalkpagetext' => "----''Sta chè l'éla pàgina ed discussiòun d'un utèint anònim c'al n'à brisa criê un sô account o c'an l'usa ménga. Bsògna quindi usêr al sô indirézz IP par identifichèrel. L'istèss indirézz IP al pôl èsser usê da di mòndi utèint. Se sèt un utèint anònim e pèinset c'a-t in sun stèdi fâti di cummèint irrilevànt, per piasér [[Special:UserLogin|criêt un account o fê al log-in]] par evitèr confusiòuni futuri cun di èter utèint anònim.''",
 'editing'          => 'Cambiamèint ed $1',
 'yourdiff'         => 'Differèinzi',
-'templatesused'    => 'Modêl usèdi in sta pàgina:',
+'templatesused'    => '{{PLURAL:$1|Modêl|Modêl}} usèdi in sta pàgina:',
 
 # Search results
 'searchhelp-url' => 'Help:Introduzione',
@@ -143,7 +143,7 @@ Nutêv ca alcuni pàgini i putrèbber cuntinuèr a cràdder ca vueter a-sîv dis
 'excontentauthor'   => "al cointgnû l'éra: '$1' (e l'ónic cuntribudôr l'éra '[[Special:Contributions/$2|$2]]')",
 'confirmdeletetext' => "Stèt per scanzlèr 'na pàgina o n'imàgin, insìmma a tòt la sô crunolugî dal database.
 Cunfermèr per piasèr ca saîv quàl che stèv par fêr, ca capîv al pussìbil counseguèinzi e ca stèv facènd quàst in confurmitê cun [[{{MediaWiki:Policy-url}}]].",
-'deletedtext'       => '"<nowiki>$1</nowiki>" l\'è stê scanzlê.
+'deletedtext'       => '"$1" l\'è stê scanzlê.
 Guèrda $2 par vèdder la lésta d\'al pàgin ch\'i sun stèdi scanzlèdi di recèint.',
 'deletedarticle'    => 'scanzlê "[[$1]]"',
 'dellogpage'        => 'Regestér dal scanzladûri',
