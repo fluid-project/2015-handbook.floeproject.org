@@ -462,7 +462,7 @@ a[href ^="http://"],
 a[href ^="gopher://"] {
 */
 a.external {
-    background: url("/images/9x9-right-arrow.png") center right no-repeat;
+    background: url("/skins/floe/images/9x9-right-arrow.png") center right no-repeat;
     padding-right: 13px;
 }
 #footer a.external {
@@ -686,4 +686,16 @@ table.collapsed tr.collapsable {
 }
 .fl-uiOptions-fatPanel .fl-panelBar {
     width: 75%;
+}
+
+/* High-contrast versions of the 'external link' arrow */
+.fl-theme-uio-wb a.external {
+    background: url("/skins/floe/images/9x9-right-arrow-white.png") center right no-repeat;
+}
+.fl-theme-uio-by a.external,
+.fl-theme-uio-bw a.external {
+    background: url("/skins/floe/images/9x9-right-arrow-black.png") center right no-repeat;
+}
+.fl-theme-uio-yb a.external {
+    background: url("/skins/floe/images/9x9-right-arrow-yellow.png") center right no-repeat;
 }
