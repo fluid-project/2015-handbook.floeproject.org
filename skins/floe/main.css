@@ -267,6 +267,9 @@ ul#page-links li {
 /* main content */
 #content {
 }
+ul li li {
+    list-style: circle;
+}
 
 /* footer */
 #footer {
