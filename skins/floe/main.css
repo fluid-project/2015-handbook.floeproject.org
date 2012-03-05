@@ -203,6 +203,7 @@ span.toc-item-0: {
 /* header */
 #header {
 	border-bottom: 8px solid #46948C;
+	margin-top: 1em;
 }
 
 div#header-left {
@@ -241,8 +242,8 @@ h3 {
 ul#user-links {
 	float:right;
 	list-style: none;
-	margin:0px;
-	margin-top: 0.5em;
+	margin: 0em;
+    padding: 0em;
 }
 ul#user-links li {
 	display:inline;
@@ -671,6 +672,7 @@ table.collapsed tr.collapsable {
     margin-right: 0;
     background-repeat: no-repeat;
     background-position: left center;
+    margin-top: 0;
 }
 .fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonShow {
     background-image: url('/skins/floe/images/icon-+-a.png');

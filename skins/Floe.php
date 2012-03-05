@@ -112,16 +112,14 @@ class FloeTemplate extends QuickTemplate {
             <div class="flc-toc-tocContainer toc"> </div>
         
             <div id="header" class="fl-col-flex2">
-                <div class="fl-fix">
-                    <span class="links-header">User Links:</span>
-                    <ul id="user-links">
-                    <?php foreach($this->data['personal_urls'] as $key => $item) { ?>
-                        <li id="<?php echo Sanitizer::escapeId( "pt-$key" ) ?>"<?php if ($item['active']) { ?> class="active"<?php } ?>>
-                        <a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskeyAttribs('pt-'.$key) ?>
-                        <?php if( !empty( $item['class'] ) ) { ?> class="<?php echo htmlspecialchars( $item['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $item['text'] ) ?></a></li>
-                    <?php } ?>
-                    </ul>
-                </div>  
+                <span class="links-header">User Links:</span>
+                <ul id="user-links">
+                <?php foreach($this->data['personal_urls'] as $key => $item) { ?>
+                    <li id="<?php echo Sanitizer::escapeId( "pt-$key" ) ?>"<?php if ($item['active']) { ?> class="active"<?php } ?>>
+                    <a href="<?php echo htmlspecialchars( $item['href'] ) ?>"<?php echo $skin->tooltipAndAccesskeyAttribs('pt-'.$key) ?>
+                    <?php if( !empty( $item['class'] ) ) { ?> class="<?php echo htmlspecialchars( $item['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $item['text'] ) ?></a></li>
+                <?php } ?>
+                </ul>
                 <div class="fl-col-mixed-200">
                     <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']); ?>" id="logo"><img src="<?php echo htmlspecialchars($this->data['logopath']); ?>" alt="floe logo" /></a>
                     <h1><?php $this->msg('tagline') ?></h1>
