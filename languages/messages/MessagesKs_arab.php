@@ -7,9 +7,11 @@
  * @ingroup Language
  * @file
  *
+ * @author Rachitrali
+ * @author Rk_kaul (on ks.wikipedia.org)
+ * @author VibhasKS
  */
 
-# @todo FIXME: Inherit almost everything for now
 $rtl = true;
 
 $digitTransformTable = array(
@@ -23,23 +25,35 @@ $digitTransformTable = array(
 	'7' => '٧', # &#x0667;
 	'8' => '٨', # &#x0668;
 	'9' => '٩', # &#x0669;
-	'.' => '٫', # &#x066b; wrong table ?
+);
+
+$separatorTransformTable = array(
+	'.' => '٫', # &#x066b;
 	',' => '٬', # &#x066c;
 );
 
 $messages = array(
 # Dates
 'monday'    => 'ژِنٛدٕروار',
+'january'   => 'جنوری',
 'february'  => 'فرؤری',
+'march'     => 'مارچ',
 'april'     => 'اپریٖل',
 'may_long'  => 'مٔی',
 'june'      => 'جوٗن',
+'july'      => 'جولائی',
 'august'    => 'اَگست',
 'september' => 'سیٚپٹَمبَر',
+'october'   => 'اکتوبر',
 'november'  => 'نَوَمبَر',
 'december'  => 'ڈیٚسَمبَر',
+'jan'       => 'جنوری',
 
 'about' => 'مُتعلِق',
+
+# Vector skin
+'vector-view-edit' => 'تَرتیٖب دِیُن',
+'vector-view-view' => 'پَرُن',
 
 'help'             => 'مدد',
 'search'           => 'ژھارُن',
@@ -47,11 +61,14 @@ $messages = array(
 'history_short'    => 'توٲریٖخ',
 'talkpagelinktext' => 'بَحَژ',
 'talk'             => 'بَحَژ',
+'toolbox'          => 'اَوزار',
+'otherlanguages'   => 'باقیَن زَبانَن منٛز',
 'jumptosearch'     => 'ژھارُن',
 
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
-'aboutsite' => 'مُتعلِق {{SITENAME}}',
-'mainpage'  => 'گَرٕ',
+'aboutsite'            => 'مُتعلِق {{SITENAME}}',
+'mainpage'             => 'گَرٕ',
+'mainpage-description' => 'اہم صَفہٕ',
 
 # Short words for each namespace, by default used in the namespace tab in monobook
 'nstab-main'     => 'صَفہٕ',

@@ -1,5 +1,5 @@
 <?php
-/** Bulgarian (Български)
+/** Bulgarian (български)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -11,6 +11,7 @@
  * @author Borislav
  * @author DCLXVI
  * @author Daggerstab
+ * @author Kaganer
  * @author Spiritia
  * @author Stanqo
  * @author Turin
@@ -56,86 +57,86 @@ $bookstoreList = array(
 );
 
 $magicWords = array(
-	'redirect'              => array( '0', '#пренасочване', '#виж', '#REDIRECT' ),
-	'notoc'                 => array( '0', '__БЕЗСЪДЪРЖАНИЕ__', '__NOTOC__' ),
-	'nogallery'             => array( '0', '__БЕЗГАЛЕРИЯ__', '__NOGALLERY__' ),
-	'forcetoc'              => array( '0', '__СЪССЪДЪРЖАНИЕ__', '__FORCETOC__' ),
-	'toc'                   => array( '0', '__СЪДЪРЖАНИЕ__', '__TOC__' ),
-	'noeditsection'         => array( '0', '__БЕЗ_РЕДАКТИРАНЕ_НА_РАЗДЕЛИ__', '__NOEDITSECTION__' ),
-	'currentmonth'          => array( '1', 'ТЕКУЩМЕСЕЦ', 'CURRENTMONTH', 'CURRENTMONTH2' ),
-	'currentmonth1'         => array( '1', 'ТЕКУЩМЕСЕЦ1', 'CURRENTMONTH1' ),
-	'currentmonthname'      => array( '1', 'ТЕКУЩМЕСЕЦИМЕ', 'CURRENTMONTHNAME' ),
-	'currentmonthnamegen'   => array( '1', 'ТЕКУЩМЕСЕЦИМЕРОД', 'CURRENTMONTHNAMEGEN' ),
-	'currentmonthabbrev'    => array( '1', 'ТЕКУЩМЕСЕЦСЪКР', 'CURRENTMONTHABBREV' ),
-	'currentday'            => array( '1', 'ТЕКУЩДЕН', 'CURRENTDAY' ),
-	'currentday2'           => array( '1', 'ТЕКУЩДЕН2', 'CURRENTDAY2' ),
-	'currentdayname'        => array( '1', 'ТЕКУЩДЕНИМЕ', 'CURRENTDAYNAME' ),
-	'currentyear'           => array( '1', 'ТЕКУЩАГОДИНА', 'CURRENTYEAR' ),
-	'currenttime'           => array( '1', 'ТЕКУЩОВРЕМЕ', 'CURRENTTIME' ),
-	'currenthour'           => array( '1', 'ТЕКУЩЧАС', 'CURRENTHOUR' ),
-	'numberofpages'         => array( '1', 'БРОЙСТРАНИЦИ', 'NUMBEROFPAGES' ),
-	'numberofarticles'      => array( '1', 'БРОЙСТАТИИ', 'NUMBEROFARTICLES' ),
-	'numberoffiles'         => array( '1', 'БРОЙФАЙЛОВЕ', 'NUMBEROFFILES' ),
-	'numberofusers'         => array( '1', 'БРОЙПОТРЕБИТЕЛИ', 'NUMBEROFUSERS' ),
-	'numberofactiveusers'   => array( '1', 'БРОЙАКТИВНИПОТРЕБИТЕЛИ', 'NUMBEROFACTIVEUSERS' ),
-	'numberofedits'         => array( '1', 'БРОЙРЕДАКЦИИ', 'NUMBEROFEDITS' ),
-	'numberofviews'         => array( '1', 'БРОЙПРЕГЛЕДИ', 'NUMBEROFVIEWS' ),
-	'pagename'              => array( '1', 'СТРАНИЦА', 'PAGENAME' ),
-	'pagenamee'             => array( '1', 'СТРАНИЦАИ', 'PAGENAMEE' ),
-	'namespace'             => array( '1', 'ИМЕННОПРОСТРАНСТВО', 'NAMESPACE' ),
-	'namespacee'            => array( '1', 'ИМЕННОПРОСТРАНСТВОИ', 'NAMESPACEE' ),
-	'fullpagename'          => array( '1', 'ПЪЛНОИМЕ_СТРАНИЦА', 'FULLPAGENAME' ),
-	'fullpagenamee'         => array( '1', 'ПЪЛНОИМЕ_СТРАНИЦАИ', 'FULLPAGENAMEE' ),
-	'subpagename'           => array( '1', 'ИМЕ_ПОДСТРАНИЦА', 'SUBPAGENAME' ),
-	'subpagenamee'          => array( '1', 'ИМЕ_ПОДСТРАНИЦАИ', 'SUBPAGENAMEE' ),
-	'talkpagename'          => array( '1', 'ИМЕ_БЕСЕДА', 'TALKPAGENAME' ),
-	'talkpagenamee'         => array( '1', 'ИМЕ_БЕСЕДАИ', 'TALKPAGENAMEE' ),
-	'msg'                   => array( '0', 'СЪОБЩ:', 'MSG:' ),
-	'subst'                 => array( '0', 'ЗАМЕСТ:', 'SUBST:' ),
-	'msgnw'                 => array( '0', 'СЪОБЩБУ:', 'MSGNW:' ),
-	'img_thumbnail'         => array( '1', 'мини', 'thumbnail', 'thumb' ),
-	'img_manualthumb'       => array( '1', 'мини=$1', 'thumbnail=$1', 'thumb=$1' ),
-	'img_right'             => array( '1', 'вдясно', 'дясно', 'д', 'right' ),
-	'img_left'              => array( '1', 'вляво', 'ляво', 'л', 'left' ),
-	'img_none'              => array( '1', 'н', 'none' ),
-	'img_width'             => array( '1', '$1пкс', '$1п', '$1px' ),
-	'img_center'            => array( '1', 'център', 'центр', 'ц', 'center', 'centre' ),
-	'img_framed'            => array( '1', 'рамка', 'врамка', 'framed', 'enframed', 'frame' ),
-	'img_frameless'         => array( '1', 'безрамка', 'frameless' ),
-	'img_border'            => array( '1', 'ръб', 'контур', 'border' ),
-	'int'                   => array( '0', 'ВЪТР:', 'INT:' ),
-	'sitename'              => array( '1', 'ИМЕНАСАЙТА', 'SITENAME' ),
-	'ns'                    => array( '0', 'ИП:', 'NS:' ),
-	'localurl'              => array( '0', 'ЛОКАЛЕНАДРЕС:', 'LOCALURL:' ),
-	'localurle'             => array( '0', 'ЛОКАЛЕНАДРЕСИ:', 'LOCALURLE:' ),
-	'server'                => array( '0', 'СЪРВЪР', 'SERVER' ),
-	'servername'            => array( '0', 'ИМЕНАСЪРВЪРА', 'SERVERNAME' ),
-	'scriptpath'            => array( '0', 'ПЪТДОСКРИПТА', 'SCRIPTPATH' ),
-	'grammar'               => array( '0', 'ГРАМАТИКА:', 'GRAMMAR:' ),
-	'gender'                => array( '0', 'ПОЛ:', 'GENDER:' ),
-	'currentweek'           => array( '1', 'ТЕКУЩАСЕДМИЦА', 'CURRENTWEEK' ),
-	'currentdow'            => array( '1', 'ТЕКУЩ_ДЕН_ОТ_СЕДМИЦАТА', 'CURRENTDOW' ),
-	'revisionid'            => array( '1', 'ИД_НА_ВЕРСИЯТА', 'REVISIONID' ),
-	'revisionday'           => array( '1', 'ДЕН_НА_ВЕРСИЯТА', 'REVISIONDAY' ),
-	'revisionday2'          => array( '1', 'ДЕН_НА_ВЕРСИЯТА2', 'REVISIONDAY2' ),
-	'revisionmonth'         => array( '1', 'МЕСЕЦ_НА_ВЕРСИЯТА', 'REVISIONMONTH' ),
-	'revisionyear'          => array( '1', 'ГОДИНА_НА_ВЕРСИЯТА', 'REVISIONYEAR' ),
-	'plural'                => array( '0', 'МН_ЧИСЛО:', 'PLURAL:' ),
-	'fullurl'               => array( '0', 'ПЪЛЕН_АДРЕС:', 'FULLURL:' ),
-	'fullurle'              => array( '0', 'ПЪЛЕН_АДРЕСИ:', 'FULLURLE:' ),
-	'lcfirst'               => array( '0', 'МБПЪРВА:', 'LCFIRST:' ),
-	'ucfirst'               => array( '0', 'ГБПЪРВА:', 'UCFIRST:' ),
-	'lc'                    => array( '0', 'МБ:', 'LC:' ),
-	'uc'                    => array( '0', 'ГБ:', 'UC:' ),
-	'raw'                   => array( '0', 'НЕОБРАБ:', 'RAW:' ),
-	'displaytitle'          => array( '1', 'ПОКАЗВ_ЗАГЛАВИЕ', 'DISPLAYTITLE' ),
-	'newsectionlink'        => array( '1', '__ВРЪЗКА_ЗА_НОВ_РАЗДЕЛ__', '__NEWSECTIONLINK__' ),
-	'language'              => array( '0', '#ЕЗИК:', '#LANGUAGE:' ),
-	'numberofadmins'        => array( '1', 'БРОЙАДМИНИСТРАТОРИ', 'NUMBEROFADMINS' ),
-	'defaultsort'           => array( '1', 'СОРТКАТ:', 'DEFAULTSORT:', 'DEFAULTSORTKEY:', 'DEFAULTCATEGORYSORT:' ),
-	'hiddencat'             => array( '1', '__СКРИТАКАТЕГОРИЯ__', '__HIDDENCAT__' ),
-	'index'                 => array( '1', '__ИНДЕКСИРАНЕ__', '__INDEX__' ),
-	'noindex'               => array( '1', '__БЕЗИНДЕКСИРАНЕ__', '__NOINDEX__' ),
+	'redirect'                => array( '0', '#пренасочване', '#виж', '#REDIRECT' ),
+	'notoc'                   => array( '0', '__БЕЗСЪДЪРЖАНИЕ__', '__NOTOC__' ),
+	'nogallery'               => array( '0', '__БЕЗГАЛЕРИЯ__', '__NOGALLERY__' ),
+	'forcetoc'                => array( '0', '__СЪССЪДЪРЖАНИЕ__', '__FORCETOC__' ),
+	'toc'                     => array( '0', '__СЪДЪРЖАНИЕ__', '__TOC__' ),
+	'noeditsection'           => array( '0', '__БЕЗ_РЕДАКТИРАНЕ_НА_РАЗДЕЛИ__', '__NOEDITSECTION__' ),
+	'currentmonth'            => array( '1', 'ТЕКУЩМЕСЕЦ', 'CURRENTMONTH', 'CURRENTMONTH2' ),
+	'currentmonth1'           => array( '1', 'ТЕКУЩМЕСЕЦ1', 'CURRENTMONTH1' ),
+	'currentmonthname'        => array( '1', 'ТЕКУЩМЕСЕЦИМЕ', 'CURRENTMONTHNAME' ),
+	'currentmonthnamegen'     => array( '1', 'ТЕКУЩМЕСЕЦИМЕРОД', 'CURRENTMONTHNAMEGEN' ),
+	'currentmonthabbrev'      => array( '1', 'ТЕКУЩМЕСЕЦСЪКР', 'CURRENTMONTHABBREV' ),
+	'currentday'              => array( '1', 'ТЕКУЩДЕН', 'CURRENTDAY' ),
+	'currentday2'             => array( '1', 'ТЕКУЩДЕН2', 'CURRENTDAY2' ),
+	'currentdayname'          => array( '1', 'ТЕКУЩДЕНИМЕ', 'CURRENTDAYNAME' ),
+	'currentyear'             => array( '1', 'ТЕКУЩАГОДИНА', 'CURRENTYEAR' ),
+	'currenttime'             => array( '1', 'ТЕКУЩОВРЕМЕ', 'CURRENTTIME' ),
+	'currenthour'             => array( '1', 'ТЕКУЩЧАС', 'CURRENTHOUR' ),
+	'numberofpages'           => array( '1', 'БРОЙСТРАНИЦИ', 'NUMBEROFPAGES' ),
+	'numberofarticles'        => array( '1', 'БРОЙСТАТИИ', 'NUMBEROFARTICLES' ),
+	'numberoffiles'           => array( '1', 'БРОЙФАЙЛОВЕ', 'NUMBEROFFILES' ),
+	'numberofusers'           => array( '1', 'БРОЙПОТРЕБИТЕЛИ', 'NUMBEROFUSERS' ),
+	'numberofactiveusers'     => array( '1', 'БРОЙАКТИВНИПОТРЕБИТЕЛИ', 'NUMBEROFACTIVEUSERS' ),
+	'numberofedits'           => array( '1', 'БРОЙРЕДАКЦИИ', 'NUMBEROFEDITS' ),
+	'numberofviews'           => array( '1', 'БРОЙПРЕГЛЕДИ', 'NUMBEROFVIEWS' ),
+	'pagename'                => array( '1', 'СТРАНИЦА', 'PAGENAME' ),
+	'pagenamee'               => array( '1', 'СТРАНИЦАИ', 'PAGENAMEE' ),
+	'namespace'               => array( '1', 'ИМЕННОПРОСТРАНСТВО', 'NAMESPACE' ),
+	'namespacee'              => array( '1', 'ИМЕННОПРОСТРАНСТВОИ', 'NAMESPACEE' ),
+	'fullpagename'            => array( '1', 'ПЪЛНОИМЕ_СТРАНИЦА', 'FULLPAGENAME' ),
+	'fullpagenamee'           => array( '1', 'ПЪЛНОИМЕ_СТРАНИЦАИ', 'FULLPAGENAMEE' ),
+	'subpagename'             => array( '1', 'ИМЕ_ПОДСТРАНИЦА', 'SUBPAGENAME' ),
+	'subpagenamee'            => array( '1', 'ИМЕ_ПОДСТРАНИЦАИ', 'SUBPAGENAMEE' ),
+	'talkpagename'            => array( '1', 'ИМЕ_БЕСЕДА', 'TALKPAGENAME' ),
+	'talkpagenamee'           => array( '1', 'ИМЕ_БЕСЕДАИ', 'TALKPAGENAMEE' ),
+	'msg'                     => array( '0', 'СЪОБЩ:', 'MSG:' ),
+	'subst'                   => array( '0', 'ЗАМЕСТ:', 'SUBST:' ),
+	'msgnw'                   => array( '0', 'СЪОБЩБУ:', 'MSGNW:' ),
+	'img_thumbnail'           => array( '1', 'мини', 'thumbnail', 'thumb' ),
+	'img_manualthumb'         => array( '1', 'мини=$1', 'thumbnail=$1', 'thumb=$1' ),
+	'img_right'               => array( '1', 'вдясно', 'дясно', 'д', 'right' ),
+	'img_left'                => array( '1', 'вляво', 'ляво', 'л', 'left' ),
+	'img_none'                => array( '1', 'н', 'none' ),
+	'img_width'               => array( '1', '$1пкс', '$1п', '$1px' ),
+	'img_center'              => array( '1', 'център', 'центр', 'ц', 'center', 'centre' ),
+	'img_framed'              => array( '1', 'рамка', 'врамка', 'framed', 'enframed', 'frame' ),
+	'img_frameless'           => array( '1', 'безрамка', 'frameless' ),
+	'img_border'              => array( '1', 'ръб', 'контур', 'border' ),
+	'int'                     => array( '0', 'ВЪТР:', 'INT:' ),
+	'sitename'                => array( '1', 'ИМЕНАСАЙТА', 'SITENAME' ),
+	'ns'                      => array( '0', 'ИП:', 'NS:' ),
+	'localurl'                => array( '0', 'ЛОКАЛЕНАДРЕС:', 'LOCALURL:' ),
+	'localurle'               => array( '0', 'ЛОКАЛЕНАДРЕСИ:', 'LOCALURLE:' ),
+	'server'                  => array( '0', 'СЪРВЪР', 'SERVER' ),
+	'servername'              => array( '0', 'ИМЕНАСЪРВЪРА', 'SERVERNAME' ),
+	'scriptpath'              => array( '0', 'ПЪТДОСКРИПТА', 'SCRIPTPATH' ),
+	'grammar'                 => array( '0', 'ГРАМАТИКА:', 'GRAMMAR:' ),
+	'gender'                  => array( '0', 'ПОЛ:', 'GENDER:' ),
+	'currentweek'             => array( '1', 'ТЕКУЩАСЕДМИЦА', 'CURRENTWEEK' ),
+	'currentdow'              => array( '1', 'ТЕКУЩ_ДЕН_ОТ_СЕДМИЦАТА', 'CURRENTDOW' ),
+	'revisionid'              => array( '1', 'ИД_НА_ВЕРСИЯТА', 'REVISIONID' ),
+	'revisionday'             => array( '1', 'ДЕН_НА_ВЕРСИЯТА', 'REVISIONDAY' ),
+	'revisionday2'            => array( '1', 'ДЕН_НА_ВЕРСИЯТА2', 'REVISIONDAY2' ),
+	'revisionmonth'           => array( '1', 'МЕСЕЦ_НА_ВЕРСИЯТА', 'REVISIONMONTH' ),
+	'revisionyear'            => array( '1', 'ГОДИНА_НА_ВЕРСИЯТА', 'REVISIONYEAR' ),
+	'plural'                  => array( '0', 'МН_ЧИСЛО:', 'PLURAL:' ),
+	'fullurl'                 => array( '0', 'ПЪЛЕН_АДРЕС:', 'FULLURL:' ),
+	'fullurle'                => array( '0', 'ПЪЛЕН_АДРЕСИ:', 'FULLURLE:' ),
+	'lcfirst'                 => array( '0', 'МБПЪРВА:', 'LCFIRST:' ),
+	'ucfirst'                 => array( '0', 'ГБПЪРВА:', 'UCFIRST:' ),
+	'lc'                      => array( '0', 'МБ:', 'LC:' ),
+	'uc'                      => array( '0', 'ГБ:', 'UC:' ),
+	'raw'                     => array( '0', 'НЕОБРАБ:', 'RAW:' ),
+	'displaytitle'            => array( '1', 'ПОКАЗВ_ЗАГЛАВИЕ', 'DISPLAYTITLE' ),
+	'newsectionlink'          => array( '1', '__ВРЪЗКА_ЗА_НОВ_РАЗДЕЛ__', '__NEWSECTIONLINK__' ),
+	'language'                => array( '0', '#ЕЗИК:', '#LANGUAGE:' ),
+	'numberofadmins'          => array( '1', 'БРОЙАДМИНИСТРАТОРИ', 'NUMBEROFADMINS' ),
+	'defaultsort'             => array( '1', 'СОРТКАТ:', 'DEFAULTSORT:', 'DEFAULTSORTKEY:', 'DEFAULTCATEGORYSORT:' ),
+	'hiddencat'               => array( '1', '__СКРИТАКАТЕГОРИЯ__', '__HIDDENCAT__' ),
+	'index'                   => array( '1', '__ИНДЕКСИРАНЕ__', '__INDEX__' ),
+	'noindex'                 => array( '1', '__БЕЗИНДЕКСИРАНЕ__', '__NOINDEX__' ),
 );
 
 $specialPageAliases = array(
@@ -243,7 +244,7 @@ $messages = array(
 'tog-hidepatrolled'           => 'Скриване на патрулираните редакции от списъка с последните промени',
 'tog-newpageshidepatrolled'   => 'Скриване на патрулираните редакции от списъка на новите страници',
 'tog-extendwatchlist'         => 'Разширяване на списъка, така че да показва всички промени, не само най-скорошните',
-'tog-usenewrc'                => 'Подобряване на последните промени (изисква Джаваскрипт)',
+'tog-usenewrc'                => 'Групиране на последните промени и списъка за наблюдение по страници (изисква Джаваскрипт)',
 'tog-numberheadings'          => 'Номериране на заглавията',
 'tog-showtoolbar'             => 'Помощна лента за редактиране (изисква Джаваскрипт)',
 'tog-editondblclick'          => 'Редактиране при двойно щракване (изисква Джаваскрипт)',
@@ -251,20 +252,20 @@ $messages = array(
 'tog-editsectiononrightclick' => 'Възможност за редактиране на раздел при щракване с десния бутон върху заглавие на раздел (изисква Джаваскрипт)',
 'tog-showtoc'                 => 'Показване на съдържание (за страници с повече от три раздела)',
 'tog-rememberpassword'        => 'Запомяне на паролата ми в този браузър (за не повече от $1 {{PLURAL:$1|ден|дни}})',
-'tog-watchcreations'          => 'Добавяне на създадените от мен страници към списъка ми за наблюдение',
-'tog-watchdefault'            => 'Добавяне на редактираните от мен страници към списъка ми за наблюдение',
-'tog-watchmoves'              => 'Добавяне на преместените от мен страници към списъка ми за наблюдение',
-'tog-watchdeletion'           => 'Добавяне на изтритите от мен страници към списъка ми за наблюдение',
+'tog-watchcreations'          => 'Добавяне на създадените от мен страници и качените от мен файлове към списъка ми за наблюдение',
+'tog-watchdefault'            => 'Добавяне на страниците, които редактирам, в списъка ми за наблюдение',
+'tog-watchmoves'              => 'Добавяне на преместените от мен страници и файлове към списъка ми за наблюдение',
+'tog-watchdeletion'           => 'Добавяне на изтритите от мен страници и файлове към списъка ми за наблюдение',
 'tog-minordefault'            => 'Отбелязване на всички промени като малки по подразбиране',
 'tog-previewontop'            => 'Показване на предварителния преглед преди текстовата кутия',
 'tog-previewonfirst'          => 'Показване на предварителен преглед при първа редакция',
 'tog-nocache'                 => 'Спиране на складирането на страниците от браузъра',
-'tog-enotifwatchlistpages'    => 'Уведомяване по е-пощата при промяна на страница от списъка ми за наблюдение',
+'tog-enotifwatchlistpages'    => 'Уведомяване по е-пощата при промяна на страница или файл от списъка ми за наблюдение',
 'tog-enotifusertalkpages'     => 'Уведомяване по е-пощата при промяна на беседата ми',
-'tog-enotifminoredits'        => 'Уведомяване по е-пощата даже при малки промени',
+'tog-enotifminoredits'        => 'Уведомяване по е-пощата даже при малки промени на страници или файлове',
 'tog-enotifrevealaddr'        => 'Показване на електронния ми адрес в известяващите писма',
 'tog-shownumberswatching'     => 'Показване на броя на потребителите, наблюдаващи дадена страница',
-'tog-oldsig'                  => 'Съществуващ подпис:',
+'tog-oldsig'                  => 'Текущ подпис:',
 'tog-fancysig'                => 'Без превръщане на подписа в препратка към потребителската страница',
 'tog-externaleditor'          => 'Използване на външен редактор по подразбиране (само за експерти, необходими са специални настройки на компютъра.
 [//www.mediawiki.org/wiki/Manual:External_editors Повече информация.])',
@@ -287,7 +288,7 @@ $messages = array(
 
 'underline-always'  => 'Винаги',
 'underline-never'   => 'Никога',
-'underline-default' => 'Според настройките на браузъра',
+'underline-default' => 'Според настройките на облика или браузъра',
 
 # Font style option in Special:Preferences
 'editfont-style'     => 'Стил на шрифта в кутията за редактиране',
@@ -372,8 +373,8 @@ $messages = array(
 'newwindow'     => '(отваря се в нов прозорец)',
 'cancel'        => 'Отказ',
 'moredotdotdot' => 'Още…',
-'mypage'        => 'Моята страница',
-'mytalk'        => 'Моята беседа',
+'mypage'        => 'Страница',
+'mytalk'        => 'Беседа',
 'anontalk'      => 'Беседа за адреса',
 'navigation'    => 'Навигация',
 'and'           => '&#32;и',
@@ -396,7 +397,7 @@ $messages = array(
 'vector-action-protect'          => 'Защита',
 'vector-action-undelete'         => 'Възстановяване',
 'vector-action-unprotect'        => 'Промяна на защитата',
-'vector-simplesearch-preference' => 'Включване на предложениия при търсене (само за изгледа Vector)',
+'vector-simplesearch-preference' => 'Включване на опростена лента за търсене (само за облика Vector)',
 'vector-view-create'             => 'Създаване',
 'vector-view-edit'               => 'Редактиране',
 'vector-view-history'            => 'История',
@@ -557,9 +558,9 @@ $1',
 'dberrortext'          => 'Възникна синтактична грешка при заявка към базата данни.
 Това може да означава грешка в софтуера.
 Последната заявка към базата данни беше:
-<blockquote><tt>$1</tt></blockquote>
-при функцията „<tt>$2</tt>“.
-MySQL върна грешка „<tt>$3: $4</tt>“.',
+<blockquote><code>$1</code></blockquote>
+при функцията „<code>$2</code>“.
+Базата от данни върна грешка „<samp>$3: $4</samp>“.',
 'dberrortextcl'        => 'Възникна синтактична грешка при заявка към базата данни.
 Последната заявка към базата данни беше:
 „$1“
@@ -594,23 +595,26 @@ $1',
 'formerror'            => 'Възникна грешка при изпращане на формуляра',
 'badarticleerror'      => 'Действието не може да се изпълни върху страницата.',
 'cannotdelete'         => 'Указаната страница или файл "$1" не можа да бъде изтрит(а). Възможно е вече да е бил(а) изтрит(а) от някой друг.',
+'cannotdelete-title'   => 'Страницата „$1“ не може да бъде изтрита',
 'badtitle'             => 'Невалидно заглавие',
 'badtitletext'         => 'Желаното заглавие на страница е невалидно, празно или неправилна препратка към друго уики. Възможно е да съдържа знаци, които не са позволени в заглавия.',
-'perfcached'           => 'Следните данни са извлечени от склада и затова може да не отговарят на текущото състояние:',
-'perfcachedts'         => 'Данните са складирани и обновени за последно на $1.',
+'perfcached'           => 'Следните данни са извлечени от склада и затова може да не отговарят на текущото състояние. В складираното копие {{PLURAL:$1|е допустим най-много един резултат|са допустими най-много $1 резултата}}.',
+'perfcachedts'         => 'Данните са складирани и обновени за последно на $1. Най-много {{PLURAL:$4|един резултат е допустим и наличен|$4 резултата са допустими и налични}} в складираното копие.',
 'querypage-no-updates' => 'Обновяването на тази страница в момента е изключено. Засега данните тук няма да бъдат обновявани.',
 'wrong_wfQuery_params' => 'Невалидни аргументи за wfQuery()<br />
 Функция: $1<br />
 Заявка: $2',
 'viewsource'           => 'Преглед на кода',
-'viewsourcefor'        => 'за $1',
+'viewsource-title'     => 'Преглеждане на кода на $1',
 'actionthrottled'      => 'Ограничение в скоростта',
 'actionthrottledtext'  => 'Като част от защитата против спам, многократното повтаряне на това действие за кратък период от време е ограничено и вие вече сте надвишили лимита си. Опитайте отново след няколко минути.',
-'protectedpagetext'    => 'Тази страница е заключена за редактиране.',
+'protectedpagetext'    => 'Тази страница е защитена, за да се предотвратят редактиране или други действия.',
 'viewsourcetext'       => 'Можете да разгледате и да копирате кодa на страницата:',
-'protectedinterface'   => 'Тази страница съдържа текст, нужен за работата на системата. Тя е защитена против редактиране, за да се предотвратят възможни злоупотреби.',
+'viewyourtext'         => "Можете да прегледате и копирате изходния код на '''вашите редакции''' на тази страница:",
+'protectedinterface'   => 'Тази страница съдържа текст, нужен за работата на системата. Тя е защитена против редактиране, за да се предотвратят възможни злоупотреби.
+За извършване на промяна за всички уикита, посетете [//translatewiki.net/ translatewiki.net], проектът за локализация на MediaWiki.',
 'editinginterface'     => "'''Внимание:''' Редактирате страница, която се използва за интерфейса на софтуера. Промяната й ще повлияе на външния вид на уикито.
-За превеждане обмислете използването на [//translatewiki.net/wiki/Main_Page?setlang=bg translatewiki.net], проектът за локализиране на MediaWiki.",
+За превеждане, обмислете използването на [//translatewiki.net/ translatewiki.net], проектът за локализиране на MediaWiki.",
 'sqlhidden'            => '(Заявка на SQL — скрита)',
 'cascadeprotected'     => 'Тази страница е защитена против редактиране, защото е включена в {{PLURAL:$1|следната страница, която от своя страна има|следните страници, които от своя страна имат}} каскадна защита:
 $2',
@@ -707,6 +711,7 @@ $2',
 'noemailprefs'               => 'За да работят тези функционалности, трябва да посочите адрес на електронна поща в своите настройки.',
 'emailconfirmlink'           => 'Потвърждаване на адреса за електронна поща',
 'invalidemailaddress'        => 'Въведеният адрес не може да бъде приет, тъй като не съответства на формата на адрес за електронна поща. Въведете коректен адрес или оставете полето празно.',
+'cannotchangeemail'          => 'Адресите за електронна поща на сметките не могат да бъдат променяни в това уики.',
 'accountcreated'             => 'Потребителската сметка беше създадена',
 'accountcreatedtext'         => 'Потребителската сметка за $1 беше създадена.',
 'createaccount-title'        => 'Създаване на сметка за {{SITENAME}}',
@@ -720,8 +725,9 @@ $2',
 'loginlanguagelabel'         => 'Език: $1',
 'suspicious-userlogout'      => 'Заявката ви за излизане от системата беше отхвърлена, тъй като изглежда е била изпратена погрешка от браузъра или кеширащото прокси.',
 
-# E-mail sending
+# Email sending
 'php-mail-error-unknown' => 'Неизвестна грешка в mail() функцията на PHP',
+'user-mail-no-addy'      => 'Опитвате се да изпратите е-писмо без да е посочен адрес за електронна поща.',
 
 # Change password dialog
 'resetpass'                 => 'Промяна на парола',
@@ -742,37 +748,49 @@ $2',
 'resetpass-temp-password'   => 'Временна парола:',
 
 # Special:PasswordReset
-'passwordreset'                => 'Възстановяване на парола',
-'passwordreset-text'           => 'След попълването на формуляра ще получите писмо с напомняща информация за потребителската сметка.',
-'passwordreset-legend'         => 'Възстановяване на парола',
-'passwordreset-disabled'       => 'Възстановяването на паролата е изключено в това уики.',
-'passwordreset-pretext'        => '{{PLURAL:$1||Въведете една част от данните по-долу}}',
-'passwordreset-username'       => 'Потребителско име:',
-'passwordreset-domain'         => 'Домейн:',
-'passwordreset-email'          => 'Електронна поща:',
-'passwordreset-emailtitle'     => 'Подробности за сметката в {{SITENAME}}',
-'passwordreset-emailtext-ip'   => 'Някой (вероятно вие, от IP адрес $1) поиска напомняне за
-данните от сметката в {{SITENAME}} ($4). За {{PLURAL:$3|следната сметка|следните сметки}}
+'passwordreset'                    => 'Възстановяване на парола',
+'passwordreset-text'               => 'Попълването на формуляра ще доведе до възстановяване на паролата.',
+'passwordreset-legend'             => 'Възстановяване на парола',
+'passwordreset-disabled'           => 'Възстановяването на паролата е изключено в това уики.',
+'passwordreset-pretext'            => '{{PLURAL:$1||Въведете някоя от информациите по-долу}}',
+'passwordreset-username'           => 'Потребителско име:',
+'passwordreset-domain'             => 'Домейн:',
+'passwordreset-capture'            => 'Преглеждане на електронното писмо?',
+'passwordreset-capture-help'       => 'Поставянето на отметка в това поле ще покаже електронното писмо (с временната парола), което ще бъде изпратено и до потребителя.',
+'passwordreset-email'              => 'Електронна поща:',
+'passwordreset-emailtitle'         => 'Подробности за сметката в {{SITENAME}}',
+'passwordreset-emailtext-ip'       => 'Някой (вероятно вие, от IP адрес $1) поиска възстановяване на паролата за сметката в {{SITENAME}} ($4). За {{PLURAL:$3|следната сметка|следните сметки}}
 е посочен този адрес за електронна поща:
 
 $2
 
 {{PLURAL:$3|Тази временна парола ще бъде активна|Тези временни пароли ще бъдат активни}} {{PLURAL:$5|един ден|$5 дни}}.
-Сега би трябвало да влезете в системата и да си изберете нова парола. Ако заявката е направена от друг или пък сте си 
-спомнили паролата и не искате да я променяте, можете да пренебрегнете това съобщение и да продължите да използвате
-старата си парола.',
-'passwordreset-emailtext-user' => 'Потребител $1 от {{SITENAME}} поиска напомняне за данните от сметката в {{SITENAME}}
+Сега би трябвало да влезете в системата и да си изберете нова парола. Ако заявката е направена от друг или пък сте си спомнили паролата и не искате да я променяте, можете да пренебрегнете това съобщение и да продължите да използвате старата си парола.',
+'passwordreset-emailtext-user'     => 'Потребител $1 от {{SITENAME}} поиска възстановяване на паролата за сметката в {{SITENAME}}
 ($4). За {{PLURAL:$3|следната сметка|следните сметки}} е посочен този адрес за електронна поща:
 
 $2
 
 {{PLURAL:$3|Тази временна парола ще бъде активна|Тези временни пароли ще бъдат активни}} {{PLURAL:$5|един ден|$5 дни}}.
-Сега би трябвало да влезете в системата и да си изберете нова парола. Ако заявката е направена 
+Сега би трябвало да влезете в системата и да изберете нова парола. Ако заявката е направена 
 от друг или пък сте си спомнили паролата и не искате да я променяте, можете да пренебрегнете 
 това съобщение и да продължите да използвате старата си парола.',
-'passwordreset-emailelement'   => 'Потребителско име: $1
+'passwordreset-emailelement'       => 'Потребителско име: $1
 Временна парола: $2',
-'passwordreset-emailsent'      => 'Беше изпратено напомнящо писмо на електронната поща.',
+'passwordreset-emailsent'          => 'На електронната поща беше испратено писмо за възстановяване на паролата.',
+'passwordreset-emailsent-capture'  => 'По-долу е показано електронното писмо за възстановяване на паролата, което беше изпратено.',
+'passwordreset-emailerror-capture' => 'По-долу е показано създадено електронно писмо за напомняне, което не беше изпратено на потребителя: $1',
+
+# Special:ChangeEmail
+'changeemail'          => 'Промяна на адреса за е-поща',
+'changeemail-header'   => 'Промяна на адреса за е-поща на сметката',
+'changeemail-text'     => 'Попълването на този формуляр ще промени адреса за електронна поща. Необходимо е да се въведе и паролата, за да се потвърди промяната.',
+'changeemail-no-info'  => 'За да достъпвате тази страница директно, необходимо е да влезете в системата.',
+'changeemail-oldemail' => 'Текущ адрес за е-поща:',
+'changeemail-newemail' => 'Нов адрес за е-поща:',
+'changeemail-none'     => '(няма)',
+'changeemail-submit'   => 'Промяна на е-пощата',
+'changeemail-cancel'   => 'Отказване',
 
 # Edit page toolbar
 'bold_sample'     => 'Получер текст',
@@ -841,9 +859,6 @@ $2
 
 Текущият ви IP-адрес е $3, а номерът на блокирането ви е $5. Включвайте ги във всяко питане, което правите.",
 'blockednoreason'                  => 'не е указана причина',
-'blockedoriginalsource'            => "По-долу е показано съдържанието на '''$1''':",
-'blockededitsource'                => "По-долу е показан текстът на '''вашите редакции''' на '''$1''':",
-'whitelistedittitle'               => 'Необходимо е да влезете, за да може да редактирате',
 'whitelistedittext'                => 'Редактирането на страници изисква $1 в системата.',
 'confirmedittext'                  => 'Необходимо е да потвърдите електронната си поща, преди да редактирате страници.
 Въведете и потвърдете адреса си на [[Special:Preferences|страницата с настройките]].',
@@ -871,11 +886,10 @@ $2
 'userpage-userdoesnotexist-view'   => 'Не е регистрирана потребителска сметка на име „$1“.',
 'blocked-notice-logextract'        => 'В момента този потребител е блокиран.
 По-долу за справка е показан последният запис от Дневника на блокиранията:',
-'clearyourcache'                   => "'''Забележка:''' За да се видят промените след съхранението е необходимо кешът на браузъра да бъде изтрит:
-* '''Firefox / Safari:''' натиснете бутона ''Shift'' и щракнете върху ''Презареждане'' (''Reload''), или изберете клавишната комбинация ''Ctrl-Shift-R'' (''Cmd-Shift-R'' за Mac);
-* '''Google Chrome:''' клавишна комбинация ''Ctrl-Shift-R'' (''Command-Shift-R'' за Mac)
-* '''Internet Explorer:''' натиснете ''Ctrl'' и щракнете върху ''Refresh'', или клавишната комбинация ''CTRL-F5'';
-* '''Konqueror:''' щракнете върху ''Презареждане'' или натиснете ''F5'';
+'clearyourcache'                   => "'''Забележка:''' За да се видят промените, необходимо е след съхраняване на страницата, кешът на браузъра да бъде изтрит.
+* '''Firefox / Safari:''' Задържа се клавиш ''Shift'' и се щраква върху ''Презареждане'' (''Reload'') или чрез клавишната комбинация ''Ctrl-Shift-R'' (''⌘-Shift-R'' за Mac);
+* '''Google Chrome:''' клавишна комбинация ''Ctrl-Shift-R'' (''⌘-Shift-R'' за Mac)
+* '''Internet Explorer:''' Задържа се клавиш ''Ctrl'' и се щраква върху ''Refresh'' или чрез клавишната комбинация ''CTRL-F5'';
 * '''Opera:''' кешът се изчиства през менюто ''Tools → Preferences''.",
 'usercssyoucanpreview'             => "'''Съвет:''' Използвайте бутона „{{int:showpreview}}“, за да изпробвате новия код на CSS преди съхранението.",
 'userjsyoucanpreview'              => "'''Съвет:''' Използвайте бутона „{{int:showpreview}}“, за да изпробвате новия код на Джаваскрипт преди съхранението.",
@@ -888,7 +902,7 @@ $2
 'userinvalidcssjstitle'            => "'''Внимание:''' Не съществува облик „$1“. Необходимо е да се знае, че имената на потребителските ви страници за CSS и Джаваскрипт трябва да се състоят от малки букви, например: „{{ns:user}}:Иван/vector.css“ (а не „{{ns:user}}:Иван/Vector.css“).",
 'updated'                          => '(обновена)',
 'note'                             => "'''Забележка:'''",
-'previewnote'                      => "'''Това е само предварителен преглед. Промените все още не са съхранени!'''",
+'previewnote'                      => "'''Важно е да се помни, че това е само предварителен преглед. Промените все още не са съхранени!'''",
 'previewconflict'                  => 'Този предварителен преглед отразява текста в горната текстова кутия така, както би се показал, ако съхраните.',
 'session_fail_preview'             => "'''За съжаление редакцията ви не успя да бъде обработена поради загуба на данните за текущата сесия. Опитайте отново. Ако все още не работи, опитайте да [[Special:UserLogout|излезете]] и да влезете отново.'''",
 'session_fail_preview_html'        => "'''За съжаление редакцията ви не беше записана поради изтичането на сесията ви.'''
@@ -924,8 +938,11 @@ $2
 Ако сте ползвали чужди материали, за които имате разрешение, непременно посочете източника.
 
 <div style=\"font-variant:small-caps\">'''Не публикувайте произведения с авторски права без разрешение!'''</div>",
-'longpageerror'                    => "'''ГРЕШКА: Текстът, който пращате, е с големина $1 килобайта, което надвишава позволения максимум от $2 килобайта. Заради това не може да бъде съхранен.'''",
-'readonlywarning'                  => "'''ВНИМАНИЕ: Базата от данни беше затворена за поддръжка, затова в момента промените ви не могат да бъдат съхранени. Ако желаете, можете да съхраните страницата като текстов файл и да се опитате да я публикувате по-късно.'''
+'longpageerror'                    => "'''ГРЕШКА: Изпратеният текст е с големина {{PLURAL:$1|един килобайт|$1 килобайта}}, което надвишава позволения максимум от {{PLURAL:$2|един килобайт|$2 килобайта}}.'''
+Поради тази причина той не може да бъде съхранен.",
+'readonlywarning'                  => "'''ВНИМАНИЕ: Базата от данни беше затворена за поддръжка, затова в момента промените няма да могат да бъдат съхранени.'''
+
+Ако желаете, можете да съхраните страницата като текстов файл и да се опитате да я публикувате по-късно.
 
 Администраторът, който е затворил базата от данни, е посочил следната причина: $1",
 'protectedpagewarning'             => "'''Внимание: Страницата е защитена и само потребители със статут на администратори могат да я редактират.'''
@@ -1029,7 +1046,7 @@ $2
 'rev-deleted-text-permission' => "Тази версия на страницата е била '''изтрита'''.
 Допълнителна информация може да се съдържа в [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Дневника на изтриванията].",
 'rev-deleted-text-unhide'     => "Тази версия на страницата е била '''изтрита'''.
-Допълнителна информация може се съдържа в [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Дневника на изтриванията].
+Допълнителна информация може се съдържа в [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} Дневника на изтриванията].
 Като администратор на сайта вие можете да [$1 прегледате тази редакция], ако желаете да продължите.",
 'rev-suppressed-text-unhide'  => "Тази версия на страницата е била '''прикрита'''.
 Допълнителна информация може да се съдържа в [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Дневника на прикриванията].
@@ -1050,8 +1067,8 @@ $2
 Допълнителна информация може да се съдържа в [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Дневника на прикриванията].
 ато администратор на сайта, вие можете да [$1 прегледате тази разликова препратка], ако желаете да продължите.",
 'rev-deleted-diff-view'       => "Една от версиите на тази разлика е била '''изтрита'''.
-Като администратор, можете да видите тази разлика; възможно е да има повече информация в [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} дневника на изтриванията].",
-'rev-suppressed-diff-view'    => "Една от редакциите от тази разлика между версиите беше '''прикрита'''.
+Можете да видите тази разлика; възможно е да има повече информация в [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} дневника на изтриванията].",
+'rev-suppressed-diff-view'    => "Една от редакциите от тази разлика между версиите е била '''прикрита'''.
 Като администратор, можете да видите тази разлика; повече подробности има в [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} дневника за прикриванията].",
 'rev-delundel'                => 'показване/скриване',
 'rev-showdeleted'             => 'показване',
@@ -1087,8 +1104,6 @@ $2
 'revdelete-unsuppress'        => 'Премахване на ограниченията за възстановените версии',
 'revdelete-log'               => 'Причина:',
 'revdelete-submit'            => 'Прилагане към {{PLURAL:$1|избраната версия|избраните версии}}',
-'revdelete-logentry'          => 'промени видимостта на версия на [[$1]]',
-'logdelete-logentry'          => 'промени видимостта на събитие за [[$1]]',
 'revdelete-success'           => "'''Видимостта на версията беше променена успешно.'''",
 'revdelete-failure'           => "'''Видимостта на редакцията не може да бъде обновена:'''
 $1",
@@ -1100,15 +1115,6 @@ $1",
 'revdel-restore-visible'      => 'видими редакции',
 'pagehist'                    => 'История на страницата',
 'deletedhist'                 => 'Изтрита история',
-'revdelete-content'           => 'съдържание',
-'revdelete-summary'           => 'резюме',
-'revdelete-uname'             => 'потребителско име',
-'revdelete-restricted'        => 'добавени ограничения за администраторите',
-'revdelete-unrestricted'      => 'премахнати ограничения за администраторите',
-'revdelete-hid'               => 'скри $1',
-'revdelete-unhid'             => 'разкри $1',
-'revdelete-log-message'       => '$1 за $2 {{PLURAL:$2|версия|версии}}',
-'logdelete-log-message'       => '$1 за $2 {{PLURAL:$2|събитие|събития}}',
 'revdelete-hide-current'      => 'Грешка при скриване на елемента от $2, $1: представлява текущата версия.
 Тя не може да бъде скрита.',
 'revdelete-show-no-access'    => 'Грешка при показване на обект, датиран към $2, $1: обектът е бил отбелязан като "ограничен".
@@ -1123,6 +1129,7 @@ $1",
 'revdelete-reason-dropdown'   => '* Стандартни причини за изтриване
 ** Нарушение на авторски права
 ** Неуместна лична информация
+** Неуместно потребителско име
 ** Потенциално клеветническа информация',
 'revdelete-otherreason'       => 'Друга/допълнителна причина:',
 'revdelete-reasonotherlist'   => 'Друга причина',
@@ -1132,7 +1139,7 @@ $1",
 # Suppression log
 'suppressionlog'     => 'Дневник на прикриванията',
 'suppressionlogtext' => 'По-долу е посочен списък на изтривания и блокирания, свързан със съдържание, скрито от администраторите.
-За текущите блокирания и забрани, вижте [[Special:BlockList|списъка с блокираните IP адреси]].',
+За текущите блокирания и забрани, вижте [[Special:BlockList|списъка с блокиранията]].',
 
 # History merging
 'mergehistory'                     => 'Сливане на редакционни истории',
@@ -1217,7 +1224,7 @@ $1",
 'search-mwsuggest-enabled'         => 'с предположения',
 'search-mwsuggest-disabled'        => 'без предположения',
 'search-relatedarticle'            => 'Свързани',
-'mwsuggest-disable'                => 'Изключване на AJAX предположенията',
+'mwsuggest-disable'                => 'Изключване на предположенията при търсене',
 'searcheverything-enable'          => 'Търсене във всички именни пространства',
 'searchrelated'                    => 'свързани',
 'searchall'                        => 'всички',
@@ -1245,11 +1252,11 @@ $1",
 'qbsettings-fixedright'     => 'Неподвижно вдясно',
 'qbsettings-floatingleft'   => 'Плаващо вляво',
 'qbsettings-floatingright'  => 'Плаващо вдясно',
-'qbsettings-directionality' => 'Фиксирана, в зависимост от посоката на скрипта от вашия език',
+'qbsettings-directionality' => 'Фиксирана, в зависимост от посоката на писане на вашия език',
 
 # Preferences page
 'preferences'                   => 'Настройки',
-'mypreferences'                 => 'Моите настройки',
+'mypreferences'                 => 'Настройки',
 'prefs-edits'                   => 'Брой редакции:',
 'prefsnologin'                  => 'Не сте влезли',
 'prefsnologintext'              => 'Необходимо е <span class="plainlinks">[{{fullurl:{{#Special:UserLogin}}|returnto=$1}} да влезете]</span>, за да може да променяте потребителските си настройки.',
@@ -1264,12 +1271,14 @@ $1",
 'prefs-rc'                      => 'Последни промени',
 'prefs-watchlist'               => 'Списък за наблюдение',
 'prefs-watchlist-days'          => 'Брой дни, които да се показват в списъка за наблюдение:',
-'prefs-watchlist-days-max'      => 'Най-много 7 дни',
+'prefs-watchlist-days-max'      => 'Най-много $1 {{PLURAL:$1|ден|дни}}',
 'prefs-watchlist-edits'         => 'Брой редакции, които се показват в разширения списък за наблюдение:',
 'prefs-watchlist-edits-max'     => 'Максимален брой: 1000',
 'prefs-watchlist-token'         => 'Уникален идентификатор на списъка за наблюдение:',
 'prefs-misc'                    => 'Други',
 'prefs-resetpass'               => 'Промяна на паролата',
+'prefs-changeemail'             => 'Промяна на е-поща',
+'prefs-setemail'                => 'Настройка на адрес за е-поща',
 'prefs-email'                   => 'Настройки за електронната поща',
 'prefs-rendering'               => 'Облик',
 'saveprefs'                     => 'Съхраняване',
@@ -1360,7 +1369,7 @@ $1",
 'prefs-displaywatchlist'        => 'Видими настройки',
 'prefs-diffs'                   => 'Разлики',
 
-# User preference: e-mail validation using jQuery
+# User preference: email validation using jQuery
 'email-address-validity-valid'   => 'Адресът за е-поща изглежда валиден',
 'email-address-validity-invalid' => 'Въведете валиден адрес за е-поща',
 
@@ -1369,7 +1378,7 @@ $1",
 'userrights-lookup-user'       => 'Управляване на потребителските групи',
 'userrights-user-editname'     => 'Потребителско име:',
 'editusergroup'                => 'Редактиране на потребителските групи',
-'editinguser'                  => "Промяна на потребителските права на потребител '''[[User:$1|$1]]''' ([[User talk:$1|{{int:talkpagelinktext}}]]{{int:pipe-separator}}[[Special:Contributions/$1|{{int:contribslink}}]])",
+'editinguser'                  => "Промяна на потребителските права на потребител '''[[User:$1|$1]]''' $2",
 'userrights-editusergroup'     => 'Редактиране на потребителските групи',
 'saveusergroups'               => 'Съхраняване на потребителските групи',
 'userrights-groupsmember'      => 'Член на:',
@@ -1382,7 +1391,7 @@ $1",
 'userrights-no-interwiki'      => 'Нямате права да редактирате потребителските групи на други уикита.',
 'userrights-nodatabase'        => 'Базата данни $1 не съществува или не е на локалния сървър.',
 'userrights-nologin'           => 'За управление на потребителските права е необходимо [[Special:UserLogin|влизане]] с администраторска сметка.',
-'userrights-notallowed'        => 'С вашия акаунт нямате разрешение да добавяте или премахвате потребителски права.',
+'userrights-notallowed'        => 'Текущата сметка няма права да добавя или премахва потребителски права.',
 'userrights-changeable-col'    => 'Групи, които можете да променяте',
 'userrights-unchangeable-col'  => 'Групи, които не можете да променяте',
 
@@ -1463,19 +1472,20 @@ $1",
 'right-autopatrol'            => 'автоматично отбелязване на редакции като проверени',
 'right-patrolmarks'           => 'Показване на отбелязаните като патрулирани последни промени',
 'right-unwatchedpages'        => 'преглеждане на списъка с ненаблюдаваните страници',
-'right-trackback'             => 'изпращане на обратна следа',
 'right-mergehistory'          => 'сливане на редакционни истории на страници',
 'right-userrights'            => 'редактиране на потребителските права',
 'right-userrights-interwiki'  => 'редактиране на потребителски права на потребители в други уикита',
 'right-siteadmin'             => 'заключване и отключване на базата от данни',
 'right-override-export-depth' => 'Изнасяне на страници, включително свързаните с тях в дълбочина до пето ниво',
 'right-sendemail'             => 'Изпращане на е-писма до другите потребители',
+'right-passwordreset'         => 'Преглеждане на е-писма за възстановяване на парола',
 
 # User rights log
-'rightslog'      => 'Дневник на потребителските права',
-'rightslogtext'  => 'Това е дневник на промените на потребителски права.',
-'rightslogentry' => 'промени потребителската група на $1 от $2 в $3',
-'rightsnone'     => '(никакви)',
+'rightslog'                  => 'Дневник на потребителските права',
+'rightslogtext'              => 'Това е дневник на промените на потребителски права.',
+'rightslogentry'             => 'промени потребителската група на $1 от $2 в $3',
+'rightslogentry-autopromote' => 'автоматично е повишен от $2 до$3',
+'rightsnone'                 => '(никакви)',
 
 # Associated actions - in the sentence "You do not have permission to X"
 'action-read'                 => 'четене на страницата',
@@ -1507,11 +1517,11 @@ $1",
 'action-patrol'               => 'отбелязване на чуждите редакции като проверени',
 'action-autopatrol'           => 'отбелязване на собствените редакции като автоматично патрулирани',
 'action-unwatchedpages'       => 'преглеждане на списъка с ненаблюдавани страници',
-'action-trackback'            => 'оставяне на обратна следа',
 'action-mergehistory'         => 'сливане на историята на тази страница',
 'action-userrights'           => 'редактиране на всички потребителски права',
 'action-userrights-interwiki' => 'редактиране на потребителските права на потребители от други уикита',
 'action-siteadmin'            => 'заключване и отключване на базата от данни',
+'action-sendemail'            => 'изпращане на е-писма',
 
 # Recent changes
 'nchanges'                          => '$1 {{PLURAL:$1|промяна|промени}}',
@@ -1546,9 +1556,11 @@ $1",
 'number_of_watching_users_pageview' => '[$1 {{PLURAL:$1|наблюдаващ потребител|наблюдаващи потребители}}]',
 'rc_categories'                     => 'Само от категории (разделител „|“)',
 'rc_categories_any'                 => 'Която и да е',
+'rc-change-size-new'                => '$1 {{PLURAL:$1|байт|байта}} след редакцията',
 'newsectionsummary'                 => 'Нова тема /* $1 */',
 'rc-enhanced-expand'                => 'Показване на детайли (изисква JavaScript)',
 'rc-enhanced-hide'                  => 'Скриване на детайли',
+'rc-old-title'                      => 'първоначално създадена като „$1“',
 
 # Recent changes linked
 'recentchangeslinked'          => 'Свързани промени',
@@ -1581,9 +1593,9 @@ $1",
 За преглеждане и търсене на вече качените файлове, може да се използва [[Special:FileList|списъка с качени файлове]]. Качванията се записват в [[Special:Log/upload|дневника на качванията]], а изтриванията &mdash; в [[Special:Log/delete|дневник на изтриванията]].
 
 За включване на файл в страница, може да се използва една от следния синтаксис: 
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.jpg]]</nowiki></tt>''' за използване пълната версия на файла
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></tt>''' за определяне на широчина от 200 пиксела, ляво позициониране и 'alt text' за описание
-* '''<tt><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></tt>''' за директна препратка, без файлът да бъде показван",
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.jpg]]</nowiki></code>''' за използване пълната версия на файла
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></code>''' за определяне на широчина от 200 пиксела, ляво позициониране и 'alt text' за описание
+* '''<code><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></code>''' за директна препратка, без файлът да бъде показван",
 'upload-permitted'            => 'Разрешени файлови формати: $1.',
 'upload-preferred'            => 'Предпочитани файлови формати: $1.',
 'upload-prohibited'           => 'Непозволени файлови формати: $1.',
@@ -1601,6 +1613,7 @@ $1",
 'ignorewarnings'              => 'Пренебрегване на всякакви предупреждения',
 'minlength1'                  => 'Имената на файловете трябва да съдържат поне един знак.',
 'illegalfilename'             => 'Името на файла „$1“ съдържа знаци, които не са позволени в заглавия на страници. Преименувайте файла и се опитайте да го качите отново.',
+'filename-toolong'            => 'Имената на файлове не могат да са по-големи от 240 байта.',
 'badfilename'                 => 'Файлът беше преименуван на „$1“.',
 'filetype-mime-mismatch'      => 'Файловото разширение ".$1" не отговаря на MIME типа на файла ($2).',
 'filetype-badmime'            => 'Не е разрешено качването на файлове с MIME-тип „$1“.',
@@ -1623,18 +1636,18 @@ $1",
 'largefileserver'             => 'Файлът е по-голям от допустимия от сървъра размер.',
 'emptyfile'                   => 'Каченият от вас файл е празен. Това може да е предизвикано от грешка в името на файла. Уверете се дали наистина желаете да го качите.',
 'windows-nonascii-filename'   => 'Уикито не поддържа имена на файлове със специални знаци.',
-'fileexists'                  => "Вече съществува файл с това име! Прегледайте '''<tt>[[:$1]]</tt>''', ако не сте сигурни, че желаете да го промените.
-[[$1|thumb]]",
-'filepageexists'              => "Описателната страница за този файл вече е създадена на '''<tt>[[:$1]]</tt>''', въпреки че файл с това име в момента не съществува. Въведеното от вас резюме няма да се появи на описателната страница. За целта, страницата трябва да бъде редактирана ръчно.
-[[$1|thumb]]",
-'fileexists-extension'        => "Съществува файл със сходно име: [[$2|thumb]]
-* Име на файла за качване: '''<tt>[[:$1]]</tt>'''
-* Име на съществуващия файл: '''<tt>[[:$2]]</tt>'''
-Моля, изберете друго име на файла за качване.",
+'fileexists'                  => 'Вече съществува файл с това име! Прегледайте <strong>[[:$1]]</strong>, ако не сте сигурни, че желаете да го промените.
+[[$1|thumb]]',
+'filepageexists'              => 'Описателната страница за този файл вече е създадена на <strong>[[:$1]]</strong>, въпреки че файл с това име в момента не съществува. Въведеното от вас резюме няма да се появи на описателната страница. За целта, страницата трябва да бъде редактирана ръчно.
+[[$1|thumb]]',
+'fileexists-extension'        => 'Съществува файл със сходно име: [[$2|thumb]]
+* Име на файла за качване: <strong>[[:$1]]</strong>
+* Име на съществуващия файл: <strong>[[:$2]]</strong>
+Моля, изберете друго име на файла за качване.',
 'fileexists-thumbnail-yes'    => "Изглежда, че файлът е картинка с намален размер ''(миникартинка)''. [[$1|thumb]]
-Проверете файла '''<tt>[[:$1]]</tt>'''.
+Проверете файла <strong>[[:$1]]</strong>.
 Ако съществуващият файл представлява оригиналната версия на картинката, няма нужда да се качва неин умален вариант.",
-'file-thumbnail-no'           => "Файловото име започва с '''<tt>$1</tt>'''. Изглежда, че е картинка с намален размер ''(миникартинка)''.
+'file-thumbnail-no'           => "Файловото име започва с <strong>$1</strong>. Изглежда, че е картинка с намален размер ''(миникартинка)''.
 Ако разполагате с версия в пълна разделителна способност, качете нея. В противен случай сменете името на този файл.",
 'fileexists-forbidden'        => 'Вече съществува файл с това име, който не може да бъде презаписан!
 Ако желаете да качите вашия файл, върнете се и го качете с ново име. [[File:$1|thumb|center|$1]]',
@@ -1685,6 +1698,19 @@ $1',
 'upload-unknown-size'       => 'Неизвестен размер',
 'upload-http-error'         => 'Възникна HTTP грешка: $1',
 
+# File backend
+'backend-fail-notexists'     => 'Файлът $1 не съществува.',
+'backend-fail-delete'        => 'Файлът $1 не може да бъде изтрит.',
+'backend-fail-alreadyexists' => 'Файлът $1 вече съществува.',
+'backend-fail-store'         => 'Файлът $1 не може да бъде съхранен в $2.',
+'backend-fail-copy'          => 'Файлът „$1“ не можа да бъде копиран в „$2“.',
+'backend-fail-move'          => 'Файлът „$1“ не можа да бъде преместен в „$2“.',
+'backend-fail-opentemp'      => 'Временният файл не може да бъде отворен.',
+'backend-fail-writetemp'     => 'Грешка при записването във временния файл.',
+'backend-fail-closetemp'     => 'Не може да бъде затворен временният файл.',
+'backend-fail-read'          => 'Файлът $1 не може да бъде прочетен.',
+'backend-fail-create'        => 'Файлът „$1“ не може да бъде съхранен.',
+
 # ZipDirectoryReader
 'zip-file-open-error' => 'Възникна грешка при отваряне на файла за проверка на ZIP.',
 'zip-wrong-format'    => 'Указаният файл не е ZIP файл.',
@@ -1704,7 +1730,7 @@ $1',
 'img-auth-nopathinfo'   => 'Липсва PATH_INFO.
 Вашият сървър не е конфигуриран да предава тази информация.
 Той може да е базиран на CGI и да не може да поддържа img_auth.
-Вижте http://www.mediawiki.org/wiki/Manual:Image_Authorization за повече информация.',
+Вижте https://www.mediawiki.org/wiki/Manual:Image_Authorization.',
 'img-auth-notindir'     => 'Търсеният път не е в настроената директория за качвания.',
 'img-auth-badtitle'     => 'Грешка при изграждането на валидно заглавие от "$1".',
 'img-auth-nologinnWL'   => 'Не сте влезли в системата и „$1“ не е в белия списък.',
@@ -1771,7 +1797,7 @@ $1',
 'filehist-filesize'         => 'Размер на файла',
 'filehist-comment'          => 'Коментар',
 'filehist-missing'          => 'Липсващ файл',
-'imagelinks'                => 'Препратки към файла',
+'imagelinks'                => 'Използване на файла',
 'linkstoimage'              => '{{PLURAL:$1|Следната страница сочи|Следните $1 страници сочат}} към файла:',
 'linkstoimage-more'         => 'Към този файл {{PLURAL:$1|препраща|препращат}} повече от $1 {{PLURAL:$1|страница|страници}}.
 Списъкът по-долу показва само {{PLURAL:$1|първата страница, която препраща|първите $1 страници, които препращат}} към файла.
@@ -1802,27 +1828,28 @@ $1',
 'filerevert-badversion'     => 'Не съществува предишна локална версия на файла със зададения времеви отпечатък.',
 
 # File deletion
-'filedelete'                  => 'Изтриване на $1',
-'filedelete-legend'           => 'Изтриване на файл',
-'filedelete-intro'            => "На път сте да изтриете '''[[Media:$1|$1]]''' заедно с цялата му редакционна история.",
-'filedelete-intro-old'        => "Изтривате версията на '''[[Media:$1|$1]]''' към [$4 $3, $2].",
-'filedelete-comment'          => 'Причина:',
-'filedelete-submit'           => 'Изтриване',
-'filedelete-success'          => "Файлът '''$1''' беше изтрит.",
-'filedelete-success-old'      => "Версията на '''[[Media:$1|$1]]''' към $3, $2 е била изтрита.",
-'filedelete-nofile'           => "Файлът '''$1''' не съществува.",
-'filedelete-nofile-old'       => "Не съществува архивна версия на '''$1''' с указаните параметри.",
-'filedelete-otherreason'      => 'Друга/допълнителна причина:',
-'filedelete-reason-otherlist' => 'Друга причина',
-'filedelete-reason-dropdown'  => '*Общи причини за изтриване
+'filedelete'                   => 'Изтриване на $1',
+'filedelete-legend'            => 'Изтриване на файл',
+'filedelete-intro'             => "На път сте да изтриете '''[[Media:$1|$1]]''' заедно с цялата му редакционна история.",
+'filedelete-intro-old'         => "Изтривате версията на '''[[Media:$1|$1]]''' към [$4 $3, $2].",
+'filedelete-comment'           => 'Причина:',
+'filedelete-submit'            => 'Изтриване',
+'filedelete-success'           => "Файлът '''$1''' беше изтрит.",
+'filedelete-success-old'       => "Версията на '''[[Media:$1|$1]]''' към $3, $2 е била изтрита.",
+'filedelete-nofile'            => "Файлът '''$1''' не съществува.",
+'filedelete-nofile-old'        => "Не съществува архивна версия на '''$1''' с указаните параметри.",
+'filedelete-otherreason'       => 'Друга/допълнителна причина:',
+'filedelete-reason-otherlist'  => 'Друга причина',
+'filedelete-reason-dropdown'   => '*Общи причини за изтриване
 ** Нарушение на авторските права
 ** Файлът се повтаря',
-'filedelete-edit-reasonlist'  => 'Редактиране на причините за изтриване',
-'filedelete-maintenance'      => 'Поради поддръжка на сайта, изтриването и възстановяването на файлове е временно ограничено.',
+'filedelete-edit-reasonlist'   => 'Редактиране на причините за изтриване',
+'filedelete-maintenance'       => 'Поради поддръжка на сайта, изтриването и възстановяването на файлове е временно ограничено.',
+'filedelete-maintenance-title' => 'Файлът не може да бъде изтрит',
 
 # MIME search
 'mimesearch'         => 'MIME-търсене',
-'mimesearch-summary' => 'На тази страница можете да филтрирате файловете по техния MIME-тип. Заявката трябва да се състои от медиен тип и подтип, разделени с наклонена черта (слеш), напр. <tt>image/jpeg</tt>.',
+'mimesearch-summary' => 'На тази страница можете да филтрирате файловете по техния MIME-тип. Заявката трябва да се състои от медиен тип и подтип, разделени с наклонена черта (слеш), напр. <code>image/jpeg</code>.',
 'mimetype'           => 'MIME-тип:',
 'download'           => 'сваляне',
 
@@ -1868,7 +1895,7 @@ $1',
 
 'disambiguations'      => 'Страници, сочещи към пояснителни страници',
 'disambiguationspage'  => 'Template:Пояснение',
-'disambiguations-text' => "Следните страници сочат към '''пояснителна страница''', вместо към истинската тематична страница.<br />Една страница се смята за пояснителна, ако ползва шаблон, към който се препраща от [[MediaWiki:Disambiguationspage]]",
+'disambiguations-text' => "Следните страници сочат към '''пояснителна страница''', вместо към истинската тематична страница.<br />Една страница се смята за пояснителна, ако ползва шаблон, към който се препраща от [[MediaWiki:Disambiguationspage]].",
 
 'doubleredirects'                   => 'Двойни пренасочвания',
 'doubleredirectstext'               => 'Тази страница съдържа списък със страници, които пренасочват към друга пренасочваща страница.
@@ -1913,6 +1940,7 @@ $1',
 'wantedpages'             => 'Желани страници',
 'wantedpages-badtitle'    => 'Невалидно заглавие в резултатното множество: $1',
 'wantedfiles'             => 'Желани файлове',
+'wantedfiletext-nocat'    => 'Следните файлове се използват, но не съществуват. Възможно е да са включени файлове от външни хранилища, въпреки че съществуват. Всички такива случаи на възможна фалшива тревога ще бъдат показвани <del>зачеркнати</del>.',
 'wantedtemplates'         => 'Желани шаблони',
 'mostlinked'              => 'Най-препращани страници',
 'mostlinkedcategories'    => 'Най-препращани категории',
@@ -1921,6 +1949,7 @@ $1',
 'mostimages'              => 'Най-препращани картинки',
 'mostrevisions'           => 'Страници с най-много версии',
 'prefixindex'             => 'Всички страници с представка',
+'prefixindex-namespace'   => 'Всички страници с представка (именно пространство $1)',
 'shortpages'              => 'Кратки страници',
 'longpages'               => 'Дълги страници',
 'deadendpages'            => 'Задънени страници',
@@ -1937,7 +1966,7 @@ $1',
 'listusers-editsonly'     => 'Показване само на потребители с редакции',
 'listusers-creationsort'  => 'Сортиране по дата на създаване',
 'usereditcount'           => '$1 {{PLURAL:$1|редакция|редакции}}',
-'usercreated'             => 'Създаден на $1 в $2',
+'usercreated'             => '{{GENDER:$3|Създаден}} на $1 в $2',
 'newpages'                => 'Нови страници',
 'newpages-username'       => 'Потребител:',
 'ancientpages'            => 'Стари страници',
@@ -1963,8 +1992,8 @@ $1',
 'booksources-invalid-isbn'  => 'Предоставеният ISBN изглежда е невалиден; проверете за грешки и копирайте от оригиналния източник.',
 
 # Special:Log
-'specialloguserlabel'  => 'Потребител:',
-'speciallogtitlelabel' => 'Заглавие:',
+'specialloguserlabel'  => 'Изпълнител:',
+'speciallogtitlelabel' => 'Цел (заглавие или потребител):',
 'log'                  => 'Дневници',
 'all-logs-page'        => 'Всички публични дневници',
 'alllogstext'          => 'Смесено показване на записи от всички налични дневници в {{SITENAME}}.
@@ -2008,7 +2037,7 @@ $1',
 'linksearch-pat'   => 'Търсене по:',
 'linksearch-ns'    => 'Именно пространство:',
 'linksearch-ok'    => 'Търсене',
-'linksearch-text'  => 'Възможна е употребата на заместващи знаци като: „*.wikipedia.org“.<br />Поддържани протоколи: <tt>$1</tt>',
+'linksearch-text'  => 'Възможна е употребата на заместващи знаци като: „*.wikipedia.org“.<br />Поддържани протоколи: <code>$1</code>',
 'linksearch-line'  => '$1 с препратка от $2',
 'linksearch-error' => 'Заместващите знаци могат да стоят само в началото на името на хоста.',
 
@@ -2021,19 +2050,15 @@ $1',
 # Special:ActiveUsers
 'activeusers'            => 'Списък на активните потребители',
 'activeusers-intro'      => 'Това е списък на потребителите, които са демонстрирали някаква активност през {{PLURAL:$1|последния|последните}} $1 {{PLURAL:$1|ден|дни}}.',
-'activeusers-count'      => '$1 {{PLURAL:$1|редакция|редакции}} за {{PLURAL:$3|последния ден|последните $3 дни}}',
+'activeusers-count'      => '$1 {{PLURAL:$1|действие|действия}} за {{PLURAL:$3|последния ден|последните $3 дни}}',
 'activeusers-from'       => 'Показване на потребителите, започвайки от:',
 'activeusers-hidebots'   => 'Скриване на ботовете',
 'activeusers-hidesysops' => 'Скриване на администраторите',
 'activeusers-noresult'   => 'Няма намерени потребители.',
 
 # Special:Log/newusers
-'newuserlogpage'              => 'Дневник на регистрациите',
-'newuserlogpagetext'          => 'В този дневник се записват регистрациите на потребители.',
-'newuserlog-byemail'          => 'паролата е изпратена по е-поща',
-'newuserlog-create-entry'     => 'Нов потребител',
-'newuserlog-create2-entry'    => 'създаде новата сметка $1',
-'newuserlog-autocreate-entry' => 'Автоматично създадена сметка',
+'newuserlogpage'     => 'Дневник на регистрациите',
+'newuserlogpagetext' => 'В този дневник се записват регистрациите на потребители.',
 
 # Special:ListGroupRights
 'listgrouprights'                      => 'Права по потребителски групи',
@@ -2053,15 +2078,15 @@ $1',
 'listgrouprights-addgroup-self-all'    => 'Може да добавя всички групи към своята сметка',
 'listgrouprights-removegroup-self-all' => 'Може да премахва всички групи от собствената сметка',
 
-# E-mail user
+# Email user
 'mailnologin'          => 'Няма електронна поща',
 'mailnologintext'      => 'Необходимо е да [[Special:UserLogin|влезете]] и да посочите валидна електронна поща в [[Special:Preferences|настройките]] си, за да може да пращате писма на други потребители.',
 'emailuser'            => 'Писмо до потребителя',
 'emailpage'            => 'Пращане писмо на потребител',
-'emailpagetext'        => 'Можете да използвате формуляра по-долу, за да изпратите електронно писмо на този потребител.
-Адресът, който се въвели в [[Special:Preferences|настройките си]], ще се появи в полето „От“ на писмото, така че получателят ще е в състояние да ви отговори.',
+'emailpagetext'        => 'Можете да използвате формуляра по-долу, за да изпратите електронно писмо на {{GENDER:$1|този потребител}}.
+Адресът, който се въвели в [[Special:Preferences|настройките си]], ще се появи в полето „От“ на писмото, така че получателят ще е в състояние да ви отговори директно.',
 'usermailererror'      => 'Пощенският обект даде грешка:',
-'defemailsubject'      => 'Писмо от {{SITENAME}}',
+'defemailsubject'      => 'Писмо от потребител $1 в {{SITENAME}}',
 'usermaildisabled'     => 'Потребителят не е разрешил да получава електронна поща',
 'usermaildisabledtext' => 'Не можете да изпращате електронна поща на други потребители от това уики',
 'noemailtitle'         => 'Няма електронна поща',
@@ -2089,8 +2114,8 @@ $1',
 'usermessage-editor'  => 'Системни съобщения',
 
 # Watchlist
-'watchlist'            => 'Моят списък за наблюдение',
-'mywatchlist'          => 'Моят списък за наблюдение',
+'watchlist'            => 'Списък за наблюдение',
+'mywatchlist'          => 'Списък за наблюдение',
 'watchlistfor2'        => 'За $1 $2',
 'nowatchlist'          => 'Списъкът ви за наблюдение е празен.',
 'watchlistanontext'    => 'За преглеждане и редактиране на списъка за наблюдение се изисква $1 в системата.',
@@ -2179,8 +2204,6 @@ $UNWATCHURL
 'actioncomplete'         => 'Действието беше изпълнено',
 'actionfailed'           => 'Действието не сполучи',
 'deletedtext'            => 'Страницата „$1“ беше изтрита. Вижте $2 за запис на последните изтривания.',
-'deletedarticle'         => 'изтри „[[$1]]“',
-'suppressedarticle'      => 'премахна „[[$1]]“',
 'dellogpage'             => 'Дневник на изтриванията',
 'dellogpagetext'         => 'Списък на последните изтривания.',
 'deletionlog'            => 'дневник на изтриванията',
@@ -2223,7 +2246,10 @@ $UNWATCHURL
 'unprotectedarticle'          => 'свали защитата на „[[$1]]“',
 'movedarticleprotection'      => 'преместване на настройките за защита от „[[$2]]“ на „[[$1]]“',
 'protect-title'               => 'Смяна на нивото на защита на "$1"',
+'protect-title-notallowed'    => 'Преглеждане нивото на защита за „$1“',
 'prot_1movedto2'              => '„[[$1]]“ преместена като „[[$2]]“',
+'protect-badnamespace-title'  => 'Незащитимо именно пространство',
+'protect-badnamespace-text'   => 'Страниците в това именно пространство не могат да бъдат защитени.',
 'protect-legend'              => 'Потвърждение на защитата',
 'protectcomment'              => 'Причина:',
 'protectexpiry'               => 'Изтича на:',
@@ -2236,11 +2262,12 @@ $UNWATCHURL
 'protect-locked-access'       => "Нямате правото да променяте нивата на защита на страниците. Ето текущите настройки за страницата „'''$1'''“:",
 'protect-cascadeon'           => 'Тази страница е защитена против редактиране, защото е включена в {{PLURAL:$1|следната страница, която от своя страна има|следните страници, които от своя страна имат}} каскадна защита. Можете да промените нивото на защита на страницата, но това няма да повлияе върху каскадната защита.',
 'protect-default'             => 'Позволяване за всички потребители',
-'protect-fallback'            => 'Необходими са права на „$1“',
-'protect-level-autoconfirmed' => 'Блокиране на нови и нерегистрирани потребители',
-'protect-level-sysop'         => 'Само за администратори',
+'protect-fallback'            => 'Позволяване само за потребители с права на „$1“',
+'protect-level-autoconfirmed' => 'Позволено само за автоматично одобрени потребители',
+'protect-level-sysop'         => 'Позволено само за администратори',
 'protect-summary-cascade'     => 'каскадно',
 'protect-expiring'            => 'изтича на $1 (UTC)',
+'protect-expiring-local'      => 'срок на изтичане $1',
 'protect-expiry-indefinite'   => 'безсрочно',
 'protect-cascade'             => 'Каскадна защита — защита на всички страници, включени в настоящата страница.',
 'protect-cantedit'            => 'Не можете да промените нивото на защита на тази страницата, защото нямате права да я редактирате.',
@@ -2296,7 +2323,6 @@ $UNWATCHURL
 'undeletereset'                => 'Изчистване',
 'undeleteinvert'               => 'Обръщане на избора',
 'undeletecomment'              => 'Причина:',
-'undeletedarticle'             => 'възстанови „[[$1]]“',
 'undeletedrevisions'           => '{{PLURAL:$1|Една версия беше възстановена|$1 версии бяха възстановени}}',
 'undeletedrevisions-files'     => '{{PLURAL:$1|Една версия|$1 версии}} и {{PLURAL:$1|един файл|$2 файла}} бяха възстановени',
 'undeletedfiles'               => '{{PLURAL:$1|Един файл беше възстановен|$1 файла бяха възстановени}}',
@@ -2305,6 +2331,7 @@ $UNWATCHURL
 
 Можете да видите последните изтрити и възстановени страници в [[Special:Log/delete|дневника на изтриванията]].",
 'undelete-header'              => 'Прегледайте [[Special:Log/delete|дневника на изтриванията]] за текущо изтритите страници.',
+'undelete-search-title'        => 'Търсене на изтрити страници',
 'undelete-search-box'          => 'Търсене на изтрити страници',
 'undelete-search-prefix'       => 'Показване на страници, започващи със:',
 'undelete-search-submit'       => 'Търсене',
@@ -2313,6 +2340,7 @@ $UNWATCHURL
 'undelete-bad-store-key'       => 'Не е възможно възстановяването на файловата версия с времеви отпечатък $1: файлът е липсвал преди изтриването.',
 'undelete-cleanup-error'       => 'Грешка при изтриване на неизползвания архивен файл „$1“.',
 'undelete-missing-filearchive' => 'Не е възможно възстановяването на файла с ID $1, защото не присъства в базата от данни. Вероятно вече е възстановен.',
+'undelete-error'               => 'Грешка при възстановяване на страницата',
 'undelete-error-short'         => 'Грешка при възстановяването на изтрития файл: $1',
 'undelete-error-long'          => 'Възникнаха грешки при възстановяването на изтрития файл:
 
@@ -2331,7 +2359,7 @@ $1',
 # Contributions
 'contributions'       => 'Приноси',
 'contributions-title' => 'Потребителски приноси за $1',
-'mycontris'           => 'Моите приноси',
+'mycontris'           => 'Приноси',
 'contribsub2'         => 'За $1 ($2)',
 'nocontribs'          => 'Не са намерени промени, отговарящи на критерия.',
 'uctop'               => ' (последна)',
@@ -2372,7 +2400,7 @@ $1',
 'whatlinkshere-hideredirs' => '$1 на пренасочващи страници',
 'whatlinkshere-hidetrans'  => '$1 на включени страници',
 'whatlinkshere-hidelinks'  => '$1 на препратки',
-'whatlinkshere-hideimages' => '$1 препратки към файла',
+'whatlinkshere-hideimages' => '$1 на препратки към файла',
 'whatlinkshere-filters'    => 'Филтри',
 
 # Block/unblock
@@ -2416,7 +2444,7 @@ $1',
 'badipaddress'                    => 'Невалиден IP-адрес',
 'blockipsuccesssub'               => 'Блокирането беше успешно',
 'blockipsuccesstext'              => 'Потребител [[Special:Contributions/$1|$1]] беше блокиран(а).<br />
-Можете да прегледате пълния [[Special:IPBlockList|списък на блокираните потребители]].',
+Можете да прегледате пълния [[Special:BlockList|списък на блокираните потребители]].',
 'ipb-blockingself'                => 'На път сте да блокирате себе си! Наистина ли желаете да извършите това действие?',
 'ipb-confirmhideuser'             => 'На път сте да блокирате потребител, който е "скрит потребител". Това действие ще заличи потребителското име от всички списъци и дневници. Наистина ли желаете да направите това?',
 'ipb-edit-dropdown'               => 'Причини за блокиране',
@@ -2436,6 +2464,7 @@ $1',
 'blocklist-userblocks'            => 'Скриване на блокирани потребителски сметки',
 'blocklist-tempblocks'            => 'Скриване на срочните блокирания',
 'blocklist-addressblocks'         => 'Скриване на отделни блокирани IP адреси',
+'blocklist-rangeblocks'           => 'Скриване на блокиранията по IP диапазон',
 'blocklist-target'                => 'Цел',
 'blocklist-expiry'                => 'Срок на изтичане:',
 'blocklist-by'                    => 'Блокиращ администратор',
@@ -2465,7 +2494,7 @@ $1',
 За справка по-долу е дадено извлечение от дневника на прикриванията:',
 'blocklogentry'                   => 'блокира [[$1]] със срок на изтичане $2 $3',
 'reblock-logentry'                => 'промени параметрите на блокирането на [[$1]] със срок на изтричане $2 $3',
-'blocklogtext'                    => 'Тази страница съдържа дневник на блокиранията и отблокиранията, извършени от този потребител.
+'blocklogtext'                    => 'Тази страница съдържа дневник на блокиранията и отблокиранията.
 Автоматично блокираните IP-адреси не са показани.
 Вижте [[Special:BlockList|списъка на блокираните IP-адреси]] за текущото състояние на блокиранията.',
 'unblocklogentry'                 => 'отблокира $1',
@@ -2524,11 +2553,11 @@ $1',
 # Move page
 'move-page'                    => 'Преместване на $1',
 'move-page-legend'             => 'Преместване на страница',
-'movepagetext'                 => "Посредством долния формуляр можете да преименувате страница, премествайки цялата й история на новото име. Старото заглавие ще се превърне в пренасочваща страница.
-Препратките към старата страница няма да бъдат променени; затова проверете за двойни или невалидни пренасочвания.
-Вие сами би трябвало да се убедите в това, дали препратките продължават да сочат там, където се предполага.
+'movepagetext'                 => "Използването на формуляра по-долу ще преименува страница, като се премести цялата ѝ редакционна история история на новото име. Старото заглавие ще се превърне в пренасочваща страница.
+Може да се избере възможност пренасочванията към оригиналното заглавие да бъдат обновени автоматично. В случай, че тази възможност не е избрана, препоръчително е да се провери за [[Special:DoubleRedirects|двойни]] или [[Special:BrokenRedirects|невалидни пренасочвания]].
+Вие сами би трябвало да се убедите в това дали препратките продължават да сочат там, където се предполага.
 
-Страницата '''няма''' да бъде преместена, ако вече съществува страница с новото име, освен ако е празна или пренасочване и няма редакционна история.
+Обърнете внимание, че страницата '''няма''' да бъде преместена, ако вече съществува страница с новото име, освен ако е празна или пренасочване и няма редакционна история.
 
 '''ВНИМАНИЕ!'''
 Това може да е голяма и неочаквана промяна за известна страница. Уверете се, че разбирате последствията, преди да продължите.",
@@ -2575,9 +2604,6 @@ $1',
 'movepage-page-moved'          => 'Страницата $1 беше преместена като $2.',
 'movepage-page-unmoved'        => 'Страницата $1 не може да бъде преместена като $2.',
 'movepage-max-pages'           => 'Преместен беше максималният брой от $1 {{PLURAL:$1|страница|страници}} и повече страници няма да бъдат премествани автоматично.',
-'1movedto2'                    => 'премести „[[$1]]“ като „[[$2]]“',
-'1movedto2_redir'              => 'премести „[[$1]]“ като „[[$2]]“ (върху пренасочване)',
-'move-redirect-suppressed'     => 'прикрита пренасочваща страница',
 'movelogpage'                  => 'Дневник на преместванията',
 'movelogpagetext'              => 'По-долу е показан списък на преместванията.',
 'movesubpage'                  => '{{PLURAL:$1|Подстраница|Подстраници}}',
@@ -2590,7 +2616,7 @@ $1',
 
 Целевата страница „[[:$1]]“ вече съществува. Искате ли да я изтриете, за да освободите място за преместването?',
 'delete_and_move_confirm'      => 'Да, искам да изтрия тази страница.',
-'delete_and_move_reason'       => 'Изтрита, за да се освободи място за преместване',
+'delete_and_move_reason'       => 'Изтрита, за да се освободи място за преместване от „[[$1]]“',
 'selfmove'                     => 'Страницата не може да бъде преместена, тъй като целевото име съвпада с първоначалното й заглавие.',
 'immobile-source-namespace'    => 'Не могат да се местят страници в именно пространство „$1“',
 'immobile-target-namespace'    => 'Не е възможно преместването на страници в именното пространство „$1“',
@@ -2619,9 +2645,11 @@ $1',
 За да изнесете няколко страници, въвеждайте всяко ново заглавие на '''нов ред'''. След това изберете дали искате само текущата версия (заедно с информация за последната редакция) или всички версии (заедно с текущата) на страницата.
 
 Ако желаете само текущата версия, бихте могли да използвате препратка от вида [[{{#Special:Export}}/{{MediaWiki:Mainpage}}]] за страницата [[{{MediaWiki:Mainpage}}]].",
+'exportall'         => 'Изнасяне на всички страници',
 'exportcuronly'     => 'Включване само на текущата версия, а не на цялата история',
 'exportnohistory'   => "----
 '''Важно:''' Изнасянето на пълната история на страниците е забранено, защото много забавя уикито.",
+'exportlistauthors' => 'Добавяне на пълен списък на редакторите за всяка страница',
 'export-submit'     => 'Изнасяне',
 'export-addcattext' => 'Добавяне на страници от категория:',
 'export-addcat'     => 'Добавяне',
@@ -2654,6 +2682,7 @@ $1',
 'thumbnail_error'          => 'Грешка при създаване на миникартинка: $1',
 'djvu_page_error'          => 'Номерът на DjVu-страницата е извън обхвата',
 'djvu_no_xml'              => 'Не е възможно вземането на XML за DjVu-файла',
+'thumbnail-temp-create'    => 'Временния файл с миникартинка не може да бъде създаден.',
 'thumbnail_invalid_params' => 'Параметрите за миникартинка са невалидни',
 'thumbnail_dest_directory' => 'Целевата директория не може да бъде създадена',
 'thumbnail_image-type'     => 'Типът картинка не се поддържа',
@@ -2697,6 +2726,11 @@ $1',
 'import-upload'              => 'Качване на XML данни',
 'import-token-mismatch'      => 'Загубени са данните за сесията. Опитайте отново.',
 'import-invalid-interwiki'   => 'Не може да бъде извършено внасяне от посоченото уики.',
+'import-error-edit'          => 'Страницата „$1“ не беше внесена, тъй като нямате права да я редактирате.',
+'import-error-create'        => 'Страницата „$1“ не беше внесена, тъй като нямате права да я създадете.',
+'import-error-interwiki'     => 'Страницата „$1“ не беше внесена, тъй като името ѝ е запазено за външно свързване (междууики).',
+'import-error-special'       => 'Страницата „$1“ не беше внесена, тъй като принадлежи към специално именно пространство, което не позволява страници.',
+'import-error-invalid'       => 'Страницата „$1“ не беше внесена, тъй като името ѝ е невалидно.',
 
 # Import log
 'importlogpage'                    => 'Дневник на внасянията',
@@ -2706,73 +2740,80 @@ $1',
 'import-logentry-interwiki'        => '$1 беше внесена от друго уики',
 'import-logentry-interwiki-detail' => '{{PLURAL:$1|една версия|$1 версии}} на $2 бяха внесени',
 
+# JavaScriptTest
+'javascripttest-disabled'             => 'Тази функционалност не е активирана в това уики.',
+'javascripttest-pagetext-noframework' => 'Тази страница е запазена за изпълнение на Джаваскрипт тестове.',
+'javascripttest-pagetext-skins'       => 'Избор на облик за тестванията:',
+'javascripttest-qunit-intro'          => 'Вижте [$1 тестовата документация] на mediawiki.org.',
+
 # Tooltip help for the actions
-'tooltip-pt-userpage'             => 'Вашата потребителска страница',
-'tooltip-pt-anonuserpage'         => 'Потребителската страница за адреса, от който редактирате',
-'tooltip-pt-mytalk'               => 'Вашата дискусионна страница',
-'tooltip-pt-anontalk'             => 'Дискусия относно редакциите от този адрес',
-'tooltip-pt-preferences'          => 'Вашите настройки',
-'tooltip-pt-watchlist'            => 'Списък на страници, чиито промени сте избрали да наблюдавате',
-'tooltip-pt-mycontris'            => 'Списък на вашите приноси',
-'tooltip-pt-login'                => 'Насърчаваме ви да влезете, въпреки че не е задължително.',
-'tooltip-pt-anonlogin'            => 'Насърчаваме ви да влезете, въпреки че не е задължително.',
-'tooltip-pt-logout'               => 'Излизане от {{SITENAME}}',
-'tooltip-ca-talk'                 => 'Беседа относно страницата',
-'tooltip-ca-edit'                 => 'Можете да редактирате страницата. Използвайте бутона за предварителен преглед преди да съхраните.',
-'tooltip-ca-addsection'           => 'Започване на нов раздел',
-'tooltip-ca-viewsource'           => 'Страницата е защитена. Можете да разгледате изходния й код.',
-'tooltip-ca-history'              => 'Предишни версии на страницата',
-'tooltip-ca-protect'              => 'Защитаване на страницата',
-'tooltip-ca-unprotect'            => 'Промяна на защитата за тази страница',
-'tooltip-ca-delete'               => 'Изтриване на страницата',
-'tooltip-ca-undelete'             => 'Възстановяване на изтрити редакции на страницата',
-'tooltip-ca-move'                 => 'Преместване на страницата',
-'tooltip-ca-watch'                => 'Добавяне на страницата към списъка ви за наблюдение',
-'tooltip-ca-unwatch'              => 'Премахване на страницата от списъка ви за наблюдение',
-'tooltip-search'                  => 'Претърсване на {{SITENAME}}',
-'tooltip-search-go'               => 'Отиване на страницата, ако тя съществува с точно това име',
-'tooltip-search-fulltext'         => 'Търсене в страниците за този текст',
-'tooltip-p-logo'                  => 'Началната страница',
-'tooltip-n-mainpage'              => 'Началната страница',
-'tooltip-n-mainpage-description'  => 'Посещаване на началната страница',
-'tooltip-n-portal'                => 'Информация за проекта — какво, къде, как',
-'tooltip-n-currentevents'         => 'Информация за текущите събития по света',
-'tooltip-n-recentchanges'         => 'Списък на последните промени в {{SITENAME}}',
-'tooltip-n-randompage'            => 'Зареждане на случайна страница',
-'tooltip-n-help'                  => 'Помощната страница',
-'tooltip-t-whatlinkshere'         => 'Списък на всички страници, сочещи насам',
-'tooltip-t-recentchangeslinked'   => 'Последните промени на страници, сочени от тази страница',
-'tooltip-feed-rss'                => 'RSS feed за страницата',
-'tooltip-feed-atom'               => 'Atom feed за страницата',
-'tooltip-t-contributions'         => 'Показване на приносите на потребителя',
-'tooltip-t-emailuser'             => 'Изпращане на писмо до потребителя',
-'tooltip-t-upload'                => 'Качване на файлове',
-'tooltip-t-specialpages'          => 'Списък на всички специални страници',
-'tooltip-t-print'                 => 'Версия за печат на страницата',
-'tooltip-t-permalink'             => 'Постоянна препратка към тази версия на страницата',
-'tooltip-ca-nstab-main'           => 'Преглед на основната страница',
-'tooltip-ca-nstab-user'           => 'Преглед на потребителската страница',
-'tooltip-ca-nstab-media'          => 'Преглед на медийната страница',
-'tooltip-ca-nstab-special'        => 'Това е специална страница, която не може да бъде редактирана.',
-'tooltip-ca-nstab-project'        => 'Преглед на проектната страница',
-'tooltip-ca-nstab-image'          => 'Преглед на страницата на файла',
-'tooltip-ca-nstab-mediawiki'      => 'Преглед на системното съобщение',
-'tooltip-ca-nstab-template'       => 'Преглед на шаблона',
-'tooltip-ca-nstab-help'           => 'Преглед на помощната страница',
-'tooltip-ca-nstab-category'       => 'Преглед на категорията',
-'tooltip-minoredit'               => 'Отбелязване на промяната като малка',
-'tooltip-save'                    => 'Съхраняване на промените',
-'tooltip-preview'                 => 'Предварителен преглед, използвайте го преди да съхраните!',
-'tooltip-diff'                    => 'Показване на направените от вас промени по текста',
-'tooltip-compareselectedversions' => 'Показване на разликите между двете избрани версии на страницата',
-'tooltip-watch'                   => 'Добавяне на страницата към списъка ви за наблюдение',
-'tooltip-recreate'                => 'Възстановяване на страницата независимо, че е била изтрита',
-'tooltip-upload'                  => 'Започване на качването',
-'tooltip-rollback'                => 'Чрез „отмяна“ ще премахнете наведнъж всички промени, нанесени от последния редактор',
-'tooltip-undo'                    => 'Препратката „връщане“ премахва тази редакция и отваря страницата за редактиране в режим на предварителен преглед.
+'tooltip-pt-userpage'              => 'Вашата потребителска страница',
+'tooltip-pt-anonuserpage'          => 'Потребителската страница за адреса, от който редактирате',
+'tooltip-pt-mytalk'                => 'Вашата дискусионна страница',
+'tooltip-pt-anontalk'              => 'Дискусия относно редакциите от този адрес',
+'tooltip-pt-preferences'           => 'Вашите настройки',
+'tooltip-pt-watchlist'             => 'Списък на страници, чиито промени сте избрали да наблюдавате',
+'tooltip-pt-mycontris'             => 'Списък на вашите приноси',
+'tooltip-pt-login'                 => 'Насърчаваме ви да влезете, въпреки че не е задължително.',
+'tooltip-pt-anonlogin'             => 'Насърчаваме ви да влезете, въпреки че не е задължително.',
+'tooltip-pt-logout'                => 'Излизане от {{SITENAME}}',
+'tooltip-ca-talk'                  => 'Беседа относно страницата',
+'tooltip-ca-edit'                  => 'Можете да редактирате страницата. Използвайте бутона за предварителен преглед преди да съхраните.',
+'tooltip-ca-addsection'            => 'Започване на нов раздел',
+'tooltip-ca-viewsource'            => 'Страницата е защитена. Можете да разгледате изходния й код.',
+'tooltip-ca-history'               => 'Предишни версии на страницата',
+'tooltip-ca-protect'               => 'Защитаване на страницата',
+'tooltip-ca-unprotect'             => 'Промяна на защитата за тази страница',
+'tooltip-ca-delete'                => 'Изтриване на страницата',
+'tooltip-ca-undelete'              => 'Възстановяване на изтрити редакции на страницата',
+'tooltip-ca-move'                  => 'Преместване на страницата',
+'tooltip-ca-watch'                 => 'Добавяне на страницата към списъка ви за наблюдение',
+'tooltip-ca-unwatch'               => 'Премахване на страницата от списъка ви за наблюдение',
+'tooltip-search'                   => 'Претърсване на {{SITENAME}}',
+'tooltip-search-go'                => 'Отиване на страницата, ако тя съществува с точно това име',
+'tooltip-search-fulltext'          => 'Търсене в страниците за този текст',
+'tooltip-p-logo'                   => 'Началната страница',
+'tooltip-n-mainpage'               => 'Началната страница',
+'tooltip-n-mainpage-description'   => 'Посещаване на началната страница',
+'tooltip-n-portal'                 => 'Информация за проекта — какво, къде, как',
+'tooltip-n-currentevents'          => 'Информация за текущите събития по света',
+'tooltip-n-recentchanges'          => 'Списък на последните промени в {{SITENAME}}',
+'tooltip-n-randompage'             => 'Зареждане на случайна страница',
+'tooltip-n-help'                   => 'Помощната страница',
+'tooltip-t-whatlinkshere'          => 'Списък на всички страници, сочещи насам',
+'tooltip-t-recentchangeslinked'    => 'Последните промени на страници, сочени от тази страница',
+'tooltip-feed-rss'                 => 'RSS feed за страницата',
+'tooltip-feed-atom'                => 'Atom feed за страницата',
+'tooltip-t-contributions'          => 'Показване на приносите на потребителя',
+'tooltip-t-emailuser'              => 'Изпращане на писмо до потребителя',
+'tooltip-t-upload'                 => 'Качване на файлове',
+'tooltip-t-specialpages'           => 'Списък на всички специални страници',
+'tooltip-t-print'                  => 'Версия за печат на страницата',
+'tooltip-t-permalink'              => 'Постоянна препратка към тази версия на страницата',
+'tooltip-ca-nstab-main'            => 'Преглед на основната страница',
+'tooltip-ca-nstab-user'            => 'Преглед на потребителската страница',
+'tooltip-ca-nstab-media'           => 'Преглед на медийната страница',
+'tooltip-ca-nstab-special'         => 'Това е специална страница, която не може да бъде редактирана.',
+'tooltip-ca-nstab-project'         => 'Преглед на проектната страница',
+'tooltip-ca-nstab-image'           => 'Преглед на страницата на файла',
+'tooltip-ca-nstab-mediawiki'       => 'Преглед на системното съобщение',
+'tooltip-ca-nstab-template'        => 'Преглед на шаблона',
+'tooltip-ca-nstab-help'            => 'Преглед на помощната страница',
+'tooltip-ca-nstab-category'        => 'Преглед на категорията',
+'tooltip-minoredit'                => 'Отбелязване на промяната като малка',
+'tooltip-save'                     => 'Съхраняване на промените',
+'tooltip-preview'                  => 'Предварителен преглед, използвайте го преди да съхраните!',
+'tooltip-diff'                     => 'Показване на направените от вас промени по текста',
+'tooltip-compareselectedversions'  => 'Показване на разликите между двете избрани версии на страницата',
+'tooltip-watch'                    => 'Добавяне на страницата към списъка ви за наблюдение',
+'tooltip-watchlistedit-raw-submit' => 'Обновяване на списъка за наблюдение',
+'tooltip-recreate'                 => 'Възстановяване на страницата независимо, че е била изтрита',
+'tooltip-upload'                   => 'Започване на качването',
+'tooltip-rollback'                 => 'Чрез „отмяна“ ще премахнете наведнъж всички промени, нанесени от последния редактор',
+'tooltip-undo'                     => 'Препратката „връщане“ премахва тази редакция и отваря страницата за редактиране в режим на предварителен преглед.
 В полето за резюме може да се впише причина за връщането.',
-'tooltip-preferences-save'        => 'Съхраняване на предпочитанията',
-'tooltip-summary'                 => 'Въведете кратко резюме',
+'tooltip-preferences-save'         => 'Съхраняване на предпочитанията',
+'tooltip-summary'                  => 'Въведете кратко резюме',
 
 # Stylesheets
 'common.css'   => '/* Чрез редактиране на този файл ще промените всички облици */',
@@ -2807,14 +2848,14 @@ $1',
 
 # Info page
 'pageinfo-title'            => 'Информация за "$1"',
-'pageinfo-header-edits'     => 'Редакции',
+'pageinfo-header-edits'     => 'История на редакциите',
 'pageinfo-header-watchlist' => 'Списък за наблюдение',
 'pageinfo-header-views'     => 'Прегледи',
 'pageinfo-subjectpage'      => 'Страница',
 'pageinfo-talkpage'         => 'Дискусионна страница',
-'pageinfo-watchers'         => 'Брой наблюдабащи',
+'pageinfo-watchers'         => 'Брой наблюдаващи страницата',
 'pageinfo-edits'            => 'Брой редакции',
-'pageinfo-authors'          => 'Брой на отделни автори',
+'pageinfo-authors'          => 'Общ брой на отделните автори',
 'pageinfo-views'            => 'Брой прегледи',
 'pageinfo-viewsperedit'     => 'Прегледи на редакция',
 
@@ -2842,9 +2883,6 @@ $1',
 # Patrol log
 'patrol-log-page'      => 'Дневник на патрула',
 'patrol-log-header'    => 'Тази страница съдържа дневник на проверените версии.',
-'patrol-log-line'      => 'отбеляза $1 от $2 като проверена $3',
-'patrol-log-auto'      => '(автоматично)',
-'patrol-log-diff'      => 'версия $1',
 'log-show-hide-patrol' => '$1 на Дневника на патрула',
 
 # Image deletion
@@ -2866,15 +2904,15 @@ $1',
 'mediawarning'           => "'''Внимание''': Възможно е файлът да съдържа злонамерен програмен код. Неговото изпълнение може да доведе до повреди в системата ви.",
 'imagemaxsize'           => "Ограничение на размерите на картинките:<br />''(само за описателните страници)''",
 'thumbsize'              => 'Размери на миникартинките:',
-'widthheightpage'        => '$1×$2, $3 {{PLURAL:$3|страница|страници}}',
+'widthheightpage'        => '$1 × $2, $3 {{PLURAL:$3|страница|страници}}',
 'file-info'              => 'големина на файла: $1, MIME-тип: $2',
 'file-info-size'         => '$1 × $2 пиксела, големина на файла: $3, MIME-тип: $4',
 'file-info-size-pages'   => '$1 × $2 пиксела, размер на файла: $3, MIME тип: $4, $5 {{PLURAL:$5|страница|страници}}',
-'file-nohires'           => '<small>Не е налична версия с по-висока разделителна способност.</small>',
+'file-nohires'           => 'Не е налична версия с по-висока разделителна способност.',
 'svg-long-desc'          => 'Файл във формат SVG, основен размер: $1 × $2 пиксела, големина на файла: $3',
 'show-big-image'         => 'Пълна разделителна способност',
-'show-big-image-preview' => '<small>Размер на този преглед: $1.</small>',
-'show-big-image-other'   => '<small>Други разделителни способности: $1.</small>',
+'show-big-image-preview' => 'Размер на този преглед: $1.',
+'show-big-image-other'   => '{{PLURAL:$2|Друга разделителна способност|Други разделителни способности}}: $1.',
 'show-big-image-size'    => '$1 × $2 пиксела',
 'file-info-gif-looped'   => 'непрекъснато повтаряне',
 'file-info-gif-frames'   => '$1 {{PLURAL:$1|кадър|кадъра}}',
@@ -2893,6 +2931,13 @@ $1',
 'ilsubmit'              => 'Търсене',
 'bydate'                => 'по дата',
 'sp-newimages-showfrom' => 'Показване на новите файлове, като се започва от $2, $1',
+
+# Video information, used by Language::formatTimePeriod() to format lengths in the above messages
+'seconds' => '{{PLURAL:$1|$1 секунда|$1 секунди}}',
+'minutes' => '{{PLURAL:$1|$1 минута|$1 минути}}',
+'hours'   => '{{PLURAL:$1|$1 час|$1 часа}}',
+'days'    => '{{PLURAL:$1|$1 ден|$1 дни}}',
+'ago'     => 'преди $1',
 
 # Bad image list
 'bad_image_list' => 'Спазва се следният формат:
@@ -3034,8 +3079,14 @@ $1',
 'exif-gpsdifferential'             => 'Диференциална корекция на GPS',
 'exif-jpegfilecomment'             => 'Kоментар на JPEG файл',
 'exif-keywords'                    => 'Ключови думи',
+'exif-worldregioncreated'          => 'Регион на света, където е направена снимката',
+'exif-countrycreated'              => 'Държава, в която е направена снимката',
+'exif-countrycodecreated'          => 'Код на държавата, където е направена снимката',
+'exif-provinceorstatecreated'      => 'Област или щат, където е направена снимката',
+'exif-citycreated'                 => 'Град, в който е направена снимката',
 'exif-objectname'                  => 'Кратко заглавие',
 'exif-specialinstructions'         => 'Специални инструкции',
+'exif-source'                      => 'Източник',
 'exif-contact'                     => 'Информация за контакти',
 'exif-languagecode'                => 'Език',
 'exif-iimversion'                  => 'IIM версия',
@@ -3047,16 +3098,18 @@ $1',
 'exif-serialnumber'                => 'Сериен номер на фотоапарата',
 'exif-cameraownername'             => 'Собственик на фотоапарата',
 'exif-label'                       => 'Етикет',
+'exif-datetimemetadata'            => 'Дата на последна модификация на метаданните',
 'exif-nickname'                    => 'Неформално име на изображението',
 'exif-rating'                      => 'Рейтинг (от 5)',
 'exif-rightscertificate'           => 'Сертификат за управление на правата',
-'exif-copyrightowner'              => 'Притежател на авторското право',
+'exif-copyrighted'                 => 'Авторскоправен статут',
+'exif-copyrightowner'              => 'Носител на авторското право',
 'exif-usageterms'                  => 'Условия за използване',
 'exif-originaldocumentid'          => 'Уникален номер на оригиналния документ',
-'exif-licenseurl'                  => 'URL адрес за лиценз за авторски права',
+'exif-licenseurl'                  => 'Адрес с информация за авторски права',
 'exif-morepermissionsurl'          => 'Алтернативна информация за лиценза',
 'exif-pngfilecomment'              => 'Kоментар на PNG файл',
-'exif-disclaimer'                  => 'Отказ от отговорност',
+'exif-disclaimer'                  => 'Уточнение',
 'exif-contentwarning'              => 'Предупреждение за съдържанието',
 'exif-giffilecomment'              => 'Kоментар на GIF файл',
 'exif-intellectualgenre'           => 'Тип елемент',
@@ -3273,7 +3326,7 @@ $1',
 'monthsall'     => 'всички',
 'limitall'      => 'всички',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'              => 'Потвърждаване на адрес за електронна поща',
 'confirmemail_noemail'      => 'Не сте посочили валиден адрес за електронна поща в [[Special:Preferences|настройки си]].',
 'confirmemail_text'         => '{{SITENAME}} изисква да потвърдите адреса си за електронна поща преди да използвате възможностите за е-поща. Натиснете долния бутон, за да ви бъде изпратено писмо, съдържащо специално генерирана препратка, чрез която ще можете да потвърдите валидността на адреса си.',
@@ -3332,13 +3385,6 @@ $5
 'scarytranscludedisabled' => '[Включването между уикита е деактивирано]',
 'scarytranscludefailed'   => '[Зареждането на шаблона за $1 не сполучи]',
 'scarytranscludetoolong'  => '[Адресът е твърде дълъг]',
-
-# Trackbacks
-'trackbackbox'      => 'Обратни следи за статията:<br />
-$1',
-'trackbackremove'   => '([$1 Изтриване])',
-'trackbacklink'     => 'Обратна следа',
-'trackbackdeleteok' => 'Обратната следа беше изтрита.',
 
 # Delete conflict
 'deletedwhileediting'      => "'''Внимание''': Страницата е била изтрита, след като сте започнали да я редактирате!",
@@ -3418,6 +3464,9 @@ $1',
 'watchlisttools-edit' => 'Преглед и редактиране на списъка за наблюдение',
 'watchlisttools-raw'  => 'Редактиране на необработения списък за наблюдение',
 
+# Signatures
+'signature' => '[[{{ns:user}}:$1|$2]] ([[{{ns:user_talk}}:$1|беседа]])',
+
 # Core parser functions
 'unknown_extension_tag' => 'Непознат етикет на разширение „$1“',
 'duplicate-defaultsort' => 'Внимание: Ключът за сортиране по подразбиране „$2“ отменя по-ранния ключ „$1“.',
@@ -3477,14 +3526,14 @@ MediaWiki се разпространява с надеждата, че ще б�
 * <span class="mw-specialpagecached">Само складирани специални страници (възможно е да са остарели).</span>',
 'specialpages-group-maintenance' => 'Доклади по поддръжката',
 'specialpages-group-other'       => 'Други специални страници',
-'specialpages-group-login'       => 'Влизане / регистриране',
+'specialpages-group-login'       => 'Влизане / създаване на сметка',
 'specialpages-group-changes'     => 'Последни промени и дневници',
 'specialpages-group-media'       => 'Доклади за файловете и качванията',
 'specialpages-group-users'       => 'Потребители и права',
 'specialpages-group-highuse'     => 'Широко използвани страници',
 'specialpages-group-pages'       => 'Списъци на страниците',
 'specialpages-group-pagetools'   => 'Инструменти за страниците',
-'specialpages-group-wiki'        => 'Уики данни и инструменти',
+'specialpages-group-wiki'        => 'Данни и инструменти',
 'specialpages-group-redirects'   => 'Пренасочващи специални страници',
 'specialpages-group-spam'        => 'Инструменти против спам',
 
@@ -3516,13 +3565,16 @@ MediaWiki се разпространява с надеждата, че ще б�
 'tags-hitcount'           => '$1 {{PLURAL:$1|промяна|промени}}',
 
 # Special:ComparePages
-'comparepages'     => 'Сравняване на страници',
-'compare-selector' => 'Сравняване версиите на страници',
-'compare-page1'    => 'Страница 1',
-'compare-page2'    => 'Страница 2',
-'compare-rev1'     => 'Версия 1',
-'compare-rev2'     => 'Версия 2',
-'compare-submit'   => 'Сравняване',
+'comparepages'                => 'Сравняване на страници',
+'compare-selector'            => 'Сравняване версиите на страници',
+'compare-page1'               => 'Страница 1',
+'compare-page2'               => 'Страница 2',
+'compare-rev1'                => 'Версия 1',
+'compare-rev2'                => 'Версия 2',
+'compare-submit'              => 'Сравняване',
+'compare-invalid-title'       => 'Посоченото заглавие е невалидно',
+'compare-title-not-exists'    => 'Посоченото заглавие не съществува.',
+'compare-revision-not-exists' => 'Посочената версия не съществува.',
 
 # Database error messages
 'dberr-header'      => 'Това уики има проблем',
@@ -3548,5 +3600,77 @@ MediaWiki се разпространява с надеждата, че ще б�
 # SQLite database support
 'sqlite-has-fts' => '$1 с поддръжка на пълнотекстово търсене',
 'sqlite-no-fts'  => '$1 без поддръжка на пълнотекстово търсене',
+
+# New logging system
+'logentry-delete-delete'              => '$1 изтри страницата $3',
+'logentry-delete-restore'             => '$1 възстанови страницата $3',
+'logentry-suppress-revision'          => '$1 тайно промени видимостта на {{PLURAL:$5|една версия|$5 версии}} на страницата $3: $4',
+'logentry-suppress-revision-legacy'   => '$1 тайно промени видимостта на версиите на страница $3',
+'revdelete-content-hid'               => 'скрито съдържание',
+'revdelete-summary-hid'               => 'скрито резюме на редакцията',
+'revdelete-uname-hid'                 => 'скрито потребителско име',
+'revdelete-restricted'                => 'добавени ограничения за администраторите',
+'revdelete-unrestricted'              => 'премахнати ограничения за администраторите',
+'logentry-move-move'                  => '$1 премести „$3“ като „$4“',
+'logentry-move-move-noredirect'       => '$1 премести „$3“ като „$4“ без пренасочване',
+'logentry-move-move_redir'            => '$1 премести страницата $3 като $4 (върху пренасочване)',
+'logentry-move-move_redir-noredirect' => '$1 премести върху пренасочване „$3“ като „$4“ без пренасочване',
+'logentry-patrol-patrol'              => '$1 отбеляза като патрулирана версия $4 на страницата „$3“',
+'logentry-patrol-patrol-auto'         => '$1 автоматично отбеляза като патрулирана версия $4 на страницата $3',
+'logentry-newusers-newusers'          => 'Потребителската сметка $1 беше създадена',
+'logentry-newusers-create'            => 'Потребителската сметка $1 беше създадена',
+'logentry-newusers-create2'           => '$1 създаде потребителска сметка $3',
+'logentry-newusers-autocreate'        => 'Сметката $1 беше създадена автоматично',
+'newuserlog-byemail'                  => 'паролата е изпратена по е-поща',
+
+# Feedback
+'feedback-subject' => 'Тема:',
+'feedback-message' => 'Съобщение:',
+'feedback-cancel'  => 'Отказване',
+'feedback-submit'  => 'Оставяне на коментар',
+'feedback-adding'  => 'Добавяне на коментар към страницата...',
+'feedback-error1'  => 'Грешка: Неразпознат резултат от API',
+'feedback-error2'  => 'Грешка: Неуспешна редакция',
+'feedback-error3'  => 'Грешка: Няма отговор от API',
+'feedback-thanks'  => 'Благодарности! Вашата обратна информация е публикувана на страницата „[$2  $1]“.',
+'feedback-close'   => 'Готово',
+
+# API errors
+'api-error-badaccess-groups'              => 'Нямате необходимите права, за да качвате файлове в това уики.',
+'api-error-badtoken'                      => 'Вътрешна грешка: неправилен маркер.',
+'api-error-copyuploaddisabled'            => 'Качването през URL е забранено на този сървър.',
+'api-error-duplicate'                     => 'На сайта вече има качени {{PLURAL:$1|[$2 друг файл]|[$2 други файла]}} с идентично съдържание.',
+'api-error-duplicate-archive'             => 'На сайта вече е имало {{PLURAL:$1|качен [$2 друг файл]|качени [$2 други файла]}} с идентично съдържание, {{PLURAL:$1|който е бил изтрит|които са били изтрити}}.',
+'api-error-duplicate-archive-popup-title' => '{{PLURAL:$1|Дублиращ се файл, който вече е бил изтрит|Дублиращи се файлове, които вече са били изтрити}}',
+'api-error-duplicate-popup-title'         => '{{PLURAL:$1|Повтарящ се файл|Повтарящи се файлове}}',
+'api-error-empty-file'                    => 'Заявеният за качване файл беше празен.',
+'api-error-emptypage'                     => 'Създаването на нови, празени страници, не е разрешено.',
+'api-error-fetchfileerror'                => 'Вътрешна грешка: Нещо се обърка при извличане на файла.',
+'api-error-file-too-large'                => 'Заявеният за качване файл беше твърде голям.',
+'api-error-filename-tooshort'             => 'Името на файла е твърде кратко.',
+'api-error-filetype-banned'               => 'Този файлов тип не е позволен за качване.',
+'api-error-filetype-missing'              => 'Липсва разширение на файла.',
+'api-error-hookaborted'                   => 'Промените, които опитахте да направите, бяха отменени от някое разширение.',
+'api-error-http'                          => 'Вътрешна грешка: Грешка при свързането със сървъра.',
+'api-error-illegal-filename'              => 'Непозволено име на файл.',
+'api-error-internal-error'                => 'Вътрешна грешка: Нещо се обърка при обработката на качването в уикито.',
+'api-error-invalid-file-key'              => 'Вътрешна грешка: Файлът не беше открит във временното хранилище.',
+'api-error-missingparam'                  => 'Вътрешна грешка: Липсващи параметри на заявката.',
+'api-error-missingresult'                 => 'Вътрешна грешка: Не може да се определи дали копирането е успешно.',
+'api-error-mustbeloggedin'                => 'Трябва да сте влезли в системата, за да можете да качвате файлове.',
+'api-error-mustbeposted'                  => 'Вътрешна грешка: Заявката изисква HTTP POST.',
+'api-error-noimageinfo'                   => 'Качването беше успешно, но сървърът не подаде никаква информация за файла.',
+'api-error-nomodule'                      => 'Вътрешна грешка: Липсва настроен модул за качвания.',
+'api-error-ok-but-empty'                  => 'Вътрешна грешка: Няма отговор от сървъра.',
+'api-error-overwrite'                     => 'Не е позволено презаписването върху съществуващ файл.',
+'api-error-stashfailed'                   => 'Вътрешна грешка: Сървърът не успя да съхрани временния файл.',
+'api-error-timeout'                       => 'Сървърът не отговори в рамките на предвиденото време.',
+'api-error-unclassified'                  => 'Възникна непозната грешка.',
+'api-error-unknown-code'                  => 'Непозната грешка: "$1"',
+'api-error-unknown-error'                 => 'Вътрешна грешка: Нещо се обърка по време на качването на файла ви.',
+'api-error-unknown-warning'               => 'Непознато предупреждение: $1',
+'api-error-unknownerror'                  => 'Неизвестна грешка: „$1“.',
+'api-error-uploaddisabled'                => 'Достъпът за качване на файлове в това уики е прекратен.',
+'api-error-verification-error'            => 'Файлът може би е повреден или има грешно разширение.',
 
 );

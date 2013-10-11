@@ -1,5 +1,5 @@
 <?php
-/** Traditional Gan script (‪贛語(繁體)‬)
+/** Traditional Gan script (贛語（繁體）‎)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Kaganer
  * @author Mark85296341
  * @author Reedy
  * @author Symane
@@ -14,7 +15,7 @@
  * @author Vipuser
  */
 
-$fallback = 'zh-hant';
+$fallback = 'zh-hant, zh-hans';
 
 $namespaceNames = array(
 	NS_TALK             => '談詑',
@@ -399,18 +400,19 @@ MySQL回到錯誤“$3: $4”。',
 'cannotdelete'         => '揀正嗰頁面或圖像“$1”刪伓正。（佢可能拕人家刪吥哩。）',
 'badtitle'             => '錯誤嗰標題',
 'badtitletext'         => '所要求嗰頁面標題伓正確，伓存在，跨語言或跨wiki連結。標題錯誤，佢可能有隻或好幾隻伓合嗰標題字符。',
-'perfcached'           => '底下係緩存資料，可能伓係最新嗰。',
-'perfcachedts'         => '底下係緩存資料，佢最晏更新嗰時間係 $1。',
+'perfcached'           => '底下係緩存資料，可能伓係最新嗰。 A maximum of {{PLURAL:$1|one result is|$1 results are}} available in the cache.',
+'perfcachedts'         => '底下係緩存資料，佢最晏更新嗰時間係 $1。 A maximum of {{PLURAL:$4|one result is|$4 results are}} available in the cache.',
 'querypage-no-updates' => '箇頁目前改伓正，佢嗰資料伓能仰上更新。',
 'wrong_wfQuery_params' => '參數錯誤斢到嘞 wfQuery()<br />
 函數： $1<br />
 查詢： $2',
 'viewsource'           => '原始碼',
-'viewsourcefor'        => '$1 嗰原始碼',
 'protectedpagetext'    => '箇頁鎖到嘞，改伓正。',
 'viewsourcetext'       => '倷可以眵吖或複製箇頁嗰原始碼：',
 'protectedinterface'   => '箇頁給正嘞軟件嗰界面文本，佢拕鎖到怕人亂扤。',
-'editinginterface'     => "!!糊糊涂涂!!'''警告'''：倷編寫嗰頁面係用來提供軟件嗰界面文本，改動箇頁會礙到別嗰用戶嗰界面外觀。",
+'editinginterface'     => "'''Warning:''' You are editing a page which is used to provide interface text for the software.
+Changes to this page will affect the appearance of the user interface for other users.
+For translations, please consider using [//translatewiki.net/wiki/Main_Page?setlang=en translatewiki.net], the MediaWiki localisation project.",
 'sqlhidden'            => '（SQL 弆到嗰查詢）',
 'cascadeprotected'     => '箇頁已拕保護，因為佢拕「聯鎖保護」嗰{{PLURAL:$1|一隻|幾隻}}拕保護頁包到：
 $2',
@@ -557,9 +559,6 @@ $2',
 
 倷嗰封鎖ID係$5。請到查詢嗰時間都要緊標到佢。',
 'blockednoreason'                  => '冇話理由',
-'blockedoriginalsource'            => "底下係'''$1'''嗰原始碼:",
-'blockededitsource'                => "底下係倷對'''$1'''嗰'''編輯'''內容:",
-'whitelistedittitle'               => '登入後才編得正',
 'whitelistedittext'                => '起先汝要$1才編得正箇頁。',
 'confirmedittext'                  => '確認嘞email才能編寫箇頁。麻煩用[[Special:Preferences|參數設置]]設置同確認倷嗰email。',
 'nosuchsectiontitle'               => '冇箇隻段落',
@@ -721,8 +720,6 @@ $2',
 'revdelete-unsuppress'        => '移吥恢復正嗰改動嗰限制',
 'revdelete-log'               => '原因:',
 'revdelete-submit'            => '應用到選正嗰修改',
-'revdelete-logentry'          => '已更改[[$1]]嗰修改可見性',
-'logdelete-logentry'          => '已更改[[$1]]嗰事件可見性',
 'revdelete-success'           => "'''修訂嗰可見性設置正嘍。'''",
 'logdelete-success'           => "'''事件嗰可見性設置正嘍。'''",
 'revdel-restore'              => '改動可見性',
@@ -730,8 +727,6 @@ $2',
 'revdel-restore-visible'      => '相得到嗰修訂版',
 'pagehist'                    => '文章歷史',
 'deletedhist'                 => '刪吥嗰歷史',
-'revdelete-uname'             => '用戶名',
-'revdelete-hid'               => '弆到 $1',
 
 # History merging
 'mergehistory'                     => '合併頁面嗰歷史',
@@ -995,15 +990,15 @@ $2',
 'large-file'                  => '建議檔案嗰大小伓要超吥$1；本檔案大小係$2。',
 'largefileserver'             => '箇隻檔案要大過服務器配置容允嗰大小。',
 'emptyfile'                   => '倷上傳嗰檔案伓存在。箇可能係因為檔案名按錯嘞。請檢查倷係否真嗰要上傳箇隻檔案。',
-'fileexists'                  => "箇隻檔案名已存在。如果倷確定伓正倷係否要改佢，請檢查'''<tt>[[:$1]]</tt>'''。 [[$1|thumb]]",
-'fileexists-extension'        => "有嘞隻飛像嗰檔名: [[$2|thumb]]
-* 上載文檔嗰檔名: '''<tt>[[:$1]]</tt>'''
-* 目前檔嗰檔名: '''<tt>[[:$2]]</tt>'''
-請揀隻伓同嗰名字。",
+'fileexists'                  => '箇隻檔案名已存在。如果倷確定伓正倷係否要改佢，請檢查<strong>[[:$1]]</strong>。 [[$1|thumb]]',
+'fileexists-extension'        => '有嘞隻飛像嗰檔名: [[$2|thumb]]
+* 上載文檔嗰檔名: <strong>[[:$1]]</strong>
+* 目前檔嗰檔名: <strong>[[:$2]]</strong>
+請揀隻伓同嗰名字。',
 'fileexists-thumbnail-yes'    => "箇隻檔案好像係一隻圖像嗰縮小版''（縮圖）''。 [[$1|thumb]]
-請檢查清楚箇隻檔案'''<tt>[[:$1]]</tt>'''。
+請檢查清楚箇隻檔案<strong>[[:$1]]</strong>。
 如果檢查後嗰檔同原先圖像嗰大小係一樣嗰話，就嫑再上傳多一隻縮圖。",
-'file-thumbnail-no'           => "箇隻檔案名係以'''<tt>$1</tt>'''開頭。佢好像一隻圖像嗰縮小版''（縮圖）''。如果倷有箇隻圖像嗰完整版，伓然請再改過隻檔名。",
+'file-thumbnail-no'           => "箇隻檔案名係以<strong>$1</strong>開頭。佢好像一隻圖像嗰縮小版''（縮圖）''。如果倷有箇隻圖像嗰完整版，伓然請再改過隻檔名。",
 'fileexists-forbidden'        => '箇隻檔案名已存在；請回頭並換過隻新嗰名稱來上傳箇隻檔案。[[File:$1|thumb|center|$1]]',
 'fileexists-shared-forbidden' => '到共用檔案庫裡度有嘞同名嗰檔案；請回頭並換過隻新嗰名稱來上傳箇隻檔案。[[File:$1|thumb|center|$1]]',
 'uploadwarning'               => '上傳警告',
@@ -1105,7 +1100,7 @@ $2',
 
 # MIME search
 'mimesearch'         => 'MIME 搜尋',
-'mimesearch-summary' => '箇隻頁面啟用檔案MIME類型篩檢程式。輸入：內容類型/子類型，像 <tt>image/jpeg</tt>。',
+'mimesearch-summary' => '箇隻頁面啟用檔案MIME類型篩檢程式。輸入：內容類型/子類型，像 <code>image/jpeg</code>。',
 'mimetype'           => 'MIME 類型:',
 'download'           => '下載',
 
@@ -1205,7 +1200,7 @@ $2',
 'protectedpagesempty'     => '箇兮參數下冇頁面拕保護到。',
 'protectedtitles'         => '保護題目',
 'listusers'               => '用戶列表',
-'usercreated'             => '$1嗰$2建立',
+'usercreated'             => '到$1嗰$2{{GENDER:$3|建立}}',
 'newpages'                => '新頁',
 'newpages-username'       => '用戶名:',
 'ancientpages'            => '老早嗰頁面',
@@ -1267,13 +1262,12 @@ Also see [[Special:WantedCategories|wanted categories]].',
 'listusers-noresult' => '尋伓到用戶。',
 
 # Special:Log/newusers
-'newuserlogpage'          => '新開戶嗰人名單',
-'newuserlog-create-entry' => '新用戶嗰賬戶',
+'newuserlogpage' => '新開戶嗰人名單',
 
 # Special:ListGroupRights
 'listgrouprights-members' => '（成員名單）',
 
-# E-mail user
+# Email user
 'mailnologin'     => '冇email地址',
 'mailnologintext' => '倷要[[Special:UserLogin|登入]] 起同到倷嗰[[Special:Preferences|參數設置]] 有隻有效嗰email才發得正email到別嗰用戶。',
 'emailuser'       => '發email到箇隻用戶',
@@ -1363,7 +1357,6 @@ $NEWPAGE
 'actioncomplete'        => '舞正哩',
 'actionfailed'          => '操作冇舞正',
 'deletedtext'           => '"$1"刪卟嘞。最晏嗰刪除記錄請望$2。',
-'deletedarticle'        => '"[[$1]]"刪卟嘞',
 'dellogpage'            => '刪除日誌',
 'dellogpagetext'        => '下底係最晏刪除嗰記錄列表:',
 'deletionlog'           => '刪除日誌',
@@ -1458,7 +1451,6 @@ $NEWPAGE
 'undeleteviewlink'             => '望吖',
 'undeletereset'                => '設過',
 'undeletecomment'              => '評論:',
-'undeletedarticle'             => '恢復正嗰"[[$1]]"',
 'undeletedrevisions'           => '$1隻修改版本恢復正嘞',
 'undeletedrevisions-files'     => '$1隻修改版本同$2隻檔案恢復正嘞',
 'undeletedfiles'               => '$1隻檔案恢復正嘞',
@@ -1552,7 +1544,7 @@ $1',
 'ipbhidename'                 => '封鎖日誌、活躍封鎖列表同用戶列表裡頭弆到用戶名',
 'badipaddress'                => 'IP位置伓對。',
 'blockipsuccesssub'           => '封鎖正嘞',
-'blockipsuccesstext'          => '[[Special:Contributions/$1|$1]]封卟嘞。 <br />望吖[[Special:IPBlockList|拕封IP列表]]來審過封鎖。',
+'blockipsuccesstext'          => '[[Special:Contributions/$1|$1]]封卟嘞。 <br />望吖[[Special:BlockList|拕封IP列表]]來審過封鎖。',
 'ipb-edit-dropdown'           => '編寫封鎖原因',
 'ipb-unblock-addr'            => '解封$1',
 'ipb-unblock'                 => '解封用戶名或IP地址',
@@ -1648,8 +1640,6 @@ $1',
 'talkexists'              => '頁面本身移動正嘞，但係新標題下底有嘞對話頁，所以對話頁移伓正。請手工合併兩頁。',
 'movedto'                 => '移到',
 'movetalk'                => '移動相關嗰討論頁',
-'1movedto2'               => '[[$1]]移到[[$2]]',
-'1movedto2_redir'         => '[[$1]]通過重定向移到[[$2]]',
 'movelogpage'             => '移動日誌',
 'movelogpagetext'         => '下底係移動嘞嗰頁面列表:',
 'movereason'              => '原因:',
@@ -1841,8 +1831,6 @@ Please visit [//www.mediawiki.org/wiki/Localisation MediaWiki Localisation] and 
 
 # Patrol log
 'patrol-log-page' => '巡查記錄',
-'patrol-log-line' => '標正嘞$1/$2版係檢查過嗰$3',
-'patrol-log-auto' => '（自動）',
 
 # Image deletion
 'deletedrevision'                 => '刪卟嘞舊版本$1。',
@@ -1863,10 +1851,10 @@ $1',
 'mediawarning'    => "'''警告''': 話伓定箇隻檔案含到惡意代碼，執行佢話伓定會損壞倷嗰系統。",
 'imagemaxsize'    => '檔案解釋頁嗰圖像大細限制到:',
 'thumbsize'       => '縮略圖大細:',
-'widthheightpage' => '$1×$2,$3頁',
+'widthheightpage' => '$1 × $2,$3頁',
 'file-info'       => '檔案大細: $1, MIME 類型: $2',
 'file-info-size'  => '$1 × $2 像素，檔案大細：$3 ，MIME類型：$4',
-'file-nohires'    => '<small>冇更高解像度嗰圖像。</small>',
+'file-nohires'    => '冇更高解像度嗰圖像。',
 'svg-long-desc'   => 'SVG檔案，表面大細： $1 × $2 像素，檔案大細：$3',
 'show-big-image'  => '完整解析度',
 
@@ -2160,7 +2148,7 @@ $1',
 'namespacesall' => '全部',
 'monthsall'     => '全部',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'            => '確認email地址',
 'confirmemail_noemail'    => '倷冇到倷嗰[[Special:Preferences|用戶設置]]設正一隻有效嗰電子郵件地址。',
 'confirmemail_text'       => '箇隻網站要求倷用email功能之前確認下倷嗰email地址。按吖下底嗰鍵來發封確認郵件到倷嗰郵箱。佢會附帶一隻代碼連結；請到倷嗰瀏覽器打開箇隻連結來確認倷嗰email地址係有效嗰。',
@@ -2190,13 +2178,6 @@ $3
 'scarytranscludedisabled' => '[跨網站嗰編碼轉換用伓正]',
 'scarytranscludefailed'   => '[對伓住，提取$1失敗]',
 'scarytranscludetoolong'  => '[對伓住，URL 太長]',
-
-# Trackbacks
-'trackbackbox'      => '箇篇文章嗰引用:<br />
-$1',
-'trackbackremove'   => '（[$1刪除]）',
-'trackbacklink'     => '引用',
-'trackbackdeleteok' => '成功刪卟箇隻引用。',
 
 # Delete conflict
 'deletedwhileediting' => '警告: 倷編輯嗰時間有人刪卟嘞箇頁！',

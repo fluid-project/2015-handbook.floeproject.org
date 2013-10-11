@@ -1,5 +1,5 @@
 <?php
-/** Corsican (Corsu)
+/** Corsican (corsu)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -7,6 +7,8 @@
  * @ingroup Language
  * @file
  *
+ * @author Ale Mister (on co.wikipedia.org)
+ * @author Img (on co.wikipedia.org)
  */
 
 $messages = array(
@@ -156,7 +158,6 @@ $messages = array(
 # General errors
 'error'         => 'Errore',
 'internalerror' => 'Errore internu',
-'viewsourcefor' => 'di $1',
 
 # Login and logout pages
 'yourname'                   => 'Nome di utilizatore:',
@@ -360,7 +361,7 @@ U to indirizzu IP serà registratu indu a cronolugia di ista pagina.",
 # Special:ListUsers
 'listusers-submit' => 'Mustrà',
 
-# E-mail user
+# Email user
 'emailto'      => 'À:',
 'emailsubject' => 'Sughjettu:',
 'emailmessage' => 'Messaghju:',
@@ -439,8 +440,6 @@ U to indirizzu IP serà registratu indu a cronolugia di ista pagina.",
 'move-watch'              => 'Fighjulà issa pagina',
 'movepagebtn'             => 'Move a pagina',
 'movedto'                 => 'mossu à',
-'1movedto2'               => 'hà mossu [[$1]] à [[$2]]',
-'1movedto2_redir'         => 'hà reindirizzatu [[$1]] à [[$2]]',
 'movelogpagetext'         => 'Elencu di e pagine mosse.',
 'movereason'              => 'Mutivu:',
 'delete_and_move_confirm' => 'Iè, supprimà issa pagina',

@@ -1,5 +1,5 @@
 <?php
-/** Avaric (Авар)
+/** Avaric (авар)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -106,9 +106,6 @@ $messages = array(
 
 # Special:AllPages
 'allarticles' => 'Киналго макъалаби',
-
-# Special:Log/newusers
-'newuserlog-create-entry' => 'ЦӀияв гӀахьалчи',
 
 # Watchlist
 'watchlist' => 'Дур халгьабиялъул сияхl',

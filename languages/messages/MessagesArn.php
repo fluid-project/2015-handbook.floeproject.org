@@ -1,5 +1,5 @@
 <?php
-/** Araucanian (Mapudungun)
+/** Mapuche (mapudungun)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -107,7 +107,9 @@ $messages = array(
 
 # Cologne Blue skin
 'qbfind'         => 'Kintupe',
+'qbbrowse'       => 'Kintun',
 'qbedit'         => 'Pepikape',
+'qbpageoptions'  => 'Tüfachi wülngiñ',
 'qbpageinfo'     => 'Trokiñdungu',
 'qbmyoptions'    => 'tañi nütramkawe',
 'qbspecialpages' => 'Kangelu',
@@ -180,6 +182,7 @@ $messages = array(
 'jumpto'            => 'Amulün:',
 'jumptonavigation'  => 'miyawün',
 'jumptosearch'      => 'kintun',
+'pool-errorunknown' => 'Kimnoelchi welulkan',
 
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
 'aboutsite'            => '{{SITENAME}} ñi dungu',
@@ -214,15 +217,22 @@ $messages = array(
 'toc'                     => 'Trokiñdungu',
 'showtoc'                 => 'pegelpe',
 'hidetoc'                 => 'ellkangepe',
+'thisisdeleted'           => 'Pen kam kümeeltun $1?',
 'viewdeleted'             => 'Küpaadkintuymi $1 am?',
 'restorelink'             => '{{PLURAL:$1|kiñe wirin ñamümgün|$1 wirin ñamümün}}',
+'feedlinks'               => 'Amuldungu:',
+'site-rss-feed'           => '$1 RSS ñi amuldungu',
 'site-atom-feed'          => '$1 ñi Atom ñi amuldungu',
+'page-rss-feed'           => '«$1» RSS ñi amuldungu',
 'page-atom-feed'          => '$1 ñi Atom ñi amuldungu',
 'red-link-title'          => '$1 (ngelay tichi adtapül)',
+'sort-descending'         => 'Kümeelngen minche püle',
+'sort-ascending'          => 'Kümeelngen püra püle',
 
 # Short words for each namespace, by default used in the namespace tab in monobook
 'nstab-main'      => 'Wülngiñ',
 'nstab-user'      => 'Kellufe',
+'nstab-media'     => 'Ad ñi wülngiñ',
 'nstab-special'   => 'Wichu wülngiñ',
 'nstab-project'   => 'Deumandungu wülngiñ',
 'nstab-image'     => 'Eltukawün',
@@ -231,7 +241,11 @@ $messages = array(
 'nstab-help'      => 'Kelluwe',
 'nstab-category'  => 'Trokiñ',
 
+# Main script and global functions
+'nosuchaction' => 'Mülelay feychi femün',
+
 # General errors
+'error'              => 'Welulkan',
 'missing-article'    => 'Feychi ngülümdunguwe kintulay feychi wülngiñ ñi wirin, welu nienuafulu. Ñi üy ta "$1" $2.
 
 Chi kiñe rakizuamün ta pünefalkülenuchi kalelu kam nülkükawlelu liftungepelu wülngiñ ñi rupañmael.
@@ -254,6 +268,7 @@ Nieafuy falinochi wirin püñamtuam wülngiñ ñi üy.',
 'nav-login-createaccount' => 'konkülen/dewman konün',
 'loginprompt'             => 'Müley "Cookies" ñi püneleael wirintukuwam {{SITENAME}} mew.',
 'userlogin'               => 'Konkülen/dewman konün',
+'userloginnocreate'       => 'Konün',
 'logout'                  => 'Tripan',
 'userlogout'              => 'Tripan',
 'notloggedin'             => 'Petu konlaymi.',
@@ -263,8 +278,12 @@ Nieafuy falinochi wirin püñamtuam wülngiñ ñi üy.',
 'gotaccount'              => 'Dew nieymi konün? $1.',
 'gotaccountlink'          => 'Konün',
 'userlogin-resetlink'     => 'Ngoyüniengetuymi chumngechi konün?',
+'createaccountreason'     => 'Dungu:',
 'mailmypassword'          => 'Amulün we nülawe werküwe mew',
 'loginlanguagelabel'      => 'Cezugun: $1',
+
+# Change password dialog
+'resetpass-submit-cancel' => 'Katrüntukun',
 
 # Edit page toolbar
 'bold_sample'     => 'Kurükünualu wirin',
@@ -361,8 +380,6 @@ Rulpakünuy feychi kangelkülelu dungu.",
 'revdel-restore-visible'     => 'pengengekelu malün',
 'pagehist'                   => 'pünon pakina',
 'deletedhist'                => 'Ñamümüngelu pünon',
-'revdelete-uname'            => 'Üy kellufe',
-'revdelete-hid'              => 'Ellkan $1',
 'revdelete-edit-reasonlist'  => 'Wirin dungu ñamümgün mew',
 
 # History merging
@@ -581,7 +598,7 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'nviews'            => '$1 {{PLURAL:$1|pen|pen}}',
 'prefixindex'       => 'Kom wülngiñ engu wüne konkülelu nemül',
 'shortpages'        => 'Pichi pakina',
-'usercreated'       => 'Llintun $1 mew $2 mew',
+'usercreated'       => '{{GENDER:$3|Dewmangey}} $1, $2 mew',
 'newpages'          => 'Weke wülngiñ',
 'newpages-username' => 'Kellufe ñi üy',
 'move'              => 'Wiñamün',
@@ -622,7 +639,7 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 # Special:ListGroupRights
 'listgrouprights-members' => '(koneltulu kellufe ñi wif)',
 
-# E-mail user
+# Email user
 'emailuser'    => 'Amulün werküwe tüfachi kellufe',
 'emailsubject' => 'Dungu',
 'emailmessage' => 'Dungu',
@@ -657,7 +674,6 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'delete-legend'         => 'Ñamümün',
 'actioncomplete'        => 'Wechuley chi femün',
 'actionfailed'          => 'Wedalkay chi femün.',
-'deletedarticle'        => '«[[$1]]» Ñamümün',
 'dellogpage'            => 'Liftungepelu wülngiñ ñi wirintukun',
 'deletereasonotherlist' => 'Kake dungu',
 
@@ -756,7 +772,6 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'move-watch'              => 'Llaytun tüfachi pakina',
 'movepagebtn'             => 'Nengümün pakina',
 'movedto'                 => 'Nengümün',
-'1movedto2'               => '[[$1]] wiñamngey [[$2]] püle',
 'movelogpage'             => 'Nengümün wirintukun',
 'revertmove'              => 'wüñoeltun',
 'delete_and_move'         => 'Ñamümün ka nengümün',
@@ -835,15 +850,13 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'others'    => 'fill',
 'siteusers' => '{{PLURAL:$2|Kellufe|Kellufe}} $1 {{SITENAME}}',
 
-# Patrol log
-'patrol-log-diff' => 'ng$1',
-
 # Browsing diffs
 'previousdiff' => '← Füta wirin',
 'nextdiff'     => 'We wirin →',
 
 # Media information
 'file-info-size' => '$1 × $2 adentun piküsel, eltukawün ñi tunte ngen: $3, MIME ñi chumngen: $4',
+'file-nohires'   => 'Pepiduamngefalay chum pengeam.',
 'svg-long-desc'  => 'SVG eltukawe, pingey $1 × $2 adentun piküsel, eltukawün ñi tunte ngen: $3',
 'show-big-image' => 'Rüf chum pengeam',
 
@@ -851,7 +864,7 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'ilsubmit' => 'Kintu',
 
 # Video information, used by Language::formatTimePeriod() to format lengths in the above messages
-'hours-abbrev' => 'o',
+'hours-abbrev' => '$1o',
 
 # Bad image list
 'bad_image_list' => 'Feychi chumkünuwe ta femngechi:
@@ -907,9 +920,6 @@ Ka dungu ellkangeay wünedullin reke.
 'namespacesall' => 'kom',
 'monthsall'     => '(kom)',
 'limitall'      => 'Kom',
-
-# Trackbacks
-'trackbackremove' => '([$1 Ñamümün])',
 
 # action=purge
 'confirm_purge_button' => 'Feley may',

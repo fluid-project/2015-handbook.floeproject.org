@@ -1,5 +1,5 @@
 <?php
-/** Cajun French (Français cadien)
+/** Cajun French (français cadien)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -305,18 +305,19 @@ L'administrateur qui l'a barrée a donné cette explication: $1",
 'cannotdelete'         => "Impossible d'ôter la page ou le dossier choisi.  (Il est possible que quèqu'une d'autre l'a déjà ôté.)",
 'badtitle'             => 'Mauvais titre',
 'badtitletext'         => 'Le titre que vous avez demandé était pas bon, vide, ou y avait un mauvais titre entre-langue ou entre-wiki.  Ça pourrait avoir des caractères qui pouvont pas être usés dans les titres.',
-'perfcached'           => 'Cette information est en cache et pourrait pas être courante.',
-'perfcachedts'         => 'Cette information est en cache et le dernier changement a été fait $1.',
+'perfcached'           => 'Cette information est en cache et pourrait pas être courante. A maximum of {{PLURAL:$1|one result is|$1 results are}} available in the cache.',
+'perfcachedts'         => 'Cette information est en cache et le dernier changement a été fait $1. A maximum of {{PLURAL:$4|one result is|$4 results are}} available in the cache.',
 'querypage-no-updates' => "À présent, les renouvelages pour cette page sont barrés.  L'information ici va pas être renouvelée t'à l'heure.",
 'wrong_wfQuery_params' => 'Informaton incorrecte sus le wfQuery()<br />
 Fonction: $1<br />
 Demande: $2',
 'viewsource'           => 'Voir la source',
-'viewsourcefor'        => 'pour $1',
 'protectedpagetext'    => 'Cette page est barrée pour empêcher des changements.',
 'viewsourcetext'       => 'Vous pouvez voir et copier la source de cette page:',
 'protectedinterface'   => "Cette page crée le texte de l'interface pour le software, et est barrée pour empêcher l'abus.",
-'editinginterface'     => "'''Attention:'''  Vous êtes après changer une page qu'est usée pour créer le texte de l'interface pour le software.  Si vous changerait cette page, vous changerait des autres pages aussi.",
+'editinginterface'     => "'''Warning:''' You are editing a page which is used to provide interface text for the software.
+Changes to this page will affect the appearance of the user interface for other users.
+For translations, please consider using [//translatewiki.net/wiki/Main_Page?setlang=en translatewiki.net], the MediaWiki localisation project.",
 'sqlhidden'            => '(Demande SQL cachée)',
 'cascadeprotected'     => 'Cette page est protégée parce qu’elle est incluse par {{PLURAL:$1|la page suivante, qui est protégée|les pages suivantes, qui sont protégées}} avec l’option « protection en cascade » activée :
 $2',
@@ -455,9 +456,6 @@ Vous pouvez contacter $1 ou un autre [[{{MediaWiki:Grouppage-sysop}}|administrat
 Notez donc que vous pouvez pas user la fonction 'envoyer un e-mail à cet useur' hormis que vous avez une adresse e-mail confirmée dans votre [[Special:Preferences|réglage de compte]] et vous avez la permission de l'user.
 
 Votre numéro de blocage est #$5.  Mettez donc cette information dans toutes vos demandes.",
-'blockedoriginalsource'            => "La source de '''$1''' est montrée en bas.",
-'blockededitsource'                => "Le texte de '''votres changements''' à '''$1''' est montré en bas.",
-'whitelistedittitle'               => 'Il faut connecter pour faire des changements.',
 'whitelistedittext'                => 'Il faut $1 pour faire des changements.',
 'confirmedittext'                  => "Il faut confirmer votre adresse e-mail pour faire des changements.  Mettez et confirmez un adresse e-mail dans votre [[Special:Preferences|réglage de compte]], s'il vous plaît.",
 'nosuchsectiontitle'               => 'Aucune section pareille',
@@ -506,8 +504,10 @@ Il foudra que vous mettez vos changements dans le texte qu'est là asteur.
 'nonunicodebrowser'                => "'''ATTENTION: Votre navigateur supporte pas les caractères unicode.  Une solution de peu de durée a été trouvée pour que vous peuvez changer des articles sans problèmes.  Les caractères qui sont pas ASCII va apparaître dans la boëte de changements comme des codes hexadécimaux.'''",
 'editingold'                       => "'''ATTENTION: Vous êtes après changer une vieille version de cette page.  Si vous le sauverait, vous perdrait n'importe quels changements faits depuis cette version.'''",
 'yourdiff'                         => 'Différences',
-'copyrightwarning'                 => "Notez donc que toutes les contributions à {{SITENAME}} sont considérées d'être libérées sous le $2 (voyez $1 pour les détails).  Si vous voulez pas que votre écriture soye changée sans pitié et redistribuée à volonté, mettez donc pas votre écriture ici.<br />  Vous êtes après nous promettre aussi que vous l'avez écrit vous-même ou que vous l'avez copié du domain public ou un autre ressource libre. ''' METTEZ PAS DE L'OUVRAGE SOUS COPYRIGHT ICI SANS PERMISSION!'''",
-'copyrightwarning2'                => "Notez donc que toutes les contributions à {{SITENAME}} pourriont être changées ou ôtées par des autres useurs.  Si vous voulez pas que votre écriture soye changée sans pitié, mettez donc pas votre écriture ici.<br />  Vous êtes après nous promettre aussi que vous l'avez écrit vous-même ou que vous l'avez copié du domain public ou un autre ressource libre (voyez $1 pour les détails). ''' METTEZ PAS DE L'OUVRAGE SOUS COPYRIGHT ICI SANS PERMISSION!'''",
+'copyrightwarning'                 => "Notez donc que toutes les contributions à {{SITENAME}} sont considérées d’être libérées sous le $2 (voyez $1 pour les détails). Si vous voulez pas que votre écriture soye changée sans pitié et redistribuée à volonté, mettez donc pas votre écriture ici.<br 
+/>Vous êtes après nous promettre aussi que vous l’avez écrit vous-même ou que vous l’avez copié du domaine public ou un autre ressource libre. ''' METTEZ PAS DE L’OUVRAGE SOUS COPYRIGHT ICI SANS PERMISSION !'''",
+'copyrightwarning2'                => "Notez donc que toutes les contributions à {{SITENAME}} pourriont être changées ou ôtées par des autres useurs. Si vous voulez pas que votre écriture soye changée sans pitié, mettez donc pas votre écriture ici.<br 
+/>Vous êtes après nous promettre aussi que vous l’avez écrit vous-même ou que vous l’avez copié du domaine public ou un autre ressource libre (voyez $1 pour les détails). ''' METTEZ PAS DE L’OUVRAGE SOUS COPYRIGHT ICI SANS PERMISSION !'''",
 'longpageerror'                    => "'''ERREUR: Le texte que vous avec mis a une taille de $1 kilobytes qu'est plus grande que le maximum de $2 kilobytes.  Ça peut pas être sauvé.'''",
 'readonlywarning'                  => "'''ATTENTION: La base d'information a été barrée, ça fait, vous serez pas capable de sauver votres changements asteur.  Vous ferait mieux de copier et coller le texte dans un dossier texte et le sauver pour plus tard.'''",
 'protectedpagewarning'             => "'''ATTENTION: Cette page a été barrée pour que ça peuve être changée juste par les administrateurs.'''",
@@ -592,8 +592,6 @@ Des autres administrateurs sus ce wiki ont la permission de voir et de rétablir
 'revdelete-unsuppress'        => 'Enlever les restrictions des versions rétablies',
 'revdelete-log'               => 'Raison:',
 'revdelete-submit'            => 'Appliquer à la version choisie',
-'revdelete-logentry'          => 'La visibilité pour la version a été changée pour [[$1]]',
-'logdelete-logentry'          => "La visibilité de l'événement a été changée pour [[$1]]",
 'revdelete-success'           => "'''Vous avez bien changé la visibilité des versions.'''",
 'logdelete-success'           => "'''Vous avez bien changé la visibilité des événements.'''",
 
@@ -656,7 +654,7 @@ Des autres administrateurs sus ce wiki ont la permission de voir et de rétablir
 # Special:Categories
 'categories' => 'Classes',
 
-# E-mail user
+# Email user
 'emailuser' => 'E-mail cet useur',
 
 # Watchlist
@@ -679,9 +677,6 @@ Des autres administrateurs sus ce wiki ont la permission de voir et de rétablir
 'blocklink'                => 'bloquer',
 'contribslink'             => 'changes',
 'block-log-flags-nocreate' => 'création de compte interdite',
-
-# Move page
-'1movedto2_redir' => 'déplacé [[$1]] vers [[$2]] en écrasant sa redirection',
 
 # Tooltip help for the actions
 'tooltip-pt-login'        => 'Vous êtes encouragé{{GENDER:||e|(e)}} à vous identifier mais ce n’est pas obligatoire.',

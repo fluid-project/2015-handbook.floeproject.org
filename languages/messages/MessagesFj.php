@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Jose77 (on fj.wikipedia.org)
  */
 
 $messages = array(
@@ -158,7 +159,7 @@ $messages = array(
 # Special:AllPages
 'allpagessubmit' => 'Lako',
 
-# E-mail user
+# Email user
 'defemailsubject' => '{{SITENAME}} I vola livaliva',
 
 # Watchlist

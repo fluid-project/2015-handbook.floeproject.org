@@ -68,6 +68,17 @@ class SVGReader {
 			$this->reader->open( $source, null, LIBXML_NOERROR | LIBXML_NOWARNING );
 		}
 
+		// Expand entities, since Adobe Illustrator uses them for xmlns
+		// attributes (bug 31719). Note that libxml2 has some protection
+		// against large recursive entity expansions so this is not as
+		// insecure as it might appear to be. However, it is still extremely
+		// insecure. It's necessary to wrap any read() calls with
+		// libxml_disable_entity_loader() to avoid arbitrary local file
+		// inclusion, or even arbitrary code execution if the expect
+		// extension is installed (bug 46859).
+		$oldDisable = libxml_disable_entity_loader( true );
+		$this->reader->setParserProperty( XMLReader::SUBST_ENTITIES, true );
+
 		$this->metadata['width'] = self::DEFAULT_WIDTH;
 		$this->metadata['height'] = self::DEFAULT_HEIGHT;
 
@@ -79,9 +90,11 @@ class SVGReader {
 			$this->read();
 		} catch( Exception $e ) {
 			wfRestoreWarnings();
+			libxml_disable_entity_loader( $oldDisable );
 			throw $e;
 		}
 		wfRestoreWarnings();
+		libxml_disable_entity_loader( $oldDisable );
 	}
 
 	/**
@@ -94,7 +107,7 @@ class SVGReader {
 	/**
 	 * Read the SVG
 	 */
-	public function read() {
+	protected function read() {
 		$keepReading = $this->reader->read();
 
 		/* Skip until first element */
@@ -166,7 +179,7 @@ class SVGReader {
 		}
 	}
 
-	/*
+	/**
 	 * Read an XML snippet from an element
 	 *
 	 * @param String $metafield that we will fill with the result

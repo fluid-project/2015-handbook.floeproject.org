@@ -278,7 +278,7 @@ $messages = array(
 # Special:Categories
 'categories' => 'ᓄᐊᑉᐳᑦ',
 
-# E-mail user
+# Email user
 'emailuser'    => 'ᑭᒍᑎᐅᑉ ᓯᑎᓂᖅᐹᖓ ᐃᓄᒃ',
 'emailfrom'    => 'ᓇᑭᑦ',
 'emailmessage' => 'ᑭᒡᒐᐹ',
@@ -339,8 +339,6 @@ $messages = array(
 'move-page-legend' => 'ᐅᐊᔪᖅ ᒪᑉᐱᑕᖅ',
 'movearticle'      => 'ᐅᐊᔪᖅ ᒪᑉᐱᑕᖅ',
 'movedto'          => 'ᐅᐊᔪᖅ',
-'1movedto2'        => '[[$1]] ᓱᕐᕋᒪᔪᖅ [[$2]]',
-'1movedto2_redir'  => '[[$1]] ᓱᕐᕋᒪᔪᖅ [[$2]] ᒥᓯᑉᐹ ᖃᓂᖓᓂ ᑲᒪᒋᔭᖅ ᐋᓯᑦ ᓇᑭᑦ',
 'movelogpage'      => 'ᐅᐊᔪᖅ ᓂᐱ',
 'movereason'       => 'ᐃᓱᒪᒃᓴᖅᓯᐅᕈᓐᓇᑦᑎᐊᕐᓂᖅ:',
 'delete_and_move'  => 'ᓂᐸᖅᑎᐹ  ᐊᒻᒪ ᐅᐊᔪᖅ',
