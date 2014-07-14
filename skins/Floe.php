@@ -153,7 +153,7 @@ class FloeTemplate extends QuickTemplate {
                                              ),
                                     "Inclusive EPUB 3" =>
                                        array("is_link" => true,
-                                             "children" => array("Semantic markup - HTML 5 semantics and epub:type" => array("is_link" => true),
+                                             "children" => array("Semantic markup - HTML 5 semantics and epub type" => array("is_link" => true),
                                                                  "WAI-ARIA - Beyond semantic tags" => array("is_link" => true),
                                                                  "Visual styling" => array("is_link" => true),
                                                                  "Handling graphics, Video, and Audio Media" => array("is_link" => true),
