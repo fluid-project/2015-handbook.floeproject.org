@@ -1,5 +1,5 @@
 <?php
-/** Лакку (Лакку)
+/** лакку (лакку)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -38,6 +38,9 @@ $namespaceNames = array(
 	NS_CATEGORY         => 'Категория',
 	NS_CATEGORY_TALK    => 'Категориялиясса_ихтилат',
 );
+
+// Remove Russian aliases
+$namespaceGenderAliases = array();
 
 $linkTrail = '/^([a-zабвгдеёжзийклмнопрстуфхцчшщъыьэюяӀ1“»]+)(.*)$/sDu';
 
@@ -96,7 +99,7 @@ $messages = array(
 # Special:Log
 'specialloguserlabel' => 'Гьурттучув:',
 
-# E-mail user
+# Email user
 'emailuser' => 'ГьурттучувначӀансса чагьар',
 
 # Watchlist

@@ -1,5 +1,5 @@
 <?php
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -40,17 +40,17 @@ $namespaceNames = array(
 	NS_MEDIA            => 'ମାଧ୍ୟମ',
 	NS_SPECIAL          => 'ବିଶେଷ',
 	NS_TALK             => 'ଆଲୋଚନା',
-	NS_USER             => 'ବ୍ୟବାହାରକାରୀ',
-	NS_USER_TALK        => 'ବ୍ୟବାହାରକାରୀଙ୍କ_ଆଲୋଚନା',
-	NS_PROJECT_TALK     => 'ଉଇକିପିଡ଼ିଆ_ଆଲୋଚନା',
+	NS_USER             => 'ବ୍ୟବହାରକାରୀ',
+	NS_USER_TALK        => 'ବ୍ୟବହାରକାରୀଙ୍କ_ଆଲୋଚନା',
+	NS_PROJECT_TALK     => '$1_ଆଲୋଚନା',
 	NS_FILE             => 'ଫାଇଲ',
 	NS_FILE_TALK        => 'ଫାଇଲ_ଆଲୋଚନା',
 	NS_MEDIAWIKI        => 'ମିଡ଼ିଆଉଇକି',
 	NS_MEDIAWIKI_TALK   => 'ମିଡ଼ିଆଉଇକି_ଆଲୋଚନା',
-	NS_TEMPLATE         => 'ଟେମ୍ପଲେଟ',
-	NS_TEMPLATE_TALK    => 'ଟେମ୍ପଲେଟ_ଆଲୋଚନା',
-	NS_HELP             => 'ସାହାଯ୍ୟ',
-	NS_HELP_TALK        => 'ସାହାଯ୍ୟ_ଆଲୋଚନା',
+	NS_TEMPLATE         => 'ଛାଞ୍ଚ',
+	NS_TEMPLATE_TALK    => 'ଛାଞ୍ଚ_ଆଲୋଚନା',
+	NS_HELP             => 'ସହଯୋଗ',
+	NS_HELP_TALK        => 'ସହଯୋଗ_ଆଲୋଚନା',
 	NS_CATEGORY         => 'ଶ୍ରେଣୀ',
 	NS_CATEGORY_TALK    => 'ଶ୍ରେଣୀ_ଆଲୋଚନା',
 );
@@ -58,14 +58,21 @@ $namespaceNames = array(
 $namespaceAliases = array(
 	'ବ୍ୟବହାରକାରି'          => NS_USER,
 	'ବ୍ୟବହାରକାରିଁକ_ଆଲୋଚନା' => NS_USER_TALK,
+	'ବ୍ୟବାହାରକାରୀ'          => NS_USER,
+	'ବ୍ୟବାହାରକାରୀଙ୍କ_ଆଲୋଚନା' => NS_USER_TALK,
+	'ଉଇକିପିଡ଼ିଆ_ଆଲୋଚନା' => NS_PROJECT_TALK,
 	'ଟେଁପଲେଟ'             => NS_TEMPLATE,
 	'ଟେଁପଲେଟ_ଆଲୋଚନା'     => NS_TEMPLATE_TALK,
+	'ଟେମ୍ପଲେଟ'             => NS_TEMPLATE,
+	'ଟେମ୍ପଲେଟ_ଆଲୋଚନା'     => NS_TEMPLATE_TALK,
 	'ବିଭାଗ'                => NS_CATEGORY,
 	'ବିଭାଗିୟ_ଆଲୋଚନା'      => NS_CATEGORY_TALK,
+	'ସାହାଯ୍ୟ'                => NS_HELP,
+	'ସାହାଯ୍ୟ_ଆଲୋଚନା'      => NS_HELP_TALK,
 );
 
 $specialPageAliases = array(
-	'Activeusers'               => array( 'ସଚଳ_ଇଉଜର' ),
+	'Activeusers'               => array( 'ସଚଳ_ସଭ୍ୟ' ),
 	'Allmessages'               => array( 'ସବୁ_ମେସେଜ' ),
 	'Allpages'                  => array( 'ସବୁ_ପୃଷ୍ଠା' ),
 	'Ancientpages'              => array( 'ପୁରୁଣା_' ),
@@ -77,7 +84,7 @@ $specialPageAliases = array(
 	'Categories'                => array( 'ଶ୍ରେଣୀ' ),
 	'ChangeEmail'               => array( 'ଇମେଲ_ବଦଳାଇବେ' ),
 	'ChangePassword'            => array( 'ପାସବାର୍ଡ଼_ବଦଳାଇବେ' ),
-	'ComparePages'              => array( 'ପୃଷ୍ଠାକୁ_ତଉଲ' ),
+	'ComparePages'              => array( 'ପୃଷ୍ଠାକୁ_ତଉଲିବେ' ),
 	'Confirmemail'              => array( 'ଇମେଲ_ଥୟ_କରିବେ' ),
 	'Contributions'             => array( 'ଅବଦାନ' ),
 	'CreateAccount'             => array( 'ଖାତା_ଖୋଲିବେ' ),
@@ -110,13 +117,13 @@ $specialPageAliases = array(
 	'Mostimages'                => array( 'ଅଧିକ_ଯୋଡ଼ା_ଫାଇଲ' ),
 	'Mostlinked'                => array( 'ଅଧିକ_ଯୋଡ଼ା_ପୃଷ୍ଠା' ),
 	'Mostlinkedcategories'      => array( 'ଅଧିକ_ଯୋଡ଼ା_ଶ୍ରେଣୀ' ),
-	'Mostlinkedtemplates'       => array( 'ଅଧିକ_ଯୋଡ଼ା_ଟେମ୍ପଲେଟ' ),
-	'Mostrevisions'             => array( 'ବେଶି_ସଙ୍କଳନ' ),
+	'Mostlinkedtemplates'       => array( 'ଅଧିକ_ଯୋଡ଼ା_ଛାଞ୍ଚ' ),
+	'Mostrevisions'             => array( 'ଅଧିକ_ସଙ୍କଳନ' ),
 	'Movepage'                  => array( 'ପୃଷ୍ଠାକୁ_ଘୁଞ୍ଚାଇବା' ),
 	'Mycontributions'           => array( 'ମୋ_ଅବଦାନ' ),
 	'Mypage'                    => array( 'ମୋ_ପୃଷ୍ଠା' ),
 	'Mytalk'                    => array( 'ମୋ_ଆଲୋଚନା' ),
-	'Myuploads'                 => array( 'ମୋ_ଅପଲୋଡ' ),
+	'Myuploads'                 => array( 'ମୋ_ଅପଲୋଡ଼' ),
 	'Newimages'                 => array( 'ନୂଆ_ଫାଇଲ' ),
 	'Newpages'                  => array( 'ନୂଆ_ପୃଷ୍ଠା' ),
 	'PermanentLink'             => array( 'ଚିରକାଳର_ଲିଙ୍କ' ),
@@ -126,122 +133,124 @@ $specialPageAliases = array(
 	'Protectedpages'            => array( 'କିଳାଯାଇଥିବା_ପୃଷ୍ଠା' ),
 	'Protectedtitles'           => array( 'କିଳାଯାଇଥିବା_ନାଆଁ' ),
 	'Randompage'                => array( 'ଇଆଡୁ_ଇଆଡୁ' ),
-	'Randomredirect'            => array( 'ଜାହିତାହି_ଫେରଣା' ),
+	'Randomredirect'            => array( 'ଜାହିତାହି_ଫେରଣାଲେଉଟାଣି' ),
 	'Recentchanges'             => array( 'ନଗଦ_ବଦଳ' ),
 	'Recentchangeslinked'       => array( 'ଜୋଡ଼ାଥିବା_ନଗଦ_ବଦଳ' ),
-	'Revisiondelete'            => array( 'ସଙ୍କଳନଲିଭାଇଦିଅ' ),
+	'Revisiondelete'            => array( 'ସଙ୍କଳନଲିଭାଇଦିଅଦେବେ' ),
 	'RevisionMove'              => array( 'ସଙ୍କଳନ' ),
 	'Search'                    => array( 'ଖୋଜନ୍ତୁ' ),
 	'Shortpages'                => array( 'ଛୋଟ_ପୃଷ୍ଠା' ),
 	'Specialpages'              => array( 'ବିଶେଷ_ପୃଷ୍ଠା' ),
 	'Statistics'                => array( 'ଗଣନା' ),
-	'Tags'                      => array( 'ଟାଗ' ),
-	'Unblock'                   => array( 'ଫିଟାଇଦିଅ' ),
+	'Tags'                      => array( 'ଚିହ୍ନସମୂହ' ),
+	'Unblock'                   => array( 'ଫିଟାଇଦେବେ' ),
 	'Uncategorizedcategories'   => array( 'ଅସଜଡ଼ା_ଶ୍ରେଣୀ' ),
 	'Uncategorizedimages'       => array( 'ସଜଡ଼ା_ଶ୍ରେଣୀର_ଫାଇଲ' ),
 	'Uncategorizedpages'        => array( 'ଅସଜଡ଼ା_ଫାଇଲସବୁ' ),
-	'Uncategorizedtemplates'    => array( 'ଅସଜଡ଼ା_ଟେମ୍ପଲେଟ' ),
-	'Undelete'                  => array( 'ଲିଭାଅ_ନାହିଁ' ),
+	'Uncategorizedtemplates'    => array( 'ଅସଜଡ଼ା_ଛାଞ୍ଚ' ),
+	'Undelete'                  => array( 'ଲିଭାନ୍ତୁ_ନାହିଁ' ),
 	'Unlockdb'                  => array( 'DBଖୋଲିବା' ),
 	'Unusedcategories'          => array( 'ବ୍ୟବହାର_ହୋଇନଥିବା_ଶ୍ରେଣୀ' ),
 	'Unusedimages'              => array( 'ବ୍ୟବହାର_ହୋଇନଥିବା_ଫାଇଲ' ),
-	'Unusedtemplates'           => array( 'ବ୍ୟବହାର_ହୋଇନଥିବା_ଟେମ୍ପଲେଟ' ),
+	'Unusedtemplates'           => array( 'ବ୍ୟବହାର_ହୋଇନଥିବା_ଛାଞ୍ଚ' ),
 	'Unwatchedpages'            => array( 'ଦେଖାଯାଇନଥିବା_ପୃଷ୍ଠାସବୁ' ),
 	'Upload'                    => array( 'ଅପଲୋଡ଼' ),
 	'UploadStash'               => array( 'ଷ୍ଟାସ_ଅପଲୋଡ଼_କରନ୍ତୁ' ),
-	'Userlogin'                 => array( 'ଇଉଜର_ଲଗ_ଇନ' ),
-	'Userlogout'                => array( 'ଇଉଜର_ଲଗ_ଆଉଟ' ),
-	'Userrights'                => array( 'ଇଉଜର_ଅଧିକାର' ),
-	'Version'                   => array( 'ଭରସନ' ),
+	'Userlogin'                 => array( 'ସଭ୍ୟ_ଲଗ_ଇନ' ),
+	'Userlogout'                => array( 'ସଭ୍ୟ_ଲଗ_ଆଉଟ' ),
+	'Userrights'                => array( 'ସଭ୍ୟ_ଅଧିକାର' ),
+	'Version'                   => array( 'ସଂସ୍କରଣ' ),
 	'Wantedcategories'          => array( 'ଦରକାରି_ଶ୍ରେଣୀ' ),
 	'Wantedfiles'               => array( 'ଦରକାରି_ଫାଇଲ' ),
 	'Wantedpages'               => array( 'ଦରକାରି_ପୃଷ୍ଠା' ),
-	'Wantedtemplates'           => array( 'ଦରକାରି_ଟେମ୍ପଲେଟ' ),
+	'Wantedtemplates'           => array( 'ଦରକାରି_ଛାଞ୍ଚ' ),
 	'Watchlist'                 => array( 'ଦେଖଣା_ତାଲିକା' ),
-	'Whatlinkshere'             => array( 'ଏଠାରେ_କଣ_ଲିଁକ_ଅଛି' ),
+	'Whatlinkshere'             => array( 'ଏଠାରେ_କଣ_ଲିଙ୍କ_ଅଛି' ),
 	'Withoutinterwiki'          => array( 'ଇଣ୍ଟରଉଇକି_ବିନା' ),
 );
 
 $magicWords = array(
-	'redirect'              => array( '0', '#ଲେଉଟାଣି', '#REDIRECT' ),
-	'noeditsection'         => array( '0', '_ବଦଳା_ନହେବାଶ୍ରେଣୀ_', '__NOEDITSECTION__' ),
-	'currentmonth'          => array( '1', 'ଏବେକାର_ମାସ', 'ଏବେର_ମାସ୨', 'CURRENTMONTH', 'CURRENTMONTH2' ),
-	'currentmonth1'         => array( '1', 'ଏବେର_ମାସ', 'CURRENTMONTH1' ),
-	'currentmonthname'      => array( '1', 'ଏବେକାର_ମାସ_ନାଆଁ', 'CURRENTMONTHNAME' ),
-	'currentmonthnamegen'   => array( '1', 'ଏବେକାର_ମାସ_ନାଆଁ_ସାଧାରଣ', 'CURRENTMONTHNAMEGEN' ),
-	'currentmonthabbrev'    => array( '1', 'ଏବେକାର_ମାସ_ନାଆଁ_ସଂକ୍ଷିପ୍ତ', 'CURRENTMONTHABBREV' ),
-	'currentday'            => array( '1', 'ଏବେକାର_ଦିନ', 'CURRENTDAY' ),
-	'currentday2'           => array( '1', 'ଏବେକାର_ଦିନ୨', 'CURRENTDAY2' ),
-	'currentdayname'        => array( '1', 'ଏବେକାର_ଦିନ_ନାଆଁ', 'CURRENTDAYNAME' ),
-	'currentyear'           => array( '1', 'ଏବେକାର_ବର୍ଷ', 'CURRENTYEAR' ),
-	'currenttime'           => array( '1', 'ଏବେକାର_ସମୟ', 'CURRENTTIME' ),
-	'currenthour'           => array( '1', 'ଏବେକାର_ଘଣ୍ଟା', 'CURRENTHOUR' ),
-	'localmonth'            => array( '1', 'ଏବେର_ମାସ୧', 'ସ୍ଥାନୀୟ_ମାସ୨', 'LOCALMONTH', 'LOCALMONTH2' ),
-	'localmonth1'           => array( '1', 'ଏବେକାର_ମାସ୧', 'LOCALMONTH1' ),
-	'localmonthname'        => array( '1', 'ମାସ୧ର_ନାଆଁ', 'LOCALMONTHNAME' ),
-	'localmonthnamegen'     => array( '1', 'ସ୍ଥାନୀୟ_ମାସ୧_ନାଆଁ_ସାଧାରଣ', 'LOCALMONTHNAMEGEN' ),
-	'localmonthabbrev'      => array( '1', 'ସ୍ଥାନୀୟ_ମାସର୧_ନାଆଁ_ସଂକ୍ଷିପ୍ତ', 'LOCALMONTHABBREV' ),
-	'localday'              => array( '1', 'Local_ଦିନ', 'LOCALDAY' ),
-	'localday2'             => array( '1', 'ସ୍ଥାନୀୟ_ଦିନ୨', 'LOCALDAY2' ),
-	'localdayname'          => array( '1', 'ଦିନ', 'LOCALDAYNAME' ),
-	'localyear'             => array( '1', 'ସ୍ଥାନୀୟ_ବର୍ଷ', 'LOCALYEAR' ),
-	'localtime'             => array( '1', 'ସ୍ଥାନୀୟ_ସମୟ', 'LOCALTIME' ),
-	'localhour'             => array( '1', 'ସ୍ଥାନୀୟ_ଘଣ୍ଟା', 'LOCALHOUR' ),
-	'numberofpages'         => array( '1', 'ପୃଷ୍ଠା_ସଂଖ୍ୟା', 'NUMBEROFPAGES' ),
-	'numberofarticles'      => array( '1', 'ଲେଖା_ସଂଖ୍ୟା', 'NUMBEROFARTICLES' ),
-	'numberoffiles'         => array( '1', 'ଫାଇଲ_ସଂଖ୍ୟା', 'NUMBEROFFILES' ),
-	'numberofusers'         => array( '1', 'ବ୍ୟବାହାରକାରୀ_ସଂଖ୍ୟା', 'NUMBEROFUSERS' ),
-	'numberofactiveusers'   => array( '1', 'ସଚଳ_ବ୍ୟବାହାରକାରୀଙ୍କ_ସଂଖ୍ୟା', 'NUMBEROFACTIVEUSERS' ),
-	'numberofedits'         => array( '1', 'ବଦଳ_ସଂଖ୍ୟା', 'NUMBEROFEDITS' ),
-	'numberofviews'         => array( '1', 'କେତେଥର_ଦେଖାଯାଇଛି', 'NUMBEROFVIEWS' ),
-	'pagename'              => array( '1', 'ପୃଷ୍ଠା_ନାଆଁ', 'PAGENAME' ),
-	'pagenamee'             => array( '1', 'ପୃଷ୍ଠା_ନାମକାରଣକାରୀ', 'PAGENAMEE' ),
-	'namespace'             => array( '1', 'ନେମସ୍ପେସ', 'NAMESPACE' ),
-	'namespacee'            => array( '1', 'ନେମସ୍ପେସକାରୀ', 'NAMESPACEE' ),
-	'talkspace'             => array( '1', 'ଟକସ୍ପେସ', 'TALKSPACE' ),
-	'talkspacee'            => array( '1', 'ଟକସ୍ପେସକାରୀ', 'TALKSPACEE' ),
-	'subjectspace'          => array( '1', 'ବିଷୟସ୍ପେସ', 'ଲେଖାସ୍ପେସ', 'SUBJECTSPACE', 'ARTICLESPACE' ),
-	'msg'                   => array( '0', 'ମେସେଜ:', 'MSG:' ),
-	'img_manualthumb'       => array( '1', 'ନଖଦେଖଣା=$1', 'ଦେଖଣା=$1', 'thumbnail=$1', 'thumb=$1' ),
-	'img_right'             => array( '1', 'ଡାହାଣ', 'right' ),
-	'img_left'              => array( '1', 'ବାଆଁ', 'left' ),
-	'img_none'              => array( '1', 'କିଛି_ନୁହେଁ', 'none' ),
-	'img_width'             => array( '1', '$1_ପିକସେଲ', '$1px' ),
-	'img_center'            => array( '1', 'କେନ୍ଦ୍ର', 'center', 'centre' ),
-	'img_framed'            => array( '1', 'ଫ୍ରେମକରା', 'framed', 'enframed', 'frame' ),
-	'img_frameless'         => array( '1', 'ଫ୍ରେମନଥିବା', 'frameless' ),
-	'img_border'            => array( '1', 'ବର୍ଡର', 'border' ),
-	'img_baseline'          => array( '1', 'ବେସଲାଇନ', 'baseline' ),
-	'img_top'               => array( '1', 'ଉପର', 'top' ),
-	'img_text_top'          => array( '1', 'ଲେଖା-ଉପର', 'text-top' ),
-	'img_middle'            => array( '1', 'ମଝି', 'middle' ),
-	'img_bottom'            => array( '1', 'ତଳ', 'bottom' ),
-	'img_text_bottom'       => array( '1', 'ଲେଖା-ତଳ', 'text-bottom' ),
-	'img_link'              => array( '1', 'ଲିଙ୍କ=$1', 'link=$1' ),
-	'articlepath'           => array( '0', 'ଲେଖାର_ପଥ', 'ARTICLEPATH' ),
-	'server'                => array( '0', 'ସର୍ଭର', 'SERVER' ),
-	'grammar'               => array( '0', 'ବ୍ୟାକରଣ', 'GRAMMAR:' ),
-	'gender'                => array( '0', 'ଲିଙ୍ଗ', 'GENDER:' ),
-	'plural'                => array( '0', 'ବହୁବଚନ:', 'PLURAL:' ),
-	'raw'                   => array( '0', 'କଞ୍ଚା', 'RAW:' ),
-	'displaytitle'          => array( '1', 'ଦେଖଣାନାଆଁ', 'DISPLAYTITLE' ),
-	'newsectionlink'        => array( '1', '_ନୂଆବିଭାଗଲିଙ୍କ_', '__NEWSECTIONLINK__' ),
-	'nonewsectionlink'      => array( '1', '_ନୂଆ_ବିଭାଗ_ନକରିବା_ଲିଙ୍କ_', '__NONEWSECTIONLINK__' ),
-	'currentversion'        => array( '1', 'ନଗଦ_ରିଭିଜନ', 'CURRENTVERSION' ),
-	'numberofadmins'        => array( '1', 'ପରିଛାମାନଙ୍କତାଲିକା', 'NUMBEROFADMINS' ),
-	'padleft'               => array( '0', 'ବାଆଁପ୍ୟାଡ଼', 'PADLEFT' ),
-	'padright'              => array( '0', 'ଡାହାଣପ୍ୟାଡ଼', 'PADRIGHT' ),
-	'special'               => array( '0', 'ବିଶେଷ', 'special' ),
-	'filepath'              => array( '0', 'ଫାଇଲରାହା:', 'FILEPATH:' ),
-	'tag'                   => array( '0', 'ଟାଗ', 'tag' ),
-	'hiddencat'             => array( '1', '_ଲୁଚିଥିବାବିଭାଗ_', '__HIDDENCAT__' ),
-	'pagesize'              => array( '1', 'ଫରଦଆକାର', 'PAGESIZE' ),
-	'protectionlevel'       => array( '1', 'ପ୍ରତିରକ୍ଷାସ୍ତର', 'PROTECTIONLEVEL' ),
-	'formatdate'            => array( '0', 'ତାରିଖରପ୍ରକାର', 'formatdate', 'dateformat' ),
-	'url_path'              => array( '0', 'ବାଟ', 'PATH' ),
-	'url_wiki'              => array( '0', 'ଉଇକି', 'WIKI' ),
-	'url_query'             => array( '0', 'ପ୍ରଶ୍ନ', 'QUERY' ),
+	'redirect'                => array( '0', '#ଲେଉଟାଣି', '#REDIRECT' ),
+	'noeditsection'           => array( '0', '_ବଦଳା_ନହେବାଶ୍ରେଣୀ_', '__NOEDITSECTION__' ),
+	'currentmonth'            => array( '1', 'ଏବେକାର_ମାସ', 'ଏବେର_ମାସ୨', 'CURRENTMONTH', 'CURRENTMONTH2' ),
+	'currentmonth1'           => array( '1', 'ଏବେର_ମାସ', 'CURRENTMONTH1' ),
+	'currentmonthname'        => array( '1', 'ଏବେକାର_ମାସ_ନାଆଁ', 'CURRENTMONTHNAME' ),
+	'currentmonthnamegen'     => array( '1', 'ଏବେକାର_ମାସ_ନାଆଁ_ସାଧାରଣ', 'CURRENTMONTHNAMEGEN' ),
+	'currentmonthabbrev'      => array( '1', 'ଏବେକାର_ମାସ_ନାଆଁ_ସଂକ୍ଷିପ୍ତ', 'CURRENTMONTHABBREV' ),
+	'currentday'              => array( '1', 'ଏବେକାର_ଦିନ', 'CURRENTDAY' ),
+	'currentday2'             => array( '1', 'ଏବେକାର_ଦିନ୨', 'CURRENTDAY2' ),
+	'currentdayname'          => array( '1', 'ଏବେକାର_ଦିନ_ନାଆଁ', 'CURRENTDAYNAME' ),
+	'currentyear'             => array( '1', 'ଏବେକାର_ବର୍ଷ', 'CURRENTYEAR' ),
+	'currenttime'             => array( '1', 'ଏବେକାର_ସମୟ', 'CURRENTTIME' ),
+	'currenthour'             => array( '1', 'ଏବେକାର_ଘଣ୍ଟା', 'CURRENTHOUR' ),
+	'localmonth'              => array( '1', 'ଏବେର_ମାସ୧', 'ସ୍ଥାନୀୟ_ମାସ୨', 'LOCALMONTH', 'LOCALMONTH2' ),
+	'localmonth1'             => array( '1', 'ଏବେକାର_ମାସ୧', 'LOCALMONTH1' ),
+	'localmonthname'          => array( '1', 'ମାସ୧ର_ନାଆଁ', 'LOCALMONTHNAME' ),
+	'localmonthnamegen'       => array( '1', 'ସ୍ଥାନୀୟ_ମାସ୧_ନାଆଁ_ସାଧାରଣ', 'LOCALMONTHNAMEGEN' ),
+	'localmonthabbrev'        => array( '1', 'ସ୍ଥାନୀୟ_ମାସର୧_ନାଆଁ_ସଂକ୍ଷିପ୍ତ', 'LOCALMONTHABBREV' ),
+	'localday'                => array( '1', 'Local_ଦିନ', 'LOCALDAY' ),
+	'localday2'               => array( '1', 'ସ୍ଥାନୀୟ_ଦିନ୨', 'LOCALDAY2' ),
+	'localdayname'            => array( '1', 'ଦିନ', 'LOCALDAYNAME' ),
+	'localyear'               => array( '1', 'ସ୍ଥାନୀୟ_ବର୍ଷ', 'LOCALYEAR' ),
+	'localtime'               => array( '1', 'ସ୍ଥାନୀୟ_ସମୟ', 'LOCALTIME' ),
+	'localhour'               => array( '1', 'ସ୍ଥାନୀୟ_ଘଣ୍ଟା', 'LOCALHOUR' ),
+	'numberofpages'           => array( '1', 'ପୃଷ୍ଠା_ସଂଖ୍ୟା', 'NUMBEROFPAGES' ),
+	'numberofarticles'        => array( '1', 'ଲେଖା_ସଂଖ୍ୟା', 'NUMBEROFARTICLES' ),
+	'numberoffiles'           => array( '1', 'ଫାଇଲ_ସଂଖ୍ୟା', 'NUMBEROFFILES' ),
+	'numberofusers'           => array( '1', 'ବ୍ୟବାହାରକାରୀ_ସଂଖ୍ୟା', 'NUMBEROFUSERS' ),
+	'numberofactiveusers'     => array( '1', 'ସଚଳ_ବ୍ୟବାହାରକାରୀଙ୍କ_ସଂଖ୍ୟା', 'NUMBEROFACTIVEUSERS' ),
+	'numberofedits'           => array( '1', 'ବଦଳ_ସଂଖ୍ୟା', 'NUMBEROFEDITS' ),
+	'numberofviews'           => array( '1', 'କେତେଥର_ଦେଖାଯାଇଛି', 'NUMBEROFVIEWS' ),
+	'pagename'                => array( '1', 'ପୃଷ୍ଠା_ନାଆଁ', 'PAGENAME' ),
+	'pagenamee'               => array( '1', 'ପୃଷ୍ଠା_ନାମକାରଣକାରୀ', 'PAGENAMEE' ),
+	'namespace'               => array( '1', 'ନେମସ୍ପେସ', 'NAMESPACE' ),
+	'namespacee'              => array( '1', 'ନେମସ୍ପେସକାରୀ', 'NAMESPACEE' ),
+	'talkspace'               => array( '1', 'ଟକସ୍ପେସ', 'TALKSPACE' ),
+	'talkspacee'              => array( '1', 'ଟକସ୍ପେସକାରୀ', 'TALKSPACEE' ),
+	'subjectspace'            => array( '1', 'ବିଷୟସ୍ପେସ', 'ଲେଖାସ୍ପେସ', 'SUBJECTSPACE', 'ARTICLESPACE' ),
+	'msg'                     => array( '0', 'ମେସେଜ:', 'MSG:' ),
+	'img_manualthumb'         => array( '1', 'ନଖଦେଖଣା=$1', 'ଦେଖଣା=$1', 'thumbnail=$1', 'thumb=$1' ),
+	'img_right'               => array( '1', 'ଡାହାଣ', 'right' ),
+	'img_left'                => array( '1', 'ବାଆଁ', 'left' ),
+	'img_none'                => array( '1', 'କିଛି_ନୁହେଁ', 'none' ),
+	'img_width'               => array( '1', '$1_ପିକସେଲ', '$1px' ),
+	'img_center'              => array( '1', 'କେନ୍ଦ୍ର', 'center', 'centre' ),
+	'img_framed'              => array( '1', 'ଫ୍ରେମକରା', 'framed', 'enframed', 'frame' ),
+	'img_frameless'           => array( '1', 'ଫ୍ରେମନଥିବା', 'frameless' ),
+	'img_border'              => array( '1', 'ବର୍ଡର', 'border' ),
+	'img_baseline'            => array( '1', 'ବେସଲାଇନ', 'baseline' ),
+	'img_top'                 => array( '1', 'ଉପର', 'top' ),
+	'img_text_top'            => array( '1', 'ଲେଖା-ଉପର', 'text-top' ),
+	'img_middle'              => array( '1', 'ମଝି', 'middle' ),
+	'img_bottom'              => array( '1', 'ତଳ', 'bottom' ),
+	'img_text_bottom'         => array( '1', 'ଲେଖା-ତଳ', 'text-bottom' ),
+	'img_link'                => array( '1', 'ଲିଙ୍କ=$1', 'link=$1' ),
+	'articlepath'             => array( '0', 'ଲେଖାର_ପଥ', 'ARTICLEPATH' ),
+	'server'                  => array( '0', 'ସର୍ଭର', 'SERVER' ),
+	'grammar'                 => array( '0', 'ବ୍ୟାକରଣ', 'GRAMMAR:' ),
+	'gender'                  => array( '0', 'ଲିଙ୍ଗ', 'GENDER:' ),
+	'plural'                  => array( '0', 'ବହୁବଚନ:', 'PLURAL:' ),
+	'raw'                     => array( '0', 'କଞ୍ଚା', 'RAW:' ),
+	'displaytitle'            => array( '1', 'ଦେଖଣାନାଆଁ', 'DISPLAYTITLE' ),
+	'newsectionlink'          => array( '1', '_ନୂଆବିଭାଗଲିଙ୍କ_', '__NEWSECTIONLINK__' ),
+	'nonewsectionlink'        => array( '1', '_ନୂଆ_ବିଭାଗ_ନକରିବା_ଲିଙ୍କ_', '__NONEWSECTIONLINK__' ),
+	'currentversion'          => array( '1', 'ନଗଦ_ରିଭିଜନ', 'CURRENTVERSION' ),
+	'numberofadmins'          => array( '1', 'ପରିଛାମାନଙ୍କତାଲିକା', 'NUMBEROFADMINS' ),
+	'padleft'                 => array( '0', 'ବାଆଁପ୍ୟାଡ଼', 'PADLEFT' ),
+	'padright'                => array( '0', 'ଡାହାଣପ୍ୟାଡ଼', 'PADRIGHT' ),
+	'special'                 => array( '0', 'ବିଶେଷ', 'special' ),
+	'filepath'                => array( '0', 'ଫାଇଲରାହା:', 'FILEPATH:' ),
+	'tag'                     => array( '0', 'ଟାଗ', 'tag' ),
+	'hiddencat'               => array( '1', '_ଲୁଚିଥିବାବିଭାଗ_', '__HIDDENCAT__' ),
+	'pagesize'                => array( '1', 'ଫରଦଆକାର', 'PAGESIZE' ),
+	'protectionlevel'         => array( '1', 'ପ୍ରତିରକ୍ଷାସ୍ତର', 'PROTECTIONLEVEL' ),
+	'formatdate'              => array( '0', 'ତାରିଖରପ୍ରକାର', 'formatdate', 'dateformat' ),
+	'url_path'                => array( '0', 'ବାଟ', 'PATH' ),
+	'url_wiki'                => array( '0', 'ଉଇକି', 'WIKI' ),
+	'url_query'               => array( '0', 'ପ୍ରଶ୍ନ', 'QUERY' ),
 );
+
+$digitGroupingPattern = "##,##,###";
 
 $messages = array(
 # User preference toggles
@@ -252,26 +261,26 @@ $messages = array(
 'tog-hidepatrolled'           => 'ନଗଦ ବଦଳରେ ଥିବା ଜଗାହୋଇଥିବା ବଦଳ ସବୁକୁ ଲୁଚାଇବେ',
 'tog-newpageshidepatrolled'   => 'ନୂଆ ପୃଷ୍ଠାତାଲିକାରୁ ଜଗାହୋଇଥିବା ବଦଳସବୁକୁ ଲୁଚାଇବେ',
 'tog-extendwatchlist'         => 'କେବଳ ନଗଦ ନୁହେଁ, ସବୁଯାକ ବଦଳକୁ ଦେଖାଇବା ନିମନ୍ତେ ଦେଖଣାତାଲିକାକୁ ବଢ଼ାଇବେ',
-'tog-usenewrc'                => 'ଉନ୍ନତ ନଗଦ ବଦଳ ବ୍ୟବହାର କରନ୍ତୁ (ଜାଭାସ୍କ୍ରିପ୍ଟ ଲୋଡ଼ା)',
+'tog-usenewrc'                => 'ନଗଦ ବଦଳରେ ପୃଷ୍ଠା ଅନୁଯାୟୀ ଗୋଷ୍ଠୀ ବଦଳ ଏବଂ ଦେଖଣା (ଜାଭାସ୍କ୍ରିପ୍ଟ ଲୋଡ଼ା)',
 'tog-numberheadings'          => 'ଆପେଆପେ-ସଂଖ୍ୟାର ନାମଗୁଡ଼ିକ',
-'tog-showtoolbar'             => 'ସମ୍ପାଦନା ଟୁଲବାର ଦେଖାଇବେ (ଜାଭାସ୍କ୍ରିପ୍ଟ ସଚଳ କରିବେ)',
+'tog-showtoolbar'             => 'ସମ୍ପାଦନା ଟୁଲବାର ଦେଖାଇବେ (ଜାଭାସ୍କ୍ରିପ୍ଟ ଲୋଡ଼ା)',
 'tog-editondblclick'          => 'ଦୁଇଥର କ୍ଲିକରେ ପୃଷ୍ଠା ବଦଳାଇବେ (ଜାଭାସ୍କ୍ରିପ୍ଟ ଲୋଡ଼ା)',
 'tog-editsection'             => '[ବଦଳାଇବେ] ଲିଙ୍କରେ ବିଭାଗର ସମ୍ପାଦନାକୁ ସଚଳ କରିବେ',
 'tog-editsectiononrightclick' => 'ବିଭାଗ ନାମରେ ଡାହାଣ କ୍ଲିକ କରି ବିଭାଗ ସମ୍ପାଦନାକୁ ସଚଳ କରିବେ (ଜାଭାସ୍କ୍ରିପ୍ଟ ଲୋଡ଼ା)',
 'tog-showtoc'                 => 'ସୂଚୀପତ୍ର ଦେଖାଇବେ (୩ରୁ ଅଧିକ ମୁଖ୍ୟ ନାମ ଥିଲେ)',
 'tog-rememberpassword'        => 'ଏହି ବ୍ରାଉଜରରେ (ସବୁଠୁ ଅଧିକ ହେଲେ $1 {{PLURAL:$1|day|ଦିନ}}) ପାଇଁ ମୋ ଲଗଇନ ମନେ ରଖିଥିବେ',
-'tog-watchcreations'          => 'ମୋ ତିଆରି ପୃଷ୍ଠାସବୁକୁ ମୋର ଦେଖଣାତାଲିକା ଭିତରେ ରଖିବେ',
-'tog-watchdefault'            => 'ମୋ ଦେଇ ସମ୍ପାଦିତ ପୃଷ୍ଠାସବୁକୁ ମୋର ଦେଖଣାତାଲିକା ଭିତରେ ରଖିବେ',
-'tog-watchmoves'              => 'ମୋ ଦେଇ ଘୁଞ୍ଚାଯାଇଥିବା ପୃଷ୍ଠାସବୁକୁ ମୋର ଦେଖଣାତାଲିକା ଭିତରେ ରଖିବେ',
-'tog-watchdeletion'           => 'ମୋ ଦେଇ ଲିଭାଯାଇଥିବା ପୃଷ୍ଠାସବୁକୁ ମୋର ଦେଖଣାତାଲିକା ଭିତରେ ରଖିବେ',
-'tog-minordefault'            => 'ସବୁଯାକ ସମ୍ପାଦନାକୁ ଛାଏଁ ଟିକେ ବଦଳ ଭାବରେ ସୂଚିତ କରିବେ',
+'tog-watchcreations'          => 'ମୋ ତିଆରି ପୃଷ୍ଠାସବୁକୁ ଏବଂ ମୋ ଅପଲୋଡ଼ଗୁଡ଼ିକୁ ମୋର ଦେଖଣାତାଲିକାରେ ଯୋଡ଼ନ୍ତୁ',
+'tog-watchdefault'            => 'ମୁଁ ବଦଳେଇଥିବା ପୃଷ୍ଠା ଏବଂ ଫାଇଲଗୁଡ଼ିକୁ ମୋର ଦେଖଣାତାଲିକାରେ ଯୋଡ଼ନ୍ତୁ',
+'tog-watchmoves'              => 'ମୁଁ ଘୁଞ୍ଚାଇଥିବା ପୃଷ୍ଠା ଏବଂ ଫାଇଲଗୁଡ଼ିକୁ ମୋର ଦେଖଣାତାଲିକାରେ ଯୋଡ଼ନ୍ତୁ',
+'tog-watchdeletion'           => 'ମୁଁ ଲିଭାଇଥିବା ପୃଷ୍ଠା ଏବଂ ଫାଇଲଗୁଡ଼ିକୁ ମୋର ଦେଖଣାତାଲିକାରେ ଯୋଡ଼ନ୍ତୁ',
+'tog-minordefault'            => 'ସବୁଯାକ ସମ୍ପାଦନାକୁ ଛାଏଁ ଛୋଟ ବଦଳ ଭାବରେ ସୂଚିତ କରିବେ',
 'tog-previewontop'            => 'ଏଡ଼ିଟ ବାକ୍ସ ଆଗରୁ ଦେଖଣା ଦେଖାଇବେ',
 'tog-previewonfirst'          => 'ପ୍ରଥମ ବଦଳର ଦେଖଣା ଦେଖାଇବେ',
 'tog-nocache'                 => 'ବ୍ରାଉଜର ପୃଷ୍ଠା ସଂରକ୍ଷଣକୁ ଅଚଳ କରିବେ',
-'tog-enotifwatchlistpages'    => 'ମୋ ଦେଖଣାତାଲିକାରେ ଥିବା ପୃଷ୍ଠାରେ କିଛି ବଦଳ ହେଲେ ମୋତେ ଇ-ମେଲ କରିବେ',
+'tog-enotifwatchlistpages'    => 'ମୋ ଦେଖଣାତାଲିକାରେ ଥିବା ପୃଷ୍ଠା ବା ଫାଇଲରେ କିଛି ବଦଳ ହେଲେ ମୋତେ ଇମେଲ କରିବେ',
 'tog-enotifusertalkpages'     => 'ମୋର ଆଲୋଚନା ପୃଷ୍ଠାରେ କିଛି ବଦଳ ହେଲେ ମୋତେ ଇ-ମେଲ କରିବେ',
-'tog-enotifminoredits'        => 'ପୃଷ୍ଠାରେ ଛୋଟ ଛୋଟ ବଦଳ ହେଲେ ବି ମୋତେ ଇ-ମେଲ କରିବେ',
-'tog-enotifrevealaddr'        => 'ସୂଚନା ଇ-ମେଲ ରେ ମୋର ଇ-ମେଲ ଠିକଣା ଦେଖାଇବେ',
+'tog-enotifminoredits'        => 'ପୃଷ୍ଠାରେ ଏବଂ ଫାଇଲଗୁଡିକରେ ଛୋଟ ଛୋଟ ବଦଳ ହେଲେ ବି ମୋତେ ଇ-ମେଲ କରିବେ',
+'tog-enotifrevealaddr'        => 'ସୂଚନା ଇମେଲ ରେ ମୋର ଇମେଲ ଠିକଣା ଦେଖାଇବେ',
 'tog-shownumberswatching'     => 'ଦେଖୁଥିବା ବ୍ୟବହାରକାରୀଙ୍କ ସଂଖ୍ୟା ଦେଖାଇବେ',
 'tog-oldsig'                  => 'ଏବେ ଥିବା ନାମ:',
 'tog-fancysig'                => 'ଦସ୍ତଖତକୁ ଉଇକିଟେକ୍ସଟ ଭାବରେ ଗଣିବେ (ଆପେଆପେ ଥିବା ଲିଙ୍କ ବିନା)',
@@ -293,7 +302,7 @@ $messages = array(
 
 'underline-always'  => 'ସବୁବେଳେ',
 'underline-never'   => 'କେବେନୁହେଁ',
-'underline-default' => 'ବ୍ରାଉଜରରେ ଆଗରୁ ଥିବା ସୁବିଧା',
+'underline-default' => 'ବ୍ରାଉଜର କିମ୍ବା ସ୍କିନରେ ଆଗରୁ ଥିବା ସୁବିଧା',
 
 # Font style option in Special:Preferences
 'editfont-style'     => 'ଫଣ୍ଟ ଶୈଳୀକୁ ବଦଳାଇବେ:',
@@ -310,18 +319,18 @@ $messages = array(
 'thursday'      => 'ଗୁରୁବାର',
 'friday'        => 'ଶୁକ୍ରବାର',
 'saturday'      => 'ଶନିବାର',
-'sun'           => 'ରବିବାର',
-'mon'           => 'ସୋମବାର',
-'tue'           => 'ମଙ୍ଗଳବାର',
-'wed'           => 'ବୁଧବାର',
-'thu'           => 'ଗୁରୁବାର',
-'fri'           => 'ଶୁକ୍ରବାର',
-'sat'           => 'ଶନିବାର',
+'sun'           => 'ରବି',
+'mon'           => 'ସୋମ',
+'tue'           => 'ମଙ୍ଗଳ',
+'wed'           => 'ବୁଧ',
+'thu'           => 'ଗୁରୁ',
+'fri'           => 'ଶୁକ୍ର',
+'sat'           => 'ଶନି',
 'january'       => 'ଜାନୁଆରୀ',
-'february'      => 'ଫେବୃଆ ରି',
-'march'         => 'ମାର୍ଚ',
-'april'         => 'ଏପ୍ରିଲ',
-'may_long'      => 'ମେ',
+'february'      => 'ଫେବୃଆରୀ',
+'march'         => 'ମାର୍ଚ୍ଚ',
+'april'         => 'ଅପ୍ରେଲ',
+'may_long'      => 'ମଇ',
 'june'          => 'ଜୁନ',
 'july'          => 'ଜୁଲାଇ',
 'august'        => 'ଅଗଷ୍ଟ',
@@ -330,22 +339,22 @@ $messages = array(
 'november'      => 'ନଭେମ୍ବର',
 'december'      => 'ଡିସେମ୍ବର',
 'january-gen'   => 'ଜାନୁଆରୀ',
-'february-gen'  => 'ଫେବୃଆରି',
-'march-gen'     => 'ମାର୍ଚ',
-'april-gen'     => 'ଏପ୍ରିଲ',
-'may-gen'       => 'ମେ',
+'february-gen'  => 'ଫେବୃଆରୀ',
+'march-gen'     => 'ମାର୍ଚ୍ଚ',
+'april-gen'     => 'ଅପ୍ରେଲ',
+'may-gen'       => 'ମଇ',
 'june-gen'      => 'ଜୁନ',
 'july-gen'      => 'ଜୁଲାଇ',
 'august-gen'    => 'ଅଗଷ୍ଟ',
-'september-gen' => 'ସେପ୍ଟେଟେମ୍ବର',
+'september-gen' => 'ସେପ୍ଟେମ୍ବର',
 'october-gen'   => 'ଅକ୍ଟୋବର',
 'november-gen'  => 'ନଭେମ୍ବର',
 'december-gen'  => 'ଡିସେମ୍ବର',
 'jan'           => 'ଜାନୁଆରୀ',
-'feb'           => 'ଫେବୃଆରି',
-'mar'           => 'ମାର୍ଚ',
-'apr'           => 'ଏପ୍ରିଲ',
-'may'           => 'ମେ',
+'feb'           => 'ଫେବୃଆରୀ',
+'mar'           => 'ମାର୍ଚ୍ଚ',
+'apr'           => 'ଅପ୍ରେଲ',
+'may'           => 'ମଇ',
 'jun'           => 'ଜୁନ',
 'jul'           => 'ଜୁଲାଇ',
 'aug'           => 'ଅଗଷ୍ଟ',
@@ -378,36 +387,36 @@ $messages = array(
 'newwindow'     => '(ଏହା ନୂଆ ଉଇଣ୍ଡୋରେ ଖୋଲିବ)',
 'cancel'        => 'ନାକଚ',
 'moredotdotdot' => 'ଅଧିକ...',
-'mypage'        => 'ମୋ ପୃଷ୍ଠା',
-'mytalk'        => 'ମୋ ଆଲୋଚନା',
+'mypage'        => 'ପୃଷ୍ଠା',
+'mytalk'        => 'ଆଲୋଚନା',
 'anontalk'      => 'ଏହି ଆଇ.ପି. ଠିକଣା ଉପରେ ଆଲୋଚନା',
 'navigation'    => 'ଦିଗବାରେଣି',
 'and'           => '&#32;ଓ',
 
 # Cologne Blue skin
-'qbfind'         => 'ଖୋଜିବା',
+'qbfind'         => 'ଖୋଜନ୍ତୁ',
 'qbbrowse'       => 'ଖୋଜିବା',
-'qbedit'         => 'ବଦଳାଇବେ',
-'qbpageoptions'  => 'ଏହି ଫର୍ଦଟି',
+'qbedit'         => 'ଏହାକୁ ବଦଳାନ୍ତୁ',
+'qbpageoptions'  => 'ଏହି ପୃଷ୍ଠାଟି',
 'qbpageinfo'     => 'ଭିତର ଚିଜ',
-'qbmyoptions'    => 'ମୋର ଫର୍ଦ',
-'qbspecialpages' => 'ନିଆରା ପୃଷ୍ଠା',
+'qbmyoptions'    => 'ମୋ ପୃଷ୍ଠାଗୁଡ଼ିକ',
+'qbspecialpages' => 'ବିଶେଷ ପୃଷ୍ଠା',
 'faq'            => 'ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ',
-'faqpage'        => 'Project:ବାରମ୍ବାର ପଚାରାଯାଉଥିବା ପ୍ରଶ୍ନ',
+'faqpage'        => 'Project:ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ',
 
 # Vector skin
-'vector-action-addsection'       => 'ଲେଖା ମିଶାଇବା',
+'vector-action-addsection'       => 'ନୂଆ ଯୋଡ଼ନ୍ତୁ',
 'vector-action-delete'           => 'ଲିଭାଇବେ',
 'vector-action-move'             => 'ଘୁଞ୍ଚାଇବେ',
 'vector-action-protect'          => 'କିଳିବେ',
 'vector-action-undelete'         => 'ଲିଭାଇବେ ନାହିଁ',
 'vector-action-unprotect'        => 'କିଳିବେ ନାହିଁ',
-'vector-simplesearch-preference' => 'ଆହୁରି ଅଧିକ ଖୋଜା ମତାମତ ଗୁଡ଼ିକ ସଚଳ କରିବେ (କେବଳ ଭେକ୍ଟର ସ୍କିନ)',
-'vector-view-create'             => 'ତିଆରି',
-'vector-view-edit'               => 'ବଦଳାଇବେ',
-'vector-view-history'            => 'ଇତିହାସ ଦେଖିବେ',
-'vector-view-view'               => 'ପଢ଼ିବେ',
-'vector-view-viewsource'         => 'ଉତ୍ସ ଦେଖିବେ',
+'vector-simplesearch-preference' => 'ସହଜ ଖୋଜା ବାରଟିକୁ ସଚଳ କରିବେ (କେବଳ ଭେକ୍ଟର ସ୍କିନ)',
+'vector-view-create'             => 'ଗଢ଼ନ୍ତୁ',
+'vector-view-edit'               => 'ଏହାକୁ ବଦଳାନ୍ତୁ',
+'vector-view-history'            => 'ଇତିହାସ',
+'vector-view-view'               => 'ପଢ଼ନ୍ତୁ',
+'vector-view-viewsource'         => 'ମୂଳାଧାର ଦେଖିବେ',
 'actions'                        => 'କାମ',
 'namespaces'                     => 'ନେମସ୍ପେସ',
 'variants'                       => 'ନିଆରା',
@@ -427,11 +436,11 @@ $messages = array(
 'permalink'         => 'ସବୁଦିନିଆ ଲିଙ୍କ',
 'print'             => 'ପ୍ରିଣ୍ଟ କରିବେ',
 'view'              => 'ଦେଖଣା',
-'edit'              => 'ବଦଳାଇବେ',
+'edit'              => 'ଏହାକୁ ବଦଳାନ୍ତୁ',
 'create'            => 'ତିଆରି କରିବେ',
-'editthispage'      => 'ଏହି ପୃଷ୍ଠାଟିକୁ ବଦଳାଇବା',
-'create-this-page'  => 'ଏହି ପୃଷ୍ଠାଟି ତିଆରିବେ',
-'delete'            => 'ଲିଭେଇବେ',
+'editthispage'      => 'ଏହି ପୃଷ୍ଠାଟିକୁ ବଦଳାଇବେ',
+'create-this-page'  => 'ଏହି ପୃଷ୍ଠା ତିଆରି କରିବେ',
+'delete'            => 'ଲିଭାଇବେ',
 'deletethispage'    => 'ଏହି ପୃଷ୍ଠାଟି ଲିଭାଇବେ',
 'undelete_short'    => '{{PLURAL:$1|ଗୋଟିଏ ବଦଳ|$1ଟି ବଦଳ}} ଯାହା ଲିଭାସରିଛି ତାହାକୁ ପଛକୁ ଫେରାଇଦେବା',
 'viewdeleted_short' => '{{PLURAL:$1|ଗୋଟିଏ ଲିଭାଯାଇଥିବା ବଦଳ|$1ଟି ଲିଭାଯାଇଥିବା ବଦଳ}} ଦେଖାଇବେ',
@@ -443,7 +452,7 @@ $messages = array(
 'newpage'           => 'ନୂଆ ପୃଷ୍ଠା',
 'talkpage'          => 'ପୃଷ୍ଠାକୁ ଆଲୋଚନା କରନ୍ତୁ',
 'talkpagelinktext'  => 'କଥାଭାଷା',
-'specialpage'       => 'ନିଆରା ପୃଷ୍ଠା',
+'specialpage'       => 'ବିଶେଷ ପୃଷ୍ଠା',
 'personaltools'     => 'ନିଜର ଟୁଲ',
 'postcomment'       => 'ନୂଆ ଭାଗ',
 'articlepage'       => 'ସୂଚୀ ପୃଷ୍ଠାଟି ଦେଖାଇବେ',
@@ -455,10 +464,10 @@ $messages = array(
 'imagepage'         => 'ଫାଇଲ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
 'mediawikipage'     => 'ମେସେଜ ପୃଷ୍ଠାଟି ଦେଖାଇବେ',
 'templatepage'      => 'ଛାଞ୍ଚ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
-'viewhelppage'      => 'ସହାଯୋଗ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
+'viewhelppage'      => 'ସହଯୋଗ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
 'categorypage'      => 'ଶ୍ରେଣୀ ପୃଷ୍ଠାଟିକୁ ଦେଖାଇବେ',
 'viewtalkpage'      => 'ଆଲୋଚନାଗୁଡ଼ିକୁ ଦେଖନ୍ତୁ',
-'otherlanguages'    => 'ଅଲଗା ଭାଷା',
+'otherlanguages'    => 'ଅଲଗା ଭାଷାରେ',
 'redirectedfrom'    => '($1 ରୁ ଲେଉଟି ଆସିଛି)',
 'redirectpagesub'   => 'ଆଉଥରେ ଫେରିବା ପୃଷ୍ଠା',
 'lastmodifiedat'    => 'ଏହି ପୃଷ୍ଠାଟି $1 ତାରିଖ $2 ବେଳେ ବଦଳାଯାଇଥିଲା ।',
@@ -471,7 +480,7 @@ $messages = array(
 ଅନେକ ସଭ୍ୟ ଏହି ଏକା ପୃଷ୍ଠାଟି ଦେଖିବାକୁ ଚେଷ୍ଟାକରୁଅଛନ୍ତି ।
 ଏହି ପୃଷ୍ଠାକୁ ଆଉଥରେ ଖୋଲିବା ଆଗରୁ ଦୟାକରି କିଛି କ୍ଷଣ ଅପେକ୍ଷା କରନ୍ତୁ ।
 $1',
-'pool-timeout'      => 'କଞ୍ଚି ଖୋଲାଯିବା ପାଇଁ ଅପେକ୍ଷା କରୁକରୁ ସମୟ ସରିଗଲା',
+'pool-timeout'      => 'ତାଲା ଖୋଲାଯିବା ପାଇଁ ଅପେକ୍ଷା କରୁକରୁ ସମୟ ସରିଗଲା',
 'pool-queuefull'    => 'ପୁଲ ଧାଡ଼ିଟି ଭରିଯାଇଅଛି',
 'pool-errorunknown' => 'ଅଜଣା ଅସୁବିଧା',
 
@@ -486,17 +495,17 @@ $1',
 'disclaimerpage'       => 'Project:ଆମେ ଦାୟୀ ନୋହୁଁ',
 'edithelp'             => 'ଲେଖା ସାହାଯ୍ୟ',
 'edithelppage'         => 'Help:ବଦଳାଇବା',
-'helppage'             => 'Help:ଭିତର ଚିଜ',
+'helppage'             => 'Help:ସୂଚୀ',
 'mainpage'             => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
 'mainpage-description' => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
 'policy-url'           => 'Project:ନୀତି',
-'portal'               => 'ସଙ୍ଘ ଆଲୋଚନା ସଭା',
-'portal-url'           => 'Project:ସଙ୍ଘ ଆଲୋଚନା ସଭା',
+'portal'               => 'ସଂଘ ସୂଚନା ଫଳକ',
+'portal-url'           => 'Project:ସଂଘ ସୂଚନା ଫଳକ',
 'privacy'              => 'ଗୁମର ନୀତି',
 'privacypage'          => 'Project:ଗୁମର ନୀତି',
 
 'badaccess'        => 'ଅନୁମତି ମିଳିବାରେ ଅସୁବିଧା',
-'badaccess-group0' => 'ଆପଣ ଅନୁରୋଷ କରିଥିବା ପୃଷ୍ଠାଟିରେ କିଛି କାମ କରିବା ନିମନ୍ତେ ଆପଣଙ୍କୁ ଅନୁମତି ମିଳିନାହିଁ',
+'badaccess-group0' => 'ଆପଣ ଅନୁରୋଧ କରିଥିବା ପୃଷ୍ଠାଟିରେ କିଛି କାମ କରିବା ନିମନ୍ତେ ଆପଣଙ୍କୁ ଅନୁମତି ମିଳିନାହିଁ',
 'badaccess-groups' => 'ଆପଣ ଅନୁରୋଧ କରିଥିବା କାମଟି କେବଳ {{PLURAL:$2|ଗୋଠ|ଗୋଠମାନଙ୍କ ଭିତରୁ ଗୋଟିଏ ଗୋଠ}}: $1 ର ସଭ୍ୟମାନଙ୍କ ଭିତରେ ସୀମିତ ।',
 
 'versionrequired'     => 'ମିଡ଼ିଆଉଇକି ର $1 ତମ ସଙ୍କଳନଟି ଲୋଡ଼ା',
@@ -505,19 +514,19 @@ $1',
 
 'ok'                      => 'ଠିକ ଅଛି',
 'retrievedfrom'           => '"$1" ରୁ ଅଣାଯାଇଅଛି',
-'youhavenewmessages'      => 'ଆପଣଙ୍କର $1 ($2).',
-'newmessageslink'         => 'ନୂଆ ମେସେଜ',
+'youhavenewmessages'      => 'ଆପଣଙ୍କ ପାଇଁ $1 ($2)।',
+'newmessageslink'         => 'ନୂଆ ସନ୍ଦେଶ',
 'newmessagesdifflink'     => 'ଶେଷ ବଦଳ',
 'youhavenewmessagesmulti' => '$1 ତାରିଖରେ ନୂଆ ଚିଠିଟିଏ ଆସିଛି',
-'editsection'             => 'ବଦଳାଇବେ',
-'editold'                 => 'ବଦଳାଇବେ',
-'viewsourceold'           => 'ଉତ୍ସ ଦେଖିବେ',
-'editlink'                => 'ବଦଳାଇବେ',
-'viewsourcelink'          => 'ଉତ୍ସ ଦେଖିବେ',
+'editsection'             => 'ସମ୍ପାଦନା',
+'editold'                 => 'ଏହାକୁ ବଦଳାନ୍ତୁ',
+'viewsourceold'           => 'ମୂଳାଧାର ଦେଖିବେ',
+'editlink'                => 'ସମ୍ପାଦନା',
+'viewsourcelink'          => 'ମୂଳାଧାର ଦେଖିବେ',
 'editsectionhint'         => '$1 ଭାଗଟିକୁ ବଦଳାଇବେ',
-'toc'                     => 'ଭିତର ଚିଜ',
+'toc'                     => 'ବିଷୟସୂଚୀ',
 'showtoc'                 => 'ଦେଖାଇବେ',
-'hidetoc'                 => 'ଲୁଚାଇବେ',
+'hidetoc'                 => 'ଲୁଚାନ୍ତୁ',
 'collapsible-collapse'    => 'ଚାପିଦେବେ',
 'collapsible-expand'      => 'ବଢ଼ାଇବେ',
 'thisisdeleted'           => '$1 କୁ ଦେଖିବେ ଅବା ପୁନସ୍ଥାପନ କରିବେ?',
@@ -526,7 +535,7 @@ $1',
 'feedlinks'               => 'ଫିଡ଼:',
 'feed-invalid'            => 'ଅଚଳ ସବସ୍କ୍ରିପସନ ଫିଡ଼ ପ୍ରକାର ।',
 'feed-unavailable'        => 'ସିଣ୍ଡିକେସନ ଫିଡ଼ସବୁ ମିଳୁନାହିଁ',
-'site-rss-feed'           => '$1 ଆରେସେସ ଫିଡ଼',
+'site-rss-feed'           => '$1 ଆରଏସଏସ ଫିଡ଼',
 'site-atom-feed'          => '$1 ଆଟମ ଫିଡ଼',
 'page-rss-feed'           => '$1 ଟି ଆରେସେସ ଫିଡ଼',
 'page-atom-feed'          => '$1 ଟି ଆଟମ ଫିଡ଼',
@@ -538,7 +547,7 @@ $1',
 'nstab-main'      => 'ପୃଷ୍ଠା',
 'nstab-user'      => 'ବ୍ୟବହାରକାରୀଙ୍କର ପୃଷ୍ଠା',
 'nstab-media'     => 'ମେଡିଆ ପରଦ',
-'nstab-special'   => 'ନିଆରା ପୃଷ୍ଠା',
+'nstab-special'   => 'ବିଶେଷ ପୃଷ୍ଠା',
 'nstab-project'   => 'ପ୍ରକଳ୍ପ ପୃଷ୍ଠା',
 'nstab-image'     => 'ଫାଇଲ',
 'nstab-mediawiki' => 'ସନ୍ଦେଶ',
@@ -559,19 +568,18 @@ $1',
 # General errors
 'error'                => 'ଭୁଲ',
 'databaseerror'        => 'ଡାଟାବେସରେ ଭୁଲ',
-'dberrortext'          => 'ଡାଟାବେସ ପ୍ରଶ୍ନ ଖୋଜା ଭୁଲ ଟିଏ ହୋଇଅଛି ।
-ଏହା ଏହି ସଫ୍ଟବେରରେ ଭୁଲଟିଏକୁ ମଧ୍ୟ ସୂଚାଇପାରେ ।
-ଶେଷ ଥର ଖୋଜାଯାଇଥିବା ଡାଟାବେସ ପ୍ରଶ୍ନ ଖୋଜାଟି ଥିଲା:
-"<tt>$2</tt>" କାମ ଭିତରୁ
-<blockquote><tt>$1</tt></blockquote> ।
-ଡାଟାବେସ ଫେରନ୍ତା ଭୁଲ "<tt>$3: $4</tt>".',
+'dberrortext'          => 'ଏହା ଏହି ସଫ୍ଟୱେରରେ ଭୁଲଟିଏକୁ ମଧ୍ୟ ସୂଚାଇପାରେ ।
+ଶେଷଥର ଖୋଜାଯାଇଥିବା ଡାଟାବେସ ପ୍ରଶ୍ନଟି ଥିଲା:
+<blockquote><code>$1</code></blockquote>
+ ଯାହାକି "<code>$2</code>"ରୁ ଥିଲା
+ଡାଟାବେସରେ ହୋଇଥିବା ଭୁଲ ହେଉଛି "<samp>$3: $4</samp>"।',
 'dberrortextcl'        => 'ଡାଟାବେସ ପ୍ରଶ୍ନ ଖୋଜା ଭୁଲଟିଏ ହୋଇଅଛି ।
 ଶେଷ ଖୋଜା ଡାଟାବେସ ପ୍ରଶ୍ନଟି ଥିଲା:
 "$1"
 ଯାହା "$2" ଭିତରୁ ନିଆଯାଇଥିଲା ।
 ଡାଟାବେସ ଫେରନ୍ତା ଭୁଲ "$3: $4"',
 'laggedslavemode'      => "'''ଜାଣିରଖନ୍ତୁ:''' ପୃଷ୍ଠାଟିରେ ବୋଧ ହୁଏ ନଗଦ ବଦଳ ନ ଥାଇପାରେ ।",
-'readonly'             => 'ଡାଟାବେସଟିରେ କଞ୍ଚି ପଡ଼ିଅଛି',
+'readonly'             => 'ଡାଟାବେସଟିରେ ତାଲା ପଡ଼ିଅଛି',
 'enterlockreason'      => 'କେତେ ଦିନ ଭିତରେ ଏହା ଖୋଲାଯିବ ତାହାର ଅଟକଳ ସହିତ କଞ୍ଚି ପଡ଼ିବାର କାରଣ ଦିଅନ୍ତୁ',
 'readonlytext'         => 'ଏହି ଡାଟାବେସଟିରେ ଅଧୁନା ନୂଆ ପ୍ରସଙ୍ଗ ଯୋଗ ଓ ବାକି ବଦଳ ପାଇଁ ତାଲା ପଡ଼ିଅଛି, ଏହା ଡାଟାବେସର ନିତିଦିନିଆ ରକ୍ଷଣାବେକ୍ଷଣା ନିମନ୍ତେ ହୋଇଥାଇପାରେ, ଯାହା ପରେ ଏହ ପୁଣି ସାଧାରଣ ଭାବେ କାମ କରିବ ।
 
@@ -580,8 +588,8 @@ $1',
 
 ଯଦି ଆପଣ ଖୋଜିଥିବା ପୃଷ୍ଠାଟି କେହି ଉଡ଼ାଇ ଦେଇଥାଏ ତେବେ ଏମିତି ହୋଇପାରେ ।
 
-ଯଦି ସେମିତି ହୋଇନଥାଏ ତେବେ ଆପଣ ଏହି ସଫଟବେରରେ କିଛି ଅସୁବିଧା ଖୋଜି ପାଇଛନ୍ତି ।
-କେହି ଜଣେ ଟିକେ [[Special:ListUsers/sysop|ପରିଛା]] ଙ୍କୁ ଏହି ଇଉଆରେଲ (url) ସହ ଚିଠିଟିଏ ପଠାଇ ଦିଅନ୍ତୁ ।',
+ଯଦି ସେମିତି ହୋଇନଥାଏ ତେବେ ଆପଣ ଏହି ସଫ୍ଟୱେରରେ କିଛି ଅସୁବିଧା ଖୋଜି ପାଇଛନ୍ତି ।
+କେହି ଜଣେ [[Special:ListUsers/sysop|ପରିଚାଳକ]] ଙ୍କୁ ଏହି ଇଉଆରଏଲ (url) ସହ ଚିଠିଟିଏ ପଠାଇ ଦିଅନ୍ତୁ ।',
 'missingarticle-rev'   => '(ସଙ୍କଳନ#: $1)',
 'missingarticle-diff'  => '(ତଫାତ: $1, $2)',
 'readonly_lag'         => 'ଏହି ଡାଟାବେସଟିରେ ଆପେ ଆପେ ତାଲା ପଡ଼ିଯାଇଅଛି, ଇତିମଧ୍ୟରେ ସାନ ଡାଟାବେସଟି ମୁଖ୍ୟ ଡାଟାବେସ ସହିତ ଯୋଗାଯୋଗ କରୁଅଛି',
@@ -599,27 +607,29 @@ $1',
 'formerror'            => 'ଭୁଲ: ଫର୍ମଟି ପଠାଇ ପାରିଲୁଁ ନାହିଁ',
 'badarticleerror'      => 'ଏହି ପୃଷ୍ଠାରେ ଏହି କାମଟି ହୋଇପାରିବ ନାହିଁ ।',
 'cannotdelete'         => '"$1" ପୃଷ୍ଠା ବା ଫାଇଲଟି ଲିଭାଯାଇପାରିବ ନାହିଁ । ଏହା ଆଗରୁ କାହା ଦେଇ ବୋଧେ ଲିଭାଇ ଦିଆଯାଇଛି ।',
+'cannotdelete-title'   => '"$1" ପୃଷ୍ଠାଟି ଲିଭଯାଇପାରିବ ନାହିଁ',
 'badtitle'             => 'ଖରାପ ନାଆଁ',
 'badtitletext'         => 'ଆପଣ ଅନୁରୋଧ କରିଥିବା ପୃଷ୍ଠାଟି ଭୁଲ, ଖାଲି ଅଛି ବା ବାକି ଭାଷା ସାଙ୍ଗରେ ଭୁଲରେ ଯୋଡ଼ା ଯାଇଛି ବା ଭୁଲ ଇଣ୍ଟର ଉଇକି ନାମ ଦିଆଯାଇଛି ।
 ଏଥିରେ ଥିବା ଗୋଟିଏ ବା ଦୁଇଟି ଅକ୍ଷର ଶିରୋନାମା ଭାବରେ ବ୍ୟବହାର କରାଯାଇ ପାରିବ ନାହିଁ ।',
-'perfcached'           => 'ତଳଲିଖିତ ତଥ୍ୟଟି ଆଗରୁ ରହିଥିବା ତଥ୍ୟ, ତେଣୁ ନଗଦ ହୋଇନପାରେ ।',
-'perfcachedts'         => 'ତଳଲିଖିତ ତଥ୍ୟ ଆଗରୁ ଥିବା ତଥ୍ୟ ଓ  $1ରେ ଶେଷଥର ଅପଡେଟ ହୋଇଥିଲା ।',
+'perfcached'           => 'ତଳଲିଖିତ ତଥ୍ୟଗୁଡିକୁ ଅସ୍ଥାୟୀ ଭାବେ ରଖାଗଲା ଏବଂ ଏହା ଅପଡେଟ ନ ହୋଇପାରେ । ଅତିବେଶିରେ {{PLURAL:$1|ଫଳ|$1ଫଳଗୁଡିକ }} ଅସ୍ଥାୟୀ ରୂପେ ରହି ପାରିବ ।',
+'perfcachedts'         => 'ତଳଲିଖିତ ତଥ୍ୟଗୁଡିକୁ ଅସ୍ଥାୟୀ ଭାବେ ରଖାଗଲା ଏବଂ  $1ରେ ଶେଷଥର ଅପଡେଟ ହୋଇଥିଲା । ଅତିବେଶିରେ {{PLURAL:$1|ଫଳ|$1ଫଳଗୁଡିକ }} ଅସ୍ଥାୟୀ ରୂପେ ରହି ପାରିବ ।',
 'querypage-no-updates' => 'ଏହି ପୃଷ୍ଠାଟି ପାଇଁ ଅପଡେଟସବୁ ଏବେ ଅଚଳ କରାଯାଇଅଛି ।
 ଏଠାରେ ଥିବା ତଥ୍ୟ ସବୁ ଏବେ ସତେଜ ହୋଇପାରିବ ନାହିଁ ।',
 'wrong_wfQuery_params' => 'wfQuery() ପାଇଁ ଭୁଲ ପାରାମିଟର<br />
 କାମ: $1<br />
 ଖୋଜା ପ୍ରଶ୍ନ: $2',
-'viewsource'           => 'ଉତ୍ସ ଦେଖିବେ',
-'viewsourcefor'        => '$1 ନିମନ୍ତେ',
+'viewsource'           => 'ମୂଳାଧାର ଦେଖିବେ',
+'viewsource-title'     => '$1 ନିମନ୍ତେ ଆଧାର ଦେଖିବେ',
 'actionthrottled'      => 'କାମଟି ବନ୍ଦ କରିଦିଆଗଲା',
 'actionthrottledtext'  => 'ସ୍ପାମକୁ ବନ୍ଦ କରିବା ନିମନ୍ତେ ଏକ ଅଳ୍ପ ସମୟ ବିରତି ଭିତରେ ଆପଣଙ୍କୁ ଏହି କାମଟୀ ବାରମ୍ବାର କରିବାକୁ ଅନୁମତି ଦିଆଯାଉନାହିଁ ଓ ଆପଣ ସୀମା ପାର କରିଯାଇଛନ୍ତି ।
 ଦୟାକରି କିଛି ସମୟ ପରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
-'protectedpagetext'    => 'ଏହି ପୃଷ୍ଠାଟି ସମ୍ପାଦନା କରିବାରୁ କିଳାଯାଇଛି ।',
+'protectedpagetext'    => 'ଏହି ପୃଷ୍ଠାଟି ସମ୍ପାଦନା କିମ୍ବା ଅନ୍ୟକୌଣସି କାର୍ଯ୍ୟ କରିବାରୁ କିଳାଯାଇଛି ।',
 'viewsourcetext'       => 'ଆପଣ ଏହି ପୃଷ୍ଠାର ଲେଖା ଦେଖିପାରିବେ ଓ ନକଲ କରିପାରିବେ:',
-'protectedinterface'   => 'ଏହି ପୃଷ୍ଠାଟି ସଫ୍ଟବେର ନିମନ୍ତେ ଇଣ୍ଟରଫେସ ଲେଖା ଯୋଗାଇଥାଏ ଓ ଏହା ଅବ୍ୟବହାରକୁ ରୋକିବା ନିମନ୍ତେ କିଳାଯାଇଅଛି ।',
-'editinginterface'     => "'''ଚେତାବନୀ:''' ଆପଣ ସଫ୍ଟବେରର ଇଣ୍ଟରଫେସ ଲେଖା ଯୋଗାଇବା ନିମନ୍ତେ ବ୍ୟବହାର କରାଯାଉଥିବା ଏକ ପୃଷ୍ଠାର ସମ୍ପାଦନା କରୁଅଛନ୍ତି ।
-ଏହି ପୃଷ୍ଠାର କିଛି ବି ବଦଳ ବାକି ସଭ୍ୟମାନଙ୍କ ଇଣ୍ଟରଫେସର ଦେଖଣାକୁ ପ୍ରଭାବିତ କରିବ ।
-ଅନୁବାଦ ନିମନ୍ତେ, ଦୟାକରି ମିଡ଼ିଆଉଇକିର ସ୍ଥାନୀୟକରଣ ପ୍ରକଳ୍ପ [//translatewiki.net/wiki/Main_Page?setlang=en translatewiki.net] ବ୍ୟବହାର କରନ୍ତୁ ।",
+'viewyourtext'         => "ଆପଣ '''ଆପଣଙ୍କ ସମ୍ପାଦିତ ''' ଅଧରଟିକୁ ଦେଖିପାରିବେ ଓ ଏହି ପୃଷ୍ଠାକୁ ନକଲ କରି ପାରିବେ",
+'protectedinterface'   => 'ଏହି ପୃଷ୍ଠାଟି ଏହି ଉଇକିରେ ଥିବା ସଫ୍ଟୱେର ନିମନ୍ତେ ଇଣ୍ଟରଫେସ ଲେଖା ଯୋଗାଇଥାଏ ଓ ଏହା ଅପବ୍ୟବହାରକୁ ରୋକିବା ନିମନ୍ତେ କିଳାଯାଇଅଛି । ସମସ୍ତ ଉଇକିର ଅନୁବାଦକୁ ଯୋଡ଼ିବା ଏବଂ ବଦଳାଇବା ପାଇଁ ମେଡ଼ିଆଉଇକିର ସ୍ଥାନୀୟ ପ୍ରକଳ୍ପରେ ଥିବା [//translatewiki.net/ translatewiki.net]କୁ ବ୍ୟବହାର କରନ୍ତୁ ।',
+'editinginterface'     => "'''ଚେତାବନୀ:''' ଆପଣ ସଫ୍ଟୱେରର ଇଣ୍ଟରଫେସ ଲେଖା ଯୋଗାଇବା ନିମନ୍ତେ ବ୍ୟବହାର କରାଯାଉଥିବା ଏକ ପୃଷ୍ଠାର ସମ୍ପାଦନା କରୁଅଛନ୍ତି ।
+ଏହି ଉଇକିପୃଷ୍ଠାର କିଛି ବି ବଦଳ ବାକି ସଭ୍ୟମାନଙ୍କ ଇଣ୍ଟରଫେସର ଦେଖଣାକୁ ପ୍ରଭାବିତ କରିବ ।
+ସମସ୍ତ ଉଇକିର ଅନୁବାଦ ନିମନ୍ତେ, ଦୟାକରି ମିଡ଼ିଆଉଇକିର ସ୍ଥାନୀୟକରଣ ପ୍ରକଳ୍ପ [//translatewiki.net/wiki/Main_Page?setlang=en translatewiki.net] ବ୍ୟବହାର କରନ୍ତୁ ।",
 'sqlhidden'            => '(SQL ପ୍ରଶ୍ନ ଲୁଚାଯାଇଅଛି)',
 'cascadeprotected'     => 'ଏହି ପୃଷ୍ଠା ସମ୍ପାଦନା କରିବାରୁ କିଳାଯାଇଅଛି, କାରଣ ଏଥିରେ ତଳଲିଖିତ {{PLURAL:$1|ପୃଷ୍ଠାଟିଏ ଅଛି|ଟି ପୃଷ୍ଠା ଅଛି}} ଯାହା "କ୍ୟାସକେଡ଼ କରା" ସୁବିଧା ଦେଇ କିଳାଯାଇଅଛି ।:
 $2',
@@ -643,25 +653,25 @@ $2',
 'welcomecreation'            => '== $1!, ଆପଣଙ୍କ ଖାତାଟି ତିଆରି ହୋଇଗଲା==
 ତେବେ, ନିଜର [[Special:Preferences|{{SITENAME}} ପସନ୍ଦସବୁକୁ]] ବଦଳାଇବାକୁ ଭୁଲିବେ ନାହିଁ ।',
 'yourname'                   => 'ବ୍ୟବହାରକାରୀଙ୍କ ନାମ:',
-'yourpassword'               => 'ପାସବାର୍ଡ଼',
-'yourpasswordagain'          => 'ପାସବାର୍ଡ଼ ଆଉଥରେ:',
+'yourpassword'               => 'ପାସୱାର୍ଡ଼',
+'yourpasswordagain'          => 'ପାସୱାର୍ଡ଼ ଆଉଥରେ:',
 'remembermypassword'         => 'ଏହି ବ୍ରାଉଜରରେ (ସବୁଠୁ ଅଧିକ ହେଲେ $1 {{PLURAL:$1|day|ଦିନ}}) ପାଇଁ ମୋ ଲଗଇନ ମନେ ରଖିଥିବେ',
 'securelogin-stick-https'    => 'ଲଗ ଇନ କଲାପରେ HTTPS ସହ ଯୋଡ଼ି ହୋଇ ରହନ୍ତୁ',
 'yourdomainname'             => 'ଆପଣଙ୍କ ଡୋମେନ:',
 'externaldberror'            => 'ବୋଧ ହୁଏ ଚିହ୍ନଟ ଡାଟାବେସ ଭୁଲଟିଏ ହୋଇଥିଲା ବା ଆପଣଙ୍କୁ ନିଜର ବାହାର ଖାତା ଅପଡେଟ କରିବା ନିମନ୍ତେ ଅନୁମତି ମିଳିନାହିଁ ।',
 'login'                      => 'ଲଗଇନ',
-'nav-login-createaccount'    => 'ଲଗିନ / ଖାତା ଖୋଲିବା',
+'nav-login-createaccount'    => 'ଲଗ ଇନ /ନୂଆ ଖାତା ଖୋଲନ୍ତୁ',
 'loginprompt'                => "{{SITENAME}}ରେ ଲଗ ଇନ କରିବାପାଇଁ ଆପଣଙ୍କୁ '''କୁକି''' ସଚଳ କରିବାକୁ ପଡ଼ିବ ।",
-'userlogin'                  => 'ଲଗିନ / ଖାତା ଖୋଲିବା',
-'userloginnocreate'          => 'ଲଗଇନ',
+'userlogin'                  => 'ଲଗ ଇନ /ନୂଆ ଖାତା ଖୋଲନ୍ତୁ',
+'userloginnocreate'          => 'ଲଗ ଇନ',
 'logout'                     => 'ଲଗଆଉଟ',
 'userlogout'                 => 'ଲଗ ଆଉଟ',
 'notloggedin'                => 'ଲଗ‌‌ ଇନ କରିନାହାନ୍ତି',
 'nologin'                    => 'ଖାତାଟିଏ ନାହିଁ? $1।',
-'nologinlink'                => 'ନୁଆ ଖାତାଟିଏ ଖୋଲିବା',
-'createaccount'              => 'ନୁଆ ଖାତା ଖୋଲିବା',
+'nologinlink'                => 'ନୂଆ ଖାତାଟିଏ ଖୋଲନ୍ତୁ',
+'createaccount'              => 'ନୂଆ ଖାତାଟିଏ ଖୋଲନ୍ତୁ',
 'gotaccount'                 => 'ଆଗରୁ ଖାତାଟିଏ ଅଛି କି? $1.',
-'gotaccountlink'             => 'ଲଗଇନ',
+'gotaccountlink'             => 'ଲଗ ଇନ',
 'userlogin-resetlink'        => 'ଲଗଇନ ତଥ୍ୟ ସବୁ ଭୁଲିଗେଲେକି?',
 'createaccountmail'          => 'ଇ-ମେଲ ରୁ',
 'createaccountreason'        => 'କାରଣ:',
@@ -672,7 +682,7 @@ $2',
 'createaccounterror'         => '$1 ନାମରେ ଖାତାଟିଏ ଖୋଲାଯାଇପାରିଲା ନାହିଁ',
 'nocookiesnew'               => 'ଇଉଜର ନାମଟି ତିଆରି କରିଦିଆଗଲା, ହେଲେ ଆପଣ ଲଗ ଇନ କରିନାହାନ୍ତି ।
 {{SITENAME}} ସଭ୍ୟମାନଙ୍କୁ ଲଗ ଇନ କରିବା ନିମନ୍ତେ କୁକି ବ୍ୟବହାର କରିଥାଏ । ଆପଣଙ୍କ କୁକି ଅଚଳ କରାଯାଇଅଛି ।
-ଦୟାକରି ତାହାକୁ ସଚଳ କରନ୍ତୁ ଓ ତାହା ପରେ ଆପଣଙ୍କ ନୂଆ ଇଉଜର ନାମ ଓ ପାସବାର୍ଡ଼ ସହିତ ଲଗ ଇନ କରନ୍ତୁ ।',
+ଦୟାକରି ତାହାକୁ ସଚଳ କରନ୍ତୁ ଓ ତାହା ପରେ ଆପଣଙ୍କ ନୂଆ ଇଉଜର ନାମ ଓ ପାସୱାର୍ଡ଼ ସହିତ ଲଗ ଇନ କରନ୍ତୁ ।',
 'nocookieslogin'             => '{{SITENAME}} ସଭ୍ୟ ମାନଙ୍କୁ ଲଗ ଇନ କରାଇବା ପାଇଁ କୁକି ବ୍ୟବହାର କରିଥାଏ ।
 ଆପଣଙ୍କର କୁକି ଅଚଳ ହୋଇଅଛି ।
 ଦୟାକରି ତାହାକୁ ସଚଳ କରି ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
@@ -688,15 +698,15 @@ $2',
 ଆପଣ ବନାନ ପରଖି ନିଅନ୍ତୁ ।',
 'nouserspecified'            => 'ଆପଣଙ୍କୁ ଇଉଜର ନାମଟିଏ ଦେବାକୁ ପଡ଼ିବ ।',
 'login-userblocked'          => 'ଏହି ସଭ୍ୟଙ୍କୁ ଅଟକାଯାଇଛି । ଲଗ ଇନ କରିବାକୁ ଅନୁମତି ନାହିଁ ।',
-'wrongpassword'              => 'ଦିଆଯାଇଥିବା ପାସବାର୍ଡ଼ଟି ଭୁଲ ଅଟେ  ।
+'wrongpassword'              => 'ଦିଆଯାଇଥିବା ପାସୱାର୍ଡ଼ଟି ଭୁଲ ଅଟେ  ।
 ଦୟାକରି ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
-'wrongpasswordempty'         => 'ଦିଆଯାଇଥିବା ପାସବାର୍ଡ଼ଟି ଖାଲି ଛଡ଼ାଯାଇଛି ।</br>
+'wrongpasswordempty'         => 'ଦିଆଯାଇଥିବା ପାସବାର୍ଡ଼ଟି ଖାଲି ଛଡ଼ାଯାଇଛି ।
 ଦୟାକରି ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
-'passwordtooshort'           => 'ପାସବାର୍ଡ଼ଟି ଅତି କମରେ {{PLURAL:$1|ଗୋଟିଏ ଅକ୍ଷର|$1ଟି ଅକ୍ଷର}}ର ହୋଇଥିବା ଲୋଡ଼ା ।',
-'password-name-match'        => 'ଆପଣଙ୍କ ପାସବାର୍ଡ଼ଟି ଆପଣଙ୍କ ଇଉଜର ନାମ ଠାରୁ ଅଲଗା ହେବା ଉଚିତ ।',
-'password-login-forbidden'   => 'ଏହି ଇଉଜର ନାମ ଓ ପାସବାର୍ଡ଼ର ବ୍ୟବହାରକୁ ବାରଣ କରାଯାଇଅଛି ।',
-'mailmypassword'             => 'ପାସବାର୍ଡ଼ଟିକୁ ଇମେଲ କରି ପଠାଇବେ',
-'passwordremindertitle'      => '{{SITENAME}} ପାଇଁ ନୂଆ ଅଳ୍ପ କାଳର ପାସବାର୍ଡ଼',
+'passwordtooshort'           => 'ପାସୱାର୍ଡ଼ଟି ଅତି କମରେ {{PLURAL:$1|ଗୋଟିଏ ଅକ୍ଷର|$1ଟି ଅକ୍ଷର}}ର ହୋଇଥିବା ଲୋଡ଼ା ।',
+'password-name-match'        => 'ଆପଣଙ୍କ ପାସୱାର୍ଡ଼ଟି ଆପଣଙ୍କ ଇଉଜର ନାମ ଠାରୁ ଅଲଗା ହେବା ଉଚିତ ।',
+'password-login-forbidden'   => 'ଏହି ଇଉଜର ନାମ ଓ ପାସୱାର୍ଡ଼ର ବ୍ୟବହାରକୁ ବାରଣ କରାଯାଇଅଛି ।',
+'mailmypassword'             => 'ପାସୱାର୍ଡ଼ଟିକୁ ଇମେଲ କରି ପଠାଇବେ',
+'passwordremindertitle'      => '{{SITENAME}} ପାଇଁ ନୂଆ ଅଳ୍ପ କାଳର ପାସୱାର୍ଡ଼',
 'passwordremindertext'       => 'କେହିଜଣେ (ବୋଧେ ଆପଣ, $1 IP ଠିକଣାରୁ) 
 ନୂଆ ପାସବାର୍ଡ଼ଟିଏ ପାଇଁ {{SITENAME}} ($4) ରେ ଆବେଦନ କରିଅଛନ୍ତି । "$2"ଙ୍କ ପାଇଁ ଏକ ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼
 ତିଆରି କରିଦିଆଗଲା ଓ ତାହାକୁ "$3" ପାଇଁ ଖଞ୍ଜି ଦିଆଗଲା । ଯଦି ଏହା ଆପଣଙ୍କର
@@ -708,89 +718,106 @@ and you no longer wish to change it, you may ignore this message and
 continue using your old password.',
 'noemail'                    => 'ସଭ୍ୟ "$1"ଙ୍କ ପାଇଁ କିଛି ବି ଇ-ମେଲ ଆଇ.ଡି. ସାଇତାଯାଇନାହିଁ  ।',
 'noemailcreate'              => 'ଆପଣଙ୍କୁ ଏକ ସଚଳ ଇ-ମେଲ ଠିକଣା ଦେବାକୁ ପଡ଼ିବ',
-'passwordsent'               => '"$1" ପାଇଁ ଥୟ କରାଯାଇଥିବା ଇ-ମେଲକୁ ନୂଆ ପାସବାର୍ଡ଼ଟିଏ ପଠାଇଦିଆଗଲା ।
+'passwordsent'               => '"$1" ପାଇଁ ଥୟ କରାଯାଇଥିବା ଇ-ମେଲକୁ ନୂଆ ପାସୱାର୍ଡ଼ଟିଏ ପଠାଇଦିଆଗଲା ।
 ତାହା ମିଳିଲା ପରେ ଆଉଥରେ ଲଗ ଇନ କରନ୍ତୁ ।',
-'blocked-mailpassword'       => 'ଆପଣଙ୍କ IP ଠିକଣାଟି ସମ୍ପାଦନାରେ ଭାଗ ନେବାରୁ ଅଟକାଯାଇଛି, ତେଣୁ ପାସବାର୍ଡ଼ ଫେରନ୍ତା କାମ ବ୍ୟବହାର କରି ଅବ୍ୟବହାରକୁ ରୋକିବା ଅନୁମୋଦିତ ନୁହେଁ ।',
+'blocked-mailpassword'       => 'ଆପଣଙ୍କ IP ଠିକଣାଟି ସମ୍ପାଦନାରେ ଭାଗ ନେବାରୁ ଅଟକାଯାଇଛି, ତେଣୁ ପାସୱାର୍ଡ଼ ଫେରନ୍ତା କାମ ବ୍ୟବହାର କରି ଅବ୍ୟବହାରକୁ ରୋକିବା ଅନୁମୋଦିତ ନୁହେଁ ।',
 'eauthentsent'               => 'ଆପଣଙ୍କ ବଛା ଇ-ମେଲ ଠିକଣାକୁ ଏକ ଥୟ କରିବା ଇ-ମେଲଟିଏ ପଠାଇଦିଆଗଲା ।
 ଖାତାଟି ଆପଣଙ୍କର ବୋଲି ଥୟ କରିବା ନିମନ୍ତେ ଆଉ କେଉଁ ଇ-ମେଲ ଆପଣଙ୍କ ଖାତାକୁ ପଠାହେବା ଆଗରୁ ଆପଣଙ୍କୁ ସେହି ଇ-ମେଲରେ ଥିବା ସୂଚନା ଅନୁସରଣ କରିବାକୁ ପଡ଼ିବ ।',
-'throttled-mailpassword'     => 'ଗତ {{PLURAL:$1|ଏକ ଘଣ୍ଟାରେ|$1 ଘଣ୍ଟାରେ}} ଆପଣଙ୍କୁ ଏକ ପାସବାର୍ଡ଼ ମନେକରିବା ସୂଚନାଟିଏ ପଠାଯାଇଛି ।
-ଅବ୍ୟବହାରକୁ ରୋକିବା ନିମନ୍ତେ, {{PLURAL:$1|ଏକ ଘଣ୍ଟାରେ|$1 ଘଣ୍ଟାରେ}} କେବଳ ଗୋଟିଏ ପାସବାର୍ଡ଼ ହିଁ ପଠାହେବ ।',
+'throttled-mailpassword'     => 'ଗତ {{PLURAL:$1|ଏକ ଘଣ୍ଟାରେ|$1 ଘଣ୍ଟାରେ}} ଆପଣଙ୍କୁ ଏକ ପୁନଃସ୍ଥାପନ ଇମେଲଟିଏ ପଠାଯାଇଛି ।
+ଅବ୍ୟବହାରକୁ ରୋକିବା ନିମନ୍ତେ, {{PLURAL:$1|ଏକ ଘଣ୍ଟାରେ|$1 ଘଣ୍ଟାରେ}} କେବଳ ଗୋଟିଏ ଇମେଲ ହିଁ ପଠାହେବ ।',
 'mailerror'                  => 'ମେଲ ପଠାଇବାରେ ଭୁଲ : $1',
 'acct_creation_throttle_hit' => 'ଏହି ଉଇକିର ଦେଖଣାହାରୀ ମାନେ ଆପଣଙ୍କ IP ଠିକଣା ବ୍ୟବହାର କରି ବିଗତ ଦିନରେ {{PLURAL:$1|ଖାତାଟିଏ|$1 ଗୋଟି ଖାତା}} ତିଆରି କରିଛନ୍ତି ଯାହା ସେହି ସମୟସୀମା ଭିତରେ ସବୁଠାରୁ ଅଧିକ ଥିଲା ।
 ତେଣୁ, ଏହି IP ଠିକଣାର ଦେଖଣାହାରୀ ଗଣ ଏବେ ଆଉ ଅଧିକ ଖାତା ଖୋଲିପାରିବେ ନାହିଁ ।',
 'emailauthenticated'         => '$2 ତାରିଖ $3 ଘଟିକା ବେଳେ ଆପଣଙ୍କ ଇ-ମେଲ ଠିକଣାଟି ଅନୁମୋଦିତ ହେଲା ।',
-'emailnotauthenticated'      => 'ଆପନଙ୍କ ଇ-ମେଲ ଠିକଣାଟି ଅନୁମୋଦିତ୍ ହୋଇନାହିଁ ।
+'emailnotauthenticated'      => 'ଆପଣଙ୍କ ଇ-ମେଲ ଠିକଣାଟି ଅନୁମୋଦିତ ହୋଇନାହିଁ ।
 ଏହି ସବୁ ସୁବିଧାକୁ ନେଇ କିଛି ବି ଇ-ମେଲ ଆପଣଙ୍କୁ ପଠାଯିବ ନାହିଁ ।',
 'noemailprefs'               => 'ଆପଣଙ୍କ ପସନ୍ଦ ଭିତରେ ଏକ ଇ-ମେଲ ଠିକଣା ଦିଅନ୍ତୁ ଯାହା ଏହି ସବୁ ସୁବିଧାକୁ ସଚଳ କରାଇବ ।',
 'emailconfirmlink'           => 'ଆପଣଙ୍କ ଇମେଲ ଆଇ.ଡି.ଟି ଠିକ ବୋଲି ଥୟ କରନ୍ତୁ',
 'invalidemailaddress'        => 'ଏହି ଇ-ମେଲ ଠିକଣାଟି ସଠିକ ସଜାଣିରେ ନଥିବାରୁ ଏହାକୁ ଗ୍ରହଣ କରାଯାଇପାରିବ ନାହିଁ ।
 ଦୟାକରି ଏକ ସଚଳ ଓ ଠିକ ସଜାଣିରେ ଥିବା ଇ-ମେଲ ଠିକଣା ଦିଅନ୍ତୁ ।',
+'cannotchangeemail'          => 'ଖାତାରେ ଥିବା ଇମେଲ ଏହି ଉଇକିରେ ବଦଳାଯାଇପାରିବ ନାହିଁ ।',
 'accountcreated'             => 'ଖାତାଟି ଖୋଲାହୋଇଗଲା',
 'accountcreatedtext'         => '$1 ପାଇଁ ନୂଆ ଖାତାଟିଏ ତିଆରି ହୋଇଗଲା ।',
 'createaccount-title'        => '{{SITENAME}} ପାଇଁ ଖାତା ଖୋଲା',
-'createaccount-text'         => 'କେହି ଜଣେ ଆପଣଙ୍କ ଇ-ମେଲ ଠିକଣାରେ {{SITENAME}} ($4) ରେ "$2" ନାମରେ, "$3" ପାସବାର୍ଡ଼ରେ ଖାତାଟିଏ ତିଆରି କରିଅଛି ।
+'createaccount-text'         => 'କେହି ଜଣେ ଆପଣଙ୍କ ଇ-ମେଲ ଠିକଣାରେ {{SITENAME}} ($4) ରେ "$2" ନାମରେ, "$3" ପାସୱାର୍ଡ଼ରେ ଖାତାଟିଏ ତିଆରି କରିଅଛି ।
 ଆପଣ ଏବେ ଲଗ ଇନ କରି ନିଜର ପାସବାର୍ଡ଼ଟିକୁ ବଦଳାଇଦିଅନ୍ତୁ ।
 
-ଯଦି ଭୁଲରେ ଏହି ଖାତାଟି ତିଆରି କରାଯାଇଥାଏ ତେବେ ଏହି ସୂଚନାଟିକୁ ଅଣଦେଖା କରିବେ ।',
+ଯଦି ଭୁଲରେ ଏହି ଖାତାଟି ତିଆରି କରାଯାଇଥାଏ, ତେବେ ଏହି ସୂଚନାଟିକୁ ଅଣଦେଖା କରିବେ ।',
 'usernamehasherror'          => 'ଇଉଜର ନାମରେ ହାସ ଅକ୍ଷର (hash characters) ରହି ପାରିବନାହିଁ',
 'login-throttled'            => 'ଆପଣ ବହୁ ଥର ଲଗ ଇନ କରିବାର ଉଦ୍ୟମ କରିଅଛନ୍ତି ।
-ଦୟାକରି ଆଉଥରେ ଚେଷ୍ଟା କରିବା ଆଗରୁ କିଛି କାଳ ଅପେକ୍ଷ କରନ୍ତୁ ।',
+ଦୟାକରି ଆଉଥରେ ଚେଷ୍ଟା କରିବା ଆଗରୁ କିଛି କାଳ ଅପେକ୍ଷା କରନ୍ତୁ ।',
 'login-abort-generic'        => 'ଆପଣଙ୍କ ଲଗ ଇନ ଅସଫଳ ହେଲା - ନାକଚ କରିଦିଆଗଲା',
 'loginlanguagelabel'         => 'ଭାଷା: $1',
 'suspicious-userlogout'      => 'ଲଗ ଆଉଟ କରିବା ନିମନ୍ତେ ଆପଣ କରିଥିବା ଆବେଦନ ନାକଚ କରିଦିଆଗଲା କାରଣ ଲାଗୁଅଛି ଯେ ଏହା ଏକ ଅସ୍ଥିର ବ୍ରାଉଜରରୁ ପଠାଯାଇଅଛି ଅବା ପ୍ରକ୍ସି ଧରାଯାଇଅଛି ।',
 
-# E-mail sending
+# Email sending
 'php-mail-error-unknown' => 'PHP ର ମେଲ() କାମରେ ଅଜଣା ଅସୁବିଧା ।',
+'user-mail-no-addy'      => 'ଏକ ଇ-ମେଲ ଠିକଣା ବିନା ଇ-ମେଲ ପଠାଇବାକୁ ଚେଷ୍ଟା କଲୁଁ ।',
 
 # Change password dialog
-'resetpass'                 => 'ପାସୱର୍ଡ଼ ବଦଳାନ୍ତୁ',
+'resetpass'                 => 'ପାସୱାର୍ଡ଼ ବଦଳାନ୍ତୁ',
 'resetpass_announce'        => 'ଆପଣ ଏକ ଅସ୍ଥାୟୀ ଇ-ମେଲରେ ଯାଇଥିବା କୋଡ଼ ସହାୟତାରେ ଲଗ ଇନ କରିଅଛନ୍ତି ।
 ଲଗ ଇନ ଶେଷ କରିବା ନିମନ୍ତେ ଆପଣଙ୍କୁ ଏହିଠାରେ ନୂଆ ପାସବାର୍ଡ଼ଟିଏ ଦେବାକୁ ପଡ଼ିବ:',
-'resetpass_header'          => 'ଖାତାର ପାସବାର୍ଡ଼ଟିକୁ ବଦଳାଇ ଦିଅନ୍ତୁ',
-'oldpassword'               => 'ପୁରୁଣା ପାସଉଆଡ଼:',
-'newpassword'               => 'ନୂଆ ପାସବାର୍ଡ଼:',
-'retypenew'                 => 'ପାସବାର୍ଡ଼ ଆଉଥରେ ଦିଅନ୍ତୁ:',
-'resetpass_submit'          => 'ପାସବାର୍ଡ଼ଟି ଦେଇ ଲଗ ଇନ କରନ୍ତୁ',
-'resetpass_success'         => 'ଆପଣଙ୍କ ପାସବାର୍ଡ଼ଟି ବଦଳାଇ ଦିଆଗଲା !
+'resetpass_header'          => 'ଖାତାର ପାସୱାର୍ଡ଼ଟିକୁ ବଦଳାଇ ଦିଅନ୍ତୁ',
+'oldpassword'               => 'ପୁରୁଣା ପାସୱାର୍ଡ଼:',
+'newpassword'               => 'ନୂଆ ପାସୱାର୍ଡ଼:',
+'retypenew'                 => 'ପାସୱାର୍ଡ଼ ଆଉଥରେ ଦିଅନ୍ତୁ:',
+'resetpass_submit'          => 'ପାସୱାର୍ଡ଼ଟିଏ ଦେଇ ଲଗ ଇନ କରନ୍ତୁ',
+'resetpass_success'         => 'ଆପଣଙ୍କ ପାସୱାର୍ଡ଼ଟି ବଦଳାଇ ଦିଆଗଲା !
 ଏବେ ଲଗ ଇନ କରୁଅଛୁଁ...',
-'resetpass_forbidden'       => 'ପାସବାର୍ଡ଼ମାନ ବଦଳା ଯାଇପାରିବ ନାହିଁ',
+'resetpass_forbidden'       => 'ପାସୱାର୍ଡ଼ମାନ ବଦଳା ଯାଇପାରିବ ନାହିଁ',
 'resetpass-no-info'         => 'ଏହି ପୃଷ୍ଠାଟିକୁ ସିଧା ଖୋଲିବା ନିମନ୍ତେ ଆପଣଙ୍କୁ ଲଗ ଇନ କରିବାକୁ ପଡ଼ିବ ।',
-'resetpass-submit-loggedin' => 'ପାସୱର୍ଡ଼ ବଦଳାନ୍ତୁ',
+'resetpass-submit-loggedin' => 'ପାସୱାର୍ଡ଼ ବଦଳାନ୍ତୁ',
 'resetpass-submit-cancel'   => 'ନାକଚ',
-'resetpass-wrong-oldpass'   => 'ଅସ୍ଥାୟୀ ବା ଏବେକାର ପାସବାର୍ଡ଼ଟି ଭୁଲ ଅଟେ ।
-ଆପଣ ବୋଧ ହୁଏ ଆଗରୁ ସଫଳ ଭାବରେ ନିଜର ପାସବାର୍ଡ଼ଟି ବଦଳାଇଦେଇଛନ୍ତି ବା ନୂଆ ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼ଟିଏ ପାଇଁ ଆବେଦନ କରିଅଛନ୍ତି ।',
-'resetpass-temp-password'   => 'ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼:',
+'resetpass-wrong-oldpass'   => 'ଅସ୍ଥାୟୀ ବା ଏବେକାର ପାସୱାର୍ଡ଼ଟି ଭୁଲ ଅଟେ ।
+ଆପଣ ବୋଧ ହୁଏ ଆଗରୁ ସଫଳ ଭାବରେ ନିଜର ପାସୱାର୍ଡ଼ଟି ବଦଳାଇଦେଇଛନ୍ତି ବା ନୂଆ ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼ଟିଏ ପାଇଁ ଆବେଦନ କରିଅଛନ୍ତି ।',
+'resetpass-temp-password'   => 'ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼:',
 
 # Special:PasswordReset
-'passwordreset'                => 'ପାସୱାର୍ଡ଼ ପୁନସ୍ଥାପନ କରନ୍ତୁ',
-'passwordreset-text'           => 'ନିଜ ଖାତାର ସବିଶେଷ ବିବରଣୀ ଏକ ଇ-ମେଲରେ ପାଇବା ପାଇଁ ଏହି ଆବେଦନ ପତ୍ରଟି ପୂରଣ କରନ୍ତୁ ।',
-'passwordreset-legend'         => 'ପାସୱାର୍ଡ଼ ପୁନସ୍ଥାପନ କରନ୍ତୁ',
-'passwordreset-disabled'       => 'ପାସବାର୍ଡ଼କୁ ପୁରାପୁରି ମୂଳକୁ ଫେରାଇବା ଏହି ଉଇକିରେ ଅଚଳ କରାଯାଇଅଛି ।',
-'passwordreset-pretext'        => '{{PLURAL:$1||ତଳେ ଥିବା ତଥ୍ୟସମୂହରୁ କୌଣସି ଗୋଟିଏ ଦିଅନ୍ତୁ}}',
-'passwordreset-username'       => 'ବ୍ୟବହାରକାରୀଙ୍କ ନାମ:',
-'passwordreset-domain'         => 'ଡୋମେନ:',
-'passwordreset-email'          => 'ଇ-ମେଲ ଠିକଣା:',
-'passwordreset-emailtitle'     => '{{SITENAME}} ର ଖାତା ସବିଶେଷ',
-'passwordreset-emailtext-ip'   => 'କେହି ଜଣେ (ବୋଧେ ଆପଣ, $1 IP ଠିକଣାରୁ) 
+'passwordreset'                    => 'ପାସୱାର୍ଡ଼ ପୁନସ୍ଥାପନ କରନ୍ତୁ',
+'passwordreset-text'               => 'ନିଜ ପାସୱାର୍ଡ଼କୁ ପୁନଃସ୍ଥାପନ କରିବା ପାଇଁ ଏହି ଆବେଦନ ପତ୍ରଟି ପୂରଣ କରନ୍ତୁ ।',
+'passwordreset-legend'             => 'ପାସୱାର୍ଡ଼ ପୁନସ୍ଥାପନ କରନ୍ତୁ',
+'passwordreset-disabled'           => 'ପାସୱାର୍ଡ଼କୁ ପୁରାପୁରି ମୂଳକୁ ଫେରାଇବା ଏହି ଉଇକିରେ ଅଚଳ କରାଯାଇଅଛି ।',
+'passwordreset-pretext'            => '{{PLURAL:$1||ତଳେ ଥିବା ତଥ୍ୟସମୂହରୁ କୌଣସି ଗୋଟିଏ ଦିଅନ୍ତୁ}}',
+'passwordreset-username'           => 'ବ୍ୟବହାରକାରୀଙ୍କ ନାମ:',
+'passwordreset-domain'             => 'ଡୋମେନ:',
+'passwordreset-capture'            => 'ଯାଉଥିବା ଇ-ମେଲଟି ଦେଖିବେ?',
+'passwordreset-capture-help'       => 'ଯଦି ଆପଣ ଘରଟିକୁ ଦେଖନ୍ତି ତେବେ (ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼ ସହିତ) ଇ-ମେଲଟି ଆପଣଙ୍କୁ ଦେଖାଯିବ ଓ ବାକି ସଭ୍ୟମାନଙ୍କୁ ଚାଲିଯିବ ।',
+'passwordreset-email'              => 'ଇ-ମେଲ ଠିକଣା:',
+'passwordreset-emailtitle'         => '{{SITENAME}} ର ଖାତା ସବିଶେଷ',
+'passwordreset-emailtext-ip'       => 'କେହି ଜଣେ (ବୋଧେ ଆପଣ, $1 IP ଠିକଣାରୁ) 
 {{SITENAME}} ($4) ସାଇଟରେ ଥିବା ଆପଣଙ୍କ ଖାତାର ସବିଶେଷ ଜାଣିବାକୁ ଅନୁରୋଧ କରିଛନ୍ତି । ଏହି ଇମେଲ ଠିକଣା ସହିତ ତଳଲିଖିତ ବ୍ୟବହାରକାରୀଙ୍କ {{PLURAL:$3|ଖାତା|ଖାତାସମୂହ}} ଯୋଡ଼ା:
 
 $2
 
-{{PLURAL:$3|ଏହି ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼ଟି|ଏହି ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼ସବୁ}} {{PLURAL:$5|ଦିନକରେ|$5 ଦିନରେ ଅଚଳ}} ହୋଇଯିବ ।
-ଆପଣ ଏବେ ଲଗ ଇନ କରି ନୂଆ ପାସବାର୍ଡ଼ଟିଏ ବାଛନ୍ତୁ । ଯହି ଆଉ କେହି ଜଣେ ଏହି ଅନୁରୋଧ କରିଥାନ୍ତି
-କିମ୍ବା ଆପଣ ଏବେ ନିଜର ମୂଳ ପାସବାର୍ଡ଼ ମନେ ପକାଇ ପାରିଥାନ୍ତି ତେବେ ଏହି ପାସବାର୍ଡ଼ଟିକୁ ଆଉ ବଦଳାଇବା ଲୋଡ଼ା ନାହିଁ ।
-ଆପଣ ନିଜ ପୁରୁଣା ପାସବାର୍ଡ଼ଟି ଆଗପରି ବ୍ୟବହାର କରିପାରନ୍ତି ।',
-'passwordreset-emailtext-user' => '{{SITENAME}}ରେ ଥିବା ବ୍ୟୟବହାରକାରୀ $1 {{SITENAME}} ($4) ସାଇଟରେ ଥିବା ଆପଣଙ୍କ ଖାତାର ସବିଶେଷ ଜାଣିବାକୁ ଅନୁରୋଧ କରିଛନ୍ତି । ଏହି ଇମେଲ ଠିକଣା ସହିତ ତଳଲିଖିତ ବ୍ୟବହାରକାରୀଙ୍କ {{PLURAL:$3|ଖାତା|ଖାତାସମୂହ}} ଯୋଡ଼ା:
+{{PLURAL:$3|ଏହି ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼ଟି|ଏହି ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼ସବୁ}} {{PLURAL:$5|ଦିନକରେ|$5 ଦିନରେ ଅଚଳ}} ହୋଇଯିବ ।
+ଆପଣ ଏବେ ଲଗ ଇନ କରି ନୂଆ ପାସୱାର୍ଡ଼ଟିଏ ବାଛନ୍ତୁ । ଯହି ଆଉ କେହି ଜଣେ ଏହି ଅନୁରୋଧ କରିଥାନ୍ତି
+କିମ୍ବା ଆପଣ ଏବେ ନିଜର ମୂଳ ପାସୱାର୍ଡ଼ ମନେ ପକାଇ ପାରିଥାନ୍ତି ତେବେ ଏହି ପାସୱାର୍ଡ଼ଟିକୁ ଆଉ ବଦଳାଇବା ଲୋଡ଼ା ନାହିଁ ।
+ଆପଣ ନିଜ ପୁରୁଣା ପାସୱାର୍ଡ଼ଟି ଆଗପରି ବ୍ୟବହାର କରିପାରନ୍ତି ।',
+'passwordreset-emailtext-user'     => '{{SITENAME}}ରେ ଥିବା ବ୍ୟବହାରକାରୀ $1 {{SITENAME}} ($4) ସାଇଟରେ ଥିବା ଆପଣଙ୍କ ଖାତାର ସବିଶେଷ ଜାଣିବାକୁ ଅନୁରୋଧ କରିଛନ୍ତି । ଏହି ଇମେଲ ଠିକଣା ସହିତ ତଳଲିଖିତ ବ୍ୟବହାରକାରୀଙ୍କ {{PLURAL:$3|ଖାତା|ଖାତାସମୂହ}} ଯୋଡ଼ା:
 
 $2
 
-{{PLURAL:$3|ଏହି ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼ଟି|ଏହି ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼ସବୁ}} {{PLURAL:$5|ଦିନକରେ|$5 ଦିନରେ ଅଚଳ}} ହୋଇଯିବ ।
-ଆପଣ ଏବେ ଲଗ ଇନ କରି ନୂଆ ପାସବାର୍ଡ଼ଟିଏ ବାଛନ୍ତୁ । ଯହି ଆଉ କେହି ଜଣେ ଏହି ଅନୁରୋଧ କରିଥାନ୍ତି
-କିମ୍ବା ଆପଣ ଏବେ ନିଜର ମୂଳ ପାସବାର୍ଡ଼ ମନେ ପକାଇ ପାରିଥାନ୍ତି ତେବେ ଏହି ପାସବାର୍ଡ଼ଟିକୁ ଆଉ ବଦଳାଇବା ଲୋଡ଼ା ନାହିଁ ।
-ଆପଣ ନିଜ ପୁରୁଣା ପାସବାର୍ଡ଼ଟି ଆଗପରି ବ୍ୟବହାର କରିପାରନ୍ତି ।',
-'passwordreset-emailelement'   => 'ଇଉଜର ନାମ: $1
-ଅସ୍ଥାୟୀ ପାସବାର୍ଡ଼: $2',
-'passwordreset-emailsent'      => 'ଏକ ମନେପକାଇବା ଇ-ମେଲ ପଠାଇଦିଆଯାଇଅଛି ।',
+{{PLURAL:$3|ଏହି ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼ଟି|ଏହି ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼ସବୁ}} {{PLURAL:$5|ଦିନକରେ|$5 ଦିନରେ ଅଚଳ}} ହୋଇଯିବ ।
+ଆପଣ ଏବେ ଲଗ ଇନ କରି ନୂଆ ପାସୱାର୍ଡ଼ଟିଏ ବାଛନ୍ତୁ । ଯହି ଆଉ କେହି ଜଣେ ଏହି ଅନୁରୋଧ କରିଥାନ୍ତି
+କିମ୍ବା ଆପଣ ଏବେ ନିଜର ମୂଳ ପାସୱାର୍ଡ଼ ମନେ ପକାଇ ପାରିଥାନ୍ତି ତେବେ ଏହି ପାସୱାର୍ଡ଼ଟିକୁ ଆଉ ବଦଳାଇବା ଲୋଡ଼ା ନାହିଁ ।
+ଆପଣ ନିଜ ପୁରୁଣା ପାସୱାର୍ଡ଼ଟି ଆଗପରି ବ୍ୟବହାର କରିପାରନ୍ତି ।',
+'passwordreset-emailelement'       => 'ଇଉଜର ନାମ: $1
+ଅସ୍ଥାୟୀ ପାସୱାର୍ଡ଼: $2',
+'passwordreset-emailsent'          => 'ଏକ ପାସୱାର୍ଡ଼ ପୁନଃସ୍ଥାପନ ଇମେଲ ପଠାଇଦିଆଯାଇଅଛି ।',
+'passwordreset-emailsent-capture'  => 'ତଳେ ଦେଖାଯାଉଥିବା ଭଳି, ପାସୱାର୍ଡ଼ ପୁନଃସ୍ଥାପନ ଇମେଲଟିଏ ପଠାଇଦିଆଯାଇଛି ।',
+'passwordreset-emailerror-capture' => 'ଗୋଟିଏ ସବିଶେଷ ଏମେଲଟିଏ ବାହାରିଛି, ଯାହାକି ତଳେ ଅଛି, କିନ୍ତୁ ଏହାକୁ ବ୍ୟବହାରକାରୀକୁ ପଠାଇବାରେ ଅସଫଳ ହେଲା :$1',
+
+# Special:ChangeEmail
+'changeemail'          => 'ଇ-ମେଲ ଠିକଣା ବଦଳାଇବେ',
+'changeemail-header'   => 'ଖାତା ଇ-ମେଲ ଠିକଣା ବଦଳାଇବେ',
+'changeemail-text'     => 'ଆପଣା ଇ-ମେଲ ଠିକଣା ବଦଳାଇବା ନିମନ୍ତେ ଏହି ଆବେଦନ ପତ୍ରଟି ପୂରଣ କରନ୍ତୁ । ଆପଣଙ୍କୁ ଏହି ବଦଳ ଥୟ କରିବା ପାଇଁ ନିଜର ପାସୱାର୍ଡ଼ ଦେବାକୁ ପଡ଼ିବ ।',
+'changeemail-no-info'  => 'ଏହି ପୃଷ୍ଠାଟିକୁ ସିଧା ଖୋଲିବା ନିମନ୍ତେ ଆପଣଙ୍କୁ ଲଗ ଇନ କରିବାକୁ ପଡ଼ିବ ।',
+'changeemail-oldemail' => 'ଏବେକାର ଇ-ମେଲ ଠିକଣା:',
+'changeemail-newemail' => 'ନୂଆ ଇ-ମେଲ ଠିକଣା:',
+'changeemail-none'     => '(କିଛି ନାହିଁ)',
+'changeemail-submit'   => 'ଇ-ମେଲ ପରିର୍ବତ୍ତନ କରନ୍ତୁ',
+'changeemail-cancel'   => 'ନାକଚ',
 
 # Edit page toolbar
 'bold_sample'     => 'ମୋଟା ଲେଖା',
@@ -800,19 +827,19 @@ $2
 'link_sample'     => 'ଲିଙ୍କ ଶିରୋନାମା',
 'link_tip'        => 'ଭିତର ଲିଙ୍କ',
 'extlink_sample'  => 'http://www.example.com ଲିଙ୍କ ଶିରୋନାମା',
-'extlink_tip'     => 'ବାହାର ଲିଙ୍କ (http:// ଆଗରେ ଲଗାଇବାକୁ ମନେରଖିଥିବେ)',
+'extlink_tip'     => 'ବାହାର ଲିଙ୍କ (ଆରମ୍ଭରେ http:// ଲେଖିବାକୁ ମନେରଖିଥିବେ)',
 'headline_sample' => 'ଶିରୋନାମା ଲେଖା',
 'headline_tip'    => '୨କ ଆକାରର ମୂଳଧାଡ଼ି',
 'nowiki_sample'   => 'ଅସଜଡ଼ା ଲେଖା ଏଠାରେ ଭରିବେ',
 'nowiki_tip'      => 'ଉଇକି ସଜାଣି ବିନା',
-'image_tip'       => 'ଏମବେଡ଼ ହୋଇ ଥିବା ଫାଇଲ',
+'image_tip'       => 'ଏମ୍ବେଡ଼ ହୋଇ ଥିବା ଫାଇଲ',
 'media_tip'       => 'ଫାଇଲର ଲିଙ୍କ',
-'sig_tip'         => 'ଲେଖାର ସମୟ ସହ ଆପଣଙ୍କ ସନ୍ତକ',
+'sig_tip'         => 'ସମୟ ସହ ଆପଣଙ୍କ ସନ୍ତକ',
 'hr_tip'          => 'ସମାନ୍ତରାଳ ରେଖା (ବେଳେବେଳେ ବ୍ୟବହାର କରିବେ)',
 
 # Edit pages
 'summary'                          => 'ସାରକଥା:',
-'subject'                          => 'ବିଷୟ/ମୂଳ ଲେଖା',
+'subject'                          => 'ବିଷୟ/ଶିରୋନାମା',
 'minoredit'                        => 'ଏହା ଖୁବ ଛୋଟ ବଦଳଟିଏ',
 'watchthis'                        => 'ଏହି ପୃଷ୍ଠାଟିକୁ ଦେଖିବେ',
 'savearticle'                      => 'ସାଇତିବେ',
@@ -821,8 +848,8 @@ $2
 'showlivepreview'                  => 'ଜୀବନ୍ତ ଦେଖଣା',
 'showdiff'                         => 'ବଦଳଗୁଡ଼ିକ ଦେଖାଇବେ',
 'anoneditwarning'                  => "'''ଜାଣିରଖନ୍ତୁ:''' ଆପଣ ଲଗଇନ କରିନାହାନ୍ତି ।
-ଏହି ଫରଦର '''ଇତିହାସ''' ପୃଷ୍ଠାରେ ଆପଣଙ୍କ ଆଇପି ଠିକଣାଟି ସାଇତା ହୋଇଯିବ ।",
-'anonpreviewwarning'               => "''ଆପଣ ଲଗ ଇନ କରି ନାହାନ୍ତି । ଆପଣ ଯେଉଁ ବଦଳସବୁ କରିବେ ଆପଣଙ୍କର IP ଠିକଣା ଏହି ପୃଷ୍ଠାର ଇତିହାସରେ ସାଇତା ହୋଇଯିବ ।''",
+ଏହି ପୃଷ୍ଠାର ଇତିହାସରେ ଆପଣଙ୍କ ଆଇପି ଠିକଣାଟି ସାଇତା ହୋଇଯିବ ।",
+'anonpreviewwarning'               => "''ଆପଣ ଲଗ ଇନ କରି ନାହାନ୍ତି । ବଦଳକରି ସାଇତିଲେ ଆପଣଙ୍କର IP ଠିକଣା ଏହି ପୃଷ୍ଠାର ଇତିହାସରେ ସାଇତା ହୋଇଯିବ ।''",
 'missingsummary'                   => "'''ଚେତାବନୀ:''' ଆପଣ ଏକ ସମ୍ପାଦନା ସାରକଥା ଦେଇନାହାନ୍ତି ।
 ଯଦି ଆପଣ \"{{int:savearticle}}\"ରେ ଆଉଥରେ କ୍ଲିକ କରନ୍ତି, ତେବେ ଆପଣଙ୍କ ବଦଳ ସାରକଥା ବିନା ସାଇତା ହୋଇଯିବ ।",
 'missingcommenttext'               => 'ଦୟାକରି ତଳେ ଏକ ମତାମତ ଦିଅନ୍ତୁ ।',
@@ -860,9 +887,6 @@ $1 ଦ୍ଵାରା ପ୍ରତିରୋଧ କରାଯାଇଛି
 ଆପଣଙ୍କ ଏବେକାର IP ଠିକଣା ହେଲା $3, ଆଉ ଅଟକ ID ହେଲା #$5 ।
 ଦୟାକରି ଆପଣ ପଚାରୁଥିବା ଯେକୌଣସି ପ୍ରଶ୍ନରେ ଉପରେ ଥିବା ସବିଶେଷ ଯୋଗ କରି ପଚାରିବେ ।',
 'blockednoreason'                  => 'କିଛି କାରଣ ଦିଆଯାଇ ନାହିଁ',
-'blockedoriginalsource'            => "'''$1'''ର ମୂଳାଧାର ତଳେ ଦିଆଯାଇଅଛି:",
-'blockededitsource'                => "'''ଆପଣଙ୍କ ସମ୍ପାଦନା''' ରୁ '''$1'''ର ଲେଖା ତଳେ ଦିଆଯାଇଅଛି:",
-'whitelistedittitle'               => 'ସମ୍ପାଦନା କରିବା ନିମନ୍ତେ ଲଗ ଇନ ଦରକାର',
 'whitelistedittext'                => 'ପୃଷ୍ଠା ସମ୍ପାଦନ ପାଇଁ ଆପଣଙ୍କୁ $1 କରିବାକୁ ପଡ଼ିବ ।',
 'confirmedittext'                  => 'ସମ୍ପାଦନା କରିବା ଆଗରୁ ଆପଣଙ୍କୁ ନିଜର ଇ-ମେଲ ଠିକଣାଟିକୁ ଥୟ କରିବାକୁ ପଡ଼ିବ ।
 ଆପଣା [[Special:Preferences|ସଭ୍ୟ ପସନ୍ଦ]] ଭିତରୁ ବାଛି ନିଜ ଇ-ମେଲ ଠିକଣାଟିକୁ ଥୟ କରନ୍ତୁ ।',
@@ -872,16 +896,16 @@ $1 ଦ୍ଵାରା ପ୍ରତିରୋଧ କରାଯାଇଛି
 'loginreqtitle'                    => 'ଲଗ ଇନ ଲୋଡ଼ା',
 'loginreqlink'                     => 'ଲଗଇନ',
 'loginreqpagetext'                 => 'ବାକି ପୃଷ୍ଠାମାନ ଦେଖିବା ନିମନ୍ତେ ଆପଣଙ୍କୁ $1 କରିବାକୁ ପଡ଼ିବ ।',
-'accmailtitle'                     => 'ପାସବାର୍ଡ଼ଟି ପଠାଇ ଦିଆଗଲା ।',
-'accmailtext'                      => "[[User talk:$1|$1]]ଙ୍କ ନିମନ୍ତେ ଏକ ଯାହିତାହି ପାସବାର୍ଡ଼ $2ଙ୍କ ନିକଟକୁ ପଠାଗଲା ।
+'accmailtitle'                     => 'ପାସୱାର୍ଡ଼ଟି ପଠାଇ ଦିଆଗଲା ।',
+'accmailtext'                      => "[[User talk:$1|$1]]ଙ୍କ ନିମନ୍ତେ ଏକ ଯାହିତାହି ପାସୱାର୍ଡ଼ $2ଙ୍କ ନିକଟକୁ ପଠାଗଲା ।
 
-ଏହି ପାସବାର୍ଡ଼ଟି ''[[Special:ChangePassword|ପାସବାର୍ଡ଼  ବଦଳାଇବା]]'' ପୃଷ୍ଠାରେ ଲଗଇନ କରି କରାଯାଇପାରିବ ।",
+ଏହି ପାସୱାର୍ଡ଼ଟି ''[[Special:ChangePassword|ପାସୱାର୍ଡ଼ ବଦଳାଇବା]]'' ପୃଷ୍ଠାରେ ଲଗଇନ କରି କରାଯାଇପାରିବ ।",
 'newarticle'                       => '(ନୁଆ)',
 'newarticletext'                   => "ଆପଣ ଖୋଲିଥିବା ଲିଙ୍କଟିରେ ଏଯାଏଁ କିଛିବି ପୃଷ୍ଠା ନାହିଁ ।
 ଏହି ପୃଷ୍ଠାଟିକୁ ତିଆରି କରିବା ପାଇଁ ତଳ ବାକ୍ସରେ ଟାଇପ କରନ୍ତୁ (ଅଧିକ ଜାଣିବା ପାଇଁ [[{{MediaWiki:Helppage}}|ସାହାଯ୍ୟ ପୃଷ୍ଠା]] ଦେଖନ୍ତୁ) ।
 ଯଦି ଆପଣ ଏଠାକୁ ଭୁଲରେ ଆସିଯାଇଥାନ୍ତି ତେବେ ଆପଣଙ୍କ ବ୍ରାଉଜରର '''Back''' ପତିଟି ଦବାନ୍ତୁ ।",
 'anontalkpagetext'                 => "----''ଏହା ଏକ IP ଖାତା ଖୋଲିନଥିବା ବା ଖାତା ବ୍ୟବହାର କରିନଥିବା ଜଣେ ବେନାମି ସଭ୍ୟଙ୍କର ଆଲୋଚନା ପୃଷ୍ଠା ।
-ତେଣୁ ଆମ୍ଭେ ସଙ୍ଖ୍ୟା ଦେଇ ସୂଚିତ IP ଠିକଣା ଦେଇ ତାହାଙ୍କୁ ଜାଣିବା ।
+ତେଣୁ ଆମ୍ଭେ ସଂଖ୍ୟା ଦେଇ ସୂଚୀତ IP ଠିକଣା ଦେଇ ତାହାଙ୍କୁ ଜାଣିବା ।
 ଏହି ପ୍ରକାରର IP ଠିକଣା ବହୁ ସଭ୍ୟଙ୍କ ଦେଇ ବଣ୍ଟା ବି ଯାଇପାରେ ।
 ଯଦି ଆପଣ ଜଣେ ଅଜଣା ସଭ୍ୟ ଓ ଭାବୁଛନ୍ତି ଇଆଡୁ ସିଆଡୁ ମତାମତ ସବୁ ଆପଣଙ୍କ ଉପରେ ଦିଆଯାଇଛି ତେବେ ଦୟାକରି [[Special:UserLogin/signup|ନୂଆ ଖାତାଟିଏ ଖୋଲନ୍ତୁ]] କିମ୍ବା [[Special:UserLogin|ଆଗରୁ ଥିବା ଖାତାରେ ଲଗ ଇନ କରନ୍ତୁ]] ଯାହା ବେନାମି ସଭ୍ୟଙ୍କୁ ନେଇ ଉପୁଜିଥିବା ଦ୍ଵନ୍ଦର ସମାଧାନ କରିବ ।''",
 'noarticletext'                    => 'ଏହି ପୃଷ୍ଠାଟିରେ କିଛି ବି ଲେଖା ନାହିଁ ।
@@ -901,7 +925,6 @@ $1 ଦ୍ଵାରା ପ୍ରତିରୋଧ କରାଯାଇଛି
 * '''Firefox / Safari:''' ''Reload'' କଲାବେଳେ ''Shift'' ଧରି, କିମ୍ବା ''Ctrl-F5'' ବା ''Ctrl-R'' (Macରେ ''⌘-R'') ଦବାନ୍ତୁ
 * '''Google Chrome:''' ''Ctrl-Shift-R'' (Macରେ ''⌘-Shift-R'') ଦବାନ୍ତୁ
 * '''Internet Explorer:'''  ''Refresh'' କଲାବେଳେ ''Ctrl'' ଦବାନ୍ତୁ, କିମ୍ବା ''Ctrl-F5'' ଦବାନ୍ତୁ
-* '''Konqueror:''' ''Reload'' ଦବାନ୍ତୁ କିମ୍ବା ''F5'' ଦବାନ୍ତୁ
 * '''Opera:''' ''Tools → Preferences''ରେ ଅସ୍ଥାୟୀ ସ୍ମୃତି ସଫା କରିଦିଅନ୍ତୁ",
 'usercssyoucanpreview'             => "'''ଜାଣିବା କଥା:''' ଆପଣା ନୂଆ CSS ସାଇତିବା ଆଗରୁ \"{{int:showpreview}}\" ବ୍ୟବହାର କରି ପରଖି ନିଅନ୍ତୁ ।",
 'userjsyoucanpreview'              => "'''ଜାଣିବା କଥା:''' ଆପଣା ନୂଆ ଜାଭାସ୍କ୍ରିପ୍ଟ (JavaScript) ସାଇତିବା ଆଗରୁ \"{{int:showpreview}}\" ବ୍ୟବହାର କରି ପରଖି ନିଅନ୍ତୁ ।",
@@ -937,10 +960,10 @@ $1 ଦ୍ଵାରା ପ୍ରତିରୋଧ କରାଯାଇଛି
 'editingsection'                   => '$1 (ଭାଗ)କୁ ବଦଳାଇବେ',
 'editingcomment'                   => '$1 (ନୂଆ ଭାଗ)କୁ ବଦଳାଉଛୁ',
 'editconflict'                     => 'ବଦଳାଇବା ଦ୍ଵନ୍ଦ: $1',
-'explainconflict'                  => "ଆପଣ ବଦଳାଇବା ଆରମ୍ଭ କରିବା ଭିତରେ କେହିଜଣେ ଏହି ପୃଷ୍ଠାକୁ ବଦଳାଇଛନ୍ତି ।</br>
-ଉପର ଲେଖା ଜାଗାଟି ଏହା ଯେମିତି ଅଛି ସେମିତି ଥିବା ଲେଖାଟି ଦେଖାଉଛି ।</br>
-ତଳ ଜାଗାଟିରେ ଆପଣ କରିଥିବା ବଦଳ ଦେଖାଉଛି ।</br>
-ଏବେ ଥିବା ଲେଖାରେ ଆପଣଙ୍କୁ ନିଜ ବଦଳକୁ ମିଶାଇବାକୁ ହେବ ।</br>
+'explainconflict'                  => "ଆପଣ ବଦଳାଇବା ଆରମ୍ଭ କରିବା ଭିତରେ କେହିଜଣେ ଏହି ପୃଷ୍ଠାକୁ ବଦଳାଇଛନ୍ତି ।
+ଉପର ଲେଖା ଜାଗାଟି ଏହା ଯେମିତି ଅଛି ସେମିତି ଥିବା ଲେଖାଟି ଦେଖାଉଛି ।
+ତଳ ଜାଗାଟିରେ ଆପଣ କରିଥିବା ବଦଳ ଦେଖାଉଛି ।
+ଏବେ ଥିବା ଲେଖାରେ ଆପଣଙ୍କୁ ନିଜ ବଦଳକୁ ମିଶାଇବାକୁ ହେବ ।
 ଯଦି ଆପଣ \"{{int:savearticle}}\" ଦବାନ୍ତି ତେବେ '''କେବଳ''' ଉପର ଲେଖାଟି ସାଇତା ହୋଇଯିବ ।",
 'yourtext'                         => 'ଆପଣଙ୍କ ଲେଖା',
 'storedversion'                    => 'ସାଇତା ସଙ୍କଳନ',
@@ -957,10 +980,10 @@ $1 ଦ୍ଵାରା ପ୍ରତିରୋଧ କରାଯାଇଛି
 ଯଦି ଆପଣ ନିଜର ଲେଖା ନିର୍ଦୟ ଭାବେ ସମ୍ପାଦିତ ହେଉ ବୋଲି ଚାହୁଁନାହାନ୍ତି ବା ବଣ୍ଟନ କରାଯାଉ ବୋଲି ଚାହୁଁ ନାହାନ୍ତି ତେବେ ତାହା ଏଠାରେ ଦିଅନ୍ତୁ ନାହିଁ ।<br />
 ଆପଣ ଆମପକ୍ଷେ ମଧ୍ୟ ପ୍ରତିଜ୍ଞା କରୁଛନ୍ତି ଯେ ଏହା ଆପଣ ନିଜେ ଲେଖିଛନ୍ତି, କିମ୍ବା ଏକ ପବ୍ଲିକ ଡୋମେନରୁ ବା ମାଗଣା ଓ ଖୋଲା ଲାଇସେନ୍ସ ଥିବା ସାଇଟରୁ ନକଲ କରି ଆଣିଛନ୍ତି । (ଦୟାକରି ସବିଶେଷ ପାଇଁ $1 ଦେଖନ୍ତୁ) ।
 '''ଅନୁମତି ବିନା ସତ୍ଵାଧିକାର ଥିବା କାମ ଏଠାରେ ଦିଅନ୍ତୁ ନାହିଁ !'''",
-'longpageerror'                    => "'''ଭୁଲ: ଆପଣ ଦେଇଥିବା ଲେଖାଟି $1 କିଲୋବାଇଟ ଲମ୍ବା, ଯାହାକି ସବୁଠାରୁ ଅଧିକ $2 ଠାରୁ ବି ଅଧିକ ।'''
+'longpageerror'                    => "'''ଭୁଲ: ଆପଣ ଦେଇଥିବା ଲେଖାଟି {{PLURAL:$1|କିଲୋବାଇଟ|$1 କିଲୋବାଇଟ}} ଲମ୍ବା, ଯାହାକି ସବୁଠାରୁ ଅଧିକ {{PLURAL:$2|କିଲୋବାଇଟ|$2 କିଲୋବାଇଟ}} ଠାରୁ ବି ଅଧିକ ।'''
 ଏହା ସାଇତାଯାଇପାରିବ ନାହିଁ ।",
-'readonlywarning'                  => "'''ସୂଚନା: ଏହି ଡାଟାବେସଟି ରକ୍ଷଣାବେକ୍ଷଣା ପାଇଁ କିଳାଯାଇଛି । ତେଣୁ ଆପଣ ଆପଣା ସମ୍ପାଦନା ଏବେ ସାଇତି ପାରିବେ ନାହିଁ ।'''
-ଆପଣ ଲେଖାସବୁ ଏକ ଟେକ୍ସଟ ଫାଇଲରେ ନକଲ କରି ପେଷ୍ଟ କରି ଆଗକୁ ବ୍ୟବହାର କରିବା ପାଇଁ ସାଇତି ପାରିବେ ।
+'readonlywarning'                  => "ସୂଚନା: ଏହି ଡାଟାବେସଟି ରକ୍ଷଣାବେକ୍ଷଣା ପାଇଁ କିଳାଯାଇଛି । ତେଣୁ ଆପଣ ଆପଣା ସମ୍ପାଦନା ଏବେ ସାଇତି ପାରିବେ ନାହିଁ ।'''
+ଆପଣ ଲେଖାସବୁ ଏକ ଟେକ୍ସଟ ଫାଇଲରେ ନକଲ ଏବଂ ପେଷ୍ଟ କରି ଆଗକୁ ବ୍ୟବହାର କରିବା ପାଇଁ ସାଇତି ପାରିବେ ।
 
 ଏହାକୁ କିଳିଥିବା ପରିଛା ଏହି କଇଫତ ଦେଇଛନ୍ତି: $1",
 'protectedpagewarning'             => "'''ଚେତାବନୀ: ଏହି ପୃଷ୍ଠାଟିକୁ କିଳାଯାଇଅଛି ଯାହା ଫଳରେ କେବଳ ପରିଛାମାନେ ହିଁ ଏହାକୁ ବଦଳାଇ ପାରିବେ ।'''
@@ -999,7 +1022,7 @@ $1 ଦ୍ଵାରା ପ୍ରତିରୋଧ କରାଯାଇଛି
 'edit-conflict'                    => 'ବଦଳାଇବା ଦ୍ଵନ୍ଦ.',
 'edit-no-change'                   => 'ଆପଣଙ୍କ ସମ୍ପାଦନାକୁ ଅଣଦେଖା କରାଗଲା, କାରଣ ଲେଖାରେ କିଛି ବି ବଦଳ କରାଯାଇନଥିଲା ।',
 'edit-already-exists'              => 'ନୂଆ ପୃଷ୍ଠାଟିଏ ତିଆରି କରିପାରିଲୁଁ ନାହିଁ ।
-ଏହା ଅଗରୁ ଅଛି ।',
+ଏହା ଆଗରୁ ଅଛି ।',
 
 # Parser/template warnings
 'expensive-parserfunction-warning'        => "'''ଚେତାବନୀ:''' ଏହି ପୃଷ୍ଠାରେ ଅନେକ ଗୁଡ଼ିଏ ମୂଲ୍ୟବାନ ପାର୍ସର ଫଙ୍କସନ କଲ ଅଛି ।
@@ -1106,7 +1129,7 @@ $3ଙ୍କ ଦେଇ ଦିଆଯାଇଥିବା କାରଣ ହେଲା '
 'revdelete-selected'          => "'''[[:$1]]ର {{PLURAL:$2|ବଛା ସଙ୍କଳନ|ବଛା ସଙ୍କଳନ}}:'''",
 'logdelete-selected'          => "'''{{PLURAL:$1|ବଛା ଲଗ ଘଟଣା|ବଛା ଲଗ ଘଟଣାବଳୀ}}:'''",
 'revdelete-text'              => "'''ଲିଭାଯାଇଥିବା ସଂସ୍କରଣ ଓ ଘଟଣାସମୂହ ଏବେ ବି ପୃଷ୍ଠାର ଇତିହାସରେ ରହିବ, କିନ୍ତୁ ଜନସାଧାରଣଙ୍କୁ ସେସବୁର କିଛି ଭାଗ ଲୁଚାଇ ରଖାଯିବ ।'''
-ଏହି {{SITENAME}}ର ବାକି ପରିଛାଗଣ ଲୁଚିରହିଥିବା ବିଷୟବସ୍ତୁ ଦେଖିପାରିବେ ଓ ଅଧିକ ବାରଣ ଥିଲେ ହେଁ ସେହି ଏକା ଇଣ୍ଟରଫେସ ବ୍ୟବହାର କରି ତାହାକୁ ଆଉଥରେ ଲିଭାଯିବାରୁ ଅଟକାଇପାରିବେ ।",
+ଏହି {{SITENAME}}ର ବାକି ପରିଚାଳକଗଣ ଲୁଚିରହିଥିବା ବିଷୟବସ୍ତୁ ଦେଖିପାରିବେ ଓ ଅଧିକ ବାରଣ ଥିଲେ ହେଁ ସେହି ଏକା ଇଣ୍ଟରଫେସ ବ୍ୟବହାର କରି ତାହାକୁ ଆଉଥରେ ଲିଭାଯିବାରୁ ଅଟକାଇପାରିବେ ।",
 'revdelete-confirm'           => 'ଦୟାକରି ଥୟ କରନ୍ତୁ ଯେ ଆପଣ ଏହା କରିବାକୁ ଚାହୁଁଛନ୍ତି, ଆପଣ ଏହାର ପରିଣାମ ଜାଣନ୍ତି ଓ ଆପଣ [[{{MediaWiki:Policy-url}}|ନୀତି]] ଅନୁସାରେ ଏହା କରୁଛନ୍ତି ।',
 'revdelete-suppress-text'     => "ଦବାଇ ରଖିବା '''କେବଳ''' ଏହି ତଳଲିଖିତ କ୍ଷେତ୍ରରେ ବ୍ୟବହାର କରାଯିବ:
 * ସମ୍ଭାବିତ ଅପମାନଜଣକ ତଥ୍ୟ
@@ -1118,16 +1141,14 @@ $3ଙ୍କ ଦେଇ ଦିଆଯାଇଥିବା କାରଣ ହେଲା '
 'revdelete-hide-name'         => 'କାମ ଓ ଲକ୍ଷ ସବୁ ଲୁଚାଇଦିଅନ୍ତୁ',
 'revdelete-hide-comment'      => 'ବଦଳ ସାରକଥା ଲୁଚାଇଦିଅନ୍ତୁ',
 'revdelete-hide-user'         => 'ସମ୍ପାଦକଙ୍କର ଇଉଜର ନାମ /IP ଲୁଚାଇଦିଅନ୍ତୁ',
-'revdelete-hide-restricted'   => 'ପରିଛା ଓ ବାକିମାନଙ୍କ ଠାରୁ ତଥ୍ୟକୁ ଦବାଇଦିଅନ୍ତୁ',
+'revdelete-hide-restricted'   => 'ପରିଚାଳକ ଓ ବାକିମାନଙ୍କ ଠାରୁ ତଥ୍ୟକୁ ଦବାଇଦିଅନ୍ତୁ',
 'revdelete-radio-same'        => '(ବଦଳାନ୍ତୁ ନାହିଁ)',
 'revdelete-radio-set'         => 'ହଁ',
 'revdelete-radio-unset'       => 'ନାହିଁ',
-'revdelete-suppress'          => 'ପରିଛା ଓ ବାକିମାନଙ୍କ ଠାରୁ ତଥ୍ୟକୁ ଦବାଇଦିଅନ୍ତୁ',
+'revdelete-suppress'          => 'ପରିଚାଳକ ଓ ବାକିମାନଙ୍କ ଠାରୁ ତଥ୍ୟକୁ ଦବାଇଦିଅନ୍ତୁ',
 'revdelete-unsuppress'        => 'ଆଉଥରେ ସ୍ଥାପିତ ସଙ୍କଳନସବୁରେ ଥିବା ବାରଣକୁ ବାହାର କରିଦିଅନ୍ତୁ',
 'revdelete-log'               => 'କାରଣ:',
 'revdelete-submit'            => 'ବଛା {{PLURAL:$1|ସଙ୍କଳନ|ସଙ୍କଳନସବୁ}} ପାଇଁ ଲାଗୁ କରନ୍ତୁ',
-'revdelete-logentry'          => '"[[$1]]"ର ଦେଖଣାର ସଙ୍କଳନସବୁକୁ ବଦଳାଗଲା',
-'logdelete-logentry'          => '"[[$1]]"ର ଘଟଣା ଦେଖଣା ବଦଳାଗଲା',
 'revdelete-success'           => "'''ସଙ୍କଳନ ଦେଖଣା ଭଲଭାବେ ସତେଜ କରାଗଲା ।'''",
 'revdelete-failure'           => "'''ସଙ୍କଳନ ଦେଖଣା ସତେଜ କରାଯାଇପାରିଲା ନାହିଁ:'''
 $1",
@@ -1139,15 +1160,6 @@ $1",
 'revdel-restore-visible'      => 'ଦେଖାଯାଉଥିବା ସଙ୍କଳନସବୁ',
 'pagehist'                    => 'ପୃଷ୍ଠାର ଇତିହାସ',
 'deletedhist'                 => 'ଲିଭାଯାଇଥିବା ଇତିହାସ',
-'revdelete-content'           => 'ଭିତର ଚିଜ',
-'revdelete-summary'           => 'ସାରକଥା ସମ୍ପାଦନା',
-'revdelete-uname'             => 'ବ୍ୟବହାରକାରୀଙ୍କ ନାମ',
-'revdelete-restricted'        => 'ପରିଛାମାନଙ୍କ ନିମନ୍ତେ ଥିବା ବାରଣ',
-'revdelete-unrestricted'      => 'ପରିଛାମାନଙ୍କ ନିମନ୍ତେ ଥିବା ବାରଣ ବାହାର କରିଦିଆଗଲା',
-'revdelete-hid'               => '$1କୁ ଲୁଚାଗଲା',
-'revdelete-unhid'             => 'ଲୁଚାଯାଇଥିବା $1କୁ ଦେଖାଇଦିଆଗଲା',
-'revdelete-log-message'       => '$2 ପାଇଁ $1 {{PLURAL:$2|ସଂସ୍କରଣ|ସଂସ୍କରଣ ମାନ}}',
-'logdelete-log-message'       => '$2 {{PLURAL:$2|ଟି ଘଟଣା|ଟି ଘଟଣା}} ପାଇଁ $1',
 'revdelete-hide-current'      => '$2,$1 ତାରିଖରେ ହୋଇଥିବା ଲେଖାଗୁଡିକ ଦେଖାଇବାରେ ଅସୁବିଧା ହେଉଛି : ଏହା ହେଉଛି ବର୍ତମାନର ପୁନଃଦେଖା ।
 ଏହାକୁ ଲୁଚା ଯାଇପାରିବ ନାହି ।',
 'revdelete-show-no-access'    => "$2 ଦିନ, $1 ବେଳେ ଥିବା ବସ୍ତୁରେ ଭୁଲ: ଏହି ବସ୍ତୁଟି ''କିଳାଯାଇଛି'' ।
@@ -1161,8 +1173,9 @@ $1",
 'revdelete-only-restricted'   => '$2 ଦିନ, $1 ବେଳେ ବସ୍ତୁଟି ଲୁଚାଇବା ବେଳେ ଅସୁବିଧାଟିଏ ଘଟିଲା: ଆପଣ ଦେଖଣା ବିକଳ୍ପମାନ ବ୍ୟବହାର ନକରି ବସ୍ତୁସବୁ ପରିଛାମାନଙ୍କ ଦେଇ ଦେଖାଯିବାରୁ ଅଟକାଇପାରିବେ ନାହିଁ ।',
 'revdelete-reason-dropdown'   => '*ସାଧାରଣ ଲିଭାଇବା କାରଣମାନ
 ** ସତ୍ଵାଧିକାର ଉଲ୍ଲଙ୍ଘନ
-** ଭୁଲ ଆତ୍ମ ବିବରଣୀ
-** ସମ୍ଭାବିତ ଅପମାନଜନକ ବିବରଣୀ',
+** ଭୁଲ ଆତ୍ମ ବିବରଣୀ କିମ୍ବା ଖରାପ ମନ୍ତବ୍ୟ
+** ଭୁଲ ବ୍ୟବହାରକାରୀ ନାମ
+** ପ୍ରାୟ ଭୁଲ ତଥ୍ୟ',
 'revdelete-otherreason'       => 'ବାକି/ଅଧିକ କାରଣ:',
 'revdelete-reasonotherlist'   => 'ଅଲଗା କାରଣ',
 'revdelete-edit-reasonlist'   => 'ଲିଭାଇବା କାରଣମାନ ବଦଳାଇବେ',
@@ -1170,15 +1183,15 @@ $1",
 
 # Suppression log
 'suppressionlog'     => 'ଦବାଇବା ଲଗ',
-'suppressionlogtext' => 'ଲିଭାଯାଇଥିବା ଓ ଅଟକାଯାଇଥିବା ବସ୍ତୁର ଏକ ତାଲିକା ତଳେ ଦିଆଯାଇଛି ଯେଉଁଥିରେ ପରିଛାମାନଙ୍କଠାରୁ ଲୁଚାଯାଇଥିବା ବସ୍ତୁ ମଧ୍ୟ ଅଛି ।
-ଏବେ କରାଯାଇଥିବା ବାସନ୍ଦ ଓ ବାରଣ ପାଇଁ [[Special:BlockList|IP ଅଟକ ତାଲିକା]] ଦେଖନ୍ତୁ ।',
+'suppressionlogtext' => 'ଲିଭାଯାଇଥିବା ଓ ଅଟକାଯାଇଥିବା, ଏହା ସହ ପରିଛାମାନଙ୍କଠାରୁ ଲୁଚାଯାଇଥିବା ଲେଖାଗୁଡ଼ିକର ଏକ ତାଲିକା ତଳେ ଦିଆଯାଇଛି ।
+ଏବେ କରାଯାଇଥିବା ବାସନ୍ଦ ଓ ବାରଣ ପାଇଁ [[Special:BlockList|block list]] ଦେଖନ୍ତୁ ।',
 
 # History merging
 'mergehistory'                     => 'ପୃଷ୍ଠାର ଇତିହାସ ସବୁ ଯୋଡ଼ିଦେବେ',
 'mergehistory-header'              => 'ଏହି ପୃଷ୍ଠାଟି ଏକ ମୂଳାଧାର ଥିବା ପୃଷ୍ଠାର ଇତିହାସକୁ ଏକ ନୂଆ ପୃଷ୍ଠାରେ ମିଶାଇଦେବାରେ ଏହି ପୃଷ୍ଠା ଆପଣଙ୍କୁ ଅନୁମତି ଦେଇଥାଏ ।
 ମନେ ରଖନ୍ତୁ ଯେ ଏହି ବଦଳ ପୃଷ୍ଠା ଇତିହାସ ନଥିରେ ସାଇତାହୋଇ ରହିବ ।',
 'mergehistory-box'                 => 'ଦୁଇଟି ପୃଷ୍ଠାର ସଙ୍କଳନ ଯୋଡ଼ିଦେବେ:',
-'mergehistory-from'                => 'ଉତ୍ସ ପୃଷ୍ଠା:',
+'mergehistory-from'                => 'ମୂଳାଧାର ପୃଷ୍ଠା:',
 'mergehistory-into'                => 'ଲକ୍ଷ ପୃଷ୍ଠା:',
 'mergehistory-list'                => 'ଯୋଡ଼ାଯାଇପାରିବା ଭଳି ସମ୍ପାଦନା ଇତିହାସ',
 'mergehistory-merge'               => 'ଏହି [[:$1]] ସଂସ୍କରଣଟି [[:$2]] ସହ ଯୋଡ଼ାଯାଇପାରିବ ।
@@ -1204,7 +1217,7 @@ $1",
 'mergelogpagetext'   => 'ତଳେ ସବୁଠାରୁ ନଗଦ ଯୋଡ଼ାଯାଇଥିବା ପୃଷ୍ଠାର ଇତିହାସ ଆଉ ଗୋଟିଏ ସହ ଦିଆଯାଇଅଛି ।',
 
 # Diffs
-'history-title'            => '"$1" ପାଇଁ ସଙ୍କଳନ ଇତିହାସ',
+'history-title'            => '"$1" ର ପୁନରାବୃତି ଇତିହାସ',
 'difference'               => '(ସଙ୍କଳନ ଭିତରେ ଥିବା ତଫାତ)',
 'difference-multipage'     => '(ପୃଷ୍ଠା ଭିତରେ ଥିବା ତଫାତ)‌',
 'lineno'                   => '$1 କ ଧାଡ଼ି:',
@@ -1233,8 +1246,8 @@ $1",
 'viewprevnext'                     => '($1 {{int:pipe-separator}} $2) ($3) ଟି ଦେଖିବେ',
 'searchmenu-legend'                => 'ଖୋଜିବା ବିକଳ୍ପ',
 'searchmenu-exists'                => "'''ଏହି ଉଇକିରେ \"[[:\$1]]\" ନାଆଁରେ ପୃଷ୍ଠାଟିଏ ଅଛି ।'''",
-'searchmenu-new'                   => "'''\"[[:\$1]]\"ଟି ଏହି ଉଇକିରେ ତିଆରି କରିବେ!'''",
-'searchhelp-url'                   => 'Help:ସୂଚୀପତ୍ର',
+'searchmenu-new'                   => "'''ଏହି ପ୍ରସଙ୍ଗଟି ଆଗରୁ ନାହିଁ, ତେଣୁ ''[[:$1]]'' ନାମରେ ପ୍ରସଙ୍ଗଟିଏ ଏଠାରେ ଗଢ଼ନ୍ତୁ!'''",
+'searchhelp-url'                   => 'Help:ସୂଚୀ',
 'searchmenu-prefix'                => '[[Special:PrefixIndex/$1|ଏହି ନାମ ଆଗରୁ ଥିବା ପୃଷ୍ଠାସବୁ ଖୋଜିବେ]]',
 'searchprofile-articles'           => 'ସୂଚୀ ପୃଷ୍ଠା',
 'searchprofile-project'            => 'ସାହାଯ୍ୟ ଓ ପ୍ରକଳ୍ପ ପୃଷ୍ଠା',
@@ -1258,7 +1271,7 @@ $1",
 'search-mwsuggest-enabled'         => 'ମତାମତ ସହ',
 'search-mwsuggest-disabled'        => 'ମତାମତ ନାହିଁ',
 'search-relatedarticle'            => 'ଯୋଡ଼ା',
-'mwsuggest-disable'                => 'AJAX ମତାମତକୁ ଅଚଳ କରାଇବେ',
+'mwsuggest-disable'                => 'ଖୋଜା ମତାମତକୁ ଅଚଳ କରାଇବେ',
 'searcheverything-enable'          => 'ସବୁଗୁଡ଼ିକ ନେମସ୍ପେସରେ ଖୋଜିବେ',
 'searchrelated'                    => 'ଯୋଡ଼ା',
 'searchall'                        => 'ସବୁ',
@@ -1292,7 +1305,7 @@ $1",
 
 # Preferences page
 'preferences'                   => 'ପସନ୍ଦ',
-'mypreferences'                 => 'ମୋ ପସନ୍ଦ',
+'mypreferences'                 => 'ପସନ୍ଦ',
 'prefs-edits'                   => 'ସମ୍ପାଦନା ସଂଖ୍ୟା:',
 'prefsnologin'                  => 'ଲଗ‌‌ ଇନ କରିନାହାନ୍ତି',
 'prefsnologintext'              => 'ବ୍ୟବହାରକାରୀଙ୍କ ପସନ୍ଦସବୁ ବଦଳାଇବା ପାଇଁ ଆପଣଙ୍କୁ <span class="plainlinks">[{{fullurl:{{#Special:UserLogin}}|returnto=$1}} ଲଗ ଇନ]</span> କରିବାକୁ ପଡ଼ିବ ।',
@@ -1300,19 +1313,21 @@ $1",
 'prefs-skin'                    => 'ବହିରାବରଣ',
 'skin-preview'                  => 'ସାଇତା ଆଗରୁ ଦେଖଣା',
 'datedefault'                   => 'କୌଣସି ପସନ୍ଦ ନାହିଁ',
-'prefs-beta'                    => 'Beta କାମସବ୍ନୁ',
+'prefs-beta'                    => 'ଆଗ ବିଶେଷତାମାନ',
 'prefs-datetime'                => 'ତାରିଖ ଓ ସମୟ',
 'prefs-labs'                    => 'ପରଖଶାଳା ସୁବିଧାସବୁ',
 'prefs-personal'                => 'ସଭ୍ୟ ପ୍ରଫାଇଲ',
 'prefs-rc'                      => 'ନଗଦ ବଦଳ',
 'prefs-watchlist'               => 'ଦେଖଣା ତାଲିକା',
 'prefs-watchlist-days'          => 'ଦେଖଣା ତାଲିକାରେ ଦେଖାଯିବା ଦିନ:',
-'prefs-watchlist-days-max'      => 'ସବୁଠାରୁ ଅଧିକ ହେଲେ ୭ ଦିନ',
+'prefs-watchlist-days-max'      => 'ସବୁଠାରୁ ଅଧିକ ହେଲେ $1 {{PLURAL:$1|ଦିନ|ଦିନ}}',
 'prefs-watchlist-edits'         => 'ବଢ଼ନ୍ତା ଦେଖଣା ତାଲିକାରେ ଦେଖିହେବା ଭଳି ସବୁଠାରୁ ଅଧିକ ବଦଲ:',
 'prefs-watchlist-edits-max'     => 'ସବୁଠାରୁ ଅଧିକ ସଂଖ୍ୟା: ୧୦୦',
 'prefs-watchlist-token'         => 'ଦେଖଣା ତାଲିକା ଟୋକନ:',
 'prefs-misc'                    => 'ବିଭିନ୍ନ',
-'prefs-resetpass'               => 'ପାସୱର୍ଡ଼ ବଦଳାନ୍ତୁ',
+'prefs-resetpass'               => 'ପାସୱାର୍ଡ଼ ବଦଳାନ୍ତୁ',
+'prefs-changeemail'             => 'ଇ-ମେଲ ପରିର୍ବତ୍ତନ କରନ୍ତୁ',
+'prefs-setemail'                => 'ଇ-ମେଲ ଠିକଣାଟିଏ  ଥୟ କରିବେ',
 'prefs-email'                   => 'ଇ-ମେଲ ବିକଳ୍ପମାନ',
 'prefs-rendering'               => 'ଦେଖଣା',
 'saveprefs'                     => 'ସାଇତିବେ',
@@ -1324,7 +1339,7 @@ $1",
 'columns'                       => 'ସ୍ତମ୍ଭସବୁ:',
 'searchresultshead'             => 'ଖୋଜିବା',
 'resultsperpage'                => 'ପୃଷ୍ଠା ପ୍ରତି ହିଟ:',
-'stub-threshold'                => '<a href="#" class="stub">ମୁଣ୍ଡିଆ ପୃଷ୍ଠା ଲିଙ୍କ</a> ସଜାଣି (ବାଇଟ) ପାଇଁ ସୀମା:',
+'stub-threshold'                => '<a href="#" class="stub">ଅସମ୍ପୂର୍ଣ ପୃଷ୍ଠା ଲିଙ୍କ</a> ସଜାଣି (ବାଇଟ) ପାଇଁ ସୀମା:',
 'stub-threshold-disabled'       => 'ଅଚଳ କରିଦିଆଯାଇଛି',
 'recentchangesdays'             => 'ନଗଦ ବଦଳରେ ଦେଖାଇବା ପାଇଁ ବାକିଥିବା ଦିନ:',
 'recentchangesdays-max'         => 'ସବୁଠାରୁ ଅଧିକ ହେଲେ $1 {{PLURAL:$1|ଦିନ|ଦିନ}}',
@@ -1352,7 +1367,7 @@ $1",
 'timezoneregion-indian'         => 'ଭାରତୀୟ ମହାସାଗର',
 'timezoneregion-pacific'        => 'ପ୍ରଶାନ୍ତ ମହାସାଗର',
 'allowemail'                    => 'ବାକି ସଭ୍ୟମାନଙ୍କ ଠାରୁ ଆସିଥିବା ଇ-ମେଲ ସଚଳ କରାଇବେ',
-'prefs-searchoptions'           => 'ଖୋଜିବା ବିକଳ୍ପ',
+'prefs-searchoptions'           => 'ଖୋଜିବେ',
 'prefs-namespaces'              => 'ନେମସ୍ପେସ',
 'defaultns'                     => 'ନଚେତ ଏହି ନେମସ୍ପେସ ଗୁଡ଼ିକରେ ଖୋଜନ୍ତୁ:',
 'default'                       => 'ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ',
@@ -1372,6 +1387,7 @@ $1",
 'yourrealname'                  => 'ପ୍ରକୃତ ନାମ:',
 'yourlanguage'                  => 'ଭାଷା:',
 'yourvariant'                   => 'ଭିତର ଭାଗ ବିବିଧତା:',
+'prefs-help-variant'            => 'ଏହି ଉଇକିରେ ଥିବା ପୃଷ୍ଠାସବୁର ଦେଖଣାରେ ବ୍ୟବହାର ହୋଇପାରିବା ଭଳି ବନାନ ।',
 'yournick'                      => 'ନୂଆ ସନ୍ତକ:',
 'prefs-help-signature'          => 'ଆଲୋଚନା ପୃଷ୍ଠାରେ ଦିଆଯାଉଥିବା ମତାମତରେ "<nowiki>~~~~</nowiki>" ଦେଇଦେଲେ ତାହା ସେଠାରେ ଆପେ ଆପେ ଆପଣଙ୍କ ନାମ ଓ ସମୟକୁ ବଦଳିଯିବ ।',
 'badsig'                        => 'ମୂଳ ସନ୍ତକଟି ଅଚଳ ଅଟେ ।
@@ -1382,12 +1398,12 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'gender-unknown'                => 'ଲୁଚାଯାଇଥିବା',
 'gender-male'                   => 'ପୁରୁଷ',
 'gender-female'                 => 'ନାରୀ',
-'prefs-help-gender'             => 'ଇଚ୍ଛାଧିନ: ସଫ୍ଟବେରରେ ଲିଙ୍ଗବାଚକ ସମ୍ବୋଧନ ନିମନ୍ତେ ବ୍ୟବହାର କରାଯାଇଥାଏ ।
+'prefs-help-gender'             => 'ଇଚ୍ଛାଧିନ: ସଫ୍ଟୱେରରେ ଲିଙ୍ଗବାଚକ ସମ୍ବୋଧନ ନିମନ୍ତେ ବ୍ୟବହାର କରାଯାଇଥାଏ ।
 ଏହି ତଥ୍ୟ ସାଧାରଣରେ ପ୍ରକାଶିତ ।',
 'email'                         => 'ଇ-ମେଲ',
 'prefs-help-realname'           => 'ପ୍ରକୃତ ନାମ ଦେବା ଆପଣଙ୍କ ଉପରେ ନିର୍ଭର କରେ ।
 ଯଦି ଆପଣ ଏହା ଦିଅନ୍ତି, ତେବେ ଏହା ଆପଣଙ୍କ କାମ ପାଇଁ ଶ୍ରେୟ ଦେବାରେ ବ୍ୟବହାର କରାଯାଇପାରିବ ।',
-'prefs-help-email'              => 'ଇ-ମେଲ ଠିକଣାଟି ଇଚ୍ଛାଧୀନ, କିନ୍ତୁ ଆପଣ ପାସବାର୍ଡ଼ଟି ଯଦି ଭୁଲିଗଲେ ତାହା ଆଉଥରେ ତିଆରିବା ପାଇଁ ଏହା କାମରେ ଲାଗିବ ।',
+'prefs-help-email'              => 'ଇ-ମେଲ ଠିକଣାଟି ଇଚ୍ଛାଧୀନ, କିନ୍ତୁ ଆପଣ ଯଦି ପାସୱାର୍ଡ଼ଟି ଭୁଲିଗଲେ ତାହା ଆଉଥରେ ତିଆରିବା ପାଇଁ ଏହା କାମରେ ଲାଗିବ ।',
 'prefs-help-email-others'       => 'ଆପଣ ନିଜର ଇ-ମେଲଟିଏ ନିଜର ସଭ୍ୟ ବା ଆଲୋଚନା ପୃଷ୍ଠାରେ ଦେଇ ଅନ୍ୟମାନଙ୍କୁ ଇ-ମେଲରେ ଯୋଗଯୋଗ କରିବାର ସୁବିଧା ଦେଇପାରିବେ ।
 ଆପଣଙ୍କୁ କେହି ମେଲ କଲେ ଆପଣଙ୍କ ଇ-ମେଲ ତାହାଙ୍କୁ ଦେଖାଯିବ ନାହିଁ ।',
 'prefs-help-email-required'     => 'ଇ-ମେଲ ଠିକଣାଟି ଲୋଡ଼ା ।',
@@ -1406,7 +1422,7 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'prefs-displaywatchlist'        => 'ଦେଖଣା ବିକଳ୍ପ',
 'prefs-diffs'                   => 'ତଫାତସବୁ',
 
-# User preference: e-mail validation using jQuery
+# User preference: email validation using jQuery
 'email-address-validity-valid'   => 'ଇ-ମେଲ ଠିକଣା ବୈଧ ଭଳି ଲାଗୁଅଛି',
 'email-address-validity-invalid' => 'ଏକ ସଠିକ ଇ-ମେଲ ଠିକଣା ଦିଅନ୍ତୁ',
 
@@ -1415,7 +1431,7 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'userrights-lookup-user'       => 'ସଭ୍ୟ ଗୋଠ ପରିଚାଳନା କରିବେ',
 'userrights-user-editname'     => 'ଇଉଜର ନାମଟିଏ ଦିଅନ୍ତୁ:',
 'editusergroup'                => 'ଇଉଜର ଗୋଠ ସମ୍ପାଦନା କରନ୍ତୁ',
-'editinguser'                  => "ବ୍ୟବ‌ହାରକାରୀ '''[[User:$1|$1]]''' ([[User talk:$1|{{int:talkpagelinktext}}]]{{int:pipe-separator}}[[Special:Contributions/$1|{{int:contribslink}}]])ଙ୍କର ସଭ୍ୟ ଅଧିକାର ବଦଳାଉଛୁ",
+'editinguser'                  => "'''[[User:$1|$1]]''' $2 ଙ୍କର ସଭ୍ୟ ଅଧିକାର ବଦଳାଉଅଛୁଁ",
 'userrights-editusergroup'     => 'ଇଉଜର ଗୋଠ ସମ୍ପାଦନା କରନ୍ତୁ',
 'saveusergroups'               => 'ଇଉଜର ଗୋଠ ସମ୍ପାଦନା କରନ୍ତୁ',
 'userrights-groupsmember'      => 'ସଭ୍ୟ ଗୋଠ:',
@@ -1427,7 +1443,7 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'userrights-reason'            => 'କାରଣ:',
 'userrights-no-interwiki'      => 'ଆପଣଙ୍କୁ ବାକି ଉଇକିରେ ସଭ୍ୟ ଅଧିକାର ବଦଳାଇବା ନିମନ୍ତେ ଅନୁମତି ମିଳିନାହିଁ ।',
 'userrights-nodatabase'        => '$1 ଡାଟାବେସଟି ନାହିଁ ବା କେବଳ ସ୍ଥାନୀୟ ହୋଇ ରହିଛି ।',
-'userrights-nologin'           => 'ଆପଣ ପରିଛା ଖାତାରୁ [[Special:UserLogin|ଲଗ ଇନ]] କରି ସଭ୍ୟ ଅଧିକାରର ସୁବିଧା ନେଇପାରିବେ ।',
+'userrights-nologin'           => 'ଆପଣ ପରିଚାଳକ ଖାତାରୁ [[Special:UserLogin|ଲଗ ଇନ]] କରି ସଭ୍ୟ ଅଧିକାରର ସୁବିଧା ଦେଇପାରିବେ ।',
 'userrights-notallowed'        => 'ଆପଣଙ୍କ ଖାତାରେ ସଭ୍ୟ ଅଧିକାର ଯୋଡ଼ିବା ବା କାଢ଼ିବାର ଅନୁମତି ନାହିଁ ।',
 'userrights-changeable-col'    => 'ଆପଣ ବଦଳାଇପାରିବା ଗୋଠସମୂହ',
 'userrights-unchangeable-col'  => 'ଯେଉଁ ଗୋଠସବୁ ଆପଣ ବଦଳାଇପାରିବେ ନାହିଁ',
@@ -1437,7 +1453,7 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'group-user'          => 'ବ୍ୟବହାରକାରୀଗଣ',
 'group-autoconfirmed' => 'ଆପେଆପେ ଥୟ କରା ସଭ୍ୟ',
 'group-bot'           => 'ଆପେଆପେ ଚାଳିତ ସଭ୍ୟ',
-'group-sysop'         => 'ପରିଛାଗଣ',
+'group-sysop'         => 'ପରିଚାଳକଗଣ',
 'group-bureaucrat'    => 'ପ୍ରଶାସକ',
 'group-suppress'      => 'ଅଜାଣତ ଅଣଦେଖା',
 'group-all'           => '(ସବୁ)',
@@ -1445,14 +1461,14 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'group-user-member'          => '{{GENDER:$1|ବ୍ୟବହାରକାରୀ}}',
 'group-autoconfirmed-member' => '{{GENDER:$1|ଆପେଆପେ ଥୟ କରା ସଭ୍ୟ}}',
 'group-bot-member'           => '{{GENDER:$1|ଆପେଚାଳିତ ସଭ୍ୟ}}',
-'group-sysop-member'         => '{{GENDER:$1|ପରିଛା}}',
+'group-sysop-member'         => '{{GENDER:$1|ପରିଚାଳକ}}',
 'group-bureaucrat-member'    => '{{GENDER:$1|ପ୍ରଶାସକ}}',
 'group-suppress-member'      => '{{GENDER:$1|ଅଜାଣତ ଅଣଦେଖା}}',
 
 'grouppage-user'          => '{{ns:project}}:ବ୍ୟବହାରକାରୀ',
 'grouppage-autoconfirmed' => '{{ns:project}}:ଆପେଆପେ ଥୟ କରା ସଭ୍ୟ',
 'grouppage-bot'           => '{{ns:project}}:ଆପେ ଚାଳିତ ସଭ୍ୟଗଣ',
-'grouppage-sysop'         => '{{ns:project}}:ପରିଛା',
+'grouppage-sysop'         => '{{ns:project}}:ପରିଚାଳକ',
 'grouppage-bureaucrat'    => '{{ns:project}}:ପ୍ରଶାସକଗଣ',
 'grouppage-suppress'      => '{{ns:project}}:ଅଜାଣତ ଅଣଦେଖା',
 
@@ -1486,7 +1502,7 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'right-deletedtext'           => 'ଲିଭାଇ ଦିଆଯାଇଥିବା ଲେଖା ଓ ଲିଭାଇ ଦିଆଯାଇଥିବା ଲେଖା ଭିତରର ସଙ୍କଳନର ବଦଳ ଦେଖିବେ',
 'right-browsearchive'         => 'ଲିଭାଯାଇଥିବା ପୃଷ୍ଠାସବୁକୁ ଖୋଜିବେ',
 'right-undelete'              => 'ଲିଭାଇ ଦିଆଯାଇଥିବା ପୃଷ୍ଠାଟିଏକୁ ଫେରାଇ ଆଣିବେ',
-'right-suppressrevision'      => 'ପରିଛାମାନଙ୍କଠାରୁ ଲୁଚାଯାଇଥିବା ସଙ୍କଳନ ପରଖିବେ ଓ ଲେଉଟାଇବେ',
+'right-suppressrevision'      => 'ପରିଚାଳକମାନଙ୍କଠାରୁ ଲୁଚାଯାଇଥିବା ସଙ୍କଳନ ପରଖିବେ ଓ ଲେଉଟାଇବେ',
 'right-suppressionlog'        => 'ବ୍ୟକ୍ତିଗତ ଲଗ ଦେଖାଇବେ',
 'right-block'                 => 'ବାକି ସଭ୍ୟମାନଙ୍କୁ ସମ୍ପାଦନାରୁ ବାରଣ କରିବେ',
 'right-blockemail'            => 'ଇ-ମେଲ ପଠାଇବାରୁ ଜଣେ ସଭ୍ୟଙ୍କୁ ବାରଣ କରିବେ',
@@ -1509,24 +1525,24 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'right-autopatrol'            => 'ଜଣକର ଆପଣା ସମ୍ପାଦନାସବୁ ଜଗାଯାଇଅଛି ବୋଲି ଚିହ୍ନିତ ହୋଇଯାଉ',
 'right-patrolmarks'           => 'ନଗଦ ବଦଳସବୁ ଜଗାଯାଇଅଛି ବୋଲି ଚିହ୍ନିତ କରି ଦେଖାଇବେ',
 'right-unwatchedpages'        => 'ଦେଖାଯାଇନଥିବା ପୃଷ୍ଠାର ଏକ ତାଲିକା ଦେଖାଇବେ',
-'right-trackback'             => 'ଏକ ଟ୍ରାକବ୍ୟାକ ଜମା କରିବେ',
 'right-mergehistory'          => 'ପୃଷ୍ଠାମାନଙ୍କର ଇତିହାସ ମିଶାଇଦେବେ',
 'right-userrights'            => 'ଇଉଜର ଅଧିକାରସବୁକୁ ବଦଳାଇବେ',
 'right-userrights-interwiki'  => 'ବାକି ଉଇକିର ସଭ୍ୟମାନଙ୍କ ସଭ୍ୟ ଅଧିକାର ବଦଳାଇବେ',
 'right-siteadmin'             => 'ଡାଟାବେସକୁ କିଳିବେ ଓ ଖୋଲିବେ',
 'right-override-export-depth' => '୫ଟି ଯାଏଁ ଯୋଡ଼ାଯାଇଥିବା ପୃଷ୍ଠା ସହିତ ସବୁ ପୃଷ୍ଠାକୁ ରପ୍ତାନୀ କରିବେ',
 'right-sendemail'             => 'ବାକି ସଭ୍ୟ ମାନଙ୍କୁ ଇ-ମେଲ ପଠାଇବେ',
+'right-passwordreset'         => 'ପାସୱାର୍ଡ଼ ପୁନସ୍ଥାପନ ଇମେଲ କରିବେ',
 
 # User rights log
 'rightslog'                  => 'ସଭ୍ୟଙ୍କ ଅଧିକାରର ଲଗ',
-'rightslogtext'              => 'ସଭ୍ୟଙ୍କ ଅଧିକାରର ବଦଳର ଏହା ଏକ ଇତିହାସ ।',
+'rightslogtext'              => 'ସଭ୍ୟଙ୍କ ଅଧିକାର ବଦଳର ଏହା ଏକ ଇତିହାସ ।',
 'rightslogentry'             => '$1 ପାଇଁ ଗୋଠ ସଭ୍ୟପଦର ଅବସ୍ଥା $2 ରୁ $3କୁ ବଦଳାଇଦିଆଗଲା',
 'rightslogentry-autopromote' => '$2 ରୁ $3କୁ ଆପେଆପେ ଉନ୍ନୀତ କରାଗଲା',
 'rightsnone'                 => '(କିଛି ନାହିଁ)',
 
 # Associated actions - in the sentence "You do not have permission to X"
 'action-read'                 => 'ଏହି ପୃଷ୍ଠାଟି ପଢ଼ିବେ',
-'action-edit'                 => 'ଏହି ପୃଷ୍ଠାଟିକୁ ବଦଳାଇବା',
+'action-edit'                 => 'ଏହି ପୃଷ୍ଠାଟିକୁ ବଦଳାଇବେ',
 'action-createpage'           => 'ପୃଷ୍ଠାଟିଏ ତିଆରିବା',
 'action-createtalk'           => 'ଆଲୋଚନା ପୃଷ୍ଠାସବୁ ଗଢ଼ିବେ',
 'action-createaccount'        => 'ଏହି ନୂଆ ସଭ୍ୟ ଖାତାଟିଏ ଗଢ଼ିବେ',
@@ -1549,16 +1565,17 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'action-suppressionlog'       => 'ବ୍ୟକ୍ତିଗତ ଲଗ ଦେଖାଇବେ',
 'action-block'                => 'ଏହି ସଭ୍ୟଙ୍କୁ ସମ୍ପାଦନାରୁ ବାରଣ କରିବେ',
 'action-protect'              => 'ଏହି ପୃଷ୍ଠାର କିଳିବା ସ୍ତରକୁ ବଦଳାଇବେ',
+'action-rollback'             => 'ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ପୃଷ୍ଠାକୁ ବଦଳାଇଥିବା ଶେଷ ସଭ୍ୟଙ୍କ ସମ୍ପାଦନାକୁ ସଙ୍ଗେସଙ୍ଗେ ପୁରାପୁରି ପଛକୁ ଫେରାଇଦେବେ',
 'action-import'               => 'ଆଉ ଏକ ଉଇକିରୁ ଏହି ପୃଷ୍ଠାଟି ଆଣିବେ',
 'action-importupload'         => 'ଏକ ଫାଇଲ ଅପଲୋଡ଼ରୁ ଏହି ପୃଷ୍ଠାଟି ଆଣିବେ',
 'action-patrol'               => 'ବାକି ମାନଙ୍କ ବଦଳକୁ ଜଗାଯାଇଥିବା ବଦଳ ବୋଲି ଚିହ୍ନିତ କରିବେ',
 'action-autopatrol'           => 'ଆପଣା ସମ୍ପାଦନାସବୁକୁ ଜଗାଯାଇଛି ବୋଲି ଚିହ୍ନିତ କରିବେ',
 'action-unwatchedpages'       => 'ଦେଖାଯାଇନଥିବା ପୃଷ୍ଠାର ଏକ ତାଲିକା ଦେଖାଇବେ',
-'action-trackback'            => 'ଏକ ଟ୍ରାକବ୍ୟାକ ଜମା କରିବେ',
 'action-mergehistory'         => 'ପୃଷ୍ଠାର ଇତିହାସ ମିଶାଇଦେବେ',
 'action-userrights'           => 'ଇଉଜର ଅଧିକାରସବୁକୁ ବଦଳାଇବେ',
 'action-userrights-interwiki' => 'ବାକି ଉଇକିର ସଭ୍ୟମାନଙ୍କ ସଭ୍ୟ ଅଧିକାର ବଦଳାଇବେ',
 'action-siteadmin'            => 'ଡାଟାବେସକୁ କିଳିବେ ଓ ଖୋଲିବେ',
+'action-sendemail'            => 'ଇ-ମେଲ ପଠାଇବେ',
 
 # Recent changes
 'nchanges'                          => '$1 {{PLURAL:$1|ବଦଳ|ବଦଳସବୁ}}',
@@ -1582,7 +1599,7 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'rclinks'                           => 'ଗଲା $2 ଦିନର $1 ବଦଳଗୁଡ଼ିକୁ ଦେଖାଇବେ<br />$3',
 'diff'                              => 'ଅଦଳ ବଦଳ',
 'hist'                              => 'ଇତିହାସ',
-'hide'                              => 'ଲୁଚାଇବେ',
+'hide'                              => 'ଲୁଚାନ୍ତୁ',
 'show'                              => 'ଦେଖାଇବେ',
 'minoreditletter'                   => 'ଟିକେ',
 'newpageletter'                     => 'ନୂଆ',
@@ -1590,9 +1607,11 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'number_of_watching_users_pageview' => '[$1 {{PLURAL:$1|ସଭ୍ୟ|ସଭ୍ୟଗଣା}}ଙ୍କୁ ଦେଖୁଅଛି]',
 'rc_categories'                     => 'ଶ୍ରେଣୀସମୂହ ପାଇଁ ସୀମା ( "|" ଦେଇ ଅଲଗା କରିବେ)',
 'rc_categories_any'                 => 'ଯେ କୌଣସି',
+'rc-change-size-new'                => 'ବଦଳପରେ $1 {{PLURAL:$1|byte|bytes}}',
 'newsectionsummary'                 => '/* $1 */ ନୂଆ ଭାଗ',
 'rc-enhanced-expand'                => 'ପୁରା ଦେଖାଇବେ (ଜାଭାସ୍କ୍ରିପ୍ଟ ଦରକାର)',
 'rc-enhanced-hide'                  => 'ବେଶି କଥାସବୁ ଲୁଚାଇଦିଅ',
+'rc-old-title'                      => 'ପ୍ରକୃତରେ "$1" ଭାବେ ତିଆରି କରାଯାଇକଥିଲା',
 
 # Recent changes linked
 'recentchangeslinked'          => 'ଏଇମାତ୍ର ବଦଳାଯାଇଥିବା ପୃଷ୍ଠାର ଲିଙ୍କ',
@@ -1621,9 +1640,9 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 ଆଗରୁ ଅପଲୋଡ଼ କରାଯାଇଥିବା ଫାଇଲ [[Special:FileList|ଅପଲୋଡ଼ ହୋଇସାରିଥିବା ଫାଇଲ]] ଖୋଜିବା ବା ଦେଖିବା ପାଇଁ, (ପୁନ) ଅପଲୋଡ଼ମାନ [[Special:Log/upload|ଅପଲୋଡ଼ ଇତିହାସ]]ରେ ରହିଛି, ଲିଭାଯାଇଥିବା ଇତିହାସ [[Special:Log/delete|ଲିଭାଯାଇଥିବା ଇତିହାସ]]ରେ ରହିଛି ।
 
 ଏକ ପୃଷ୍ଠାରେ ଫାଇଲଟିଏ ଭରିବା ନିମନ୍ତେ ତଳଲିଖିତ ଫର୍ମରେ ଲିଙ୍କଟିଏ ବ୍ୟବହାର କରିବେ:
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.jpg]]</nowiki></tt>''' ଫାଇଲଟିର ପୁରା ସଂସ୍କରଣ ବ୍ୟବହାର କରିବେ
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></tt>''' ବାମ ଏକ ୨୦୦ ପିକ୍ସେଲର ଚଉଡ଼ା ଘରେ ବିବରଣୀ 'alt text' ଥିବା ବର୍ଣ୍ଣନା ରହିବ
-* '''<tt><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></tt>''' ଫାଇଲଟି ନ ଦେଖାଇ ଫାଇଲ ସହ ସିଧା ଯୋଡ଼ିବା",
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.jpg]]</nowiki></code>''' ଫାଇଲଟିର ପୁରା ସଂସ୍କରଣ ବ୍ୟବହାର କରିବେ
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></code>''' ବାମ ଏକ ୨୦୦ ପିକ୍ସେଲର ଚଉଡ଼ା ଘରେ ବିବରଣୀ 'alt text' ଥିବା ବର୍ଣ୍ଣନା ରହିବ
+* '''<code><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></code>''' ଫାଇଲଟି ନ ଦେଖାଇ ଫାଇଲ ସହ ସିଧା ଯୋଡ଼ିବା",
 'upload-permitted'            => 'ଅନୁମୋଦିତ ଫାଇଲ ପ୍ରକାର: $1 ।',
 'upload-preferred'            => 'ପସନ୍ଦର ଫାଇଲ ପ୍ରକାର: $1 ।',
 'upload-prohibited'           => 'ଅନନୁମୋଦିତ ଫାଇଲ ପ୍ରକାର: $1 ।',
@@ -1643,6 +1662,7 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 'minlength1'                  => 'ଫାଇଲ ନାମଟି ଅତି କମରେ ଗୋଟିଏ ଅକ୍ଷର ହୋଇଥିବା ଲୋଡ଼ା ।',
 'illegalfilename'             => '"$1" ନାମରେ ଥିବା ଫାଇଲର ନାମରେ ଥିବା ଅକ୍ଷର ପୃଷ୍ଠା ଶିରୋନାମାରେ ରଖିବା ପାଇଁ ଅନୁମୋଦିତ ନୁହେଁ ।
 ଦୟାକରି ଫାଇଲର ନାମଟି ବଦଳାନ୍ତୁ ଓ ଆଉଥରେ ଅପଲୋଡ଼ କରନ୍ତୁ ।',
+'filename-toolong'            => 'ଫାଇଲ ନାମ ୨୦୦ ବାଇଟରୁ ଅଧିକ ନ ହେବା ଉଚିତ ।',
 'badfilename'                 => 'ଫାଇଲ ନାମ "$1"କୁ ବଦଳାଇ ଦିଆଯାଇଛି ।',
 'filetype-mime-mismatch'      => 'ଫାଇଲ ଏକ୍ସଟେନସନ ".$1" ଚିହ୍ନଟ ହୋଇଥିବା MIME ଫାଇଲ ପ୍ରକାର ସଙ୍ଗେ ମେଳ ଖାଉନାହିଁ ($2) ।',
 'filetype-badmime'            => '"$1" MIME ପ୍ରକାରର ଫାଇଲ ଅପଲୋଡ଼ କରିବା ଅନୁମୋଦିତ ନୁହେଁ ।',
@@ -1670,21 +1690,21 @@ HTML ଟାଗ ପରଖିନିଅନ୍ତୁ ।',
 ଏହା ହୁଏତ ଫାଇଲ ନାମରେ କିଛି ଭୁଲ ଜନିତ ହୋଇଥାଇପାରେ ।
 ସତରେ ଆପଣ ଏହି ଫାଇଲଟି ଅପଲୋଡ଼ କରିବାକୁ ଚାହାନ୍ତି କି ନାଁ ଠାରେ ପରଖି ନିଅନ୍ତୁ ।',
 'windows-nonascii-filename'   => 'ଏହି ଉଇକି ବିଶେଷ ସଂକେତ ଥିବା ଫାଇଲ ନାମକୁ ଅନୁମତି ଦିଏ ନାହିଁ ।',
-'fileexists'                  => "ଏହି ଏକା ନାଆଁରେ ଆଗରୁ ଫାଇଲଟିଏ ଅଛି , ସତରେ ଆପଣ ଏହାକୁ ଅପଲୋଡ଼ କରିବାକୁ ଚାହାନ୍ତି କି ନାଁ ଦୟାକରି '''<tt>[[:$1]]</tt>''' ପରଖି ନିଅନ୍ତୁ ।
-[[$1|thumb]]",
-'filepageexists'              => "ଏହି ଫାଇଲର ବିବରଣୀ ପୃଷ୍ଠାଟି '''<tt>[[:$1]]</tt>''' ଠାରେ ତିଆରି କରାଯାଇଅଛି, କିନ୍ତୁ ଏହି ନାମରେ ଗୋଟିଏ ବି ଫାଇଲ ନାହିଁ ।
+'fileexists'                  => 'ଏହି ଏକା ନାଆଁରେ ଆଗରୁ ଫାଇଲଟିଏ ଅଛି , ସତରେ ଆପଣ ଏହାକୁ ଅପଲୋଡ଼ କରିବାକୁ ଚାହାନ୍ତି କି ନାଁ ଦୟାକରି <strong>[[:$1]]</strong> ପରଖି ନିଅନ୍ତୁ ।
+[[$1|thumb]]',
+'filepageexists'              => 'ଏହି ଫାଇଲର ବିବରଣୀ ପୃଷ୍ଠାଟି <strong>[[:$1]]</strong> ଠାରେ ତିଆରି କରାଯାଇଅଛି, କିନ୍ତୁ ଏହି ନାମରେ ଗୋଟିଏ ବି ଫାଇଲ ନାହିଁ ।
 ବିବରଣୀ ପୃଷ୍ଠାରେ ଆପଣ ଦେଇଥିବା ସାରକଥା ଦେଖାଯିବ ନାହିଁ ।
 ଆପଣଙ୍କ ବିବରଣୀ ସେଠାରେ ଦେଖାଇବା ନିମନ୍ତେ ଆପଣଙ୍କୁ ନିଜେ ଏହା ବଦଳାଇବାକୁ ପଡ଼ିବ ।
-[[$1|thumb]]",
-'fileexists-extension'        => "ଏକାପରି ନାଆଁ ଥିବା ଫାଇଲଟିଏ ଆଗରୁ ଅଛି: [[$2|thumb]]
-* ଅପଲୋଡ଼ କରାଯାଉଥିବା ଫାଇଲର ନାମ: '''<tt>[[:$1]]</tt>'''
-* ଆଗରୁ ଥିବା ଫାଇଲର ନାମ: '''<tt>[[:$2]]</tt>'''
-ଦୟାକରି ଅଲଗା ନାମଟିଏ ବାଛନ୍ତୁ ।",
+[[$1|thumb]]',
+'fileexists-extension'        => 'ଏକାପରି ନାଆଁ ଥିବା ଫାଇଲଟିଏ ଆଗରୁ ଅଛି: [[$2|thumb]]
+* ଅପଲୋଡ଼ କରାଯାଉଥିବା ଫାଇଲର ନାମ: <strong>[[:$1]]</strong>
+* ଆଗରୁ ଥିବା ଫାଇଲର ନାମ: <strong>[[:$2]]</strong>
+ଦୟାକରି ଅଲଗା ନାମଟିଏ ବାଛନ୍ତୁ ।',
 'fileexists-thumbnail-yes'    => "ଫାଇଲଟି ଏକ ସାନ ଆକାରର ଛବି ବୋଲି ବୋଧ ହୁଏ ''(ନଖଦେଖଣା)''.
 [[$1|thumb]]
-ଦୟାକରି '''<tt>[[:$1]]</tt>''' ଫାଇଲଟି ପରଖି ନିଅନ୍ତୁ ।
+ଦୟାକରି <strong>[[:$1]]</strong> ଫାଇଲଟି ପରଖି ନିଅନ୍ତୁ ।
 ଯଦି ବଛା ଫାଇଲଟି ମୂଳ ଫାଇଲ ଆକାରର ହୋଇଥାଏ ତେବେ ଆଉ ଗୋଟିଏ ନଖଦେଖଣା ସାନ ଛବି ଅପଲୋଡ଼ କରିବାକୁ ପଡ଼ିବ ।",
-'file-thumbnail-no'           => "ଫାଇଲ ନାମ '''<tt>$1</tt>'''ରେ ଆରମ୍ଭ ହୋଇଥାଏ ।
+'file-thumbnail-no'           => "ଫାଇଲ ନାମ <strong>$1</strong>ରେ ଆରମ୍ଭ ହୋଇଥାଏ ।
 ଏହା ଏକ ଛୋଟ ଆକାରର ଛବି ଭଳି ବୋଧ ହୁଏ ''(ଛୋଟଦେଖଣା)'' ।
 ଯଦି ଆପଣଙ୍କ ପାଖରେ ପୁରା ରେଜୋଲୁସନର ଛବିଟିଏ ଅଛି ତେବେ ତାହା ଅପଲୋଡ଼ କରନ୍ତୁ କିମ୍ବା ଫାଇଲ ନାମ ବଦଳାଇ ଦିଅନ୍ତୁ ।",
 'fileexists-forbidden'        => 'ଏହି ନାମରେ ଫାଇଲଟିଏ ଆଗରୁ ଅଛି ଯାହା ଉପରେ ଆଉଥରେ ମଡ଼ାଯାଇପାରିବ ନାହିଁ ।
@@ -1746,6 +1766,41 @@ $1',
 'upload-unknown-size'       => 'ଅଜଣା ଆକାର',
 'upload-http-error'         => 'HTTP ଅସୁବିଧାଟିଏ ଘଟିଲା: $1',
 
+# File backend
+'backend-fail-stream'        => 'ଷ୍ଟ୍ରିମ ଫାଇଲ $1ଟି ମିଳିଲା ନାହିଁ ।',
+'backend-fail-backup'        => 'ଭବିଷ୍ୟତ ପାଇଁ ଥିବା $1 ଫାଇଲଟି ମିଳିଲା ନାହିଁ ।',
+'backend-fail-notexists'     => '$1 ଫାଇଲଟି ମିଳିଲା ନାହିଁ ।',
+'backend-fail-hashes'        => 'ତୁଳନା ପାଇଁ ଫାଇଲ ହାସ ମିଳିଲା ନାହିଁ ।',
+'backend-fail-notsame'       => '$1 ଠାରେ ଏକ ଅସମ ଫାଇଲ ଆଗରୁ ଅଛି ।',
+'backend-fail-invalidpath'   => '$1 ଏକ ବୈଧ ସାଇତିବା ପଥ ନୁହେଁ ।',
+'backend-fail-delete'        => '$1 ଫାଇଲଟି ଲିଭାଇ ପାରିବେ ନାହିଁ ।',
+'backend-fail-alreadyexists' => '$1 ଫାଇଲଟି ଆଗରୁ ଅଛି ।',
+'backend-fail-store'         => '$2 ଠାରେ $1 ଫାଇଲଟି ସାଇତାଯାଇ ପାରିଲା ନାହିଁ ।',
+'backend-fail-copy'          => '$1 ଫାଇଲଟିରୁ $2 କୁ ଫାଇଲ ନକଲ କରାଯାଇପାରିବ ନାହିଁ ।',
+'backend-fail-move'          => '$1 ରୁ $2 କୁ ଫାଇଲ ନକଲ କରିପାରିଲୁ ନାହିଁ ।',
+'backend-fail-opentemp'      => 'ଅସ୍ଥାୟୀ ଫାଇଲ ଖୋଲିହେଲା ନାହିଁ ।',
+'backend-fail-writetemp'     => 'ଅସ୍ଥାୟୀ ଫାଇଲ ତିଆରି କରିପାରିଲୁ ନାହିଁ ।',
+'backend-fail-closetemp'     => 'ଅସ୍ଥାୟୀ ଫାଇଲ ବନ୍ଦ କରିହେଲା ନାହିଁ ।',
+'backend-fail-read'          => '$1 ଫାଇଲଟି ପଢ଼ିପାରିଲୁ ନାହିଁ ।',
+'backend-fail-create'        => '$1 ଫାଇଲରେ କିଛି ଲେଖି ହେଲା ନାହିଁ ।',
+'backend-fail-readonly'      => 'ସାଇତାଲେଖା "$1" କେବଳ ପଢିହେବ । କାରଣଟି ହେଉଛି: "\'\'$2\'\'"',
+'backend-fail-synced'        => 'ଭିତର ସାଇତା ମଧ୍ୟରେ "$1"ଏକ ଅସ୍ଥାୟୀ ଫାଇଲ',
+'backend-fail-connect'       => 'ସାଇତିବା ଧାରକ "$1" ସହ ଯୋଗାଯୋଗ ହୋଇ ପାରିଲା ନାହିଁ ।',
+'backend-fail-internal'      => 'ସାଇତା ଧାରକ "$1" କିଛି ଅଜଣା ଅସୁବିଧା ଉପୁଜିଲା ।',
+'backend-fail-contenttype'   => '"$1"ରେ ଥିବା ସାଇତା ପାଇଁ ଥିବା ଫାଇଲର ବିଷୟବସ୍ତୁର ପ୍ରକାର ଗୁଡିକ ଜଣାପଡୁନି ।',
+'backend-fail-batchsize'     => 'ସାଇତା ଧାରକକୁ  $1 ଫାଇଲର {{PLURAL:$1|operation|operations}} ଏକ ଗୋଛା ଦିଆଯାଇଥିଲା; ସୀମା ହେଉଛି $2 {{PLURAL:$2|operation|operations}} ।',
+
+# Lock manager
+'lockmanager-notlocked'        => 'କିଳାଯାଇଥିବା "$1"କୁ ଖୋଲିପାରିଲୁ ନାହିଁ; ଏହା ପ୍ରକୃତରେ କିଳାଯାଇନାହିଁ ।',
+'lockmanager-fail-closelock'   => '"$1" ପାଇଁ ତାଲା ପରି କାମ କରିବା ଫାଇଲଟି ମିଳିଲାନାହିଁ ।',
+'lockmanager-fail-deletelock'  => '"$1" ଫାଇଲଟି କିଳାଯାଇଥିବାରୁ ଲିଭାଯାଇପାରିଲା ନାହିଁ ।',
+'lockmanager-fail-acquirelock' => '"$1" ଚାବି ପାଇଁ ତାଲା ମିଳିଲା ନାହିଁ ।',
+'lockmanager-fail-openlock'    => '"$1" ଫାଇଲଟି କିଳାଯାଇଥିବାରୁ ଖୋଲାଯାଇ ପାରିଲା ନାହିଁ ।',
+'lockmanager-fail-releaselock' => '"$1" ଚାବି ପାଇଁ ତାଲା ମିଳିଲା ନାହିଁ ।',
+'lockmanager-fail-db-bucket'   => '$1 ଝୁଡ଼ିରେ ଥିବା ସବୁ କିଳାଯାଇଥିବା ଡାଟାବେସ ସହ ଯୋଗାଯୋଗ କରାଯାଇପାରିଲା ନାହିଁ ।',
+'lockmanager-fail-db-release'  => '$1 ଡାଟାବେସରେ ଲାଗିଥିବା ତାଲା ଖୋଲାଯାଇପାରିଲା ନାହିଁ ।',
+'lockmanager-fail-svr-release' => '$1 ସର୍ଭରରେ ଲାଗିଥିବା ତାଲା ଖୋଲାଯାଇପାରିଲା ନାହିଁ ।',
+
 # ZipDirectoryReader
 'zip-file-open-error' => 'ZIP ପରଖିବା ପାଇଁ ଫାଇଲଟି ଖୋଲିଲା ବେଳେ ଅସୁବିଧାଟିଏ ଘଟିଲା ।',
 'zip-wrong-format'    => 'ଦିଆଯାଇଥିବା ଫାଇଲଟି ଏକ ZIP ଫାଇଲ ନୁହେଁ ।',
@@ -1762,13 +1817,14 @@ $1',
 'uploadstash-badtoken' => 'ସେହି କାମଟି କରିବାରେ ଅସଫଳ ହେଲୁ, ବୋଧେ ଆପଣଙ୍କ ଇଉଜର ନାମ ଓ ପାସବାର୍ଡ଼ ଆଦିର ମିଆଦ ପୁରିଗଲାଣି । ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
 'uploadstash-errclear' => 'ଫାଇଲମାନଙ୍କର ଲିଭାଇବା ଅସଫଳ ରହିଲା ।',
 'uploadstash-refresh'  => 'ଫାଇଲମାନଙ୍କର ତାଲିକାକୁ ସତେଜ କରିବେ',
+'invalid-chunk-offset' => 'ଅବୈଧ ଖରାପ ଅଫସେଟ',
 
 # img_auth script messages
 'img-auth-accessdenied'     => 'ଭିତରକୁ ପଶିବାକୁ ବାରଣ କରାଗଲା',
-'img-auth-nopathinfo'       => 'PATH_INFO ମିଳୁ ନାହିଁ।
-ଆପଣଙ୍କ ସର୍ଭରକୁ ଏହି ତଥ୍ୟଟିକୁ ପଠାଇବା ନିମନ୍ତେ ସଜଡ଼ାଯାଇନାହିଁ ।
-ଏହା ସିଜିଆଇ-ଚାଳିତ ହୋଇପାରେ ଓ img_auth ରେ କାମକରୁନଥାଇପାରେ  ।
-http://www.mediawiki.org/wiki/Manual:Image_Authorization ଦେଖନ୍ତୁ ।',
+'img-auth-nopathinfo'       => 'ପଥ_ବିବରଣୀ ମିଳୁ ନାହିଁ।
+ଆପଣଙ୍କ ସର୍ଭରରେ ଏହି ତଥ୍ୟଟିକୁ ପଠାଇବା ନିମନ୍ତେ ବ୍ୟବସ୍ଥା କରାଯାଇନାହିଁ ।
+ଏହା ସିଜିଆଇ-ଆଧାରିତ ହୋଇପାରେ ଓ ଆଇଏମଜି_ଅଉଥରେ କାମକରୁନଥାଇପାରେ  ।
+https://www.mediawiki.org/wiki/Manual:Image_Authorization ଦେଖନ୍ତୁ ।',
 'img-auth-notindir'         => 'ଅନୁରୋଧ କରାଯାଇଥିବା ପଥ ସଂରଚିତ ଅପଲୋଡ଼ ତାଲିକା ନୁହେଁ ।',
 'img-auth-badtitle'         => '"$1"ରୁ ଏକ ସଠିକ ଶିରୋନାମା ଗଠନ କରିବାରେ ଅସଫଳ ହେଲୁଁ ।',
 'img-auth-nologinnWL'       => 'ଆପଣ ଲଗ ଇନ କରି ନାହାନ୍ତି ଓ "$1" ଏକ ଅନୁମୋଦିତ ତାଲିକାରେ ନାହିଁ ।',
@@ -1802,7 +1858,7 @@ URLଟି ଠିକ ଅଚିକି କି ନାଁ ଓ ସାଇଟଟି ସ�
 ଆପଣ ଟିକେ କମ ବ୍ୟସ୍ତ ସମୟ ଭିତରେ ଚେଷ୍ଟା କରିପାରନ୍ତି ।',
 
 'license'            => 'ସତ୍ଵ:',
-'license-header'     => 'ସତ୍ଵ:',
+'license-header'     => 'ସତ୍ଵ',
 'nolicense'          => 'ଗୋଟିଏ ବି ବଛାଯାଇନାହିଁ',
 'license-nopreview'  => '(ସାଇତିବା ଆଗଦେଖଣା ମିଳୁନାହିଁ)',
 'upload_source_url'  => '(ଏକ ବୈଧ ସାଧାରଣରେ ଖୋଲାଯାଇପାରୁଥିବା URL)',
@@ -1870,28 +1926,29 @@ URLଟି ଠିକ ଅଚିକି କି ନାଁ ଓ ସାଇଟଟି ସ�
 'filerevert-badversion'     => 'ଏହି ଫାଇଲର କିଛି ବି ଆଗର ସ୍ଥାନୀୟ ଫାଇଲ ନାହିଁ ଯେଉଁଥିରେ ଏହି ସମୟ ଛିହ୍ନଟି ଦିଆଯାଇଛି ।',
 
 # File deletion
-'filedelete'                  => 'ଲିଭାଇବା $1',
-'filedelete-legend'           => 'ଫାଇଲଟି ଲିଭାଇବେ',
-'filedelete-intro'            => "ଆପଣ '''[[Media:$1|$1]]''' ପୃଷ୍ଠାଟି ଇତିହାସ ସମେତ ଲିଭାଇବାକୁ ଯାଉଛନ୍ତି ।",
-'filedelete-intro-old'        => "[$4 $3, $2] ବେଳେ ଆପଣ '''[[Media:$1|$1]]''' ସଂସ୍କରଣରୁ ଲିଭାଉ ଅଛନ୍ତି ।",
-'filedelete-comment'          => 'କାରଣ:',
-'filedelete-submit'           => 'ଲିଭାଇବେ',
-'filedelete-success'          => "'''$1''' ପୃଷ୍ଠାଟି ଲିଭାଇ ଦିଆଗଲା ।",
-'filedelete-success-old'      => "$3, $2 ବେଳର '''[[Media:$1|$1]]''' ଟି ଲିଭାଇଦିଆଗଲା ।",
-'filedelete-nofile'           => "'''$1'''ଟି ମିଳିଲା ନାହିଁ ।",
-'filedelete-nofile-old'       => "ଦିଆଯାଇଥିବା ବିଶେଷତା ଠିଆ '''$1'''ର ଗୋଟିଏ ବି ଅଭିଲେଖ ସଂସ୍କରଣ ନାହିଁ ।",
-'filedelete-otherreason'      => 'ବାକି/ଅଧିକ କାରଣ:',
-'filedelete-reason-otherlist' => 'ଅଲଗା କାରଣ',
-'filedelete-reason-dropdown'  => '*ସାଧାରଣ ଲିଭାଇବା କାରଣମାନ
+'filedelete'                   => 'ଲିଭାଇବା $1',
+'filedelete-legend'            => 'ଫାଇଲଟି ଲିଭାଇବେ',
+'filedelete-intro'             => "ଆପଣ '''[[Media:$1|$1]]''' ପୃଷ୍ଠାଟି ଇତିହାସ ସମେତ ଲିଭାଇବାକୁ ଯାଉଛନ୍ତି ।",
+'filedelete-intro-old'         => "[$4 $3, $2] ବେଳେ ଆପଣ '''[[Media:$1|$1]]''' ସଂସ୍କରଣରୁ ଲିଭାଉ ଅଛନ୍ତି ।",
+'filedelete-comment'           => 'କାରଣ:',
+'filedelete-submit'            => 'ଲିଭାଇବେ',
+'filedelete-success'           => "'''$1''' ପୃଷ୍ଠାଟି ଲିଭାଇ ଦିଆଗଲା ।",
+'filedelete-success-old'       => "$3, $2 ବେଳର '''[[Media:$1|$1]]''' ଟି ଲିଭାଇଦିଆଗଲା ।",
+'filedelete-nofile'            => "'''$1'''ଟି ମିଳିଲା ନାହିଁ ।",
+'filedelete-nofile-old'        => "ଦିଆଯାଇଥିବା ବିଶେଷତା ଠିଆ '''$1'''ର ଗୋଟିଏ ବି ଅଭିଲେଖ ସଂସ୍କରଣ ନାହିଁ ।",
+'filedelete-otherreason'       => 'ବାକି/ଅଧିକ କାରଣ:',
+'filedelete-reason-otherlist'  => 'ଅଲଗା କାରଣ',
+'filedelete-reason-dropdown'   => '*ସାଧାରଣ ଲିଭାଇବା କାରଣମାନ
 ** ସତ୍ଵାଧିକାର ଉଲ୍ଲଙ୍ଘନ
 ** ନକଲି ଫାଇଲ',
-'filedelete-edit-reasonlist'  => 'ଲିଭାଇବା କାରଣମାନ ବଦଳାଇବେ',
-'filedelete-maintenance'      => 'ରକ୍ଷଣାବେକ୍ଷଣ ନିମନ୍ତେ ଫାଇଲ ଲିଭାଇବା ଓ ପୁନସ୍ଥାପନ କିଛି କାଳ ପାଇଁ ଅଚଳ କରିଦିଆଯାଇଛି ।',
+'filedelete-edit-reasonlist'   => 'ଲିଭାଇବା କାରଣମାନ ବଦଳାଇବେ',
+'filedelete-maintenance'       => 'ରକ୍ଷଣାବେକ୍ଷଣ ନିମନ୍ତେ ଫାଇଲ ଲିଭାଇବା ଓ ପୁନସ୍ଥାପନ କିଛି କାଳ ପାଇଁ ଅଚଳ କରିଦିଆଯାଇଛି ।',
+'filedelete-maintenance-title' => 'ଏହି ଫାଇଲକୁ ଲିଭାଯାଇପାରିବ ନାହି',
 
 # MIME search
 'mimesearch'         => 'MIME ଖୋଜା',
 'mimesearch-summary' => 'ଏହି ପୃଷ୍ଠାଟି ଫାଇଲ ମାନଙ୍କର MIME ପ୍ରକାରକୁ ଛଣିବାରେ ସହଯୋଗ କରିଥାଏ ।
-ଇନପୁଟ: ବିଷୟ ଶ୍ରେଣୀ/ଉପ ଶ୍ରେଣ, ଯଥା: <tt>image/jpeg</tt> ।',
+ଇନପୁଟ: ବିଷୟ ଶ୍ରେଣୀ/ଉପ ଶ୍ରେଣ, ଯଥା: <code>image/jpeg</code> ।',
 'mimetype'           => 'MIME ପ୍ରକାର:',
 'download'           => 'ଡାଉନଲୋଡ଼',
 
@@ -1938,9 +1995,9 @@ URLଟି ଠିକ ଅଚିକି କି ନାଁ ଓ ସାଇଟଟି ସ�
 
 'disambiguations'      => 'ବହୁବିକଳ୍ପ ପୃଷ୍ଠାମାନଙ୍କ ସହ ଯୋଡ଼ା ପୃଷ୍ଠା',
 'disambiguationspage'  => 'Template:ବହୁବିକଳ୍ପ',
-'disambiguations-text' => "ତଲାଲିଖିତ ପୃଷ୍ଠାମାନ '''ବହୁବିକଳ୍ପ ପୃଷ୍ଠା'''କୁ ଯୋଡ଼ିଥାନ୍ତି ।
-ସେହିସବୁ ଉପଯୁକ୍ତ ପ୍ରସଙ୍ଗ ସହ ଯୋଡ଼ାହେବା ଜରୁରୀ ।<br />
-A page is treated as disambiguation page if it uses a template which is linked from [[MediaWiki:Disambiguationspage]] ସହ ଯୋଡ଼ାଥିବା ଛାଞ୍ଚ ବ୍ୟବହାର କରୁଥିଲେ ପୃଷ୍ଠାଟିଏକୁ ବହୁବିକଳ୍ପ ପୃଷ୍ଠା ବୋଲି କୁହାଯାଏ",
+'disambiguations-text' => "ତଳେ ଥିବା ପୃଷ୍ଠାଗୁଡିକ ଅତିକମରେ ଗୋଟେ ଗୋଟେ '''ବହୁବିକଳ୍ପ ପୃଷ୍ଠା'''କୁ ଯୋଡ଼ିଥାନ୍ତି ।
+ସେସବୁ ଅଧିକ ଉପଯୁକ୍ତ ପ୍ରସଙ୍ଗ ସହ ଯୋଡ଼ାହେବା ଉଚିତ  ।<br />
+[[MediaWiki:Disambiguationspage]] ସହ ଯୋଡ଼ାଥିବା ଛାଞ୍ଚ ବ୍ୟବହାର କରୁଥିଲେ ପୃଷ୍ଠାଟିଏକୁ ବହୁବିକଳ୍ପ ପୃଷ୍ଠା ବୋଲି କୁହାଯାଏ",
 
 'doubleredirects'                   => 'ଯୋଡ଼ା ପୁନପ୍ରେରଣ',
 'doubleredirectstext'               => 'ଏହି ପୃଷ୍ଠା ବାକି ବହୁବିକଳ୍ପ ପୃଷ୍ଠାମାନଙ୍କ ସହ ଯୋଡ଼ିଥାଏ ।
@@ -1953,8 +2010,8 @@ A page is treated as disambiguation page if it uses a template which is linked f
 
 'brokenredirects'        => 'ଭଙ୍ଗା ପୁନପ୍ରେରଣ',
 'brokenredirectstext'    => 'ତଳଲିଖିତ ପୁନପ୍ରେରଣ ସବୁ ସ୍ଥିତିହିନ ପୃଷ୍ଠାମାନଙ୍କୁ ପୁନପ୍ରେରିତ ହୋଇଥାଏ :',
-'brokenredirects-edit'   => 'ବଦଳାଇବେ',
-'brokenredirects-delete' => 'ଲିଭାଇବା',
+'brokenredirects-edit'   => 'ଏହାକୁ ବଦଳାନ୍ତୁ',
+'brokenredirects-delete' => 'ଲିଭାଇବେ',
 
 'withoutinterwiki'         => 'ଭାଷାର ଲିଙ୍କ ନଥିବା ପୃଷ୍ଠାମାନ',
 'withoutinterwiki-summary' => 'ତଳଲିଖିତ ପୃଷ୍ଠାମାନ ଗୋଟିଏ ବି ଅଲଗା ଭାଷାର ସଂସ୍କରଣ ସହ ଯୋଡ଼ା ନୁହନ୍ତି ।',
@@ -1986,6 +2043,8 @@ A page is treated as disambiguation page if it uses a template which is linked f
 'wantedpages'             => 'ଦରକାରି ପୃଷ୍ଠା',
 'wantedpages-badtitle'    => '$1 ଉତ୍ତରସବୁରେ ଥିବା ଭୁଲ ଟାଇଟଲ',
 'wantedfiles'             => 'ଦରକାରି ଫାଇଲ',
+'wantedfiletext-cat'      => 'ନିମ୍ନଲିଖିତ ଫାଇଲଗୁଡିକ ବ୍ୟବହୃତ ହେଇଛି ହଲେ ନାହିଁ । ରହିଥିବା ଫାଇଲ ବଦଳରେ ବାହାରେ ଥିବା ଫାଇଲଗୁଡିକ ତାଲିକାଭୁକ୍ତ ହେଇଛି । ଏହିଭଳି ଭୁଲ ସତ୍ୟଗୁଡିକ <del>struck out</del> ହେଇଯିବ । ଅଧିକନ୍ତୁ, ପ୍ରକୃତରେ ନଥିବା ଫାଇଲଗୁଡିକର ପୃଷ୍ଠାଗୁଡିକ [[:$1]]ରେ ତାଲିକାଭୁକ୍ତ ହୋଇଛି ।',
+'wantedfiletext-nocat'    => 'ନିମ୍ନଲିଖିତ ଫାଇଲଗୁଡିକ ବ୍ୟବହୃତ ହେଇଛି ହଲେ ନାହିଁ । ରହିଥିବା ଫାଇଲ ବଦଳରେ ବାହାରେ ଥିବା ଫାଇଲଗୁଡିକ ତାଲିକାଭୁକ୍ତ ହେଇଛି । ଏହିଭଳି ଭୁଲ ସତ୍ୟଗୁଡିକ <del>struck out</del> ହେଇଯିବ ।',
 'wantedtemplates'         => 'ଦରକାରୀ ଛାଞ୍ଚ',
 'mostlinked'              => 'ଅଧିକ ଯୋଡ଼ାଯାଇଥିବା ପୃଷ୍ଠା',
 'mostlinkedcategories'    => 'ବେଶି ଯୋଡ଼ାଯାଇଥିବା ଶ୍ରେଣୀ',
@@ -1994,6 +2053,7 @@ A page is treated as disambiguation page if it uses a template which is linked f
 'mostimages'              => 'ଫାଇଲରେ ବେଶି ଯୋଡ଼ାଯାଇଥିବା ଥିବା',
 'mostrevisions'           => 'ସବୁଠାରୁ ଅଧିକ ସଙ୍କଳନ ଥିବା ପୃଷ୍ଠାସମୂହ',
 'prefixindex'             => 'ଆଗରୁ କିଛି ଯୋଡ଼ା ସହ ଥିବା ସବୁ ଫରଦସବୁ',
+'prefixindex-namespace'   => 'ଉପସର୍ଗ ଲାଗିଥିବା ସବୁଯାକ ପୃଷ୍ଠା ($1 ଗୋଟି ନେମସ୍ପେସ)',
 'shortpages'              => 'ଛୋଟ ପୃଷ୍ଠାସମୂହ',
 'longpages'               => 'ଲମ୍ବା ପୃଷ୍ଠା',
 'deadendpages'            => 'ଆଗକୁ ଯାଇପାରୁନଥିବା ପୃଷ୍ଠା',
@@ -2004,13 +2064,13 @@ A page is treated as disambiguation page if it uses a template which is linked f
 'protectedpagestext'      => 'ଏହି ତଳଲିଖିତ ପୃଷ୍ଠାମାନ ଘୁଞ୍ଚାଇବାରୁ ବା ସମ୍ପାଦନାରୁ କିଳାଯାଇଅଛି',
 'protectedpagesempty'     => 'ଏହି ସବୁ ସଜାଣି ସହ ଗୋଟିଏ ବି ପୃଷ୍ଠା ଏବେ କିଳାଯାଇ ନାହିଁ ।',
 'protectedtitles'         => 'କିଳାଯାଇଥିବା ଶିରୋନାମାମାନ',
-'protectedtitlestext'     => 'ତଲାଲିଖିତ ଶିରୋନାମା ସବୁ ତିଆରି କରିବାରୁ କିଳାଯାଇଅଛି ।',
+'protectedtitlestext'     => 'ତଳଲିଖିତ ଶିରୋନାମା ସବୁ ତିଆରି କରିବାରୁ କିଳାଯାଇଅଛି ।',
 'protectedtitlesempty'    => 'ଏହି ସବୁ ସଜାଣି ସହ ଗୋଟିଏ ବି ପୃଷ୍ଠା ଏବେ କିଳାଯାଇ ନାହିଁ ।',
 'listusers'               => 'ବ୍ୟବହାରକାରୀଙ୍କ ତାଲିକା',
 'listusers-editsonly'     => 'କେବଳ କିଛି ସମ୍ପାଦନା କରିଥିବା ସଭ୍ୟମାନଙ୍କୁ ଦେଖାଇବେ',
 'listusers-creationsort'  => 'ତିଆରି ତାରିଖ ଅନୁସାରେ ସଜାଇବେ',
 'usereditcount'           => '$1 ଟି {{PLURAL:$1|ବଦଳ}}',
-'usercreated'             => '$2 ଠାରେ $1ରେ ତିଆରି କରାଗଲା',
+'usercreated'             => '$1 ତାରିଖ ଦିନ $2 ବେଳେ {{GENDER:$3|ତିଆରି କରାଗଲା}}',
 'newpages'                => 'ନୂଆ ପୃଷ୍ଠା',
 'newpages-username'       => 'ବ୍ୟବହାରକାରୀଙ୍କ ନାମ:',
 'ancientpages'            => 'ସବୁଠୁ ପୁରାତନ ପୃଷ୍ଠା',
@@ -2084,7 +2144,7 @@ A page is treated as disambiguation page if it uses a template which is linked f
 'linksearch-ok'    => 'ଖୋଜିବା',
 'linksearch-text'  => '"*.wikipedia.org" ପରି ୱାଇଲ୍ଡକାର୍ଡ଼ର ବ୍ୟବହାର କରାଯାଇଥାଇ ପାରେ ।
 ଏକ ଉଚ୍ଚକୋଟୀର ଡୋମେନ ଲୋଡ଼ା, ଯଥା "*.org".<br />
-ଅନୁମୋଦିତ ପ୍ରଟୋକଲ: <tt>$1</tt> (ନିଜର ଖୋଜିବାରେ ଏହାକୁ ରଖନ୍ତୁ ନାହିଁ) ।',
+ଅନୁମୋଦିତ ପ୍ରଟୋକଲ: <code>$1</code> (ନିଜର ଖୋଜିବାରେ ଏହାକୁ ରଖନ୍ତୁ ନାହିଁ) ।',
 'linksearch-line'  => '$1 ଟି $2ରୁ ଯୋଡ଼ାଯାଇଅଛି ।',
 'linksearch-error' => 'କେବଳ ହୋଷ୍ଟ ନାମର ଆରମ୍ଭରେ ୱାଇଲ୍ଡକାର୍ଡ଼ ଦେଖାଯିବ ।',
 
@@ -2097,19 +2157,15 @@ A page is treated as disambiguation page if it uses a template which is linked f
 # Special:ActiveUsers
 'activeusers'            => 'ସଚଳ ସଭ୍ୟଙ୍କ ତାଲିକା',
 'activeusers-intro'      => 'ବିଗତ $1 {{PLURAL:$1|ଦିନ|ଦିନ}} ଭିତରେ କିଛି ପ୍ରକାରର କାମ କରିଥିବା ସଭ୍ୟମାନଙ୍କର ତାଲିକା ।',
-'activeusers-count'      => 'ବିଗତ {{PLURAL:$3|ଦିନ|$3 ଦିନରେ}}ରେ $1ଟି {{PLURAL:$1|ସମ୍ପାଦନା|ସମ୍ପାଦନା}}',
+'activeusers-count'      => 'ବିଗତ {{PLURAL:$3|ଦିନ|$3 ଦିନରେ}}ରେ $1ଟି {{PLURAL:$1|ସମ୍ପାଦନା|ସମ୍ପାଦନାଗୁଡିକ}}',
 'activeusers-from'       => 'ଏହି ନାମରେ ଆରମ୍ଭ ହେଉଥିବା ସଭ୍ୟମାନଙ୍କୁ ଦେଖାଇବେ:',
-'activeusers-hidebots'   => 'ଆପେଆପେ ଚାଳିତ ସଭ୍ୟମାନଙ୍କୁ ଲୁଚାଗଲା',
-'activeusers-hidesysops' => 'ପରିଛାଗଣଙ୍କୁ ଲୁଚାଇବେ',
+'activeusers-hidebots'   => 'ଆପେଆପେ ଚାଳିତ ସଭ୍ୟମାନଙ୍କୁ ଲୁଚାନ୍ତୁ',
+'activeusers-hidesysops' => 'ପରିଚାଳକମାନଙ୍କୁ ଲୁଚାଇବେ',
 'activeusers-noresult'   => 'ଜଣେ ବି ସଭ୍ୟ ମିଳିଲେ ନାହିଁ ।',
 
 # Special:Log/newusers
-'newuserlogpage'              => 'ବ୍ୟବହାରକାରୀ ତିଆରି ଲଗ',
-'newuserlogpagetext'          => 'ସଭ୍ୟଙ୍କର ଖାତା ଗଠନ ପାଇଁ ଏକ ଇତିହାସ ଅଛି ।',
-'newuserlog-byemail'          => 'ଇ-ମେଲରେ ପାସବାର୍ଡ଼ ପଠାଇଦିଆଗଲା',
-'newuserlog-create-entry'     => 'ନୂଆ ବ୍ୟବହାରକାରୀଙ୍କ ଖାତା',
-'newuserlog-create2-entry'    => '$1 ନାମରେ ନୂଆ ଖାତାଟିଏ ତିଆରି କରିଲୁଁ',
-'newuserlog-autocreate-entry' => 'ଖାତାଟି ଆପେଆପେ ତିଆରି ହୋଇଗଲା',
+'newuserlogpage'     => 'ବ୍ୟବହାରକାରୀ ତିଆରି ଲଗ',
+'newuserlogpagetext' => 'ସଭ୍ୟଙ୍କର ଖାତା ଗଠନ ପାଇଁ ଏକ ଇତିହାସ ଅଛି ।',
 
 # Special:ListGroupRights
 'listgrouprights'                      => 'ସଭ୍ୟ ଗୋଠ ଅଧିକାରସମୂହ',
@@ -2130,15 +2186,15 @@ A page is treated as disambiguation page if it uses a template which is linked f
 'listgrouprights-addgroup-self-all'    => 'ନିଜ ଖାତାରେ ସବୁଯାକ ଗୋଠ ଯୋଡ଼ିବେ',
 'listgrouprights-removegroup-self-all' => 'ନିଜ ଖାତାରୁ ସବୁଯାକ ଗୋଠ ହଟାଇଦେବେ',
 
-# E-mail user
+# Email user
 'mailnologin'          => 'ଗୋଟିଏ ବି ପଠାଇବା ଠିକଣା ନାହିଁ',
 'mailnologintext'      => 'ଆପଣ ନିଜ [[Special:Preferences|ପସନ୍ଦସବୁ]]ରେ [[Special:UserLogin|ଲଗ ଇନ]] କରିଥିଲେ ଓ ନିଜର ଏକ ସଚଳ ଇ-ମେଲ ଠିକଣା ଥିଲେ ଯାଇ ବାକି ସବୁ ସଭ୍ୟଙ୍କୁ ଇ-ମେଲ ପଠାଇପାରିବେ ।',
 'emailuser'            => 'ଏହି ସଭ୍ୟଙ୍କୁ ଇମେଲ କରିବେ',
 'emailpage'            => 'ଇ-ମେଲ ବ୍ୟବହାରକାରୀ',
-'emailpagetext'        => 'ତଳେ ଥିବା ଫର୍ମ ବ୍ୟବହର କରି ଆପଣ ଏହି ସଭ୍ୟନ୍କୀ ଇ-ମେଲ କରିପାରିବେ ।
-[[Special:Preferences|ଅପନକ ପସନ୍ଦ]]ରେ ଥିବା ଇ-ମେଲ ଠିକଣା ପ୍ରେରକ ଭାବରେ ଦେଖାଯିବ, ତେଣୁ ତିଥି ପାଇଥିବା ସଭ୍ୟ ଆପଣଙ୍କୁ ସିଧା ସଳଖ ଉତ୍ତର ଦେଇପାରିବ ।',
+'emailpagetext'        => 'ଥିବା ଫର୍ମ ବ୍ୟବହାର କରି ଆପଣ ଏହି {{GENDER:$1|user}} ଇ-ମେଲ କରିପାରିବେ ।
+[[Special:Preferences|ଆପଣଙ୍କ ପସନ୍ଦ]]ରେ ଥିବା ଇ-ମେଲ ଠିକଣା ପ୍ରେରକ ଭାବରେ ଦେଖାଯିବ, ତେଣୁ ଚିଠି ପାଇଥିବା ସଭ୍ୟ ଆପଣଙ୍କୁ ସିଧା ସଳଖ ଉତ୍ତର ଦେଇପାରିବ ।',
 'usermailererror'      => 'ମେଲ ଭିତରେ କିଛି ଅସୁବିଧା ଅଛି ବୋଲି ଜାଣିବାକୁ ମିଳିଲା:',
-'defemailsubject'      => '{{SITENAME}} ଇ-ମେଲ',
+'defemailsubject'      => '{{SITENAME}} "$1" ସଭ୍ୟଙ୍କ ଠାରୁ ଇ-ମେଲ କରିବେ',
 'usermaildisabled'     => 'ବ୍ୟବହାରକାରୀଙ୍କ ଈ-ମେଲ ଅଚଳ କରାଗଲା',
 'usermaildisabledtext' => 'ଏହି ଉଇକିରେ ଆପଣ ବାକି ସଭ୍ୟଙ୍କୁ ଇ ମେଲ କରିପାରିବେ ନାହିଁ',
 'noemailtitle'         => 'ଇ-ମେଲ ଠିକଣା ନାହିଁ',
@@ -2166,16 +2222,16 @@ A page is treated as disambiguation page if it uses a template which is linked f
 'usermessage-editor'  => 'ସିଷ୍ଟମ ଦୂତ',
 
 # Watchlist
-'watchlist'            => 'ଦେଖାତାଲିକା',
-'mywatchlist'          => 'ମୋର ଦେଖାତାଲିକା',
+'watchlist'            => 'ଦେଖଣାତାଲିକା',
+'mywatchlist'          => 'ଦେଖଣାତାଲିକା',
 'watchlistfor2'        => '$1 $2 ପାଇଁ',
 'nowatchlist'          => 'ଆପଣଙ୍କ ଦେଖଣା ତାଲିକାରେ କିଛି ବି ଜିନିଷ ନାହିଁ ।',
 'watchlistanontext'    => 'ଆପଣା ଦେଖଣାତାଲିକାରେ କିଛି ସମ୍ପାଦନା କରିବା ନିମନ୍ତେ ଦୟାକରି  $1 କରନ୍ତୁ ।',
 'watchnologin'         => 'ଲଗ‌‌ ଇନ କରିନାହାନ୍ତି',
 'watchnologintext'     => 'ଆପଣା ଦେଖଣାତାଲିକା ବଦଳାଇବା ନିମନ୍ତେ ଆପଣଙ୍କୁ [[Special:UserLogin|ଲଗ ଇନ]] କରିବାକୁ ପଡ଼ିବ ।',
 'addwatch'             => 'ଦେଖଣାତାଲିକାରେ ଯୋଡ଼ିବେ',
-'addedwatchtext'       => "\"[[:\$1]]\" ପୃଷ୍ଠାଟି ଆପଣଙ୍କ [[Special:Watchlist|ଦେଖଣାତାଲିକା]]ରେ ଯୋଡ଼ିଦିଆଗଲା ।
-ଏହି ପୃଷ୍ଠାରେ ଭବିଷ୍ୟତର ଅଦଳ ବଦଳ ଓ ତାହା ସହ ଯୋଡ଼ା ଆଲୋଚନା ପୃଷ୍ଠା ଏଠାରେ ଦିଆଯିବ, ଆଉ ପୃଷ୍ଠାଟି [[Special:RecentChanges|ନଗଦ ବଦଳ ତାଲିକା]]ରେ ସହଜରେ ବାଛିବା ପାଇଁ '''ମୋଟା ଅକ୍ଷର''' ହୋଇ ଦେଖାଯିବ ।",
+'addedwatchtext'       => '"[[:$1]]" ପୃଷ୍ଠାଟି ଆପଣଙ୍କ [[Special:Watchlist|ଦେଖଣାତାଲିକା]]ରେ ଯୋଡ଼ିଦିଆଗଲା ।
+ଏହି ପୃଷ୍ଠାରେ ଭବିଷ୍ୟତର ଅଦଳ ବଦଳ ଓ ତାହା ସହ ଯୋଡ଼ା ଆଲୋଚନା ପୃଷ୍ଠା ସେଠାରେ ଦିଆଯିବ ।',
 'removewatch'          => 'ଦେଖଣା ତାଲିକାରୁ ହଟାଇବେ',
 'removedwatchtext'     => '"[[:$1]]" ପୃଷ୍ଠାଟି [[Special:Watchlist|ଆପଣଙ୍କ ଦେଖଣାତାଳିକା]]ରୁ ହଟାଗଲା ।',
 'watch'                => 'ଦେଖିବେ',
@@ -2192,7 +2248,7 @@ A page is treated as disambiguation page if it uses a template which is linked f
 'watchmethod-list'     => 'ନଗଦ ବଦଳ ନିମନ୍ତେ ଦେଖାଯାଇଥିବା ପୃଷ୍ଠାମାନ ପରଖୁଛୁଁ',
 'watchlistcontains'    => 'ଆପଣଙ୍କ ଦେଖଣାତାଲିକାରେ $1 {{PLURAL:$1|ଗୋଟି ପୃଷ୍ଠା|ଗୋଟି ପୃଷ୍ଠା}} ରହିଅଛି ।',
 'iteminvalidname'      => "'$1' ଯୋଗୁଁ କିଛି ଅସୁବିଧା ହେଉଅଛି, ଭୁଲ ନାମ...",
-'wlnote'               => "ଗତ {{PLURAL:$2|ଘଣ୍ଟା|'''$2''' ଘଣ୍ଟା}} ଭିତରେ ହୋଇଥିବା {{PLURAL:$1|ଶେଷ ବଦଳ|ଶେଷ '''$1''' ଗୋଟି ବଦଳ}} ତଳେ ଦିଆଗଲା ।",
+'wlnote'               => "$3, $4 ସୁଦ୍ଧା ବିଗତ {{PLURAL:$2|ଘଣ୍ଟେ ଭିତରେ|'''$2''' ଘଣ୍ଟା ଭିତରେ}} ଘଟିଥିବା {{PLURAL:$1|ଶେଷ ବଦଳଟି ଅଛି|ଶେଷ '''$1''' ଟି ବଦଳ}} ତଳେ ଦିଆଯାଇଛି ।",
 'wlshowlast'           => 'ଶେଷ $1 ଘଣ୍ଟା $2 ଦିନ $3 ଦେଖାଇବେ',
 'watchlist-options'    => 'ଦେଖଣା ବିକଳ୍ପସବୁ',
 
@@ -2244,13 +2300,13 @@ $UNWATCHURL ଦେଖନ୍ତୁ
 
 # Delete
 'deletepage'             => 'ପୃଷ୍ଠାଟି ଲିଭାଇଦେବେ',
-'confirm'                => 'ଥୟ କରିବେ',
+'confirm'                => 'ନିଶ୍ଚିତ କରନ୍ତୁ',
 'excontent'              => 'ଭିତର ଭାଗ ଥିଲା: $1',
 'excontentauthor'        => 'ଭିତର ଭାଗରେ ଥିଲା: "$1" (ଆଉ "[[Special:Contributions/$2|$2]]" କେବଳ ଜଣେ ମାତ୍ର ଦାତା ଥିଲେ)',
 'exbeforeblank'          => 'ଖାଲି କରିବା ଆଗରୁ ଭିତରେ "$1" ଥିଲା',
 'exblank'                => 'ପୃଷ୍ଠାଟି ଖାଲି ଅଛି',
 'delete-confirm'         => 'ଲିଭେଇବେ $1',
-'delete-legend'          => 'ଲିଭେଇବେ',
+'delete-legend'          => 'ଲିଭାଇବେ',
 'historywarning'         => "'''ଚେତାବନୀ:''' ଆପଣ ଲିଭାଇବାକୁ ଯାଉଥିବା ଏହି ପୃଷ୍ଠାଟିର ପାଖାପାଖି $1 {{PLURAL:$1|ଟି ସଙ୍କଳନ|ଗୋଟି ସଙ୍କଳନ}} ରହିଅଛି:",
 'confirmdeletetext'      => 'ଆପଣ ଗୋଟିଏ ପୃଷ୍ଠାର ଇତିହାସ ସହ ତାହାକୁ ଲିଭାଇବାକୁ ଯାଉଛନ୍ତି ।
 ଏହା ଥୟ କରନ୍ତୁ ଯେ ଆପଣ ଏହାର ପରିଣତି ଜାଣିଛନ୍ତି ଓ ଏହା [[{{MediaWiki:Policy-url}}|ମିଡ଼ିଆଉଇକିର ନିୟମ]] ଅନୁସାରେ କରୁଛନ୍ତି ।',
@@ -2258,8 +2314,6 @@ $UNWATCHURL ଦେଖନ୍ତୁ
 'actionfailed'           => 'କାମଟି ଅସଫଳ ହୋଇଗଲା',
 'deletedtext'            => '"$1"କୁ ଲିଭାଇ ଦିଆଗଲା ।
 ନଗଦ ଲିଭାଯାଇଥିବା ଫାଇଲର ଇତିହାସ $2ରେ ଦେଖନ୍ତୁ ।',
-'deletedarticle'         => '"[[$1]]" ଟି ଉଡ଼ିଗଲା',
-'suppressedarticle'      => '"[[$1]]"କୁ ଚପାଇଆଗଲା',
 'dellogpage'             => 'ଲିଭାଇବା ଇତିହାସ',
 'dellogpagetext'         => 'ତଳେ ନଗଦ ଲିଭାଯାଇଥିବା ପୃଷ୍ଠାମାନଙ୍କର ତାଲିକା ରହିଅଛି ।',
 'deletionlog'            => 'ଲିଭାଇବା ଇତିହାସ',
@@ -2310,7 +2364,10 @@ $2ଙ୍କ ଦେଇ ଶେଷଥର ହୋଇଥିବା ସଂସ୍କର�
 'unprotectedarticle'          => '"[[$1]]"କୁ କିଳାଯିବାରୁ ବ୍ନାହାର କରାଗଲା',
 'movedarticleprotection'      => 'ସୁରକ୍ଷା ସ୍ତରକୁ "[[$2]]" ରୁ "[[$1]]"କୁ ଘୁଞ୍ଚାଇଦିଆଗଲା',
 'protect-title'               => '"$1" ପାଇଁ ସୁରକ୍ଷା ସ୍ତରକୁ ବଦଳାଇବେ',
+'protect-title-notallowed'    => '"$1" ତମ ପ୍ରତିରକ୍ଷା ସ୍ତର ଦେଖିବେ',
 'prot_1movedto2'              => '[[$1]] ପୃଷ୍ଠାଟି [[$2]] କୁ ଘୁଞ୍ଚାଇ ଦିଆଗଲା',
+'protect-badnamespace-title'  => 'କିଳାହୋଇନଥିବା ନେମସ୍ପେସ',
+'protect-badnamespace-text'   => 'ଏହି ନେମସ୍ପେସଥିବା ପୃଷ୍ଠାସବୁକୁ ସାଇତାଯାଇପାରିବ ନାହିଁ ।',
 'protect-legend'              => 'କିଳଣାକୁ ଥୟ କରିବେ',
 'protectcomment'              => 'କାରଣ:',
 'protectexpiry'               => 'ଅଚଳ ହେବ:',
@@ -2327,11 +2384,12 @@ $2ଙ୍କ ଦେଇ ଶେଷଥର ହୋଇଥିବା ସଂସ୍କର�
 'protect-cascadeon'           => 'ଏହି ପୃଷ୍ଠାଟି ଏବେ ପାଇଁ କିଳାଯାଇଛି {{PLURAL:$1|ପୃଷ୍ଠା, ଯେଉଁଥିରେ|ପୃଷ୍ଠମାନ, ଯେଉଁସବୁରେ}} କାସକେଡ଼କରା ସୁରକ୍ଷା ସଚଳ ଥିଲା ।
 ଆପଣ ପୃଷ୍ଠାଟିର ପ୍ରତିରକ୍ଷା ସ୍ତର ବଦଳାଇ ପାରିବେ, କିନ୍ତୁ ଏହା କାସକେଡ଼ ପ୍ରତିରକ୍ଷାକୁ ପ୍ରଭାବିତ କରିନଥାଏ ।',
 'protect-default'             => 'ସବୁ ଇଉଜରଙ୍କୁ ଅନୁମତି ଦିଅନ୍ତୁ',
-'protect-fallback'            => '"$1" ବାଲା ଅନୁମତି ଦରକାର',
-'protect-level-autoconfirmed' => 'ନୁଆ ଓ ନାଆଁ ଲେଖାଇ ନ ଥିବା ଇଉଜରମାନକୁ ଅଟକାଁତୁ',
-'protect-level-sysop'         => 'କେବଳ ପରିଛାମାନଁକ ପାଇଁ',
+'protect-fallback'            => 'କେବଳ "$1" ଅନୁମତି ଥିବା ବ୍ୟବହାରକାରୀ ମାନଙ୍କୁ ଛାଡିବେ',
+'protect-level-autoconfirmed' => 'କେବଳ ଆପେ ଆପେ ସହମତ ହୋଇଥିବା ବ୍ୟବହାରକାରୀ ମାନଙ୍କୁ ଛାଡିବେ',
+'protect-level-sysop'         => 'କେବଳ ପରିଛାମାନଙ୍କୁ ଛାଡିବେ',
 'protect-summary-cascade'     => 'କାସକେଡ଼ ହୋଇଥିବା',
 'protect-expiring'            => '$1 (ଇଉଟିସି)ରେ ଅଚଳ ହୋଇଯିବ',
+'protect-expiring-local'      => '$1ରେ ଅଚଳ ହୋଇଯିବ',
 'protect-expiry-indefinite'   => 'ଅସିମୀତ',
 'protect-cascade'             => 'ଏହି ଫରଦସହ ଜୋଡ଼ା ଫରଦସବୁକୁ କିଳିଦିଅ (କାସକେଡ଼କରା ସୁରକ୍ଷା)',
 'protect-cantedit'            => 'ଆପଣ ଏହି ସୁରକ୍ଷା ସ୍ତରକୁ ବଦଳାଇ ପାରିବେ ନାହିଁ, କାହିଁକି ନା ଏହାକୁ ବଦଳାଇବା ପାଇଁ ଆପଣଁକୁ ଅନୁମତି ନାହିଁ .',
@@ -2354,9 +2412,9 @@ $2ଙ୍କ ଦେଇ ଶେଷଥର ହୋଇଥିବା ସଂସ୍କର�
 'pagesize'                    => '(ବାଇଟ)',
 
 # Restrictions (nouns)
-'restriction-edit'   => 'ବଦଳାଇବେ',
+'restriction-edit'   => 'ଏହାକୁ ବଦଳାନ୍ତୁ',
 'restriction-move'   => 'ଘୁଞ୍ଚାଇବେ',
-'restriction-create' => 'ତିଆରି',
+'restriction-create' => 'ଗଢ଼ନ୍ତୁ',
 'restriction-upload' => 'ଅପଲୋଡ଼ କରନ୍ତୁ',
 
 # Restriction levels
@@ -2392,7 +2450,6 @@ $2ଙ୍କ ଦେଇ ଶେଷଥର ହୋଇଥିବା ସଂସ୍କର�
 'undeletereset'                => 'ପୁନସ୍ଥାପନ',
 'undeleteinvert'               => 'ବଛାଯାଇଥିବା ଲେଖାକୁ ଓଲଟେଇଦେବେ',
 'undeletecomment'              => 'କାରଣ:',
-'undeletedarticle'             => '"[[$1]]" ମୁକୁଳାଗଲା',
 'undeletedrevisions'           => '{{PLURAL:$1|ଗୋଟିଏ ସଂକଳନ|$1 ଗୋଟି ସଂକଳନ}} ପୁନସ୍ଥାପନ କରାଗଲା',
 'undeletedrevisions-files'     => '{{PLURAL:$1|ଗୋଟିଏ ସଂସ୍କରଣ|$1 ଗୋଟି ସଂସ୍କରଣ}} ଓ {{PLURAL:$2|ଗୋଟିଏ ଫାଇଲ|$2 ଗୋଟି ଫାଇଲ}} ପୁନସ୍ଥାପନ କରାଗଲା',
 'undeletedfiles'               => '{{PLURAL:$1|ଗୋଟିଏ ଫାଇଲ|$1 ଗୋଟି ଫାଇଲ}} ପୁନସ୍ଥାପନ କରାଗଲା',
@@ -2402,15 +2459,17 @@ $2ଙ୍କ ଦେଇ ଶେଷଥର ହୋଇଥିବା ସଂସ୍କର�
 
 ନଗଦ ଲିଭାଇବା ଓ ପୁନସ୍ଥାପନ ପାଇଁ [[Special:Log/delete|ଲିଭାଇବା ଇତିହାସ]] ଦେଖନ୍ତୁ ।",
 'undelete-header'              => 'ନଗଦ ଲିଭାଯାଇଥିବା ପୃଷ୍ଠାସବୁ ପାଇଁ [[Special:Log/delete|ଲିଭାଇବା ଇତିହାସ]] ଦେଖନ୍ତୁ ।',
+'undelete-search-title'        => 'ଲିଭାଯାଇଥିବା ପୃଷ୍ଠାସବୁକୁ ଖୋଜିବେ',
 'undelete-search-box'          => 'ଲିଭାଯାଇଥିବା ପୃଷ୍ଠାସବୁକୁ ଖୋଜିବେ',
 'undelete-search-prefix'       => 'ଏହି ଉପସର୍ଗ ସହିତ ଆରମ୍ଭ ହେଉଥିବା ପୃଷ୍ଠାସବୁ ଦେଖାନ୍ତୁ:',
-'undelete-search-submit'       => 'ଖୋଜିବା',
+'undelete-search-submit'       => 'ଏଠାରେ ଖୋଜନ୍ତୁ',
 'undelete-no-results'          => 'ଲିଭାଇବା ଅଭିଲେଖରେ ଗୋଟିଏ ବି ପୃଷ୍ଠା ମେଳ ଖାଇଲା ନାହିଁ ।',
 'undelete-filename-mismatch'   => '$1 ସମୟଚିହ୍ନ ସହ ଥିବା ଫାଇଲ ସଂସ୍କରଣଟି ଲିଭାଯାଇପାରିବ ନାହିଁ: ଫାଇଲନାମ ମେଳ ଖାଉନାହିଁ',
 'undelete-bad-store-key'       => '$1 ସମୟ ଚିହ୍ନ ଥିବା ସଂସ୍କରଣଟି ଲିଭାଇବାରୁ ରୋକି ପାରିବୁ ନାହିଁ:ଲିଭାଇବା ଆଗରୁ ଫାଇଲଟି ହଜିଯାଇଛି ।',
 'undelete-cleanup-error'       => 'ବ୍ୟବହାର ହେଉନଥିବା ଅଭିଲେଖ ପୃଷ୍ଠା "$1"କୁ ଲିଭାଇବାରେ ବିଫଳ ହେଲୁଁ ।',
 'undelete-missing-filearchive' => 'ଫାଇଲ ଅଭିଲେଖ ID $1 କୁ ପୁନସ୍ଥାପନ କରିବାରେ ଅସଫଳ ହେଲୁ କାରଣ ଏହା ଡାଟାବେସରେ ମିଳିଲା ନାହିଁ ।
 ଏହା ବୋଧେ ଆଗରୁ ଲିଭାଯିବାରୁ ରୋକାଯାଇଛି ।',
+'undelete-error'               => 'ଲିଭିଯାଇଥିବା ପୃଷ୍ଠାକୁ ଲେଉଟାଇବାରେ ଅସୁବିଧା',
 'undelete-error-short'         => 'ଲିଭାଯାଇଥିବା ଫାଇଲକୁ ଫେରାଇବାରେ ଅସୁବିଧା: $1',
 'undelete-error-long'          => 'ଲିଭାଯାଇଥିବା ତଳଲିଖିତ ଫାଇଲକୁ ଫେରାଇବାରେ ଅସୁବିଧା:
 
@@ -2429,7 +2488,7 @@ $1',
 # Contributions
 'contributions'       => 'ବ୍ୟବହାରକାରୀଙ୍କ ଦାନ',
 'contributions-title' => '$1 ପାଇଁ ବ୍ୟବହାରକାରୀଙ୍କ ଦାନ',
-'mycontris'           => 'ମୋ ଅବଦାନ',
+'mycontris'           => 'ଅବଦାନ',
 'contribsub2'         => '$1 ($2) ପାଇଁ',
 'nocontribs'          => 'ଏହି ନିର୍ଣ୍ଣାୟକବଳୀ ନିମନ୍ତେ କିଛି ବି ବଦଳ ମେଳ ଖାଇଲା ନାହିଁ ।',
 'uctop'               => '(ଉପର)',
@@ -2470,7 +2529,7 @@ $1',
 'whatlinkshere-hideredirs' => '$1 କୁ ଲେଉଟାଣି',
 'whatlinkshere-hidetrans'  => '$1 ଆଧାର ସହ ଭିତରେ ରଖିବା',
 'whatlinkshere-hidelinks'  => '$1 ଟି ଲିଙ୍କ',
-'whatlinkshere-hideimages' => '$1 ଛବିର ଲିଙ୍କସବୁ',
+'whatlinkshere-hideimages' => '$1 ଫାଇଲର ଲିଙ୍କସବୁ',
 'whatlinkshere-filters'    => 'ଛଣା',
 
 # Block/unblock
@@ -2489,9 +2548,9 @@ $1',
 'ipbreasonotherlist'              => 'ଅଲଗା କାରଣ',
 'ipbreason-dropdown'              => '*ସାଧାରଣ ଅଟକ କାରଣ
 ** ଭୁଲ ବିବରଣୀ ଦେବା
-** ପୃଷ୍ଠାରେ ଭୁଲ ବିବରଣୀ ପୁରାଇବା
+** ପୃଷ୍ଠାରୁ ବିବରଣୀ କାଢିବା
 ** ଅନନୁମୋଦିତ ବାହାର ସାଇଟର ଲିଙ୍କ ସ୍ପାମ କରିବା
-** ଆବୁରୁ ଜାବୁରୁ କଥା ସାଇଟରେ ପୁରାଇବା
+** ଅଯଥା କଥା ପୃଷ୍ଠାରେ ପୁରାଇବା
 ** ଧମକାଣି/ଅପମାନ
 ** ଏକାଧିକ ଖାତାରେ ଅସଦାଆଚରଣ
 ** ଗ୍ରହଣ ଅଯୋଗ୍ୟ ଇଉଜର ନାମ',
@@ -2511,8 +2570,8 @@ $1',
 'ipb-confirm'                     => 'ଅଟକ ଥୟ କରିବେ',
 'badipaddress'                    => 'ଭୁଲ IP ଠିକଣା',
 'blockipsuccesssub'               => 'ବାସନ୍ଦ ସଫଳ ହେଲା',
-'blockipsuccesstext'              => '[[Special:Contributions/$1|$1]] ଅଟକାଯାଇଛନ୍ତି.<br />
-ଅଟକ ବାବଦରେ ଟିପ୍ପଣୀ ଦେବା ନିମନ୍ତେ [[Special:BlockList|IP ତାଲିକା]] ଦେଖନ୍ତୁ ।',
+'blockipsuccesstext'              => '[[Special:Contributions/$1|$1]] ଅଟକାଯାଯାଇଛି.<br />
+ଅଟକ ବାବଦରେ ଟିପ୍ପଣୀ ଦେବା ନିମନ୍ତେ [[Special:BlockList|block list]] ଦେଖନ୍ତୁ ।',
 'ipb-blockingself'                => 'ଆପଣ ନିଜକୁ ଅଟକାଇବାକୁ ଯାଉଛନ୍ତି ! ଆପଣ ପୁରାପୁରି ନିଶ୍ଚିତ ତ?',
 'ipb-confirmhideuser'             => 'ଆପଣ "ବ୍ୟବହାରକାରୀଙ୍କୁ ଲୁଚାନ୍ତୁ" ସଚଳ କରି ଜଣେ ବ୍ୟବହାରକାରୀଙ୍କୁ ଅଟକାଇବାକୁ ଯାଉଛନ୍ତି । ଏହା ବ୍ୟବହାରକାରୀଙ୍କ ନାମକୁ ସବୁଯାକ ତାଲିକାୟ ଇତିହାସରେ ଲୁଚାଇଦେବ । ତଥାପି ବି ଆପଣ ଏହା କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?',
 'ipb-edit-dropdown'               => 'ସମ୍ପାଦନା ଅଟକ କାରଣମାନ',
@@ -2532,6 +2591,7 @@ $1',
 'blocklist-userblocks'            => 'ଅଟକାଯାଇଥିବା ଖାତାସବୁ ଖୋଜିବେ',
 'blocklist-tempblocks'            => 'ଅସ୍ଥାୟୀ ଅଟକସବୁ ଲୁଚାଇଦେବେ',
 'blocklist-addressblocks'         => 'ଗୋଟିକିଆ IP ଅଟକସବୁ ଲୁଚାଇବେ',
+'blocklist-rangeblocks'           => 'ରେଞ୍ଜ ବ୍ଲକସବୁ ଲୁଚାଇଦେବେ',
 'blocklist-timestamp'             => 'ସମୟଚିହ୍ନ',
 'blocklist-target'                => 'ଲକ୍ଷ',
 'blocklist-expiry'                => 'ଅଚଳ ହେବ',
@@ -2554,6 +2614,7 @@ $1',
 'unblocklink'                     => 'ଛାଡ଼ିବା',
 'change-blocklink'                => 'ଓଗଳାକୁ ବଦଳାଇବେ',
 'contribslink'                    => 'ଅବଦାନ',
+'emaillink'                       => 'ଇ-ମେଲ ପଠାଇବେ',
 'autoblocker'                     => '"[[User:$1|$1]]"ଙ୍କ ଦେଇ ଏହି ମାତ୍ର ଆପଣଙ୍କ IP ଠିକଣାଟି ଆପେଆପେ ଅଟକାଯାଇଅଛି ।
 $1ର ଅଟକ ପାଇଁ ଦିଆଯାଇଥିବା କାରଣଟି ହେଲା: "$2"',
 'blocklogpage'                    => 'ଲଗଟିକୁ ଅଟକାଇଦେବେ',
@@ -2565,7 +2626,7 @@ $1ର ଅଟକ ପାଇଁ ଦିଆଯାଇଥିବା କାରଣଟି �
 'reblock-logentry'                => '[[$1]] ଙ୍କ ନିମନ୍ତେ $2 $3 ମିଆଦର ଅଟକକୁ ବଦଳାଗଲା',
 'blocklogtext'                    => 'ଏହା ଏକ ବ୍ୟବହାରକାରୀ ଅଟକ ଓ ଛାଡ଼ ପାଇଁ ଇତିହାସ ।
 ଆପେଆପେ ଅଟକାଯାଇଥିବା IP ଠିକଣା ଏଠାରେ ସ୍ଥାନିତ ହୋଇନାହିଁ ।
-ଏବେ ସଚଳ କରାଯାଇଥିବା ଅଟକ ଓ ବାରଣସବୁ ଦେଖବା ନିମନ୍ତେ [[Special:BlockList|IP ଅଟକ ତାଲିକା]] ଦେଖନ୍ତୁ ।',
+ଏବେ ସଚଳ କରାଯାଇଥିବା ଅଟକ ଓ ବାରଣସବୁ ଦେଖବା ନିମନ୍ତେ [[Special:BlockList|block]] ଦେଖନ୍ତୁ ।',
 'unblocklogentry'                 => 'କିଳାଯାଇନଥିବା $1',
 'block-log-flags-anononly'        => 'କେବଳ ବେନାମି ସଭ୍ୟ',
 'block-log-flags-nocreate'        => 'ନୂଆ ଖାତା ଖୋଲିବା ଅଚଳ କରାଯାଇଅଛି',
@@ -2634,7 +2695,7 @@ $1ର ଅଟକ ପାଇଁ ଦିଆଯାଇଥିବା କାରଣଟି �
 
 ଲିଙ୍କସବୁ କେଉଁଠିକୁ ଯାଉଛି ତାହା ପାଇଁ ଆପଣ ଦାୟୀ ନୁହନ୍ତି ।
 
-ମନେ ରଖନ୍ତୁ, ଆଗରୁ ଏହି ଏକା ନାଆଁରେ ପୃଷ୍ଠାଟିଏ ଥିଲେ ଏହି ପୃଷ୍ଠାଟି '''ଘୁଞ୍ଚିବ ନାହିଁ''' ଯେତେ ଯାଏଁ ତାହା ଖାଲି ନାହିଁ ବା ଆଗ ପୃଷ୍ଠାଟିର କୌଣସି ବଦଳ ଇତିହାସ ନାହିଁ ସେତେ ବେଳ ଯାଏଁ ଏହା ଏମିତି ରହିବ । ଏହାର ମାନେ ହେଉଛି, ଆପଣ ଗୋଟିଏ ପୃଷ୍ଠାର ନାଆଁକୁ ତାର ପୁରୁଣା ନାଆଁ ଦେଇପାରିବେ, କିନ୍ତୁ ଆଗରୁ ଥିବା ପୃଷ୍ଠାଟି ଉପରେ ନୂଆ ପୃଷ୍ଠାଟିଏ ଚାପି ଦେଇପାରିବେ ନାହିଁ ।
+ମନେ ରଖନ୍ତୁ, ଆଗରୁ ଏହି ଏକା ନାଆଁରେ ପୃଷ୍ଠାଟିଏ ଥିଲେ ଏହି ପୃଷ୍ଠାଟି '''ଘୁଞ୍ଚିବ ନାହିଁ''' ଯେତେ ଯାଏଁ ଆଗ ପୃଷ୍ଠାଟିର କୌଣସି ବଦଳ ଇତିହାସ ନାହିଁ ସେତେ ବେଳ ଯାଏଁ ଏହା ଏମିତି ରହିବ । ଏହାର ମାନେ ହେଉଛି, ଆପଣ ଗୋଟିଏ ପୃଷ୍ଠାର ନାଆଁକୁ ତାର ପୁରୁଣା ନାଆଁ ଦେଇପାରିବେ, କିନ୍ତୁ ଆଗରୁ ଥିବା ପୃଷ୍ଠାଟି ଉପରେ ନୂଆ ପୃଷ୍ଠାଟିଏ ଚାପି ଦେଇପାରିବେ ନାହିଁ ।
 
 '''ଜାଣି ରଖନ୍ତୁ!'''
 ଏହା ଏକ ଜଣାଶୁଣା ପୃଷ୍ଠାରେ ଆମୂଳଚୂଳ ଓ ଅଜଣା ବଦଳ କରିପାରେ;
@@ -2684,9 +2745,6 @@ $1ର ଅଟକ ପାଇଁ ଦିଆଯାଇଥିବା କାରଣଟି �
 'movepage-page-moved'          => '$1 ପୃଷ୍ଠାଟିକୁ $2କୁ ଘୁଞ୍ଚାଇ ଦିଆଗଲା ।',
 'movepage-page-unmoved'        => '$1 ପୃଷ୍ଠାରୁ $2କୁ ଘୁଞ୍ଚାଯାଇ ପାରିବ ନାହିଁ ।',
 'movepage-max-pages'           => 'ସବୁଠାରୁ ଅଧିକ ହେଲେ $1 ଗୋଟି {{PLURAL:$1|ପୃଷ୍ଠା|ପୃଷ୍ଠା}} ଘୁଞ୍ଚାଇଦିଆଯାଇଛି ଓ ଆଉ ଅଧିକ ଆପେଆପେ ଘୁଞ୍ଚାଇଦିଆଯିବ ନାହିଁ ।',
-'1movedto2'                    => '[[$1]]ରୁ [[$2]]କୁ ଘୁଞ୍ଚାଗଲା',
-'1movedto2_redir'              => '[[$1]]ରୁ [[$2]]କୁ ଲେଉଟାଇଦିଆଗଲା',
-'move-redirect-suppressed'     => 'ଚା‌ପିରହିଥିବା ବସ୍ତୁକୁ ପୁନପ୍ରେରଣ କରାଗଲା',
 'movelogpage'                  => 'ଲଗଟିକୁ ଘୁଞ୍ଚାଇବେ',
 'movelogpagetext'              => 'ତଳେ ଘୁଞ୍ଚାଯାଇଥିବା ସବୁଯାକ ପୃଷ୍ଠାର ତାଲିକା ଦିଆଗଲା ।',
 'movesubpage'                  => '{{PLURAL:$1|ସାନପୃଷ୍ଠା|ସାନପୃଷ୍ଠାମାନ}}',
@@ -2699,7 +2757,7 @@ $1ର ଅଟକ ପାଇଁ ଦିଆଯାଇଥିବା କାରଣଟି �
 ମୁକାମ ପୃଷ୍ଠା "[[:$1]]" ଟି ଆଗରୁ ଅଛି ।
 ଆପଣ ଏହାକୁ ଲିଭାଇ ଘୁଞ୍ଚାଇବାକୁ ବାଟ କଢ଼ାଇବାକୁ ଚାହାନ୍ତି କି?',
 'delete_and_move_confirm'      => 'ହଁ, ଏହି ପୃଷ୍ଠାଟିକୁ ଲିଭାଇଦେବେ',
-'delete_and_move_reason'       => 'ଘୁଞ୍ଚାଇବାରେ ସୁବିଧା ନିମନ୍ତେ ଲିଭାଇଦିଆଗଲା',
+'delete_and_move_reason'       => '"[[$1]]" ପାଇଁ ପଥ ସଳଖ କରିବା ନିମନ୍ତେ ଲିଭାଇଦିଆଗଲା',
 'selfmove'                     => 'ମୂଳ ଓ ମୁକାମ ନାମ ଏକା ଅଟନ୍ତି;
 ପୃଷ୍ଠାଟିକୁ ଘୁଞ୍ଚାଇପାରିବୁଁ ନାହିଁ ।',
 'immobile-source-namespace'    => '"$1" ନେମସ୍ପେସ ଥିବା ପୃଷ୍ଠାକୁ ଘୁଞ୍ଚାଇପାରିବୁଁ ନାହିଁ',
@@ -2730,9 +2788,11 @@ MediaWiki ବ୍ୟବହାର କରି [[Special:Import|ପୃଷ୍ଠା �
 ପୃଷ୍ଠା ରପ୍ତାନି କରିବା ନିମନ୍ତେ ତଳେ ଥିବା ଟେକ୍ସଟ ଘରେ ନାମ ଦିଅନ୍ତୁ, ଧାଡ଼ିପ୍ରତି ଗୋଟିଏ ଲେଖାଏଁ ନାମ, ଆଉ ଆପଣ ଏବେକାର ସଂସ୍କରଣ ଚାହୁଁଛନ୍ତି ବା ପୁରୁଣା ସଂସ୍କରଣମାନ ଚାହୁଁଛନ୍ତି, ପୃଷ୍ଠାର ଇତିହାସ ସହ, କିମ୍ବା ଶେଷ ବଦଳ ବାବଦରେ ଏକ ବିବରଣୀ ସହ ଏବେକାର ସଂସ୍କରଣ ଦିଅନ୍ତୁ ।
 
 ଶେଷ କ୍ଷେତ୍ରରେ ଆପଣ ଏକ ଲିଙ୍କ ବ୍ୟବହାର କରିପାରିବେ, ଯଥା ଏକ ପୃଷ୍ଠା ପାଇଁ [[{{#Special:Export}}/{{MediaWiki:Mainpage}}]] "[[{{MediaWiki:Mainpage}}]]" ।',
+'exportall'         => 'ସମସ୍ତ ପୃଷ୍ଠାଗୁଡିକୁ ରପ୍ତାନି କରିବେ',
 'exportcuronly'     => 'କେବଳ ଏବେକର ସଂସ୍କରଣରେ ଭରିଥାଏ, ପୁରା ଇତିହାସରେ ନୁହେଁ',
 'exportnohistory'   => "----
 '''ସୂଚନା:''' ଦେଖଣାରେ ଅସୁବିଧା ହେବା କାରଣରୁ ପୃଷ୍ଠାର ପୁରା ଇତିହାସ ରପ୍ତାନି କରିବା ଅଚଳ କରାଯାଇଛି ।",
+'exportlistauthors' => 'ପ୍ରତି ପୃଷ୍ଠା ନିମନ୍ତେ ଅବଦାନକାରୀଙ୍କର ଏକ ପୁରା ତାଲିକା ରଖିବେ',
 'export-submit'     => 'ପଠେଇବେ',
 'export-addcattext' => 'ଶ୍ରେଣୀରୁ ପୃଷ୍ଠାସବୁକୁ ଯୋଡ଼ନ୍ତୁ:',
 'export-addcat'     => 'ଯୋଡ଼ିବେ',
@@ -2760,11 +2820,13 @@ MediaWiki ବ୍ୟବହାର କରି [[Special:Import|ପୃଷ୍ଠା �
 'allmessages-filter-submit'     => 'ଯିବା',
 
 # Thumbnails
-'thumbnail-more'           => 'ବଡ଼କର',
+'thumbnail-more'           => 'ବିସ୍ତାର',
 'filemissing'              => 'ଫାଇଲ ମିଳୁନାହିଁ',
 'thumbnail_error'          => 'ନଖଦେଖଣା ତିଆରିବାରେ ଅସୁବିଧା: $1',
 'djvu_page_error'          => 'DjVu ପୃଷ୍ଠା ସୀମା ବାହାରେ ରହିଅଛି',
 'djvu_no_xml'              => 'DjVu ଫାଇଲ ନିମନ୍ତେ XML ଆଣିବାରେ ବିଫଳ ହେଲୁଁ',
+'thumbnail-temp-create'    => 'ଏକ ଅସ୍ଥାୟୀ ଛୋଟଦେଖଣା ଫାଇଲ ତିଆରି କରିବାରେ ବିଫଳ ହେଲୁ',
+'thumbnail-dest-create'    => 'ଲକ୍ଷସ୍ଥଳରେ ସାନଦେଖଣା ସାଇତିବାରେ ବିଫଳ ହେଲୁ',
 'thumbnail_invalid_params' => 'ଅଚଳ ସାନଦେଖଣା ପାରାମିଟର',
 'thumbnail_dest_directory' => 'ମୁକାମ ସୂଚି ତିଆରିବାରେ ବିଫଳ ହେଲୁଁ',
 'thumbnail_image-type'     => 'ଛବିର ପ୍ରକାର ଅନୁମୋଦିତ ନୁହେଁ',
@@ -2813,6 +2875,11 @@ MediaWiki ବ୍ୟବହାର କରି [[Special:Import|ପୃଷ୍ଠା �
 'import-token-mismatch'      => 'ଅବଧି ତଥ୍ୟ ଲୋପପାଇଗଲାଣି ।
 ଦୟାକରି ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
 'import-invalid-interwiki'   => 'ଦିଆଯାଇଥିବା ଉଇକିରୁ ଆହରଣ କରାଯାଇପାରିବ ନାହିଁ ।',
+'import-error-edit'          => '"$1" ପୃଷ୍ଠାଟି ଅଣାଯାଇନାହିଁ କାରଣ ଆପଣଙ୍କର ଏହାକୁ ବଦଳାଇବା ଅଧିକାର ନାହିଁ ।',
+'import-error-create'        => '"$1" ପୃଷ୍ଠାଟି ଅଣାଯାଇନାହିଁ କାରଣ ଆପଣଙ୍କର ଏହାକୁ ତିଆରିକରିବା ଅଧିକାର ନାହିଁ ।',
+'import-error-interwiki'     => '"$1"ପୃଷ୍ଠାକୁ ଆମଦାନୀ କରିହେଲାନି କାରଣ ଏହାର ନାମ ବାହାରଲିଙ୍କରେ ଆଗରୁ ଅଛି(ଉଇକିଗୁଡିକ ମଧ୍ୟରେ) ।',
+'import-error-special'       => '"$1"ପୃଷ୍ଠାକୁ ଆମଦାନୀ କରିହେଲାନି କାରଣ ଏହା ଏକ ବିଶେଷ ନେମସ୍ପେସରେ ଅଛି ଯାହା ପୃଷ୍ଠାଗୁଡିକୁ ଅନୁମତି ଦିଏ ନାହିଁ ।',
+'import-error-invalid'       => '"$1"ପୃଷ୍ଠାକୁ ଆମଦାନୀ କରିହେଲାନି କାରଣ ଏହାର ନାମଟି ଅବୈଧ ।',
 
 # Import log
 'importlogpage'                    => 'ଇତିହାସ ଆହରଣ',
@@ -2822,73 +2889,86 @@ MediaWiki ବ୍ୟବହାର କରି [[Special:Import|ପୃଷ୍ଠା �
 'import-logentry-interwiki'        => '$1 କୁ ଟ୍ରାନ୍ସଉଇକି କରାଗଲା',
 'import-logentry-interwiki-detail' => '$2 ଭିତରୁ $1 ଗୋଟି {{PLURAL:$1|ସଂସ୍କରଣ|ସଂସ୍କରଣ}}',
 
+# JavaScriptTest
+'javascripttest'                           => 'ଜାଭାସ୍କ୍ରିପ୍ଟ ପରଖ',
+'javascripttest-disabled'                  => 'ଏହି ଉଇକିରେ ଏହି ବ୍ୟବସ୍ଥାଟିକୁ ସଚଳ କରାଯାଇନାହି ।',
+'javascripttest-title'                     => 'ଚାଲୁଥିବା $1 ପରଖଗୁଡିକ',
+'javascripttest-pagetext-noframework'      => 'ଏହି ପୃଷ୍ଠାଟି ଜାଭାସ୍କ୍ରିପ୍ଟ ପରଖ ପାଇଁ ସଂରକ୍ଷଣ କରି ରଖାଯାଇଛି ।',
+'javascripttest-pagetext-unknownframework' => '"$1" ଅଜଣା ପରଖ ଗତିବିଧି ।',
+'javascripttest-pagetext-frameworks'       => 'ଦୟାକରି ନିମ୍ନରେ ଥିବା ଏକ ପରଖ ପ୍ରକ୍ରିୟାକୁ ବାଛନ୍ତୁ :$1',
+'javascripttest-pagetext-skins'            => 'ଏହି ପରଖକୁ ଚାଲୁ କରିବା ପାଇଁ ଏକ ଆବରଣ ବାଛନ୍ତୁ ।',
+'javascripttest-qunit-intro'               => 'mediawiki.orgରେ [$1 testing documentation]କୁ ଦେଖନ୍ତୁ ।',
+'javascripttest-qunit-heading'             => 'ମେଡିଆଉଇକି ଜାଭାସ୍କ୍ରିପ୍ଟ Qunit ପରଖ ପ୍ରକ୍ରିୟା',
+
 # Tooltip help for the actions
-'tooltip-pt-userpage'             => 'ଆପଣଙ୍କ ବ୍ୟବହାରକାରୀ ପୃଷ୍ଠା',
-'tooltip-pt-anonuserpage'         => 'ଆପଣ ଯେଉଁ IP ଠିକଣାର ବ୍ୟବହାରକାରୀ ପୃଷ୍ଠାଟି ବଦଳାଇବା ପାଇଁ ଚେଷ୍ଟା କରୁଛନ୍ତି',
-'tooltip-pt-mytalk'               => 'ଆପଣଙ୍କ ଆଲୋଚନା ପୃଷ୍ଠା',
-'tooltip-pt-anontalk'             => 'ଏହି IP ଠିକଣାରୁ କେହିଜଣେ କରିଥିବା ସମ୍ପାଦନାର ଆଲୋଚନା',
-'tooltip-pt-preferences'          => 'ମୋ ପସନ୍ଦ',
-'tooltip-pt-watchlist'            => 'ବଦଳ ପାଇଁ ଆପଣ ଦେଖାଶୁଣା କରୁଥିବା ପୃଷ୍ଠାଗୁଡ଼ିକର ତାଲିକା',
-'tooltip-pt-mycontris'            => 'ଆପଣଙ୍କ ଅବଦାନ',
-'tooltip-pt-login'                => 'ଆପଣଙ୍କୁ ଲଗଇନ କରିବାକୁ କୁହାଯାଉଅଛି ସିନା, ବାଧ୍ୟ କରାଯାଉନାହିଁ',
-'tooltip-pt-anonlogin'            => 'ଆପଣଙ୍କୁ ଲଗଇନ କରିବାକୁ କୁହାଯାଉଅଛି ସିନା, ବାଧ୍ୟ କରାଯାଉନାହିଁ',
-'tooltip-pt-logout'               => 'ଲଗଆଉଟ',
-'tooltip-ca-talk'                 => 'ଏହି ପୃଷ୍ଠାଟି ଉପରେ ଆଲୋଚନା',
-'tooltip-ca-edit'                 => 'ଆପଣ ଏହି ପୃଷ୍ଠାଟିରେ ଅଦଳ ବଦଳ କରିପାରିବେ, ତେବେ ସାଇତିବା ଆଗରୁ ଦେଖଣା ଦେଖନ୍ତୁ ।',
-'tooltip-ca-addsection'           => 'ନୂଆ ବିଭାଗଟିଏ ଆରମ୍ଭ କରିବେ',
-'tooltip-ca-viewsource'           => 'ଏହି ପୃଷ୍ଠାଟି କିଳାଯାଇଛି ।
+'tooltip-pt-userpage'                 => 'ଆପଣଙ୍କ ବ୍ୟବହାରକାରୀ ପୃଷ୍ଠା',
+'tooltip-pt-anonuserpage'             => 'ଆପଣ ଯେଉଁ IP ଠିକଣାର ବ୍ୟବହାରକାରୀ ପୃଷ୍ଠାଟି ବଦଳାଇବା ପାଇଁ ଚେଷ୍ଟା କରୁଛନ୍ତି',
+'tooltip-pt-mytalk'                   => 'ଆପଣଙ୍କ ଆଲୋଚନା ପୃଷ୍ଠା',
+'tooltip-pt-anontalk'                 => 'ଏହି IP ଠିକଣାରୁ କେହିଜଣେ କରିଥିବା ସମ୍ପାଦନାର ଆଲୋଚନା',
+'tooltip-pt-preferences'              => 'ମୋ ପସନ୍ଦ',
+'tooltip-pt-watchlist'                => 'ବଦଳ ପାଇଁ ଆପଣ ଦେଖାଶୁଣା କରୁଥିବା ପୃଷ୍ଠାଗୁଡ଼ିକର ତାଲିକା',
+'tooltip-pt-mycontris'                => 'ଆପଣଙ୍କ ଅବଦାନ',
+'tooltip-pt-login'                    => 'ଆପଣଙ୍କୁ ଲଗଇନ କରିବାକୁ କୁହାଯାଉଅଛି ସିନା, ବାଧ୍ୟ କରାଯାଉନାହିଁ',
+'tooltip-pt-anonlogin'                => 'ଆପଣଙ୍କୁ ଲଗଇନ କରିବାକୁ କୁହାଯାଉଅଛି ସିନା, ବାଧ୍ୟ କରାଯାଉନାହିଁ',
+'tooltip-pt-logout'                   => 'ଲଗଆଉଟ',
+'tooltip-ca-talk'                     => 'ଏହି ପୃଷ୍ଠାଟି ଉପରେ ଆଲୋଚନା',
+'tooltip-ca-edit'                     => 'ଆପଣ ଏହି ପୃଷ୍ଠାଟିରେ ଅଦଳ ବଦଳ କରିପାରିବେ, ତେବେ ସାଇତିବା ଆଗରୁ ଦେଖଣା ଦେଖନ୍ତୁ ।',
+'tooltip-ca-addsection'               => 'ନୂଆ ବିଭାଗଟିଏ ଆରମ୍ଭ କରିବେ',
+'tooltip-ca-viewsource'               => 'ଏହି ପୃଷ୍ଠାଟି କିଳାଯାଇଛି ।
 ଆପଣ ଏହାର ମୂଳ ଦେଖିପାରିବେ',
-'tooltip-ca-history'              => 'ଏହି ପୃଷ୍ଠାର ପୁରୁଣା ସଂସ୍କରଣ',
-'tooltip-ca-protect'              => 'ଏହି ପୃଷ୍ଠାଟିକୁ କିଳିବେ',
-'tooltip-ca-unprotect'            => 'ଏହି ପୃଷ୍ଠା ପାଇଁ ସୁରକ୍ଷାର ପ୍ରକାର ବଦଳାଇବେ',
-'tooltip-ca-delete'               => 'ଏହି ପୃଷ୍ଠାଟି ଲିଭାଇବେ',
-'tooltip-ca-undelete'             => 'ଏହି ପୃଷ୍ଠାଟି ଲିଭାଇଦିଆଯିବା ଆଗରୁ ଏଥିରେ ହୋଇଥିବା ସମ୍ପାଦନାସମୂହକୁ ପୁନସ୍ଥାପନ କରନ୍ତୁ',
-'tooltip-ca-move'                 => 'ଏହି ପୃଷ୍ଠାଟିକୁ ଘୁଞ୍ଚାଇବେ',
-'tooltip-ca-watch'                => 'ଆପଣଙ୍କ ଦେଖାତାଲିକାରେ ଏଇ ପୃଷ୍ଠାଟି ମିଶାଇବେ',
-'tooltip-ca-unwatch'              => 'ନିଜ ଦେଖଣାତାଲିକାରୁ ଏହି ପୃଷ୍ଠାଟି ବାହାର କରିଦେବେ',
-'tooltip-search'                  => '{{SITENAME}} ରେ ଖୋଜିବା',
-'tooltip-search-go'               => 'ଏହି ଅବିକଳ ନାଆଁଟି ଥିଲେ ସେହି ପୃଷ୍ଠାକୁ ଯିବା',
-'tooltip-search-fulltext'         => 'ଏହି ଲେଖାଟି ପାଇଁ ପୃଷ୍ଠାସବୁକୁ ଖୋଜିବା',
-'tooltip-p-logo'                  => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
-'tooltip-n-mainpage'              => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
-'tooltip-n-mainpage-description'  => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
-'tooltip-n-portal'                => 'ଏହି ପ୍ରକଳ୍ପଟିରେ ଖୋଜା ଖୋଜି ପାଇଁ ଆପଣ କେମିତି ସାହାଯ୍ୟ କରିପାରିବେ',
-'tooltip-n-currentevents'         => 'ନଗଦ କାମର ପଛପଟେ ଚାଲିଥିବା କାମର ତଥ୍ୟ',
-'tooltip-n-recentchanges'         => 'ବିକିରେ ଏହିମାତ୍ର କରାଯାଇଥିବା ଅଦଳ ବଦଳ',
-'tooltip-n-randompage'            => 'ଯାହିତାହି ପୃଷ୍ଠାଟିଏ ଖୋଲ',
-'tooltip-n-help'                  => 'ଖୋଜି ପାଇବା ଭଳି ଜାଗା',
-'tooltip-t-whatlinkshere'         => 'ଏଠାରେ ଯୋଡ଼ାଯାଇଥିବା ପୃଷ୍ଠାସବୁର ତାଲିକା',
-'tooltip-t-recentchangeslinked'   => 'ଏହି ପୃଷ୍ଠା ସଙ୍ଗେ ଯୋଡ଼ା ଫରଦଗୁଡ଼ିକରେ ଏବେ ଏବେ କରାଯାଇଥିବା ଅଦଳବଦଳ',
-'tooltip-feed-rss'                => 'ଏହି ପୃଷ୍ଠାଟି ପାଇଁ RSS ଫିଡ଼',
-'tooltip-feed-atom'               => 'ଏହି ପୃଷ୍ଠାଟି ପାଇଁ ଆଟମ ଫିଡ଼',
-'tooltip-t-contributions'         => 'ଏହି ଇଉଜରଙ୍କର ଦେଇ କରାଯାଇଥିବା ସବୁଯାକ ଦାନ ଦେଖାଇବା',
-'tooltip-t-emailuser'             => 'ଏହି ସଭ୍ୟଙ୍କୁ ଇ-ମେଲଟିଏ ପଠାଇବେ',
-'tooltip-t-upload'                => 'ଫାଇଲ ଅପଲୋଡ଼ କରିବେ',
-'tooltip-t-specialpages'          => 'ନିଆରା ପୃଷ୍ଠା ତାଲିକା',
-'tooltip-t-print'                 => 'ଏହି ପୃଷ୍ଠାର ଛପାହୋଇପାରିବା ସଙ୍କଳନ',
-'tooltip-t-permalink'             => 'ବଦଳାଯାଇଥିବା ଏହି ଫରଦଟିର ସ୍ଥାୟୀ ଲିଙ୍କ',
-'tooltip-ca-nstab-main'           => 'ସୂଚୀ ପୃଷ୍ଠାଟି ଦେଖାଇବେ',
-'tooltip-ca-nstab-user'           => 'ଫାଇଲ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
-'tooltip-ca-nstab-media'          => 'ମିଡ଼ିଆ ପୃଷ୍ଠାଟି ଦେଖିବେ',
-'tooltip-ca-nstab-special'        => 'ଏଇଟି ଗୋଟିଏ ନିଆରା ପୃଷ୍ଠା, ଆପଣ ଏହାକୁ ବଦଳାଇପାରିବେ ନାହିଁ',
-'tooltip-ca-nstab-project'        => 'ପ୍ରକଳ୍ପ ପୃଷ୍ଠାଟି ଦେଖାଇବେ',
-'tooltip-ca-nstab-image'          => 'ଫାଇଲ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
-'tooltip-ca-nstab-mediawiki'      => 'ସିଷ୍ଟମ ମେସେଜ ଦେଖିବେ',
-'tooltip-ca-nstab-template'       => 'ଟେମ୍ପଲେଟଟି ଦେଖିବା',
-'tooltip-ca-nstab-help'           => 'ସହାଯୋଗ ପୃଷ୍ଠାଟି ଦେଖନ୍ତୁ',
-'tooltip-ca-nstab-category'       => 'ଶ୍ରେଣୀ ପୃଷ୍ଠାଟିକୁ ଦେଖାଇବେ',
-'tooltip-minoredit'               => 'ଏହାକୁ ଏକ ଛୋଟ ବଦଳ ଭାବେ ଗଣିବେ',
-'tooltip-save'                    => 'ବଦଳଗୁଡ଼ିକ ସାଇତିବେ',
-'tooltip-preview'                 => 'ଆପଣନ୍କ ବଦଳ ଦେଖିନିଅନ୍ତୁ, ସାଇତିବା ଆଗରୁ ଏହା ବ୍ୟ୍ଅବହାର କରନ୍ତୁ!',
-'tooltip-diff'                    => 'ଏହି ଲେଖାରେ ଆପଣ କରିଥିବା ବଦଳଗୁଡିକୁ ଦେଖନ୍ତୁ ।',
-'tooltip-compareselectedversions' => 'ଏହି ଫରଦର ଦୁଇଟି ବଛାଯାଇଥିବା ସଁକଳନକୁ ତଉଲିବା',
-'tooltip-watch'                   => 'ଆପଣଙ୍କ ଦେଖାତାଲିକାରେ ଏଇ ପୃଷ୍ଠାଟି ମିଶାଇବେ',
-'tooltip-recreate'                => 'ଏହି ପୃଷ୍ଠାଟି ଲିଭାଇଦିଆଯାଇଥିଲେ ବି ଆଉଥରେ ତିଆରି କରନ୍ତୁ',
-'tooltip-upload'                  => 'ଅପଲୋଡ଼ କରନ୍ତୁ',
-'tooltip-rollback'                => '"ଫେରିବା" ଏହି ଫରଦରେ ଶେଷ ଦାତାଙ୍କ ଦେଇ କରାଯାଇଥିବା ସବୁଯାକ ବଦଳକୁ  ଏକାଥରକରେ ପଛକୁ ଫେରାଇଦେବ',
-'tooltip-undo'                    => '"କରନାହିଁ" ଆଗରୁ କରାଯାଇଥିବା ବଦଳଟିକୁ ପଛକୁ ଲେଉଟାଇଦିଏ ଆଉ ବଦଳ ଫରମଟିକୁ ଦେଖଣା ଭାବରେ ଖୋଲେ । ଏହା ଆପଣଙ୍କୁ ସାରକଥାରେ ଗୋଟିଏ କାରଣ ଲେଖିବାକୁ ଅନୁମତି ଦିଏ ।',
-'tooltip-preferences-save'        => 'ଆପଣା ପସନ୍ଦ ସାଇତିବେ',
-'tooltip-summary'                 => 'ଛୋଟ ସାରକଥାଟିଏ ଦିଅନ୍ତୁ',
+'tooltip-ca-history'                  => 'ଏହି ପୃଷ୍ଠାର ପୁରୁଣା ସଂସ୍କରଣ',
+'tooltip-ca-protect'                  => 'ଏହି ପୃଷ୍ଠାଟିକୁ କିଳିବେ',
+'tooltip-ca-unprotect'                => 'ଏହି ପୃଷ୍ଠା ପାଇଁ ସୁରକ୍ଷାର ପ୍ରକାର ବଦଳାଇବେ',
+'tooltip-ca-delete'                   => 'ଏହି ପୃଷ୍ଠାଟି ଲିଭାଇବେ',
+'tooltip-ca-undelete'                 => 'ଏହି ପୃଷ୍ଠାଟି ଲିଭାଇଦିଆଯିବା ଆଗରୁ ଏଥିରେ ହୋଇଥିବା ସମ୍ପାଦନାସମୂହକୁ ପୁନସ୍ଥାପନ କରନ୍ତୁ',
+'tooltip-ca-move'                     => 'ଏହି ପୃଷ୍ଠାଟିକୁ ଘୁଞ୍ଚାଇବେ',
+'tooltip-ca-watch'                    => 'ଆପଣଙ୍କ ଦେଖାତାଲିକାରେ ଏଇ ପୃଷ୍ଠାଟି ମିଶାଇବେ',
+'tooltip-ca-unwatch'                  => 'ନିଜ ଦେଖଣାତାଲିକାରୁ ଏହି ପୃଷ୍ଠାଟି ବାହାର କରିଦେବେ',
+'tooltip-search'                      => '{{SITENAME}} ରେ ଖୋଜିବା',
+'tooltip-search-go'                   => 'ଏହି ଅବିକଳ ନାଆଁଟି ଥିଲେ ସେହି ପୃଷ୍ଠାକୁ ଯିବା',
+'tooltip-search-fulltext'             => 'ଏହି ଲେଖାଟି ପାଇଁ ପୃଷ୍ଠାସବୁକୁ ଖୋଜିବା',
+'tooltip-p-logo'                      => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
+'tooltip-n-mainpage'                  => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
+'tooltip-n-mainpage-description'      => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
+'tooltip-n-portal'                    => 'ଏହି ପ୍ରକଳ୍ପଟିରେ ଖୋଜା ଖୋଜି ପାଇଁ ଆପଣ କେମିତି ସାହାଯ୍ୟ କରିପାରିବେ',
+'tooltip-n-currentevents'             => 'ନଗଦ କାମର ପଛପଟେ ଚାଲିଥିବା କାମର ତଥ୍ୟ',
+'tooltip-n-recentchanges'             => 'ୱିକିରେ ଏହିମାତ୍ର କରାଯାଇଥିବା ଅଦଳ ବଦଳ',
+'tooltip-n-randompage'                => 'ଯାହିତାହି ପୃଷ୍ଠାଟିଏ ଖୋଲ',
+'tooltip-n-help'                      => 'ଖୋଜି ପାଇବା ଭଳି ଜାଗା',
+'tooltip-t-whatlinkshere'             => 'ଏଠାରେ ଯୋଡ଼ାଯାଇଥିବା ପୃଷ୍ଠାସବୁର ତାଲିକା',
+'tooltip-t-recentchangeslinked'       => 'ଏହି ପୃଷ୍ଠା ସଙ୍ଗେ ଯୋଡ଼ା ଫରଦଗୁଡ଼ିକରେ ଏବେ ଏବେ କରାଯାଇଥିବା ଅଦଳବଦଳ',
+'tooltip-feed-rss'                    => 'ଏହି ପୃଷ୍ଠାଟି ପାଇଁ RSS ଫିଡ଼',
+'tooltip-feed-atom'                   => 'ଏହି ପୃଷ୍ଠାଟି ପାଇଁ ଆଟମ ଫିଡ଼',
+'tooltip-t-contributions'             => 'ଏହି ଇଉଜରଙ୍କର ଦେଇ କରାଯାଇଥିବା ସବୁଯାକ ଦାନ ଦେଖାଇବା',
+'tooltip-t-emailuser'                 => 'ଏହି ସଭ୍ୟଙ୍କୁ ଇ-ମେଲଟିଏ ପଠାଇବେ',
+'tooltip-t-upload'                    => 'ଫାଇଲ ଅପଲୋଡ଼ କରିବେ',
+'tooltip-t-specialpages'              => 'ବିଶେଷ ପୃଷ୍ଠାମାନଙ୍କର ଏକ ତାଲିକା',
+'tooltip-t-print'                     => 'ଏହି ପୃଷ୍ଠାର ଛପାହୋଇପାରିବା ସଙ୍କଳନ',
+'tooltip-t-permalink'                 => 'ବଦଳାଯାଇଥିବା ଏହି ଫରଦଟିର ସ୍ଥାୟୀ ଲିଙ୍କ',
+'tooltip-ca-nstab-main'               => 'ସୂଚୀ ପୃଷ୍ଠାଟି ଦେଖାଇବେ',
+'tooltip-ca-nstab-user'               => 'ଫାଇଲ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
+'tooltip-ca-nstab-media'              => 'ମିଡ଼ିଆ ପୃଷ୍ଠାଟି ଦେଖିବେ',
+'tooltip-ca-nstab-special'            => 'ଏହା ଗୋଟିଏ ବିଶେଷ ପୃଷ୍ଠା, ଆପଣ ଏହାକୁ ବଦଳାଇପାରିବେ ନାହିଁ',
+'tooltip-ca-nstab-project'            => 'ପ୍ରକଳ୍ପ ପୃଷ୍ଠାଟି ଦେଖାଇବେ',
+'tooltip-ca-nstab-image'              => 'ଫାଇଲ ପୃଷ୍ଠାଗୁଡ଼ିକ ଦେଖନ୍ତୁ',
+'tooltip-ca-nstab-mediawiki'          => 'ସିଷ୍ଟମ ମେସେଜ ଦେଖିବେ',
+'tooltip-ca-nstab-template'           => 'ଟେମ୍ପଲେଟଟି ଦେଖିବା',
+'tooltip-ca-nstab-help'               => 'ସହାଯୋଗ ପୃଷ୍ଠାଟି ଦେଖନ୍ତୁ',
+'tooltip-ca-nstab-category'           => 'ଶ୍ରେଣୀ ପୃଷ୍ଠାଟିକୁ ଦେଖାଇବେ',
+'tooltip-minoredit'                   => 'ଏହାକୁ ଏକ ଛୋଟ ବଦଳ ଭାବେ ଗଣିବେ',
+'tooltip-save'                        => 'ବଦଳଗୁଡ଼ିକ ସାଇତିବେ',
+'tooltip-preview'                     => 'ଆପଣନ୍କ ବଦଳ ଦେଖିନିଅନ୍ତୁ, ସାଇତିବା ଆଗରୁ ଏହା ବ୍ୟ୍ଅବହାର କରନ୍ତୁ!',
+'tooltip-diff'                        => 'ଏହି ଲେଖାରେ ଆପଣ କରିଥିବା ବଦଳଗୁଡିକୁ ଦେଖନ୍ତୁ ।',
+'tooltip-compareselectedversions'     => 'ଏହି ଫରଦର ଦୁଇଟି ବଛାଯାଇଥିବା ସଁକଳନକୁ ତଉଲିବା',
+'tooltip-watch'                       => 'ଆପଣଙ୍କ ଦେଖାତାଲିକାରେ ଏଇ ପୃଷ୍ଠାଟି ମିଶାଇବେ',
+'tooltip-watchlistedit-normal-submit' => 'ଶିରୋନାମାଗୁଡିକୁ ଲିଭାଇବେ',
+'tooltip-watchlistedit-raw-submit'    => 'ଦେଖଣା ତାଲିକାକୁ ଅପଡ଼େଟ କରିବେ',
+'tooltip-recreate'                    => 'ଏହି ପୃଷ୍ଠାଟି ଲିଭାଇଦିଆଯାଇଥିଲେ ବି ଆଉଥରେ ତିଆରି କରନ୍ତୁ',
+'tooltip-upload'                      => 'ଅପଲୋଡ଼ କରନ୍ତୁ',
+'tooltip-rollback'                    => '"ଫେରିବା" ଏହି ଫରଦରେ ଶେଷ ଦାତାଙ୍କ ଦେଇ କରାଯାଇଥିବା ସବୁଯାକ ବଦଳକୁ  ଏକାଥରକରେ ପଛକୁ ଫେରାଇଦେବ',
+'tooltip-undo'                        => '"କରନାହିଁ" ଆଗରୁ କରାଯାଇଥିବା ବଦଳଟିକୁ ପଛକୁ ଲେଉଟାଇଦିଏ ଆଉ ବଦଳ ଫରମଟିକୁ ଦେଖଣା ଭାବରେ ଖୋଲେ । ଏହା ଆପଣଙ୍କୁ ସାରକଥାରେ ଗୋଟିଏ କାରଣ ଲେଖିବାକୁ ଅନୁମତି ଦିଏ ।',
+'tooltip-preferences-save'            => 'ଆପଣା ପସନ୍ଦ ସାଇତିବେ',
+'tooltip-summary'                     => 'ଛୋଟ ସାରକଥାଟିଏ ଦିଅନ୍ତୁ',
 
 # Metadata
 'notacceptable' => 'ଆପଣଙ୍କ ସହଯୋଗୀ ପଢ଼ିପାରିବା ଢଙ୍ଗରେ ଉଇକି ସର୍ଭର ତଥ୍ୟ ଦେଇପାରିବ ନାହିଁ ।',
@@ -2916,14 +2996,14 @@ MediaWiki ବ୍ୟବହାର କରି [[Special:Import|ପୃଷ୍ଠା �
 
 # Info page
 'pageinfo-title'            => '"$1"ର ବିବରଣୀ',
-'pageinfo-header-edits'     => 'ବଦଳସବୁ',
+'pageinfo-header-edits'     => 'ବଦଳ ଇତିହାସ',
 'pageinfo-header-watchlist' => 'ଦେଖଣା ତାଲିକା',
 'pageinfo-header-views'     => 'ଦେଖଣା',
 'pageinfo-subjectpage'      => 'ପୃଷ୍ଠା',
 'pageinfo-talkpage'         => 'ଆଲୋଚନା ପୃଷ୍ଠା',
-'pageinfo-watchers'         => 'ଦେଖଣାହାରି ସଂଖ୍ୟା',
+'pageinfo-watchers'         => 'ପୃଷ୍ଠା ଦେଖଣାହାରି ସଂଖ୍ୟା',
 'pageinfo-edits'            => 'ସମ୍ପାଦନା ସଂଖ୍ୟା:',
-'pageinfo-authors'          => 'ନିଆରା ଲେଖକଙ୍କ ସଂଖ୍ୟା',
+'pageinfo-authors'          => 'ନିଆରା ଲେଖକଙ୍କ ମୋଟସଂଖ୍ୟା',
 'pageinfo-views'            => 'ଦେଖଣା ସଂଖ୍ୟା',
 'pageinfo-viewsperedit'     => 'ସମ୍ପାଦନା ପ୍ରତି ଦେଖା',
 
@@ -2941,9 +3021,6 @@ MediaWiki ବ୍ୟବହାର କରି [[Special:Import|ପୃଷ୍ଠା �
 # Patrol log
 'patrol-log-page'      => 'ଜଗିବା ଇତିହାସ',
 'patrol-log-header'    => 'ଏହା ଏକ ଜଗାଯାଇଥିବା ସଂସ୍କରଣର ଇତିହାସ ।',
-'patrol-log-line'      => '$2 ଦେଇ ଜଗାହୋଇଥିବା $3ର $1କୁ ସୂଚିତ କରାଗଲା',
-'patrol-log-auto'      => '(ଆପେ ଆପେ)',
-'patrol-log-diff'      => '$1 ସଙ୍କଳନ',
 'log-show-hide-patrol' => '$1 ଜଗିବା ଇତିହାସ',
 
 # Image deletion
@@ -2970,11 +3047,11 @@ $1',
 'file-info'              => 'ଫାଇଲ ଆକାର: $1, MIME ପ୍ରକାର: $2',
 'file-info-size'         => '$1 × $2 ପିକସେଲ, ଫାଇଲ ଆକାର: $3, ଏମ.ଆଇ.ଏମ.ଇର ପ୍ରକାର: $4',
 'file-info-size-pages'   => '$1 × $2 ପିକ୍ସେଲ, ଫାଇଲ ଆକାର: $3, MIME ପ୍ରକାର: $4, $5 ଗୋଟି {{PLURAL:$5|ପୃଷ୍ଠା|ପୃଷ୍ଠା}}',
-'file-nohires'           => '<small>ବଡ଼ ରେଜୋଲୁସନ ନାହିଁ ।</small>',
+'file-nohires'           => 'ବଡ଼ ରେଜୋଲୁସନ ନାହିଁ ।',
 'svg-long-desc'          => 'SVG ଫାଇଲ, ସାଧାରଣ ମାପ $1 × $2 ପିକ୍ସେଲ, ଫାଇଲ ଆକାର: $3',
 'show-big-image'         => 'ପୁରା ବଡ଼ ଆକାରରେ',
-'show-big-image-preview' => '<small>ଆଗଦେଖଣାର ଆକାର: $1 ।</small>',
-'show-big-image-other'   => '<small>ବାକି ରେଜୋଲୁସନ: $1.</small>',
+'show-big-image-preview' => 'ଏହି ଦେଖଣାର ଆକାର: $1 ।',
+'show-big-image-other'   => 'ବାକି {{PLURAL:$2|ରେଜୋଲୁସନ|ରେଜୋଲୁସନ}}: $1.',
 'show-big-image-size'    => '$1 × $2 ପିକ୍ସେଲ',
 'file-info-gif-looped'   => 'ଲୁପ',
 'file-info-gif-frames'   => '$1 ଗୋଟି {{PLURAL:$1|ଫ୍ରେମ|ଫ୍ରେମ}}',
@@ -2993,6 +3070,13 @@ $1',
 'ilsubmit'              => 'ଖୋଜିବା',
 'bydate'                => 'ତାରିଖ ଅନୁସାରେ',
 'sp-newimages-showfrom' => '$2, $1 ରେ ଆରମ୍ଭ ହେଉଥିବା ନୂଆ ଫାଇଲ ସବୁ ଦେଖାଇବେ',
+
+# Video information, used by Language::formatTimePeriod() to format lengths in the above messages
+'seconds' => '{{PLURAL:$1|$1 ସେକେଣ୍ଡ|$1 ସେକେଣ୍ଡ}}',
+'minutes' => '{{PLURAL:$1|$1 ମିନିଟ|$1 ମିନିଟ}}',
+'hours'   => '{{PLURAL:$1|$1 ଘଣ୍ଟା|$1 ଘଣ୍ଟା}}',
+'days'    => '{{PLURAL:$1|$1 ଦିନ|$1 ଦିନ}}',
+'ago'     => '$1 ଆଗରୁ',
 
 # Bad image list
 'bad_image_list' => 'ଗଢ଼ଣଟି ଏମିତି ହେବ:
@@ -3264,7 +3348,7 @@ $1',
 'exif-lightsource-18'  => 'ମାନକ ଆଲୁଅ B',
 'exif-lightsource-19'  => 'ମାନକ ଆଲୁଅ C',
 'exif-lightsource-24'  => 'ISO ଷ୍ଟୁଡ଼ିଓ ଟଙ୍ଗଷ୍ଟନ',
-'exif-lightsource-255' => 'ବାକି ଆଲୁଅ ସ୍ରୋତ',
+'exif-lightsource-255' => 'ବାକି ଲାଇଟ ସୋର୍ସ',
 
 # Flash modes
 'exif-flash-fired-0'    => 'ଫ୍ଲାସ କାମ କଲାନାହିଁ',
@@ -3421,7 +3505,7 @@ $1',
 'monthsall'     => 'ସବୁ',
 'limitall'      => 'ସବୁ',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'              => 'ଆପଣଙ୍କ ଇମେଲ ଠିକଣା ଟି ଠିକ ବୋଲି ଥୟ କରନ୍ତୁ',
 'confirmemail_noemail'      => '[[Special:Preferences|ଆପଣଙ୍କ ପସନ୍ଦ]] ଭିତରେ  ଏକ ସଠିକ ଇମେଲ ଠିକଣା ଦିଆଯାଇନାହିଁ ।',
 'confirmemail_text'         => 'ଆପଣା ଇମେଲ ସୁବିଧା ବ୍ୟବହାର କରିବା ଆଗରୁ {{SITENAME}}ରେ ଆପଣଙ୍କର ଇମେଲ ଠିକଣା ଥୟ କରିବାକୁ ପଡ଼ିବ ।
@@ -3490,13 +3574,6 @@ $5
 'scarytranscludefailed'   => '[$1 ପାଇଁ ଛାଞ୍ଚକୁ ପାଇବା ସମ୍ଭବ ହେଲାନାହିଁ]',
 'scarytranscludetoolong'  => '[URLଟି ଖୁବ ଲମ୍ବା]',
 
-# Trackbacks
-'trackbackbox'      => 'ଏହି ପୃଷ୍ଠାର ଅତୀତ ଓ ଇତିହାସ:<br />
-$1',
-'trackbackremove'   => '([$1 ଲିଭାଇବା])',
-'trackbacklink'     => 'ଅତୀତ ଇତିହାସ',
-'trackbackdeleteok' => 'ଅତୀତ ଇତିହାସ ସଫଳ ଭାବେ ଲିଭାଗଲା ।',
-
 # Delete conflict
 'deletedwhileediting'      => "''' ସାବଧାନ ''' : ଆପଣ ବଦଳାଇବା ପାଇଁ ଆରମ୍ଭ କରିବା ପରେ ପରେ ହିଁ ଏହି ପୃଷ୍ଠାଟିକୁ ଲିଭାଇ ଦିଆଯାଇଛି !",
 'confirmrecreate'          => "ବ୍ୟବହାରକାରୀ [[User:$1|$1]] ([[User talk:$1|talk]]) ଆପଣ ବଦଳାଇବା ଆରମ୍ଭ କରିବା ପରେ ପରେ ଏହି ପୃଷ୍ଠାଟିକୁ ଲିଭାଇ ଦେଇଛନ୍ତି ଓ ଏହାର କାରଣ ହେଉଛି :
@@ -3523,7 +3600,7 @@ $1',
 'imgmultigoto'     => '$1 ପୃଷ୍ଠାକୁ ଯିବେ',
 
 # Table pager
-'ascending_abbrev'         => 'asc',
+'ascending_abbrev'         => 'ସାନରୁ ବଡ କ୍ରମରେ',
 'descending_abbrev'        => 'ବଖାଣ',
 'table_pager_next'         => 'ପର ପୃଷ୍ଠା',
 'table_pager_prev'         => 'ଆଗ ପୃଷ୍ଠା',
@@ -3579,6 +3656,9 @@ $1',
 'watchlisttools-edit' => 'ଦେଖିବା ତାଲିକାଟିକୁ ଦେଖିବେ ଓ ବଦଳାଇବେ',
 'watchlisttools-raw'  => 'ଫାଙ୍କା ଦେଖଣା ତାଲିକାଟିର ସମ୍ପାଦନା କରିବେ',
 
+# Signatures
+'signature' => '[[{{ns:user}}:$1|$2]] ([[{{ns:user_talk}}:$1|ମୋ ଆଲୋଚନା]])',
+
 # Core parser functions
 'unknown_extension_tag' => 'ଅଜଣା ଏକ୍ସଟେନସନ ଚିହ୍ନ "$1"',
 'duplicate-defaultsort' => '\'\'\'ସୂଚନା:\'\'\' ଆପେଆପେ କାମକରୁଥିବା "$2" ଆଗରୁ ଆପେ ଆପେ ସଜାଡୁଥିବା "$1"କୁ ବନ୍ଦ କରିଦେଇଛି ।',
@@ -3586,7 +3666,7 @@ $1',
 # Special:Version
 'version'                       => 'ସଂସ୍କରଣ',
 'version-extensions'            => 'ଇନଷ୍ଟଲ କରାହୋଇଥିବା ଏକ୍ସଟେନସନସବୁ',
-'version-specialpages'          => 'ନିଆରା ପୃଷ୍ଠା',
+'version-specialpages'          => 'ବିଶେଷ ପୃଷ୍ଠା',
 'version-parserhooks'           => 'ପାର୍ସର ହୁକ',
 'version-variables'             => 'ଚଳ',
 'version-antispam'              => 'ଅଦରକାରୀ ମେଲ ଅଟକ',
@@ -3631,21 +3711,20 @@ MediaWiki ଉପଯୋଗୀ ହେବା ଲକ୍ଷରେ ବଣ୍ଟାଯ�
 'fileduplicatesearch-noresults' => '"$1" ନାମରେ ଗୋଟିଏ ବି ଫାଇଲ ମିଳିଲା ନାହିଁ ।',
 
 # Special:SpecialPages
-'specialpages'                   => 'ନିଆରା ପୃଷ୍ଠା',
+'specialpages'                   => 'ବିଶେଷ ପୃଷ୍ଠା',
 'specialpages-note'              => '----
 * ସାଧାରଣ ବିଶେଷ ପୃଷ୍ଠାମାନ ।
-* <span class="mw-specialpagerestricted">ସଂରକ୍ଷିତ ବିଶେଷ ପୃଷ୍ଠାମାନ ।</span>
-* <span class="mw-specialpagecached">ସାଇତା ହୋଇଥିବା ପୃଷ୍ଠା (ବୋଧେ ଆଉ ବ୍ୟବ‌ହାର ହେଉନଥିବା) ।</span>',
+* <span class="mw-specialpagerestricted">କିଳାଯାଇଥିବା ବିଶେଷ ପୃଷ୍ଠାମାନ ।</span>',
 'specialpages-group-maintenance' => 'ରକ୍ଷଣାବେକ୍ଷଣା ବିବରଣୀ',
 'specialpages-group-other'       => 'ବାକି ବିଶେଷ ପୃଷ୍ଠା',
-'specialpages-group-login'       => 'ଲଗିନ / ଖାତା ଖୋଲି',
+'specialpages-group-login'       => 'ଲଗଇନ / ଖାତା ଖୋଲିବେ',
 'specialpages-group-changes'     => 'ନଗଦ ବଦଳ ଓ ଇତିହାସ',
 'specialpages-group-media'       => 'ମିଡ଼ିଆ ବିବରଣୀ ଓ ଅପଲୋଡ଼',
 'specialpages-group-users'       => 'ବ୍ୟବହାରକାରୀଗଣ ଓ ଅଧିକାରମାନ',
 'specialpages-group-highuse'     => 'ଅଧିକ ବ୍ୟବହାର ହେଉଥିବା ପୃଷ୍ଠା',
 'specialpages-group-pages'       => 'ପୃଷ୍ଠାମାନଙ୍କର ତାଲିକା',
 'specialpages-group-pagetools'   => 'ପୃଷ୍ଠା ଉପକରଣ',
-'specialpages-group-wiki'        => 'ଉଇକି ଡାଟା ଓ ଉପକରଣ',
+'specialpages-group-wiki'        => 'ତଥ୍ୟ ଓ ଉପକରଣ',
 'specialpages-group-redirects'   => 'ବିଶେଷ ପୃଷ୍ଠାକୁ ପୁନପ୍ରେରଣ କରିବା',
 'specialpages-group-spam'        => 'ଅଯଥା ଉପକରଣ',
 
@@ -3673,17 +3752,20 @@ MediaWiki ଉପଯୋଗୀ ହେବା ଲକ୍ଷରେ ବଣ୍ଟାଯ�
 'tags-display-header'     => 'ବଦଳ ତାଲିକାରେ ଦେଖଣା',
 'tags-description-header' => 'ଅର୍ଥର ପୁରା ବିବରଣୀ',
 'tags-hitcount-header'    => 'ଚିହ୍ନିତ ବଦଳ',
-'tags-edit'               => 'ବଦଳାଇବେ',
+'tags-edit'               => 'ସମ୍ପାଦନା',
 'tags-hitcount'           => '$1 {{PLURAL:$1|ବଦଳ|ବଦଳସବୁ}}',
 
 # Special:ComparePages
-'comparepages'     => 'ବଦଳ ତୁଳନା କରିବେ',
-'compare-selector' => 'ପୃଷ୍ଠା ସଂସ୍କରଣ ତୁଳନା କରିବେ',
-'compare-page1'    => 'ପୃଷ୍ଠା ୧',
-'compare-page2'    => 'ପୃଷ୍ଠା ୨',
-'compare-rev1'     => 'ପୁନରାବୃତ୍ତି୧',
-'compare-rev2'     => 'ପୁନରାବୃତ୍ତି ୨',
-'compare-submit'   => 'ତୁଳନା',
+'comparepages'                => 'ବଦଳ ତୁଳନା କରିବେ',
+'compare-selector'            => 'ପୃଷ୍ଠା ସଂସ୍କରଣ ତୁଳନା କରିବେ',
+'compare-page1'               => 'ପୃଷ୍ଠା ୧',
+'compare-page2'               => 'ପୃଷ୍ଠା ୨',
+'compare-rev1'                => 'ପୁନରାବୃତ୍ତି୧',
+'compare-rev2'                => 'ପୁନରାବୃତ୍ତି ୨',
+'compare-submit'              => 'ତୁଳନା',
+'compare-invalid-title'       => 'ଆପଣ ଦର୍ଶାଇଥିବା ଶିରୋନାମା ବୈଧ ନୁହେଁ ।',
+'compare-title-not-exists'    => 'ଆପଣ ଦର୍ଶାଇଥିବା ଶିରୋନାମାଟି ଆଦୌ ନାହିଁ ।',
+'compare-revision-not-exists' => 'ଆପଣ ଦର୍ଶାଇଥିବା ପୁନରାବୃତ୍ତି ଆଦୌ ନାହିଁ ।',
 
 # Database error messages
 'dberr-header'      => 'ଏହି ଉଇକିରେ କିଛି ଅସୁବିଧା ଅଛି ।',
@@ -3710,5 +3792,91 @@ MediaWiki ଉପଯୋଗୀ ହେବା ଲକ୍ଷରେ ବଣ୍ଟାଯ�
 # SQLite database support
 'sqlite-has-fts' => 'ପୁରା ଟେକ୍ସ୍ଟ ଖୋଜା ସହଯୋଗ ସହିତ $1',
 'sqlite-no-fts'  => 'ପୁରା ଟେକ୍ସ୍ଟ ଖୋଜା ସହଯୋଗ ବିନା $1',
+
+# New logging system
+'logentry-delete-delete'              => '$1 $3 ପୃଷ୍ଠାଟି ଲିଭାଇଦେଲେ',
+'logentry-delete-restore'             => '$1 $3 ପୃଷ୍ଠାଟି ପୁନସ୍ଥାପନ କଲେ',
+'logentry-delete-event'               => '$1 $3 ବେଳେ {{PLURAL:$5|ଏକ ଇତିହାସର ଘଟଣାର|$5 ଇତିହାସର ଘଟଣାମାନଙ୍କର}} ଦେଖଣା ବଦଳାଇ ଦେଲେ: $4',
+'logentry-delete-revision'            => '$1 $3 ପୃଷ୍ଠାରେ {{PLURAL:$5|ସଙ୍କଳନଟିଏର|$5 ସଙ୍କଳନମାନଙ୍କର}} ଦେଖଣା ବଦଳାଇ ଦେଲେ: $4',
+'logentry-delete-event-legacy'        => '$1 $3 ରେ ଇତିହାସର ଘଟଣାସବୁର ଦେଖଣା ବଦଳାଇଦେଲେ',
+'logentry-delete-revision-legacy'     => '$1 $3 ପୃଷ୍ଠାରେ ଇତିହାସର ଘଟଣାସବୁର ଦେଖଣା ବଦଳାଇଦେଲେ',
+'logentry-suppress-delete'            => '$1 $3 ପୃଷ୍ଠାଟିକୁ ଚପାଇଦେଲେ',
+'logentry-suppress-event'             => '$3 ବେଳେ $1 ଗୋପନ ଭାବରେ {{PLURAL:$5|ଇତିହାସର ଘଟଣାଟିଏର|$5 ଇତିହାସର ଘଟଣାବଳୀର}} ଦେଖଣା ବଦଳାଇଦେଲେ: $4',
+'logentry-suppress-revision'          => '$1 ଗୋପନ ଭାବରେ $3 ପୃଷ୍ଠାରେ {{PLURAL:$5|ଇତିହାସର ଘଟଣାଟିଏର|$5 ଇତିହାସର ଘଟଣାବଳୀର}} ଦେଖଣା ବଦଳାଇଦେଲେ: $4',
+'logentry-suppress-event-legacy'      => '$1 ଗୋପନ ଭାବରେ ବଦଳାଇଦେଲେ $3ରେ ଥିବା ଇତିହାସ ଘଟଣାମାନଙ୍କର ଦେଖଣା ବଦଳାଇଦେଲେ',
+'logentry-suppress-revision-legacy'   => '$1 ଗୋପନ ଭାବରେ ବଦଳାଇଦେଲେ $3 ପୃଷ୍ଠାରେ ଥିବା ଇତିହାସ ଘଟଣାମାନଙ୍କର ଦେଖଣା ବଦଳାଇଦେଲେ',
+'revdelete-content-hid'               => 'ଭିତର ଭାଗ ଲୁଚାଯାଇଅଛି',
+'revdelete-summary-hid'               => 'ସମ୍ପାଦନା ସାରକଥା ଲୁଚାଯାଇଅଛି',
+'revdelete-uname-hid'                 => 'ଇଉଜର ନାମ ଲୁଚାଯାଇଅଛି',
+'revdelete-content-unhid'             => 'ଲୁଚାଯାଇଥିବା ଭିତର ଭାଗ ଦେଖାଇବେ',
+'revdelete-summary-unhid'             => 'ଲୁଚାଯାଇଥିବା ସମ୍ପାଦନା ସାରକଥା ଦେଖାଇବେ',
+'revdelete-uname-unhid'               => 'ଲୁଚାଯାଇଥିବା ଇଉଜର ନାମ ଦେଖାଇବେ',
+'revdelete-restricted'                => 'ପରିଛାମାନଙ୍କ ନିମନ୍ତେ ଥିବା ବାରଣ',
+'revdelete-unrestricted'              => 'ପରିଛାମାନଙ୍କ ନିମନ୍ତେ ଥିବା ବାରଣ ବାହାର କରିଦିଆଗଲା',
+'logentry-move-move'                  => '$1 $3 ପୃଷ୍ଠାଟି $4କୁ ଘୁଞ୍ଚାଇଲେ',
+'logentry-move-move-noredirect'       => '$1 $3 ପୃଷ୍ଠାଟି $4କୁ ପୁନପ୍ରେରଣ ବିନା ଘୁଞ୍ଚାଇଲେ',
+'logentry-move-move_redir'            => '$1 $3 ପୃଷ୍ଠାଟି $4କୁ ପୁନପ୍ରେରଣ ଛାଡ଼ି ଘୁଞ୍ଚାଇଲେ',
+'logentry-move-move_redir-noredirect' => '$1 $3 ପୃଷ୍ଠାଟି $4କୁ ପୁନପ୍ରେରଣକୁ ଛାଡ଼ି ପୁନପ୍ରେରଣ ବିନା ଘୁଞ୍ଚାଇଲେ',
+'logentry-patrol-patrol'              => '$1 $3 ପୃଷ୍ଠାର $4 ତମ ସଙ୍କଳନକୁ ଜଗାଯାଇଅଛି ବୋଲି ଚିହ୍ନିତ କଲେ',
+'logentry-patrol-patrol-auto'         => '$1 ଆପେଆପେ $3 ପୃଷ୍ଠାର $4 ତମ ସଙ୍କଳନକୁ ଜଗାଯାଇଅଛି ବୋଲି ଚିହ୍ନିତ କଲେ',
+'logentry-newusers-newusers'          => 'ସଭ୍ୟ ଖାତା $1 ତିଆରି କରାଗଲା',
+'logentry-newusers-create'            => 'ସଭ୍ୟ ଖାତା $1 ତିଆରି କରାଗଲା',
+'logentry-newusers-create2'           => 'ସଭ୍ୟ ଖାତା $3ଟି $1 ଦ୍ଵାରା ତିଆରି କରାଗଲା',
+'logentry-newusers-autocreate'        => '$1 ଖାତାଟି ଆପେଆପେ ତିଆରିହେଲା',
+'newuserlog-byemail'                  => 'ଇ-ମେଲରେ ପାସୱାର୍ଡ଼ ପଠାଇଦିଆଗଲା',
+
+# Feedback
+'feedback-bugornote' => 'ଦୟାକରି ଆପଣ ଏକ କାରିଗରି ଅସୁବିଧାଟିଏ ଜଣାଇବା ପାଇଁ ଚାହୁଁଥିଲେ ଦୟାକରି [$1 ଏଠାରେ ଅସୁବିଧାଟି ଜଣାନ୍ତୁ] । 
+ଅଥବା, ଆପଣ ତଳେ ଠିଆ ସହଜ ଆବେଦନ ପତ୍ରଟି ପୁରଣ କରିପାରିବେ ।  ଆପଣଙ୍କ ବ୍ୟବହାରକାରୀ ନାମ ଓ ଆପଣ ବ୍ୟବହାର କରୁଥିବା ବ୍ରାଉଜର ଅନୁସାରେ ଆପଣଙ୍କ ମତାମତ "[$3 $2]"ରେ ଯୋଡ଼ାଯିବ ।',
+'feedback-subject'   => 'ବିଷୟ:',
+'feedback-message'   => 'ଖବର:',
+'feedback-cancel'    => 'ନାକଚ',
+'feedback-submit'    => 'ମତାମତ ଦିଅନ୍ତୁ',
+'feedback-adding'    => 'ପୃଷ୍ଠାରେ ମତାମତ ଦେଉଛି...',
+'feedback-error1'    => 'ଭୁଲ: API ରୁ ଅଚିହ୍ନା ଫଳାଫଳ',
+'feedback-error2'    => 'ଅସୁବିଧା: ସମ୍ପାଦନା ବିଫଳ ହେଲା',
+'feedback-error3'    => 'ଅସୁବିଧା: API ରୁ କିଛି ଉତ୍ତର ମିଳିଲା ନାହିଁ',
+'feedback-thanks'    => 'ଧନ୍ୟବାଦ ! ଆପଣଙ୍କର ମତାମତ  "[$2 $1]" ପୃଷ୍ଠାରେ ଦର୍ଶାଯାଇଛି ।',
+'feedback-close'     => 'ହୋଇଗଲା',
+'feedback-bugcheck'  => 'ବହୁତ ଭଲ ! ଖାଲି ଦେଖିଦିଅନ୍ତୁ ଯେ ଏହା ଆଗରୁ ଥିବା [$1 known bugs] ମଧ୍ୟରୁ ନୁହେଁ ତ ।',
+'feedback-bugnew'    => 'ମୁଁ ଯାଞ୍ଚ କରିଦେଲି । ନୂତନ ଅସୁବିଧାର ବିବରଣ କରନ୍ତୁ ।',
+
+# API errors
+'api-error-badaccess-groups'              => 'ଆପଣଙ୍କୁ ଏହି ଉଇକିରେ ଅପଲୋଡ଼ କରିବାକୁ ଅନୁମତି ଦିଆଯାଇନାହିଁ ।',
+'api-error-badtoken'                      => 'ଭିତର ଅସୁବିଧା: ଖରାପ ଟୋକନ ।',
+'api-error-copyuploaddisabled'            => 'URL ଦେଇ ଅପଲୋଡ଼ କରିବା ଏହି ସର୍ଭରରେ ଅଚଳ କରାଯାଇଅଛି ।',
+'api-error-duplicate'                     => 'ଏହି ସାଇଟରେ ସେହି ଏକା ତଥ୍ୟ ଥିବା {{PLURAL:$1| [$2 ଆଉ ଏକ ଫାଇଲ] ରହିଅଛି|[$2 ଆଉ କିଛି ଫାଇଲ] ରହି ଅଛନ୍ତି}} ।',
+'api-error-duplicate-archive'             => 'ସେହି ସାଇଟରେ ସେହି ଏକା ଭିତର ଭାଗ ସହିତ ଆଗରୁ {{PLURAL:$1|[$2 ଆଉ ଫାଇଲଟିଏ] ଥିଲା|[$2 ଆଉ କେତେକ ଫାଇଲ] ଥିଲା}}, କିନ୍ତୁ {{PLURAL:$1|ତାହାକୁ|ସେସବୁକୁ}} ଲିଭାଇ ଦିଆଯାଇଅଛି ।',
+'api-error-duplicate-archive-popup-title' => 'ଆଗରୁ ଲିଭାଯାଇଥିବା ନକଲି {{PLURAL:$1|ଗୋଟି ଫାଇଲ|ଗୋଟି ଫାଇଲ}}',
+'api-error-duplicate-popup-title'         => 'ନକଲି {{PLURAL:$1|ଗୋଟି ଫାଇଲ|ଗୋଟି ଫାଇଲ}}',
+'api-error-empty-file'                    => 'ଆପଣ ପଠାଇଥିବା ଫାଇଲଟି ଖାଲି ଅଟେ ।',
+'api-error-emptypage'                     => 'ନୂଆ, ଖାଲି ପୃଷ୍ଠ ତିଆରି କରିବାର ଅନୁମତି ନାହି ।',
+'api-error-fetchfileerror'                => 'ଭିତର ଅସୁବିଧା: ଏହି ଫାଇଲଟି ପାଖରେ ପହଞ୍ଚିବା ବେଳେ କିଛି ଅସୁବିଧା ହେଲା ।',
+'api-error-file-too-large'                => 'ଆପଣ ପଠାଇଥିବା ଫାଇଲଟି ବିରାଟ ଅଟେ ।',
+'api-error-filename-tooshort'             => 'ଫାଇଲ ନାମଟି ଖୁବ ଛୋଟ ।',
+'api-error-filetype-banned'               => 'ଏହି ପ୍ରକାରର ଫାଇଲ ବାରଣ କରାଯାଇଅଛି ।',
+'api-error-filetype-missing'              => 'ଫାଇଲଟିର ଏକ୍ସଟେନସନ ନାହିଁ ।',
+'api-error-hookaborted'                   => 'ଏକ ଏକ୍ସଟେନସନ ହୁକ ଦେଇ ଆପଣ କରୁଥିବା ବଦଳଟି ବନ୍ଦ କରିଦିଆଗଲା ।',
+'api-error-http'                          => 'ଭିତର ଅସୁବିଧା: ସର୍ଭର ସହ ଯୋଡ଼ି ହେଉନାହିଁ ।',
+'api-error-illegal-filename'              => 'ଏହି ଫାଇଲ ନାମଟି ଅନୁମୋଦିତ ନୁହେଁ ।',
+'api-error-internal-error'                => 'ଆଭ୍ୟନ୍ତରୀଣ ଅସୁବିଧା: ଏହି ଉଇକିରେ ଆପଣଙ୍କ ଅପଲୋଡ଼ କରିବା କାଳରେ କିଛି ଅସୁବିଧା ଘଟିଲା ।',
+'api-error-invalid-file-key'              => 'ଭିତର ଅସୁବିଧା: ଫାଇଲଟି ଅସ୍ଥାୟୀ ସାଇତାଘର ଭିତରୁ ମିଳିଲାନାହିଁ ।',
+'api-error-missingparam'                  => 'ଭିତର ଅସୁବିଧା: ହଜିଯାଇଥିବା ପାରାମିଟର ସବୁକୁ ଅନୁରୋଧ କ୍ରମେ ଦେଖାଇଦିଆଗଲା ।',
+'api-error-missingresult'                 => 'ଭିତର ଅସୁବିଧା: ନକଲ କରିବା ଠିକରେ ହେଲାକି ନାହିଁ  ଜାଣି ପାରିଲା ନାହିଁ ।',
+'api-error-mustbeloggedin'                => 'ଫାଇଲ ଅପଲୋଡ଼ କରିବା ନିମନ୍ତେ ଆପଣଙ୍କୁ ଲଗ ଇନ କରିବାକୁ ପଡ଼ିବ ।',
+'api-error-mustbeposted'                  => 'ଭିତର ଅସୁବିଧା: କରାଯାଇଥିବା ଅନୁରୋଧ ପାଇଁ HTTP POST ଦରକାର ।',
+'api-error-noimageinfo'                   => 'ଅପଲୋଡ଼ ସଫଳ ହେଲା, କିନ୍ତୁ ସର୍ଭରଟି ଆମ୍ଭଙ୍କୁ ଫାଇଲଟୀ ବାବଦରେ କିଛି ବିବରଣୀ ଦେଲା ନାହିଁ ।',
+'api-error-nomodule'                      => 'ଭିତର ଅସୁବିଧା: ଅପଲୋଡ଼ ମୋଡୁଲ ଠିକ କରାଯାଇନାହିଁ ।',
+'api-error-ok-but-empty'                  => 'ଭିତର ଅସୁବିଧା: ସର୍ଭର ଠାରୁ କିଛି ଖବର ନାହିଁ ।',
+'api-error-overwrite'                     => 'ଆଗରୁଥିବା ଏକ ଫାଇଲ ଉପରେ ମଡ଼ାଇବା ଅନୁମୋଦିତ ନୁହେଁ ।',
+'api-error-stashfailed'                   => 'ଭିତର ଅସୁବିଧା: ସର୍ଭର ଅସ୍ଥାୟୀ ଫାଇଲକୁ ସାଇତି ପାରିଲା ନାହିଁ ।',
+'api-error-timeout'                       => 'ସର୍ଭର ଏକ ସୀମିତ କାଳ ଭିତରେ ଉତ୍ତର ଦେଲାନାହିଁ ।',
+'api-error-unclassified'                  => 'ଏକ ଅଜଣା ଅସୁବିଧା ଘଟିଲା ।',
+'api-error-unknown-code'                  => 'ଅଜଣା ତୃଟି: "$1"',
+'api-error-unknown-error'                 => 'ଆଭ୍ୟନ୍ତରୀଣ ଅସୁବିଧା: ଫାଇଲଟି ଅପଲୋଡ଼ କରିବା କାଳରେ କିଛି ଅସୁବିଧା ଘଟିଲା ।',
+'api-error-unknown-warning'               => 'ଅଜଣା ଚେତାବନୀ: $1',
+'api-error-unknownerror'                  => 'ଅଜଣା ତୃଟି: "$1"',
+'api-error-uploaddisabled'                => 'ଉଇକିରେ ଅପଲୋଡ଼ କରିବା ଅଚଳ କରାଯାଇଅଛି ।',
+'api-error-verification-error'            => 'ଏହି ଫାଇଲଟି ବୋଧ ହୁଏ ନଷ୍ଟ ହୋଇଯାଇଅଛି କିମ୍ବା ଭୁଲ ଏକ୍ସଟେନସନ ଦିଆଯାଇଅଛି ।',
 
 );

@@ -8,7 +8,9 @@
  * @file
  *
  * @author Huji
+ * @author Kaganer
  * @author Mostafadaneshvar
+ * @author Reedy
  * @author ZxxZxxZ
  */
 
@@ -477,14 +479,13 @@ $1',
 'badtitle'             => 'عنوان بد',
 'badtitletext'         => 'لوٹتگین عنوان صفحه نامعتبر ،هالیک یا یک عنوان هرابین لینک بین زبانی یا بین وی کی انت.
 آی شاید شامل یک یا گیشترین کاراکترانت که ته عناوین استفاده نه بنت.',
-'perfcached'           => 'جهلیگین دیتا ذخیره بیتگنت و شاید نوک می بنت.',
-'perfcachedts'         => 'جهلیگین دیتا ذخیره بیتگنت و اهرین په روچ بیگ $1.',
+'perfcached'           => 'جهلیگین دیتا ذخیره بیتگنت و شاید نوک می بنت. A maximum of {{PLURAL:$1|one result is|$1 results are}} available in the cache.',
+'perfcachedts'         => 'جهلیگین دیتا ذخیره بیتگنت و اهرین په روچ بیگ $1. A maximum of {{PLURAL:$4|one result is|$4 results are}} available in the cache.',
 'querypage-no-updates' => 'په روچ بیگان په ای صفحه الان غیر فعالنت. دیتا ادان الان نوکین نهنت.',
 'wrong_wfQuery_params' => 'اشتباهین پارامتر به wfQuery()<br />
 Function: $1<br />
 Query: $2',
 'viewsource'           => 'به گند منبع آ',
-'viewsourcefor'        => 'په $1',
 'actionthrottled'      => 'کار گیر نت',
 'actionthrottledtext'  => 'په خاطر یک معیار ضد اسپم شما چه انجام ای کار ته یک کمی زمان محدود بیتگیت، و شما چه ای محدودیت رد بیتگیت.
 لطفا چند دقیقه بعد کوشست کن',
@@ -678,9 +679,6 @@ $2',
  مشی هنوکی ان آی پی $3 شمی شماره محدودیت $5
 لطفا ای شماره ته هر جوست و پرسی هور کنیت.',
 'blockednoreason'                  => 'هچ دلیلی دهگ نه بیته',
-'blockedoriginalsource'            => "منبع '''$1''' جهلآ پیش دراگ بیت:",
-'blockededitsource'                => "متن '''your edits'' به '''$1''' جهلآ پیش دارگ بیت:",
-'whitelistedittitle'               => 'په اصلاح کتن بایدن وارد سیستم بیت',
 'whitelistedittext'                => 'شما باید $1به اصلاح کتن صفحات.',
 'confirmedittext'                  => 'شما بایدن وتی آدرس ایمیل آ پیش چه اصلاح کتن صفحات تایید کنیت.
 لطفا وتی آدرس ایمیل آی چه طریق [[Special:Preferences|ترجحات کاربر]] تنظیم و معتبر کنیت.',
@@ -741,7 +739,7 @@ $2',
 اگر شما ایء ذخیره کتت، هر تغییری که دهگ بیتء چه ای بازبینی گار بنت.'''",
 'yourdiff'                         => 'تفاوتان',
 'copyrightwarning'                 => "لطفا توجه بیت که کل نوشته یات ته {{SITENAME}}  تحت $2 نشر بنت.(بچار په جزیات$1).
-اگه شما لوٹیت شمی نوشتانک اصلاح و دگه چهاپ مبنت، اچه آیانا ادان مهلیت.<b/>
+اگه شما لوٹیت شمی نوشتانک اصلاح و دگه چهاپ مبنت، اچه آیانا ادان مهلیت.
 شما ما را قول دهیت که وتی چیزا بنویسیت یا چه یک دامین عمومی کپی کتگیت.
 ''' نوشتانکی که کپی رایت دارند بی اجازه ادا هور مکنیت'''",
 'copyrightwarning2'                => "لطفا توجه کنیت که کل مشارکاتن ته {{SITENAME}} شاید اصلاح, عوض و یا توسط دگه شرکت کننده آن حذف بنت.
@@ -892,8 +890,6 @@ Legend: (cur) = تفاوتان گون هنوکین نسخه,
 'revdelete-unsuppress'        => 'بزور محدودیت آنء جه ترینتگین بازبینی آن',
 'revdelete-log'               => 'دلیل:',
 'revdelete-submit'            => 'بلی اور انتخابی بازبینی',
-'revdelete-logentry'          => 'عوض بوت ظاهر بیگ بازبینی  [[$1]]',
-'logdelete-logentry'          => 'عوض بیت ظاهر بوتن رویداد چه  [[$1]]',
 'revdelete-success'           => "'''ظاهر بازبینی گون موفقیت تنظیم بوت.'''",
 'revdelete-failure'           => "'''پیشدارگ نسخ قابل تنظیم نه بیتن.'''",
 'logdelete-success'           => "''''آمار ظاهر بیگ گون موفقیت تنظیم بوت.''''",
@@ -902,15 +898,6 @@ $1",
 'revdel-restore'              => 'عوض کن ظاهر بیگء',
 'pagehist'                    => 'تاریح صفحه',
 'deletedhist'                 => 'تاریح حذف بوت',
-'revdelete-content'           => 'محتوا',
-'revdelete-summary'           => 'خلاصه اصلاح',
-'revdelete-uname'             => 'نام کاربری',
-'revdelete-restricted'        => 'محدودیت آن په مدیران سیستم بوت',
-'revdelete-unrestricted'      => 'به زور چه مدیران سیستم محدودیتان',
-'revdelete-hid'               => 'پناه $1',
-'revdelete-unhid'             => ' $1پنهاه مکن',
-'revdelete-log-message'       => '$1 په $2 {{PLURAL:$2|بازبینی|بازبینی ان}}',
-'logdelete-log-message'       => '$1 په $2 {{PLURAL:$2|رویداد|رویدادان}}',
 'revdelete-edit-reasonlist'   => 'اصلاح دلایل حذف',
 
 # Suppression log
@@ -1046,7 +1033,7 @@ $1",
 'prefs-rc'                      => 'نوکین تغییرات',
 'prefs-watchlist'               => 'لیست چارگ',
 'prefs-watchlist-days'          => 'روچان په پیش دارگ ته لیست چارگ',
-'prefs-watchlist-days-max'      => '(حداکثر ۷ روچ)',
+'prefs-watchlist-days-max'      => 'Maximum $1 {{PLURAL:$1|day|days}}',
 'prefs-watchlist-edits'         => 'گشیترین تعداد تغییرات په پیشدارگ ته پچین لیست چارگ:',
 'prefs-watchlist-edits-max'     => '(گیشترین تعداد: ۱۰۰۰)',
 'prefs-misc'                    => 'هردابین',
@@ -1227,7 +1214,6 @@ $1",
 'right-autopatrol'            => 'اتوماتیکی اصلاحات یکیء چه وتی نشان کن په داب نظارت بوتگین',
 'right-patrolmarks'           => 'به گند نوکین تغییرات نشان نظارتی',
 'right-unwatchedpages'        => 'به گند په داب یکیک لیست نچارتگین صفحات',
-'right-trackback'             => 'یک رندگری دیم دی',
 'right-mergehistory'          => 'چن وبند کن تاریح صفحاتء',
 'right-userrights'            => 'اصلاح کل حقوق کاربری',
 'right-userrights-interwiki'  => 'اصلاح حقوق کابرانی کابران دگه ویکی انء',
@@ -1270,7 +1256,6 @@ $1",
 'action-patrol'               => 'نشان کتن اصلاح دگران په داب چارگ بیتگین',
 'action-autopatrol'           => 'نشان کتن وتی اصلاح په داب چارگ بوتگین',
 'action-unwatchedpages'       => 'چارگ لیست نچارتگین صفحات',
-'action-trackback'            => 'ثبت یک بازتر',
 'action-mergehistory'         => 'هورکتن تاریح ای صفحه',
 'action-userrights'           => 'اصلاح کل حقوق کاربر',
 'action-userrights-interwiki' => 'اصلاح حقوق کاربری کاربران ته دگه ویکیء',
@@ -1330,9 +1315,9 @@ $1",
 په دیستن یا گشتن پیشگین آپلودی فایلان برو  [[Special:FileList|لیست فایلان آپلودی]], آپلودان و حذفیات هنچو هستن ته [[Special:Log/upload|آمار آپلود]].
 
 په وارد کتن فایل ته یک صفحه ای، چه لینک ته فرم استفاده کن
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></tt>''' په استفاده چه نسخه کامل فایل
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></tt>''' په استفاده چه ۲۰۰ پیکسل پهنات ته یک جعبه ته چپ
-* '''<tt><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></tt>'''  په مسیری لینک دهگ په فایل بی پیش دارگ فایل",
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></code>''' په استفاده چه نسخه کامل فایل
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|alt text]]</nowiki></code>''' په استفاده چه ۲۰۰ پیکسل پهنات ته یک جعبه ته چپ
+* '''<code><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></code>'''  په مسیری لینک دهگ په فایل بی پیش دارگ فایل",
 'upload-permitted'            => 'مجازین نوع فایل:  $1.',
 'upload-preferred'            => 'ترجیحی نوع فایل:  $1.',
 'upload-prohibited'           => 'غیرمجازین نوع فایل:  $1.',
@@ -1364,19 +1349,19 @@ $1",
 'largefileserver'             => 'ای فایل مزنتر چه حدی انت که سرور تنظیم بوتت په اجازه دهگ.',
 'emptyfile'                   => 'فایلی که شما آپلود کتت هالیک انت. شاید شی په خاطر اشتباه نه نام فایل بیت.
 لطفا کتنرل کنیت که آیا واقعا شما لوٹیت ای فایلء آپلود کنیت.',
-'fileexists'                  => "یک فایل گون ای نام هستنت،لطفا کنترل کن '''<tt>[[:$1]]</tt>''' اگه شما مطمین نهیت اگه لوٹیت نامی آیء عوض کنیت.
-[[$1|thumb]]",
-'filepageexists'              => "صفحه توضیح په ای فایل پیشتر شر بوتت ته '''<tt>[[:$1]]</tt>''', بله هچ فایلی گون ای نام هنو نیست.
+'fileexists'                  => 'یک فایل گون ای نام هستنت،لطفا کنترل کن <strong>[[:$1]]</strong> اگه شما مطمین نهیت اگه لوٹیت نامی آیء عوض کنیت.
+[[$1|thumb]]',
+'filepageexists'              => 'صفحه توضیح په ای فایل پیشتر شر بوتت ته <strong>[[:$1]]</strong>, بله هچ فایلی گون ای نام هنو نیست.
 خلاصه ای که شما وارد کت ته صفحه توضیح ظاهر نه بیت.
-په ظاهر کتن خلاصه ادان شما لازمنت آیء دستی اصلاح کنیت.",
-'fileexists-extension'        => "یک فایلی گون یک دابی نام هستن: [[$2|thumb]]
-* نام فایلی که آپلود بیت: '''<tt>[[:$1]]</tt>'''
-* نام هستین فایل:'''<tt>[[:$2]]</tt>'''
-لطفا دگه نامی بزوریت.",
+په ظاهر کتن خلاصه ادان شما لازمنت آیء دستی اصلاح کنیت.',
+'fileexists-extension'        => 'یک فایلی گون یک دابی نام هستن: [[$2|thumb]]
+* نام فایلی که آپلود بیت: <strong>[[:$1]]</strong>
+* نام هستین فایل:<strong>[[:$2]]</strong>
+لطفا دگه نامی بزوریت.',
 'fileexists-thumbnail-yes'    => "فایل به نظر رسیت که یک عکس هورد بوتگین اندازه انت. ''(پنچی انگشت)''. [[$1|thumb]]
-لطفا فایل کنترل کن '''<tt>[[:$1]]</tt>'''.
+لطفا فایل کنترل کن <strong>[[:$1]]</strong>.
 اگر فایل کنترلی هما عکسنت گون اصلی اندازه لازم نهنت یک پنچ انگشتی گیشین آپلود کنیت.",
-'file-thumbnail-no'           => "نام فایل شروع بیت گون '''<tt>$1</tt>'''.
+'file-thumbnail-no'           => "نام فایل شروع بیت گون <strong>$1</strong>.
 جاه کیت که یک هور بوتگین اندازه عکس ایت.''(پینچ انگشت)''.
 اگر شما را ای عکس ته وضوح کامل هست ایء آپلود کنیت یا که نام فایل عوض کنیت لطفا",
 'fileexists-forbidden'        => 'فایل گو ای نام الان هستنت؛و نه توینت سری نویسگ بیتن.
@@ -1528,7 +1513,7 @@ PICT # misc.
 # MIME search
 'mimesearch'         => 'گردگ په مایم',
 'mimesearch-summary' => 'ای صفحه فیلتر کتن فایلان په اساس نوع مایم اش فعال کنت.
-ورودی:متحوانوع/زیرنوع،مثل<tt>image/jpeg</tt>.',
+ورودی:متحوانوع/زیرنوع،مثل<code>image/jpeg</code>.',
 'mimetype'           => 'نوع مایم:',
 'download'           => 'آیرگیزگ',
 
@@ -1711,7 +1696,7 @@ PICT # misc.
 'linksearch-ns'    => 'نام فضا:',
 'linksearch-ok'    => 'گردگ',
 'linksearch-text'  => 'تقریبانی په داب "*.wikipedia.org" شاید استفاده بیت.<br />
-داشتگین پروتوکل: <tt>$1</tt>',
+داشتگین پروتوکل: <code>$1</code>',
 'linksearch-line'  => '$1 لینک بوتت چه $2',
 'linksearch-error' => 'تقریبیان شاید فقط ته اول نام هاست جاه کاینت.',
 
@@ -1728,12 +1713,8 @@ PICT # misc.
 'activeusers-noresult' => 'هچ کاربری درگیزگ نه بیت',
 
 # Special:Log/newusers
-'newuserlogpage'              => 'ورود شرکتن کاربر',
-'newuserlogpagetext'          => '.شی یک ورودی چه شرکتن کاربر',
-'newuserlog-byemail'          => 'کلمه رمز گون ایمیل دیم دهگ بوت',
-'newuserlog-create-entry'     => 'نوکین کاربر',
-'newuserlog-create2-entry'    => 'نوکین حساب شربوت  $1',
-'newuserlog-autocreate-entry' => 'حساب اتوماتیکی شربوت',
+'newuserlogpage'     => 'ورود شرکتن کاربر',
+'newuserlogpagetext' => '.شی یک ورودی چه شرکتن کاربر',
 
 # Special:ListGroupRights
 'listgrouprights'                      => 'حقوق گروه کاربر',
@@ -1754,7 +1735,7 @@ PICT # misc.
 'listgrouprights-addgroup-self-all'    => 'نونیت کل گروهان په وتی حساب هور کنت',
 'listgrouprights-removegroup-self-all' => 'تونیت کل گروه ان چه وتی حساب بزوریت',
 
-# E-mail user
+# Email user
 'mailnologin'      => 'هچ آدرس دیم دهگ',
 'mailnologintext'  => 'شما بایدن [[Special:UserLogin|وارد بیت]] و یک معتبرین آدرس ایمیلی داشته بیت ته وتی [[Special:Preferences|ترجیحات]] په دیم داتن ایمیل په دگه کاربران',
 'emailuser'        => 'په ای کابر ایمیل دیم دی',
@@ -1861,8 +1842,6 @@ $NEWPAGE
 'actionfailed'           => 'عمل پروش وارت',
 'deletedtext'            => '"$1" حذف بیت.
 بگندیت $2 په ثبتی که نوکین حذفیات',
-'deletedarticle'         => 'حذف بوت "[[$1]]"',
-'suppressedarticle'      => 'متوقف بوت "[[$1]]"',
 'dellogpage'             => 'حذف ورودان',
 'dellogpagetext'         => 'جهلء یک لیستی چه نوکترین حذفیات هست.',
 'deletionlog'            => 'آمار حذف',
@@ -1992,7 +1971,6 @@ $NEWPAGE
 'undeletereset'                => 'برگردینگ',
 'undeleteinvert'               => 'چپکایگ کتن انتخاب',
 'undeletecomment'              => 'نظر:',
-'undeletedarticle'             => 'واترینت "[[$1]]"',
 'undeletedrevisions'           => '{{PLURAL:$1|1 بازبینی|$1 بازبینی آن}} واترینگ بیت',
 'undeletedrevisions-files'     => '{{PLURAL:$1|1 بازبینی|$1بازبینی ان}} و {{PLURAL:$2|1 فایل|$2 فایلان}} برگردینگ بوتن',
 'undeletedfiles'               => '{{PLURAL:$1|1 فایل|$1 فایلآن}} واترینگ بین',
@@ -2096,7 +2074,7 @@ $1',
 'badipaddress'                    => 'نامعتبر آدرس آی پی',
 'blockipsuccesssub'               => 'محدودیت موفق بوت',
 'blockipsuccesstext'              => '[[Special:Contributions/$1|$1]] محدود بوتت..<br />
-بچار [[Special:IPBlockList|لیست آی پی محدود]] په بازبینی محدودیتان.',
+بچار [[Special:BlockList|لیست آی پی محدود]] په بازبینی محدودیتان.',
 'ipb-edit-dropdown'               => 'اصلاح کن دلایل محدودیت',
 'ipb-unblock-addr'                => 'رفع محدودیت  $1',
 'ipb-unblock'                     => 'نام کاربری یا آدرس آی پی رفع محدودیت کن',
@@ -2227,9 +2205,6 @@ $1',
 'movepage-page-moved'          => 'صفحه  $1 جاه په جاه بیت په  $2',
 'movepage-page-unmoved'        => 'صفحه $1نه تونیت جاه په جاه بیت په $2',
 'movepage-max-pages'           => 'گیشترین $1 {{PLURAL:$1|صفحه|صفحات}}جاه په جاه بوتگن  ودگه هچی اتوماتیکی جاه په جاه نه بیت.',
-'1movedto2'                    => '[[$1]] چاه په چاه بوت په [[$2]]',
-'1movedto2_redir'              => '[[$1]] جاه په جاه بوت په [[$2]] غیر مستقیم',
-'move-redirect-suppressed'     => 'تغییر مسیر بند بوت',
 'movelogpage'                  => 'جاه په جاهی ورود',
 'movelogpagetext'              => 'جهلء یک لیستی چه صفحات جاه په جاه بوتگین هست',
 'movesubpage'                  => '{{PLURAL:$1|زیرتاک|زیرتاکان}}',
@@ -2470,9 +2445,6 @@ $1',
 # Patrol log
 'patrol-log-page'      => 'آمار نظارت',
 'patrol-log-header'    => 'شی آماری چه بازبینی آن گشتی انت.',
-'patrol-log-line'      => 'نشان هلگ بیتن $1 چه $2 نظارت $3',
-'patrol-log-auto'      => '(اتوماتیک)',
-'patrol-log-diff'      => 'ر$1',
 'log-show-hide-patrol' => '$1  آمار گشت',
 
 # Image deletion
@@ -2494,10 +2466,10 @@ $1',
 'mediawarning'    => "''''هوژاری:'''' ای فایل شاید شامل بد واهین کد بوت،اجرای آیی ته وتی سیستم شاید توافقی بیت.",
 'imagemaxsize'    => "محدودیت تصاویر: <br />''(په صفحات توضیح فایل)''",
 'thumbsize'       => 'اندازه پیج انگشتی',
-'widthheightpage' => '$1×$2, $3 {{PLURAL:$3|صفحه|صفحات}}',
+'widthheightpage' => '$1 × $2, $3 {{PLURAL:$3|صفحه|صفحات}}',
 'file-info'       => 'اندازه فایل: $1, مایم نوع: $2',
 'file-info-size'  => '$1 × $2 پیکسل, اندازه فایل: $3, مایم نوع: $4',
-'file-nohires'    => '<small>مزنترین رزلوشن نیست.</small>',
+'file-nohires'    => 'مزنترین رزلوشن نیست.',
 'svg-long-desc'   => 'اس وی جی  فایل, معمولا $1 × $2 پیکسل, فایل اندازه: $3',
 'show-big-image'  => 'کل صفحه',
 
@@ -2514,9 +2486,9 @@ $1',
 'sp-newimages-showfrom' => 'پیش دار نوکین فایلان شروع بینت چه $2, $1',
 
 # Video information, used by Language::formatTimePeriod() to format lengths in the above messages
-'seconds-abbrev' => 'س',
-'minutes-abbrev' => 'م',
-'hours-abbrev'   => 'ه',
+'seconds-abbrev' => '$1س',
+'minutes-abbrev' => '$1م',
+'hours-abbrev'   => '$1ه',
 
 # Bad image list
 'bad_image_list' => 'فرمت په داب جهلیگی انت:
@@ -2879,7 +2851,7 @@ Variants for Chinese language
 'namespacesall' => 'کل',
 'monthsall'     => 'کل',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'             => 'آدرس ایمیل تایید کن',
 'confirmemail_noemail'     => 'شما یک معتبرین آدرس ایمیل تنظیم نه کتت نه وتی [[Special:Preferences|ترجیحات کاربر]].',
 'confirmemail_text'        => '{{SITENAME}} لوٹیت که شما وتی آدرس ایمیلء تایید کنید پیش چه شی که سرویسان ایمیلی استفاده کنیت.
@@ -2925,13 +2897,6 @@ $5
 'scarytranscludedisabled' => '[جاه په جاهی بین ویکی غیر فعالنت]',
 'scarytranscludefailed'   => '[تمپلت آرگ پروش وارت په $1]',
 'scarytranscludetoolong'  => '[URL باز مزننت]',
-
-# Trackbacks
-'trackbackbox'      => 'گرند گروگان ای صفحه:<br />
-$1',
-'trackbackremove'   => '([$1 حذف])',
-'trackbacklink'     => 'رند گر',
-'trackbackdeleteok' => 'رند گر گون موفقیت حذف بوت.',
 
 # Delete conflict
 'deletedwhileediting' => "'''هوژاری''': ای صفحه حذف بوتت رند چه شمی اصلاح کتن شروه بیگ!",
@@ -3166,5 +3131,10 @@ $1',
 'htmlform-submit'              => 'دیم دی',
 'htmlform-reset'               => 'ترینگ تغییرات',
 'htmlform-selectorother-other' => 'دگه',
+
+# New logging system
+'revdelete-restricted'   => 'محدودیت آن په مدیران سیستم بوت',
+'revdelete-unrestricted' => 'به زور چه مدیران سیستم محدودیتان',
+'newuserlog-byemail'     => 'کلمه رمز گون ایمیل دیم دهگ بوت',
 
 );

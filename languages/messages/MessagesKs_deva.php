@@ -7,9 +7,9 @@
  * @ingroup Language
  * @file
  *
+ * @author Rk_kaul (on ks.wikipedia.org)
+ * @author VibhasKS
  */
-
-# @todo FIXME: Inherit almost everything for now
 
 $digitTransformTable = array(
 	'0' => '०', # &#x0966;
@@ -26,6 +26,12 @@ $digitTransformTable = array(
 
 $messages = array(
 'help' => 'मदद',
+
+# All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
+'mainpage' => 'आहम सफ़ा',
+
+'editsectionhint' => '$1 शाबह तर तैयब दीउ',
+'red-link-title'  => '$1 (सफ़ा ना आसुन)',
 
 # Recent changes
 'recentchanges' => 'नवि तबदीली',

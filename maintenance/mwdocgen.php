@@ -33,7 +33,7 @@
  * @todo document
  * @ingroup Maintenance
  *
- * @author Ashar Voultoiz <hashar at free dot fr>
+ * @author Antoine Musso <hashar at free dot fr>
  * @author Brion Vibber
  * @author Alexandre Emsenhuber
  * @version first release
@@ -57,11 +57,10 @@ $doxygenBin = 'doxygen';
 /** doxygen configuration template for mediawiki */
 $doxygenTemplate = $mwPath . 'maintenance/Doxyfile';
 
-/** svnstat command, used to get the version of each file */
-$svnstat = $mwPath . 'bin/svnstat';
-
 /** where Phpdoc should output documentation */
 $doxyOutput = $mwPath . 'docs' . DIRECTORY_SEPARATOR ;
+
+$doxyVersion = 'master';
 
 /** MediaWiki subpaths */
 $mwPathI = $mwPath . 'includes/';
@@ -89,6 +88,7 @@ require_once( "$mwPath/includes/GlobalFunctions.php" );
 /**
  * Read a line from the shell
  * @param $prompt String
+ * @return string
  */
 function readaline( $prompt = '' ) {
 	print $prompt;
@@ -99,60 +99,19 @@ function readaline( $prompt = '' ) {
 }
 
 /**
- * Copied from SpecialVersion::getSvnRevision()
- * @param $dir String
- * @return Mixed: string or false
- */
-function getSvnRevision( $dir ) {
-	// http://svnbook.red-bean.com/nightly/en/svn.developer.insidewc.html
-	$entries = $dir . '/.svn/entries';
-
-	if ( !file_exists( $entries ) ) {
-		return false;
-	}
-
-	$content = file( $entries );
-
-	// check if file is xml (subversion release <= 1.3) or not (subversion release = 1.4)
-	if ( preg_match( '/^<\?xml/', $content[0] ) ) {
-		// subversion is release <= 1.3
-		if ( !function_exists( 'simplexml_load_file' ) ) {
-			// We could fall back to expat... YUCK
-			return false;
-		}
-
-		$xml = simplexml_load_file( $entries );
-
-		if ( $xml ) {
-			foreach ( $xml->entry as $entry ) {
-				if ( $xml->entry[0]['name'] == '' ) {
-					// The directory entry should always have a revision marker.
-					if ( $entry['revision'] ) {
-						return intval( $entry['revision'] );
-					}
-				}
-			}
-		}
-		return false;
-	} else {
-		// subversion is release 1.4
-		return intval( $content[3] );
-	}
-}
-
-/**
  * Generate a configuration file given user parameters and return the temporary filename.
  * @param $doxygenTemplate String: full path for the template.
  * @param $outputDirectory String: directory where the stuff will be output.
  * @param $stripFromPath String: path that should be stripped out (usually mediawiki base path).
  * @param $currentVersion String: Version number of the software
- * @param $svnstat String: path to the svnstat file
  * @param $input String: Path to analyze.
  * @param $exclude String: Additionals path regex to exclude
  * @param $exclude_patterns String: Additionals path regex to exclude
  *                 (LocalSettings.php, AdminSettings.php, .svn and .git directories are always excluded)
+ * @return string
  */
-function generateConfigFile( $doxygenTemplate, $outputDirectory, $stripFromPath, $currentVersion, $svnstat, $input, $exclude, $exclude_patterns ) {
+function generateConfigFile( $doxygenTemplate, $outputDirectory, $stripFromPath, $currentVersion, $input, $exclude, $exclude_patterns ) {
+	global $wgDoxyGenerateMan;
 
 	$template = file_get_contents( $doxygenTemplate );
 
@@ -161,11 +120,11 @@ function generateConfigFile( $doxygenTemplate, $outputDirectory, $stripFromPath,
 		'{{OUTPUT_DIRECTORY}}' => $outputDirectory,
 		'{{STRIP_FROM_PATH}}'  => $stripFromPath,
 		'{{CURRENT_VERSION}}'  => $currentVersion,
-		'{{SVNSTAT}}'          => $svnstat,
 		'{{INPUT}}'            => $input,
 		'{{EXCLUDE}}'          => $exclude,
 		'{{EXCLUDE_PATTERNS}}' => $exclude_patterns,
 		'{{HAVE_DOT}}'         => `which dot` ? 'YES' : 'NO',
+		'{{GENERATE_MAN}}'     => $wgDoxyGenerateMan ? 'YES' : 'NO',
 	);
 	$tmpCfg = str_replace( array_keys( $replacements ), array_values( $replacements ), $template );
 	$tmpFileName = tempnam( wfTempDir(), 'mwdocgen-' );
@@ -180,20 +139,63 @@ function generateConfigFile( $doxygenTemplate, $outputDirectory, $stripFromPath,
 
 unset( $file );
 
-if ( is_array( $argv ) && isset( $argv[1] ) ) {
-	switch( $argv[1] ) {
-	case '--all':         $input = 0; break;
-	case '--includes':    $input = 1; break;
-	case '--languages':   $input = 2; break;
-	case '--maintenance': $input = 3; break;
-	case '--skins':       $input = 4; break;
-	case '--file':
-		$input = 5;
-		if ( isset( $argv[2] ) ) {
-			$file = $argv[2];
+if ( is_array( $argv ) ) {
+	for ($i = 0; $i < count($argv); $i++ ) {
+		switch( $argv[$i] ) {
+		case '--all':         $input = 0; break;
+		case '--includes':    $input = 1; break;
+		case '--languages':   $input = 2; break;
+		case '--maintenance': $input = 3; break;
+		case '--skins':       $input = 4; break;
+		case '--file':
+			$input = 5;
+			$i++;
+			if ( isset( $argv[$i] ) ) {
+				$file = $argv[$i];
+			}
+			break;
+		case '--no-extensions': $input = 6; break;
+		case '--output':
+			$i++;
+			if ( isset( $argv[$i] ) ) {
+				$doxyOutput = realpath( $argv[$i] );
+			}
+			break;
+		case '--version':
+			$i++;
+			if ( isset( $argv[$i] ) ) {
+				$doxyVersion = $argv[$i];
+			}
+			break;
+		case '--generate-man':
+			$wgDoxyGenerateMan = true;
+			break;
+		case '--help':
+			print <<<END
+Usage: php mwdocgen.php [<command>] [<options>]
+
+Commands:
+    --all           Process entire codebase
+    --includes      Process only files in includes/ dir
+    --languages     Process only files in languages/ dir
+    --maintenance   Process only files in maintenance/ dir
+    --skins         Process only files in skins/ dir
+    --file <file>   Process only the given file
+    --no-extensions Process everything but extensions directorys
+
+If no command is given, you will be prompted.
+
+Other options:
+    --output <dir>  Set output directory (default: $doxyOutput)
+    --generate-man  Generates man page documentation
+    --version       Project version to display in the outut (default: $doxyVersion)
+    --help          Show this help and exit.
+
+
+END;
+			exit(0);
+			break;
 		}
-		break;
-	case '--no-extensions': $input = 6; break;
 	}
 }
 
@@ -235,20 +237,11 @@ case 6:
 	$exclude_patterns = 'extensions';
 }
 
-$versionNumber = getSvnRevision( $input );
-if ( $versionNumber === false ) { # Not using subversion ?
-	$svnstat = ''; # Not really useful if subversion not available
-	# @todo FIXME
-	$version = 'trunk';
-} else {
-	$version = "trunk (r$versionNumber)";
-}
-
 // Generate path exclusions
 $excludedPaths = $mwPath . join( " $mwPath", $mwExcludePaths );
 print "EXCLUDE: $excludedPaths\n\n";
 
-$generatedConf = generateConfigFile( $doxygenTemplate, $doxyOutput, $mwPath, $version, $svnstat, $input, $excludedPaths, $exclude_patterns );
+$generatedConf = generateConfigFile( $doxygenTemplate, $doxyOutput, $mwPath, $doxyVersion, $input, $excludedPaths, $exclude_patterns );
 $command = $doxygenBin . ' ' . $generatedConf;
 
 echo <<<TEXT

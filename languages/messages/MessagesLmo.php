@@ -1,5 +1,5 @@
 <?php
-/** Lumbaart (Lumbaart)
+/** lumbaart (lumbaart)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -12,6 +12,7 @@
  * @author Dakrismeno
  * @author DracoRoboter
  * @author Flavio05
+ * @author GatoSelvadego
  * @author Insübrich
  * @author Kemmótar
  * @author Malafaya
@@ -95,10 +96,10 @@ $specialPageAliases = array(
 );
 
 $magicWords = array(
-	'img_right'             => array( '1', 'drita', 'destra', 'right' ),
-	'img_left'              => array( '1', 'manzína', 'sinistra', 'left' ),
-	'img_none'              => array( '1', 'nissön', 'nessuno', 'none' ),
-	'sitename'              => array( '1', 'NUMSIT', 'NOMESITO', 'SITENAME' ),
+	'img_right'               => array( '1', 'drita', 'destra', 'right' ),
+	'img_left'                => array( '1', 'manzína', 'sinistra', 'left' ),
+	'img_none'                => array( '1', 'nissön', 'nessuno', 'none' ),
+	'sitename'                => array( '1', 'NUMSIT', 'NOMESITO', 'SITENAME' ),
 );
 
 $messages = array(
@@ -412,7 +413,6 @@ Per piasè, fa raport a 'n'[[Special:ListUsers/sysop|aministradur]], cun la nota
 'badtitle'            => 'Títul mía bun',
 'badtitletext'        => "El titul de la pagina ciamada a l'è vöj, sbajaa o cun carater minga acetaa, opüra al vegn d'un erur in di ligam intra sit wiki diferent o versión in lenguv diferent de l'istess sit.",
 'viewsource'          => 'Còdas surgent',
-'viewsourcefor'       => 'de $1',
 'protectedpagetext'   => "Cula pagina chi l'è stata blucà per impedinn la mudifica.",
 'viewsourcetext'      => "L'è pussibil vèd e cupià el codes surgent de cula pagina chí:",
 'editinginterface'    => "'''Ocio''': Te see adree a mudifegà una pàgina che la se dröva per generà 'l test de l'interfacia del prugrama. Qualsìa mudìfega fada la cambierà l'interfacia de tüt i druvadur. Se te gh'hee intenzión de fà una tradüzión, per piasì cunsiderà la pussibilità de druvà [//translatewiki.net/wiki/Main_Page?setlang=lmo translatewiki.net], 'l pruget de lucalizazión de MediaWiki.",
@@ -947,14 +947,13 @@ La descrizión sura la sua [$2 pagina de descrizión del file] l'è mustrada ch�
 'activeusers-from' => 'Fàm vedè i dupradur a partì da:',
 
 # Special:Log/newusers
-'newuserlogpage'          => 'Rrgister di druvat növ',
-'newuserlog-create-entry' => 'Druvadur növ',
+'newuserlogpage' => 'Rrgister di druvat növ',
 
 # Special:ListGroupRights
 'listgrouprights'         => 'Dirit del grüp di druvat',
 'listgrouprights-members' => '(Lista di member)',
 
-# E-mail user
+# Email user
 'emailuser'     => 'Manda un email a quel druvadur chì',
 'emailsent'     => 'Messagg spedii',
 'emailsenttext' => "El messagg e-mail l'è staa spedii.",
@@ -1018,7 +1017,6 @@ Per fà di cumünicazion de servizzi e per cercà jüt:
 Per piasè, dà la cunferma che te gh'hee intenzión de andà inanz cun 'l scancelament, che te see al curent di cunseguenz, e che te see adree a fàl segónd i regulament de [[{{MediaWiki:Policy-url}}]].",
 'actioncomplete'         => 'Aziun cumpletada',
 'deletedtext'            => 'La pagina "$1" l\'è stada scancelada. Varda el $2 per una lista di ültim scancelaziun.',
-'deletedarticle'         => 'l\'ha scancelaa "[[$1]]"',
 'dellogpage'             => 'Register di scancelament',
 'deletionlog'            => 'log di scancelament',
 'reverted'               => 'Bütada sü turna la versión de prima.',
@@ -1084,7 +1082,6 @@ Quest chì a hinn i regulazión curent per la pagina '''$1''':",
 'undelete-nodiff'    => "Per questa pagina gh'è nanca una revisiun precedenta.",
 'undeletebtn'        => 'Rimett a post',
 'undeletelink'       => 'Varda/büta indree',
-'undeletedarticle'   => 'rimetüü a post "[[$1]]"',
 'undeletedrevisions' => '{{PLURAL:$1|1 revision|$1 versiun}} rimetüü a post',
 
 # Namespace form on various pages
@@ -1160,7 +1157,7 @@ Scrivee chì de suta 'l mutiv specifegh per el bloch (presempi, a pudii scriv i 
 'badipaddress'             => 'Adrèss IP mia valid',
 'blockipsuccesssub'        => 'Blucagg bel-e faa',
 'blockipsuccesstext'       => "[[Special:Contributions/$1|$1]] a l'è staa blucaa.<br />
-Varda [[Special:IPBlockList|lista di IP blucaa]] per vidè anmò i bloch.",
+Varda [[Special:BlockList|lista di IP blucaa]] per vidè anmò i bloch.",
 'ipb-edit-dropdown'        => 'Resón del bloch',
 'ipb-unblock-addr'         => 'Desblòca $1',
 'ipb-unblock'              => 'Desbloca un duvrat o un adress IP',
@@ -1217,8 +1214,6 @@ Che 'l scerna, per piasè, un nom diferent per quel articul chì.",
 'talkexists'              => "'''La pagina a l'è stada spustada ben, ma'l s'è pudüü minga spustà la pagina de discüssión perchè gh'en è giamò un altra cun l'istess nom. Per piasè met insema i cuntegnüü di dò paginn a man'''",
 'movedto'                 => 'spustaa vers:',
 'movetalk'                => 'Sposta anca la pagina de discüssión',
-'1movedto2'               => '[[$1]] spustaa in [[$2]]',
-'1movedto2_redir'         => '[[$1]] movuu in [[$2]] par redirezion',
 'movelogpage'             => 'Register di San Martin',
 'movereason'              => 'Resón:',
 'revertmove'              => "büta indree a 'mè che l'era",
@@ -1309,7 +1304,7 @@ Che 'l scerna, per piasè, un nom diferent per quel articul chì.",
 'imagemaxsize'   => 'Limitá i imagin süi pagin da descrizziún dii imagin a:',
 'thumbsize'      => 'Dimensiún diapusitiif:',
 'file-info-size' => '$1 × $2 pixel, dimensión : $3, sort MIME: $4',
-'file-nohires'   => '<small>Nissüna resulüzión püssee granda dispunibila.</small>',
+'file-nohires'   => 'Nissüna resulüzión püssee granda dispunibila.',
 'svg-long-desc'  => "archivi in furmaa SVG, dimensión nominaj  $1 × $2 pixel, dimensión de l'archivi: $3",
 'show-big-image' => 'Versión a resolüzión volta',
 
@@ -1353,7 +1348,7 @@ I ligam che i vegnen dopu, in sü l'istessa riga, i vegnen cónsideraa di ecezi�
 'namespacesall' => 'tücc',
 'monthsall'     => 'tücc',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'          => "Cunferma l<nowiki>'</nowiki>''e-mail''",
 'confirmemail_text'     => "Prima da pudé riçeef mesacc sül tò adrèss da pòsta letrònica l è neçessari verificál.
 Schiscjá ul butún che gh'è chi da sót par curfermá al tò adrèss.
@@ -1370,6 +1365,9 @@ Te riçevaree un mesacc cun deent un ligamm specjal; ti duvaree clicaa sül liga
 'watchlisttools-view' => 'Varda i mudifegh impurtant',
 'watchlisttools-edit' => 'Varda e mudifega la lista di paginn che te tegnet sut ögg',
 'watchlisttools-raw'  => 'Mudifega la lista in furmaa test',
+
+# Signatures
+'signature' => '[[{{ns:user}}:$1|$2]] ([[{{ns:user_talk}}:$1|ciciarade]])',
 
 # Special:Version
 'version' => 'Versiun',

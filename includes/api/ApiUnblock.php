@@ -24,11 +24,6 @@
  * @file
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	// Eclipse helper - will be ignored in production
-	require_once( "ApiBase.php" );
-}
-
 /**
  * API module that facilitates the unblocking of users. Requires API write mode
  * to be enabled.
@@ -45,11 +40,15 @@ class ApiUnblock extends ApiBase {
 	 * Unblocks the specified user or provides the reason the unblock failed.
 	 */
 	public function execute() {
-		global $wgUser;
+		$user = $this->getUser();
 		$params = $this->extractRequestParams();
 
 		if ( $params['gettoken'] ) {
-			$res['unblocktoken'] = $wgUser->editToken( '', $this->getMain()->getRequest() );
+			// If we're in JSON callback mode, no tokens can be obtained
+			if ( !is_null( $this->getMain()->getRequest()->getVal( 'callback' ) ) ) {
+				$this->dieUsage( 'Cannot get token when using a callback', 'aborted' );
+			}
+			$res['unblocktoken'] = $user->getEditToken( '', $this->getMain()->getRequest() );
 			$this->getResult()->addValue( null, $this->getModuleName(), $res );
 			return;
 		}
@@ -61,12 +60,12 @@ class ApiUnblock extends ApiBase {
 			$this->dieUsageMsg( 'unblock-idanduser' );
 		}
 
-		if ( !$wgUser->isAllowed( 'block' ) ) {
+		if ( !$user->isAllowed( 'block' ) ) {
 			$this->dieUsageMsg( 'cantunblock' );
 		}
 		# bug 15810: blocked admins should have limited access here
-		if ( $wgUser->isBlocked() ) {
-			$status = SpecialBlock::checkUnblockSelf( $params['user'] );
+		if ( $user->isBlocked() ) {
+			$status = SpecialBlock::checkUnblockSelf( $params['user'], $user );
 			if ( $status !== true ) {
 				$this->dieUsageMsg( $status );
 			}
@@ -77,13 +76,14 @@ class ApiUnblock extends ApiBase {
 			'Reason' => is_null( $params['reason'] ) ? '' : $params['reason']
 		);
 		$block = Block::newFromTarget( $data['Target'] );
-		$retval = SpecialUnblock::processUnblock( $data );
+		$retval = SpecialUnblock::processUnblock( $data, $this->getContext() );
 		if ( $retval !== true ) {
 			$this->dieUsageMsg( $retval[0] );
 		}
 
 		$res['id'] = $block->getId();
-		$res['user'] = $block->getType() == Block::TYPE_AUTO ? '' : $block->getTarget();
+		$target = $block->getType() == Block::TYPE_AUTO ? '' : $block->getTarget();
+		$res['user'] = $target instanceof User ? $target->getName() : $target;
 		$res['reason'] = $params['reason'];
 		$this->getResult()->addValue( null, $this->getModuleName(), $res );
 	}
@@ -141,7 +141,7 @@ class ApiUnblock extends ApiBase {
 		return '';
 	}
 
-	protected function getExamples() {
+	public function getExamples() {
 		return array(
 			'api.php?action=unblock&id=105',
 			'api.php?action=unblock&user=Bob&reason=Sorry%20Bob'
@@ -153,6 +153,6 @@ class ApiUnblock extends ApiBase {
 	}
 
 	public function getVersion() {
-		return __CLASS__ . ': $Id: ApiUnblock.php 104449 2011-11-28 15:52:04Z reedy $';
+		return __CLASS__ . ': $Id$';
 	}
 }
