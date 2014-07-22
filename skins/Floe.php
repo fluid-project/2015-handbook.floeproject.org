@@ -160,7 +160,7 @@ class FloeTemplate extends QuickTemplate {
                                                                  "Handling scripting" => array("is_link" => true),
                                                                  "Media overlays (narrations) and text-to-speech" => array("is_link" => true),
                                                                  "Accessibility metadata" => array("is_link" => true),
-                                                                 "Resources" => array("is_link"=> true)
+                                                                 "EPUB 3 resources" => array("is_link"=> true)
                                                                 )
                                              )
                              );
