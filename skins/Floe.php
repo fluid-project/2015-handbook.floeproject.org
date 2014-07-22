@@ -157,6 +157,7 @@ class FloeTemplate extends QuickTemplate {
                                                                  "WAI-ARIA - Beyond semantic tags" => array("is_link" => true),
                                                                  "Visual styling" => array("is_link" => true),
                                                                  "Handling graphics, video, and audio media" => array("is_link" => true),
+                                                                 "Handling scripting" => array("is_link" => true),
                                                                  "Media overlays (narrations) and text-to-speech" => array("is_link" => true),
                                                                  "Accessibility metadata" => array("is_link" => true),
                                                                  "Resources" => array("is_link"=> true)
