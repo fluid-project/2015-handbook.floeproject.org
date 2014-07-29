@@ -52,7 +52,7 @@ $wgExtensionCredits['other'][] = array(
 	'name' => 'Vector',
 	'author' => array( 'Trevor Parscal', 'Roan Kattouw', 'Nimish Gautam', 'Adam Miller' ),
 	'version' => '0.3.0',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:Vector',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Vector',
 	'descriptionmsg' => 'vector-desc',
 );
 $wgAutoloadClasses['VectorHooks'] = dirname( __FILE__ ) . '/Vector.hooks.php';
