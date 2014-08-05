@@ -15,7 +15,8 @@ if( !defined( 'MEDIAWIKI' ) )
 
 define('INFUSION_LOC', "/extensions/infusion/");
 define('FSS_LOC', INFUSION_LOC . "framework/fss/css/");
-define('UIO_CSS_LOC', INFUSION_LOC . "components/uiOptions/css/");
+define('PREFS_CSS_LOC', INFUSION_LOC . "framework/preferences/css/");
+define('JQ_CSS_LOC', INFUSION_LOC . "lib/jquery/ui/css/");
 
 class FloeTemplate extends QuickTemplate {
     /**
@@ -35,71 +36,39 @@ class FloeTemplate extends QuickTemplate {
 ?>
 
     <!-- div for the UI Options fat panel -->
-    <div class="flc-uiOptions-fatPanel fl-uiOptions-fatPanel fl-clearfix">
-        <!-- This is the div that will contain the UI Options component -->
-        <div id="myUIOptions" class="flc-slidingPanel-panel flc-uiOptions-iframe"></div>     
-    
-        <!-- This div is for the sliding panel that shows and hides the UI Options controls -->
-        <div class="fl-panelBar fl-container-flex75 fl-centered">
-            <button class="flc-slidingPanel-toggleButton fl-toggleButton fl-toggleButtonShow">The show/hide button label will go here</button>
+    <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel fl-clearfix">
+        <!-- This is the div that will contain the Preference Editor component -->
+        <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+        <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+        <div class="fl-panelBar">
+            <span class="fl-prefsEditor-buttons">
+                <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            </span>
         </div>
-    </div>  
+    </div>
 
        <!-- MyInfusion.js was being included at the bottom of every generated page in
             MediaWiki 1.18.1 so addScriptFile in line #246 is not being used at the 
             moment, and the script is being included below.  Investigate this issue. -->
-       <script src="/extensions/infusion/MyInfusion.js"></script>
+       <script src="/extensions/infusion/infusion-custom.js"></script>
        <script type="text/javascript">
             var floe = floe || {};
 
             (function ($, fluid) {
-                floe.initPageEnhancer = function () {
-                    fluid.pageEnhancer({
-                        defaultSiteSettings: {
-                            lineSpacing: 1
-                        },
-                        // Tell UIEnhancer where to find the table of contents' template URL
-                        tocTemplate: "<?php  global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/tableOfContents/html/TableOfContents.html"
-                    });
-                };
-                
-                // event listener so toggle styles for the show/hide button
-                // (see http://issues.fluidproject.org/browse/FLUID-4410)
-                var toggleButtonStyle = function (that) {
-                    that.locate("toggleButton").toggleClass(that.options.styles.toggleButtonShow)
-                                                .toggleClass(that.options.styles.toggleButtonHide);
-                };
-
                 floe.initUIOptions = function () {
-                    fluid.uiOptions.fatPanel(".flc-uiOptions-fatPanel", {
-                        // Tell UIOptions where to find all the templates, relative to this file
-                        prefix: "<?php global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>components/uiOptions/html/",
-                        slidingPanel: {
-                            options: {
-                                // Provide custom strings for slidingPanel button
-                                strings: {
-                                    showText: "Display Preferences",
-                                    hideText: "Display Preferences"
-                                },
-                                // define styles for button (see http://issues.fluidproject.org/browse/FLUID-4410)
-                                styles: {
-                                    toggleButtonShow: "fl-toggleButtonShow",
-                                    toggleButtonHide: "fl-toggleButtonHide"
-                                },
-                                listeners: {
-                                    onPanelShow: toggleButtonStyle,
-                                    onPanelHide: toggleButtonStyle
-                                }
-                            }
-                        }
-                        
-                    });
+	                fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+	                    "templatePrefix": "<?php global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>/framework/preferences/html/",
+	                    "messagePrefix": "<?php global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>/framework/preferences/messages/",
+	                    "tocTemplate": "<?php global $wgScriptPath; echo $wgScriptPath; echo INFUSION_LOC?>/components/tableOfContents/html/TableOfContents.html"
+	                });
                 };    
+	            $(document).ready(function () {
+	                floe.initUIOptions();
+	            });
             })(jQuery, fluid);
  
-             // Initialize the page enhancer right away
-            floe.initPageEnhancer();
-            floe.initUIOptions();
         </script>
 
         <div class="fl-container-flex75 fl-centered">
@@ -239,12 +208,21 @@ class SkinFloe extends SkinTemplate {
         $out->addStyle(FSS_LOC.'fss-text.css', 'screen');
 
         /* UIO CSS files */
-        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-bw-uio.css', 'screen');
-        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-wb-uio.css', 'screen');
-        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-yb-uio.css', 'screen');
-        $out->addStyle(UIO_CSS_LOC.'fss/fss-theme-by-uio.css', 'screen');
-        $out->addStyle(UIO_CSS_LOC.'fss/fss-text-uio.css', 'screen');
-        $out->addStyle(UIO_CSS_LOC.'FatPanelUIOptions.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'fss/fss-theme-bw-prefsEditor.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'fss/fss-theme-wb-prefsEditor.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'fss/fss-theme-yb-prefsEditor.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'fss/fss-theme-by-prefsEditor.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'fss/fss-theme-lgdg-prefsEditor.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'fss/fss-theme-dglg-prefsEditor.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'fss/fss-text-prefsEditor.css', 'screen');
+        $out->addStyle(JQ_CSS_LOC.'fl-theme-by/by.css', 'screen');
+        $out->addStyle(JQ_CSS_LOC.'fl-theme-yb/yb.css', 'screen');
+        $out->addStyle(JQ_CSS_LOC.'fl-theme-bw/bw.css', 'screen');
+        $out->addStyle(JQ_CSS_LOC.'fl-theme-wb/wb.css', 'screen');
+        $out->addStyle(JQ_CSS_LOC.'fl-theme-lgdg/lgdg.css', 'screen');
+        $out->addStyle(JQ_CSS_LOC.'fl-theme-dglg/dglg.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'PrefsEditor.css', 'screen');
+        $out->addStyle(PREFS_CSS_LOC.'SeparatedPanelPrefsEditor.css', 'screen');
 
         $out->addStyle( 'floe/main.css', 'screen' );
         $out->addStyle( 'floe/rtl.css', '', '', 'rtl' );
