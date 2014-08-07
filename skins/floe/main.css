@@ -59,7 +59,7 @@
 
 body {
 	color: #444444;
-	font: 14px/1.5em "Lato", "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
+	font: 1em "Lato", "Myriad Pro", "Helvetica Neue", helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -663,44 +663,24 @@ table.collapsed tr.collapsable {
 .templatesUsed { margin-top: 1.5em; }
 
 
-
-/* custom styling for UIO "show" button */
-.fl-uiOptions-fatPanel .fl-toggleButton {
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 0;
-    font-weight: normal;
-    text-transform: none;
-    padding-left: 50px;
-    margin-right: 0;
-    background-repeat: no-repeat;
-    background-position: left center;
-    margin-top: 0;
-}
-.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonShow {
-    background-image: url('/skins/floe/images/icon-+-a.png');
-}
-.fl-uiOptions-fatPanel .fl-toggleButton.fl-toggleButtonHide {
-    background-image: url('/skins/floe/images/icon---a.png');
-}
-.fl-uiOptions-fatPanel .fl-panelBar {
-    border: none;
-}
-.fl-uiOptions-fatPanel-iframe {
-    border: solid 1px gray;
-}
-.fl-uiOptions-fatPanel .fl-panelBar {
-    width: 75%;
+/* reduce the size of the prefs editor button to be more in line with rest of site */
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-reset {
+    font-size: 1em;
 }
 
 /* High-contrast versions of the 'external link' arrow */
-.fl-theme-uio-wb a.external {
+.fl-theme-prefsEditor-wb a.external {
     background: url("/skins/floe/images/9x9-right-arrow-white.png") center right no-repeat;
 }
-.fl-theme-uio-by a.external,
-.fl-theme-uio-bw a.external {
+.fl-theme-prefsEditor-by a.external,
+.fl-theme-prefsEditor-bw a.external {
     background: url("/skins/floe/images/9x9-right-arrow-black.png") center right no-repeat;
 }
-.fl-theme-uio-yb a.external {
+.fl-theme-prefsEditor-yb a.external {
     background: url("/skins/floe/images/9x9-right-arrow-yellow.png") center right no-repeat;
 }
+.fl-theme-prefsEditor-lgdg a.external {
+    background: url("/skins/floe/images/9x9-right-arrow-lightGray.png") center right no-repeat;
+}
+
