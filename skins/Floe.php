@@ -128,8 +128,10 @@ class FloeTemplate extends QuickTemplate {
                                                                  "Visual styling" => array("is_link" => true),
                                                                  "Handling graphics, video, and audio media" => array("is_link" => true),
                                                                  "Handling scripting" => array("is_link" => true),
+                                                                 "Mathematics" => array("is_link"=> true),
                                                                  "Media overlays (narrations) and text-to-speech" => array("is_link" => true),
                                                                  "Accessibility metadata" => array("is_link" => true),
+                                                                 "Testing and validation" => array("is_link" => true),
                                                                  "EPUB 3 resources" => array("is_link"=> true)
                                                                 )
                                              )
