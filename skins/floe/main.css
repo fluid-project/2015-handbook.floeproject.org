@@ -458,6 +458,7 @@ textarea {
 pre {
   margin: 2em;
   border: solid 1px black;
+  overflow: auto;
 }
 
 
