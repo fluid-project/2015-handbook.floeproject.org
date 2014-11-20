@@ -13,6 +13,7 @@
  * @author PCode
  * @author Salam
  * @author Александр Сигачёв
+ * @author Блокнот
  */
 
 $fallback = 'ru';
@@ -157,7 +158,7 @@ $messages = array(
 'category-file-count-limited'    => 'Ку категоринче $1 файл.',
 'listingcontinuesabbrev'         => '(малалли)',
 
-'linkprefix' => '/^(.*?)([a-zA-Z\\x80-\\xff«"]+)$/sD',
+'linkprefix' => '/^((?>.*(?<![a-zA-Z\\\\x80-\\\\xff«"])))(.+)$/sD',
 
 'about'         => 'Ăнлантаркăч',
 'article'       => 'Статья',
@@ -220,12 +221,12 @@ $messages = array(
 'unprotectthispage' => 'Хӳтĕлеве пăрахăçла',
 'newpage'           => 'Çĕнĕ статья',
 'talkpage'          => 'Сӳтсе явасси',
-'talkpagelinktext'  => 'Сӳтсе яв',
+'talkpagelinktext'  => 'Сӳтсе явни',
 'specialpage'       => 'Ятарлă страницă',
 'personaltools'     => 'Ман хатĕрсем',
 'postcomment'       => 'Хуравла',
 'articlepage'       => 'Статьяна пăх',
-'talk'              => 'Сӳтсе явасси',
+'talk'              => 'Сӳтсе явни',
 'views'             => 'Пурĕ пăхнă',
 'toolbox'           => 'Ĕç хатĕрĕсем',
 'userpage'          => 'Хутшăнакан страницине пăх',

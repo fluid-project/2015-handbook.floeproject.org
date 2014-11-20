@@ -13,6 +13,7 @@
  * @author DracoRoboter
  * @author Flavio05
  * @author GatoSelvadego
+ * @author Geitost
  * @author Insübrich
  * @author Kemmótar
  * @author Malafaya
@@ -437,7 +438,7 @@ Tegné cünt che certi paginn pödass che i seguiten a vedess tant 'me se a füd
 'logout'                  => 'Va fö',
 'userlogout'              => 'Và fö',
 'notloggedin'             => 'Te seet minga dent in del sistema',
-'nologin'                 => "Gh'avii anmò da registrav? '''$1'''.",
+'nologin'                 => "Gh'avii anmò da registrav? $1.",
 'nologinlink'             => 'Creé un cünt!',
 'createaccount'           => 'Creá un cünt',
 'gotaccount'              => "Gh'hee-t giamò un cünt? '''$1'''.",
@@ -1341,7 +1342,7 @@ I ligam che i vegnen dopu, in sü l'istessa riga, i vegnen cónsideraa di ecezi�
 
 # External editor support
 'edit-externally'      => 'Redatá chest archivi cunt un prugramari da fö',
-'edit-externally-help' => 'Varda [//www.mediawiki.org/wiki/Manual:External_editors i istrüzión] per avègh püssee infurmazión (in ingles).',
+'edit-externally-help' => 'Varda [https://www.mediawiki.org/wiki/Manual:External_editors i istrüzión] per avègh püssee infurmazión (in ingles).',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'tücc',

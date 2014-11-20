@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Geitost
  * @author Huslåke
  * @author Urhixidur
  * @author Ælsån
@@ -315,7 +316,7 @@ Førespørgsel: $2',
 'userlogin'               => 'Åpret æ konto æller loĝ på',
 'logout'                  => 'Loĝ åf',
 'userlogout'              => 'Loĝ åf',
-'nologin'                 => "Du har engen brugerkonto? '''$1'''.",
+'nologin'                 => 'Du har engen brugerkonto? $1.',
 'nologinlink'             => 'Åpret ny brugerkonto',
 'createaccount'           => 'Åpret en ny konto',
 'gotaccount'              => "Du har ålerede en brugerkonto? '''$1'''.",
@@ -838,7 +839,7 @@ Kun endholtet åf æ liste (lenjer startende ve *) bliver brugt. Den første hen
 
 # External editor support
 'edit-externally'      => "Redigær denne gøret ve'n utsende redigærstøme",
-'edit-externally-help' => 'Se [//www.mediawiki.org/wiki/Manual:External_editors setup hjælpje] før mære informasje.',
+'edit-externally-help' => 'Se [https://www.mediawiki.org/wiki/Manual:External_editors setup hjælpje] før mære informasje.',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'åle',

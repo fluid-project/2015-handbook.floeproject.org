@@ -16,6 +16,7 @@
  * @author Erdemaslancan
  * @author Gulmammad
  * @author Kaganer
+ * @author Khan27
  * @author PPerviz
  * @author PrinceValiant
  * @author Sortilegus
@@ -209,7 +210,7 @@ $messages = array(
 'noindex-category'               => 'İndeksləşdirilməyən səhifələr',
 'broken-file-category'           => 'İşləməyən fayl keçidləri olan səhifələr',
 
-'linkprefix' => '/^(.*?)([a-zA-Z\\x80-\\xff]+)$/sD',
+'linkprefix' => '/^((?>.*(?<![a-zA-Z\\\\x80-\\\\xff])))(.+)$/sD',
 
 'about'         => 'Haqqında',
 'article'       => 'Mündəricat',
@@ -824,8 +825,8 @@ Mümkündür ki, bununla bağlı təfərrüatlar [{{fullurl:{{#Special:Log}}/del
 'revdelete-hide-user'         => 'Redaktə müəllifinin istifadəçi adını/IP ünvanını gizlə',
 'revdelete-hide-restricted'   => 'Məlumatları idarəçilərdən də gizlə',
 'revdelete-radio-same'        => '(dəyişdirmə)',
-'revdelete-radio-set'         => 'Bəli',
-'revdelete-radio-unset'       => 'Xeyr',
+'revdelete-radio-set'         => 'Gizli',
+'revdelete-radio-unset'       => 'Görünür',
 'revdelete-suppress'          => 'Məlumatları idarəçilərdən də gizlə',
 'revdelete-unsuppress'        => 'Bərpa olunan versiyalar üzərindən məhdudiyyətləri qaldır',
 'revdelete-log'               => 'Səbəb:',
@@ -987,7 +988,7 @@ $1",
 'prefs-rendering'               => 'Görünüş',
 'saveprefs'                     => 'Qeyd et',
 'resetprefs'                    => 'Yarat',
-'restoreprefs'                  => 'Bütün nizamlamaları bərpa et',
+'restoreprefs'                  => 'Bütün nizamlamaları bərpa et (bütün bölmələrdə)',
 'prefs-editing'                 => 'Redaktə',
 'prefs-edit-boxsize'            => 'Redaktə pəncərəsinin həcmi',
 'rows'                          => 'Sıralar:',
@@ -1204,7 +1205,7 @@ Həmçinin kimliyinizi gostərmədən belə, başqalarının sizinlə istifadə�
 'action-suppressionlog'       => 'xüsusi gündəliyə baxış',
 'action-block'                => 'istifadəçinin redaktə etməsini əngəlləmək',
 'action-protect'              => 'bu səhifənin mühafizə səviyyəsini dəyişmək',
-'action-import'               => 'bu səhifəni başqa vikidən götürmək',
+'action-import'               => 'başqa vikidən səhifələrin idxalı',
 'action-importupload'         => 'fayl yükləmə vasitəsilə səhifələrin idxalı',
 'action-patrol'               => 'Digərlərinin dəyişikliklərini patrullanmış olaraq işarələ',
 'action-autopatrol'           => 'öz redaktələrinizi patrullanmış olarq işarələmək',
@@ -2163,7 +2164,7 @@ Zəhmət olmasa başqa ad seçin.',
 'allmessagesname'               => 'Ad',
 'allmessagesdefault'            => 'İlkin mətn',
 'allmessagescurrent'            => 'İndiki mətn',
-'allmessagestext'               => 'Bu MediaWiki-də olan sistem mesajlarının siyahısıdır. Əgər MediaWiki-ni lokallaşdırmaq işində kömək etmək isəyirsinizsə, lütfən [//www.mediawiki.org/wiki/Localisation MediaWiki Localisation] və [//translatewiki.net translatewiki.net]-ə baş çəkin.',
+'allmessagestext'               => 'Bu MediaWiki-də olan sistem mesajlarının siyahısıdır. Əgər MediaWiki-ni lokallaşdırmaq işində kömək etmək isəyirsinizsə, lütfən [https://www.mediawiki.org/wiki/Localisation MediaWiki Localisation] və [//translatewiki.net translatewiki.net]-ə baş çəkin.',
 'allmessages-filter-legend'     => 'Filtr',
 'allmessages-filter-unmodified' => 'Dəyişdirilməmiş',
 'allmessages-filter-all'        => 'Hamısı',
@@ -2797,7 +2798,7 @@ Variants for Chinese language
 
 # External editor support
 'edit-externally'      => 'Bu faylı kənar proqram vasitəsilə redaktə et.',
-'edit-externally-help' => '(Daha ətraflı məlumat üçün [//www.mediawiki.org/wiki/Manual:External_editors tətbiqetmə qaydalarına] baxa bilərsiniz)',
+'edit-externally-help' => '(Daha ətraflı məlumat üçün [https://www.mediawiki.org/wiki/Manual:External_editors tətbiqetmə qaydalarına] baxa bilərsiniz)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'hamısını',
@@ -2898,7 +2899,7 @@ Variants for Chinese language
 'version-hook-subscribedby'   => 'Abunə olan',
 'version-version'             => '(Versiya $1)',
 'version-license'             => 'Lisenziya',
-'version-poweredby-credits'   => "Bu wiki '''[//www.mediawiki.org/ MediaWiki]''' proqramı istifadə edilərək yaradılmışdır, müəlliflik © 2001-$1 $2.",
+'version-poweredby-credits'   => "Bu wiki '''[https://www.mediawiki.org/ MediaWiki]''' proqramı istifadə edilərək yaradılmışdır, müəlliflik © 2001-$1 $2.",
 'version-poweredby-others'    => 'digərləri',
 'version-software-product'    => 'Məhsul',
 'version-software-version'    => 'Versiya',
@@ -2956,8 +2957,7 @@ Variants for Chinese language
 
 # Database error messages
 'dberr-header'   => 'Bu vikidə problem var',
-'dberr-problems' => 'Üzr istəyirik!
-Bu saytda texniki problemlər var.',
+'dberr-problems' => 'Üzr istəyirik! Bu saytda texniki problemlər var.',
 'dberr-info'     => '($1: Məlumat bazası ilə əlaqə yoxdur)',
 
 # HTML forms

@@ -3,6 +3,42 @@
 Security reminder: MediaWiki does not require PHP's register_globals
 setting since version 1.2.0. If you have it on, turn it '''off''' if you can.
 
+<<<<<<< HEAD
+=======
+== MediaWiki 1.19.21 ==
+
+This is a maintenance release of the MediaWiki 1.19 branch.
+
+=== Changes since 1.19.20 ===
+
+* (bug 67440) Allow classes to be registered properly from installer.
+* (bug 47281) Fixed a dumpBackup.php error with --uploads --include-files
+  options: Unable to find the wrapper "mwstore".
+  System administrators are encouraged to upgrade to this release or 1.22+
+  and produce a full data dump.
+  https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Backing_up_a_wiki
+* (bug 63049) Removed anonymous functions from ApiFormatBase, added in
+  1.19.13 as part of the fix for bug 61362, for PHP 5.2 compatibility.
+
+== MediaWiki 1.19.20 ==
+
+This is a security release of the MediaWiki 1.19 branch.
+
+=== Changes since 1.19.19 ===
+* (bug 70672) SECURITY: OutputPage: Remove separation of css and js module
+  allowance.
+
+== MediaWiki 1.19.19 ==
+
+This is a security release of the MediaWiki 1.19 branch.
+
+=== Changes since 1.19.18 ===
+* (bug 69008) SECURITY: Enhance CSS filtering in SVG files. Filter <style>
+  elements; normalize style elements and attributes before filtering; add
+  checks for attributes that contain css; add unit tests for html5sec and
+  reported bugs.
+
+>>>>>>> mediawiki-clean
 == MediaWiki 1.19.18 ==
 
 This is a security release of the MediaWiki 1.19 branch.

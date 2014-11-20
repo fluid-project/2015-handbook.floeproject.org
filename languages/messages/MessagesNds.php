@@ -628,7 +628,7 @@ Vergeet nich, de Sied för di persönlich [[Special:Preferences|intostellen]].',
 'logout'                     => 'Afmellen',
 'userlogout'                 => 'Afmellen',
 'notloggedin'                => 'Nich anmellt',
-'nologin'                    => "Wenn du noch keen Brukerkonto hest, denn kannst di anmellen: '''$1'''.",
+'nologin'                    => 'Wenn du noch keen Brukerkonto hest, denn kannst di anmellen: $1.',
 'nologinlink'                => 'Brukerkonto inrichten',
 'createaccount'              => 'Nieg Brukerkonto anleggen',
 'gotaccount'                 => "Hest Du al en Brukerkonto? '''$1'''.",
@@ -1528,7 +1528,7 @@ Wenn du ehr liekers hoochladen wullt, gah trüch un laad de Datei ünner en anne
 'upload-file-error'       => 'Internen Fehler',
 'upload-file-error-text'  => 'Dat geev en internen Fehler bi dat Anleggen vun en temporäre Datei op’n Server. Segg man en [[Special:ListUsers/sysop|Administrater]] bescheed.',
 'upload-misc-error'       => 'Unbekannt Fehler bi dat Hoochladen',
-'upload-misc-error-text'  => 'Bi dat Hoochladen geev dat en unbekannten Fehler. Kiek na, wat dor en Fehler in de URL is, wat de Websteed ok löppt un versöök dat denn noch wedder. Wenn dat Problem denn noch jümmer dor is, denn vertell dat en [[Special:ListUsers/sysop|System-Administrater]].',
+'upload-misc-error-text'  => 'Bi dat Hoochladen geev dat en unbekannten Fehler. Kiek na, wat dor en Fehler in de URL is, wat de Websteed ok löppt un versöök dat denn noch wedder. Wenn dat Problem denn noch jümmer dor is, denn vertell dat en [[Special:ListUsers/sysop|Administrater]].',
 
 # Some likely curl errors. More could be added from <http://curl.haxx.se/libcurl/c/libcurl-errors.html>
 'upload-curl-error6'       => 'Kunn de URL nich kriegen',
@@ -2902,7 +2902,7 @@ Wiedere warrt standardmatig nich anwiest:
 
 # External editor support
 'edit-externally'      => 'Änner disse Datei mit en extern Programm',
-'edit-externally-help' => '(Lees de [//www.mediawiki.org/wiki/Manual:External_editors Installatschoonshelp] wenn du dor mehr to weten wullt)',
+'edit-externally-help' => '(Lees de [https://www.mediawiki.org/wiki/Manual:External_editors Installatschoonshelp] wenn du dor mehr to weten wullt)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'alle',
@@ -3047,7 +3047,7 @@ Du kannst ok de [[Special:EditWatchlist|normale Sied to’n Ännern]] bruken.',
 'version-hook-subscribedby'     => 'Opropen vun',
 'version-version'               => '(Version $1)',
 'version-license'               => 'Lizenz',
-'version-poweredby-credits'     => "Dit Wiki bruukt '''[//www.mediawiki.org/ MediaWiki]''', Copyright © 2001–$1 $2.",
+'version-poweredby-credits'     => "Dit Wiki bruukt '''[https://www.mediawiki.org/ MediaWiki]''', Copyright © 2001–$1 $2.",
 'version-poweredby-others'      => 'annere',
 'version-software'              => 'Installeerte Software',
 'version-software-product'      => 'Produkt',

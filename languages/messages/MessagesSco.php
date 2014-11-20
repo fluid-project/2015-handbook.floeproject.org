@@ -14,6 +14,7 @@
  * @author OchAyeTheNoo
  * @author Omnipaedista
  * @author Purodha
+ * @author Shirayuki
  * @author The Evil IP address
  * @author Urhixidur
  * @author Ushanka
@@ -1477,7 +1478,7 @@ If th' file haes bin modified frae tis original state, some details kin nae full
 
 # External editor support
 'edit-externally'      => 'Edit this file uisin an external application',
-'edit-externally-help' => '(See the [//www.mediawiki.org/wiki/Manual:External_editors setup instructions] for mair guidance.)',
+'edit-externally-help' => '(See the [https://www.mediawiki.org/wiki/Manual:External_editors setup instructions] for mair guidance.)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'aw',

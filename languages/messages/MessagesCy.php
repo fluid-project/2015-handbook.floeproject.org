@@ -12,6 +12,7 @@
  * @author Lloffiwr
  * @author Malafaya
  * @author Reedy
+ * @author Robin Owain
  * @author Thaf
  * @author Urhixidur
  * @author Xxglennxx
@@ -125,12 +126,12 @@ $messages = array(
 'tog-hidepatrolled'           => 'Cuddio golygiadau sydd wedi derbyn ymweliad patrôl rhag y rhestr newidiadau diweddar',
 'tog-newpageshidepatrolled'   => 'Cuddio tudalennau sydd wedi derbyn ymweliad patrôl rhag rhestr y tudalennau newydd',
 'tog-extendwatchlist'         => "Ehangu'r rhestr wylio i ddangos pob golygiad yn hytrach na'r diweddaraf yn unig",
-'tog-usenewrc'                => "Yn dangos newidiadau i un dudalen gyda'i gilydd - ar 'newidiadau diweddar' a'r 'rhestr wylio' (angen JavaScript)",
+'tog-usenewrc'                => "Yn dangos newidiadau i un dudalen gyda'i gilydd - ar 'newidiadau diweddar' a'r 'rhestr wylio'",
 'tog-numberheadings'          => "Rhifo penawdau'n awtomatig",
-'tog-showtoolbar'             => 'Dangos y bar offer golygu (angen JavaScript)',
-'tog-editondblclick'          => 'Golygu tudalennau wrth glicio ddwywaith (angen JavaScript)',
+'tog-showtoolbar'             => 'Dangos y bar offer golygu',
+'tog-editondblclick'          => 'Golygu tudalennau wrth glicio ddwywaith',
 'tog-editsection'             => 'Galluogi golygu adran trwy ddolennau [golygu] uwchben yr adran',
-'tog-editsectiononrightclick' => 'Galluogi golygu adran drwy dde-glicio ar bennawd yr adran (JavaScript)',
+'tog-editsectiononrightclick' => 'Galluogi golygu adran drwy dde-glicio ar bennawd yr adran',
 'tog-showtoc'                 => 'Dangos y daflen gynnwys (ar gyfer tudalennau sydd â mwy na 3 pennawd)',
 'tog-rememberpassword'        => "Y porwr hwn i gofio'r manylion mewngofnodi (hyd at $1 {{PLURAL:$1||diwrnod|ddiwrnod|diwrnod|diwrnod|diwrnod}})",
 'tog-watchcreations'          => 'Ychwanegu tudalennau at fy rhestr wylio wrth i mi eu creu a ffeiliau wrth i mi eu huwchlwytho.',
@@ -151,7 +152,7 @@ $messages = array(
 'tog-externaleditor'          => 'Defnyddio golygydd allanol trwy ragosodiad (ar gyfer arbenigwyr yn unig; mae arno angen gosodiadau arbennig ar eich cyfrifiadur. [//www.mediawiki.org/wiki/Manual:External_editors Rhagor o wybodaeth.])',
 'tog-externaldiff'            => 'Defnyddio "external diff" trwy ragosodiad (ar gyfer arbenigwyr yn unig; mae arno angen gosodiadau arbennig ar eich cyfrifiadur. [//www.mediawiki.org/wiki/Manual:External_editors Rhagor o wybodaeth.])',
 'tog-showjumplinks'           => 'Galluogi dolenni hygyrchedd "neidio i"',
-'tog-uselivepreview'          => 'Defnyddio rhagolwg byw (JavaScript) (Arbrofol)',
+'tog-uselivepreview'          => 'Defnyddio rhagolwg byw (arbrofol)',
 'tog-forceeditsummary'        => 'Tynnu fy sylw pan adawaf flwch crynodeb golygu yn wag',
 'tog-watchlisthideown'        => 'Cuddio fy ngolygiadau fy hunan yn fy rhestr wylio',
 'tog-watchlisthidebots'       => 'Cuddio golygiadau bot yn fy rhestr wylio',
@@ -159,7 +160,7 @@ $messages = array(
 'tog-watchlisthideliu'        => 'Cuddio golygiadau gan ddefnyddwyr mewngofnodedig rhag y rhestr wylio',
 'tog-watchlisthideanons'      => 'Cuddio golygiadau gan ddefnyddwyr anhysbys rhag y rhestr wylio',
 'tog-watchlisthidepatrolled'  => 'Cuddio golygiadau sydd wedi derbyn ymweliad patrôl rhag y rhestr wylio',
-'tog-ccmeonemails'            => 'Anfoner copi ataf pan anfonaf e-bost at ddefnyddiwr arall',
+'tog-ccmeonemails'            => 'Anfon copi ataf pan anfonaf e-bost at ddefnyddiwr arall',
 'tog-diffonly'                => "Peidio â dangos cynnwys y dudalen islaw'r gymhariaeth ar dudalennau cymharu",
 'tog-showhiddencats'          => 'Dangos categorïau cuddiedig',
 'tog-norollbackdiff'          => 'Hepgor dangos cymhariaeth ar ôl gwrthdroi golygiad',
@@ -290,7 +291,7 @@ $messages = array(
 'tagline'           => 'Oddi ar {{SITENAME}}',
 'help'              => 'Cymorth',
 'search'            => 'Chwilio',
-'searchbutton'      => 'Chwilio',
+'searchbutton'      => 'Chwilier',
 'go'                => 'Eler',
 'searcharticle'     => 'Mynd',
 'history'           => 'Hanes y dudalen',
@@ -301,12 +302,12 @@ $messages = array(
 'print'             => 'Argraffu',
 'view'              => 'Darllen',
 'edit'              => 'Golygu',
-'create'            => 'Creu',
+'create'            => 'Dechrau',
 'editthispage'      => 'Golygwch y dudalen hon',
 'create-this-page'  => "Creu'r dudalen",
 'delete'            => 'Dileu',
 'deletethispage'    => 'Dileer y dudalen hon',
-'undelete_short'    => 'Adfer $1 {{PLURAL:$1|golygiad|golygiad|olygiad|golygiad|golygiad|golygiad}}',
+'undelete_short'    => 'Adfer $1 {{PLURAL:$1|golygiad|golygiad|olygiad|golygiad}}',
 'viewdeleted_short' => "Edrych ar y {{PLURAL:$1|golygiad sydd wedi'i ddileu|golygiad sydd wedi'i ddileu|$1 olygiad sydd wedi'u dileu|$1 golygiad sydd wedi'u dileu|$1 golygiad sydd wedi'u dileu|$1 golygiad sydd wedi'u dileu}}",
 'protect'           => 'Diogelu',
 'protect_change'    => 'newid',
@@ -322,7 +323,7 @@ $messages = array(
 'articlepage'       => 'Dangos tudalen bwnc',
 'talk'              => 'Sgwrs',
 'views'             => 'Golygon',
-'toolbox'           => 'Blwch offer',
+'toolbox'           => 'Offer',
 'userpage'          => 'Gweld tudalen y defnyddiwr',
 'projectpage'       => 'Gweld tudalen y wici',
 'imagepage'         => 'Gweld tudalen y ffeil',
@@ -352,7 +353,7 @@ $1',
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
 'aboutsite'            => 'Ynglŷn â {{SITENAME}}',
 'aboutpage'            => 'Project:Amdanom',
-'copyright'            => "Mae'r cynnwys ar gael o dan $1.",
+'copyright'            => "Rhoddir y cynnwys ar gael ar delerau'r drwydded $1, heblaw ei fod wedi nodi'n wahanol.",
 'copyrightpage'        => '{{ns:project}}:Hawlfraint',
 'currentevents'        => 'Materion cyfoes',
 'currentevents-url'    => 'Project:Materion cyfoes',
@@ -384,7 +385,7 @@ $1',
 'youhavenewmessagesmulti' => 'Mae negeseuon newydd gennych ar $1',
 'editsection'             => 'golygu',
 'editold'                 => 'golygu',
-'viewsourceold'           => 'dangos y tarddiad',
+'viewsourceold'           => 'dangos côd y dudalen',
 'editlink'                => 'golygu',
 'viewsourcelink'          => 'dangos côd y dudalen',
 'editsectionhint'         => "Golygu'r adran: $1",
@@ -510,33 +511,32 @@ Rhoddwyd y rheswm hwn - ''$2''.",
 # Login and logout pages
 'logouttext'                 => "'''Rydych wedi allgofnodi.'''
 
-Gallwch ddefnyddio {{SITENAME}} yn anhysbys, neu fe allwch [[Special:UserLogin|fewngofnodi eto]] wrth yr un un enw neu wrth enw arall.
 Sylwer y bydd rhai tudalennau yn parhau i ymddangos fel ag yr oeddent pan oeddech wedi mewngofnodi hyd nes i chi glirio celc eich porwr.",
 'welcomecreation'            => "==Croeso, $1!==
 Mae eich cyfrif wedi'i greu.
 Cofiwch osod y [[Special:Preferences|dewisiadau]] sydd fwyaf hwylus i chi ar {{SITENAME}}.",
 'yourname'                   => 'Eich enw defnyddiwr:',
-'yourpassword'               => 'Eich cyfrinair:',
+'yourpassword'               => 'Cyfrinair:',
 'yourpasswordagain'          => 'Ail-deipiwch y cyfrinair:',
-'remembermypassword'         => "Y porwr hwn i gofio'r manylion mewngofnodi (am hyd at $1 {{PLURAL:$1||diwrnod|ddiwrnod|diwrnod|diwrnod|diwrnod}})",
+'remembermypassword'         => "Y porwr hwn i gofio'r manylion mewngofnodi (am hyd at $1 {{PLURAL:$1||diwrnod|ddiwrnod|diwrnod}})",
 'securelogin-stick-https'    => "Cadw'r cyswllt â HTTPS ar ôl mewngofnodi",
-'yourdomainname'             => 'Eich parth',
+'yourdomainname'             => 'Eich parth:',
 'externaldberror'            => "Naill ai: cafwyd gwall dilysu allanol ar databas neu: ar y llaw arall efallai nad oes hawl gennych chi i ddiwygio'ch cyfrif allanol.",
 'login'                      => 'Mewngofnodi',
 'nav-login-createaccount'    => 'Mewngofnodi',
 'loginprompt'                => "Mae'n rhaid galluogi cwcis er mwyn mewngofnodi i {{SITENAME}}.",
 'userlogin'                  => 'Mewngofnodi / creu cyfrif',
 'userloginnocreate'          => 'Mewngofnodi',
-'logout'                     => 'Allgofnodi',
+'logout'                     => 'Allgofnoder',
 'userlogout'                 => 'Allgofnodi',
 'notloggedin'                => 'Nid ydych wedi mewngofnodi',
-'nologin'                    => "Dim cyfrif gennych? '''$1'''.",
+'nologin'                    => 'Dim cyfrif gennych? $1.',
 'nologinlink'                => 'Crëwch gyfrif',
 'createaccount'              => 'Creu cyfrif newydd',
-'gotaccount'                 => "Oes cyfrif gennych eisoes? '''$1'''.",
-'gotaccountlink'             => 'Mewngofnodwch',
+'gotaccount'                 => 'Oes cyfrif gennych eisoes? $1.',
+'gotaccountlink'             => 'Mewngofnodi',
 'userlogin-resetlink'        => 'Ydych chi wedi anghofio eich manylion mewngofnodi?',
-'createaccountmail'          => 'trwy e-bost',
+'createaccountmail'          => "Defnyddier cyfrinair ar hap a thros dro, a'i anfon at y cyfeiriad e-bost a benwyd",
 'createaccountreason'        => 'Rheswm:',
 'badretype'                  => "Nid yw'r cyfrineiriau'n union yr un fath.",
 'userexists'                 => 'Mae rhywun arall wedi dewis yr enw defnyddiwr hwn. 
@@ -572,27 +572,27 @@ Os mai rhywun arall a holodd am y cyfrinair, ynteu eich bod wedi cofio\'r hen gy
 'passwordsent'               => 'Mae cyfrinair newydd wedi\'i ddanfon at gyfeiriad e-bost cofrestredig "$1". Mewngofnodwch eto ar ôl i chi dderbyn y cyfrinair, os gwelwch yn dda.',
 'blocked-mailpassword'       => 'Gan fod eich cyfeiriad IP wedi ei atal rhag golygu, ni ellir adfer y cyfrinair.',
 'eauthentsent'               => 'Anfonwyd e-bost o gadarnhâd at y cyfeiriad a benwyd.
-Cyn y gellir anfon unrhywbeth arall at y cyfeiriad hwnnw rhaid i chi ddilyn y cyfarwyddiadau yn yr e-bost hwnnw er mwyn cadarnhau bod y cyfeiriad yn un dilys.',
+Cyn y gellir anfon unrhywbeth arall at y cyfeiriad hwnnw rhaid i chi ddilyn y cyfarwyddiadau yn yr e-bost er mwyn cadarnhau mai chi sydd berchen y cyfeiriad hwnnw.',
 'throttled-mailpassword'     => "Anfonwyd e-bost atoch eisoes i'ch atgoffa o'ch cyfrinair, a hynny yn ystod y $1 {{PLURAL:$1|awr}} diwethaf.
 Er mwyn rhwystro camddefnydd, dim ond un e-bost i'ch atgoffa o'ch cyfrinair gaiff ei anfon bob yn $1 {{PLURAL:$1|awr}}.",
 'mailerror'                  => 'Gwall wrth ddanfon yr e-bost: $1',
 'acct_creation_throttle_hit' => "Mae ymwelwyr sy'n defnyddio'ch cyfeiriad IP wedi creu $1 {{PLURAL:$1|cyfrif|cyfrif|gyfrif|chyfrif|chyfrif|cyfrif}} yn ystod y diwrnod diwethaf, sef y mwyafswm a ganiateir mewn diwrnod.
 Felly ni chaiff defnyddwyr sy'n defnyddio'r cyfeiriad IP hwn greu rhagor o gyfrifon ar hyn o bryd.",
 'emailauthenticated'         => 'Cadarnhawyd eich cyfeiriad e-bost am $3 ar $2.',
-'emailnotauthenticated'      => "Nid yw eich cyfeiriad e-bost wedi'i ddilysu eto. Ni fydd unrhyw negeseuon e-bost yn cael eu hanfon atoch ar gyfer y nodweddion canlynol.",
+'emailnotauthenticated'      => "Nid yw eich cyfeiriad e-bost wedi'i gadarnhau eto. Ni fydd unrhyw negeseuon e-bost yn cael eu hanfon atoch ar gyfer y nodweddion canlynol.",
 'noemailprefs'               => "Mae'n rhaid i chi gynnig cyfeiriad e-bost er mwyn i'r nodweddion hyn weithio.",
 'emailconfirmlink'           => 'Cadarnhewch eich cyfeiriad e-bost',
 'invalidemailaddress'        => 'Ni allwn dderbyn y cyfeiriad e-bost gan fod ganddo fformat annilys. Mewnbynnwch cyfeiriad dilys neu gwagiwch y maes hwnnw, os gwelwch yn dda.',
 'cannotchangeemail'          => 'Ni ellir newid cyfeiriadau e-bost i gyfrifon ar y wici hwn.',
 'accountcreated'             => 'Crëwyd y cyfrif',
-'accountcreatedtext'         => 'Crëwyd cyfrif defnyddiwr ar gyfer $1.',
+'accountcreatedtext'         => 'Gosodwyd cyfrif defnyddiwr ar gyfer [[{{ns:User}}:$1|$1]] ([[{{ns:User talk}}:$1|sgwrs]]).',
 'createaccount-title'        => 'Creu cyfrif ar {{SITENAME}}',
 'createaccount-text'         => 'Creodd rhywun gyfrif o\'r enw $2 ar {{SITENAME}} ($4) ar gyfer y cyfeiriad e-bost hwn. "$3" yw\'r cyfrinair ar gyfer "$2". Dylech fewngofnodi a newid eich cyfrinair yn syth.
 
 Rhydd ichi anwybyddu\'r neges hon os mai camgymeriad oedd creu\'r cyfrif.',
 'usernamehasherror'          => 'Ni all enw defnyddiwr gynnwys symbolau stwnsh',
-'login-throttled'            => 'Rydych wedi ceisio mewngofnodi gormod o weithiau ar unwaith.
-Oedwch ychydig cyn mentro eto.',
+'login-throttled'            => 'Rydych wedi ceisio mewngofnodi gormod o weithiau ar ben ei gilydd.
+Oedwch cyn mentro eto.',
 'login-abort-generic'        => 'Ni lwyddodd y mewngofnodi - Rhoddwyd y gorau iddo',
 'loginlanguagelabel'         => 'Iaith: $1',
 'suspicious-userlogout'      => 'Gwrthodwyd eich cais i allgofnodi oherwydd ei fod yn ymddangos mai gweinydd wedi torri neu ddirprwy gelc a anfonodd y cais.',
@@ -609,8 +609,10 @@ Er mwyn cwblhau'r mewngofnodi, rhaid i chi osod cyfrinair newydd fel hyn:",
 'oldpassword'               => 'Hen gyfrinair:',
 'newpassword'               => 'Cyfrinair newydd:',
 'retypenew'                 => 'Ail-deipiwch y cyfrinair newydd:',
+'resetpass-abort-generic'   => 'Mae estyniad wedi atal newid y cyfrinair.',
 'resetpass_submit'          => 'Gosod y cyfrinair a mewngofnodi',
-'resetpass_success'         => "Llwyddodd y newid i'ch cyfrinair! Wrthi'n mewngofnodi...",
+'resetpass_success'         => "Llwyddodd y newid i'ch cyfrinair!
+Wrthi'n eich mewngofnodi...",
 'resetpass_forbidden'       => 'Ni ellir newid cyfrineiriau',
 'resetpass-no-info'         => 'Ni allwch fynd at y dudalen hon yn uniongyrchol heblaw eich bod wedi mewngofnodi.',
 'resetpass-submit-loggedin' => 'Newidier y cyfrinair',
@@ -658,7 +660,7 @@ Y cyfrinair dros dro: $2",
 'changeemail-newemail' => 'Cyfeiriad e-bost newydd:',
 'changeemail-none'     => '(dim)',
 'changeemail-submit'   => 'Newidier y cyfeiriad e-bost',
-'changeemail-cancel'   => 'Dileer',
+'changeemail-cancel'   => 'Diddymer',
 
 # Edit page toolbar
 'bold_sample'     => 'Testun cryf',
@@ -737,9 +739,7 @@ Efallai bod yr adran wedi cael ei symud neu ei dileu ers i chi agor y dudalen.",
 'loginreqlink'                     => 'mewngofnodi',
 'loginreqpagetext'                 => "Mae'n rhaid $1 er mwyn gweld tudalennau eraill.",
 'accmailtitle'                     => 'Wedi danfon y cyfrinair.',
-'accmailtext'                      => "Anfonwyd cyfrinair a grewyd ar hap ar gyfer [[User talk:$1|$1]] at $2.
-
-Gellir newid y cyfrinair ar gyfer y cyfrif newydd hwn ar y dudalen ''[[Special:ChangePassword|newid cyfrinair]]'', wedi i chi fewngofnodi.",
+'accmailtext'                      => "Anfonwyd cyfrinair a grewyd ar hap ar gyfer [[User talk:$1|$1]] at $2. Gellir newid y cyfrinair hwn ar y dudalen ''[[Special:ChangePassword|newid cyfrinair]]'', wrth fewngofnodi.",
 'newarticle'                       => '(Newydd)',
 'newarticletext'                   => "Rydych chi wedi dilyn cysylltiad i dudalen sydd heb gael ei chreu eto.
 I greu'r dudalen, dechreuwch deipio yn y blwch isod (gweler y [[{{MediaWiki:Helppage}}|dudalen gymorth]] am fwy o wybodaeth).
@@ -817,7 +817,7 @@ Cynigiodd y gweinyddwr a glodd y gronfa ddata y rheswm hwn dros ei chloi: $1",
 Dyma'r cofnod lòg diweddaraf, er gwybodaeth:",
 'semiprotectedpagewarning'         => "'''Sylwer:''' Mae'r dudalen hon wedi ei chloi; dim ond defnyddwyr cofrestredig a allant ei golygu.
 Dyma'r cofnod lòg diweddaraf, er gwybodaeth:",
-'cascadeprotectedwarning'          => "'''Dalier sylw:''' Mae'r dudalen hon wedi ei diogelu fel nad ond defnyddwyr â galluoedd gweinyddwyr sy'n gallu ei newid, oherwydd ei bod yn rhan o'r {{PLURAL:$1|dudalen ganlynol|dudalen ganlynol|tudalennau canlynol|tudalennau canlynol|tudalennau canlynol|tudalennau canlynol}} sydd wedi {{PLURAL:$1|ei|ei|eu|eu|eu|eu}} sgydol-ddiogelu.",
+'cascadeprotectedwarning'          => "'''Dalier sylw:''' Mae'r dudalen hon wedi ei diogelu fel nad ond defnyddwyr â galluoedd gweinyddwyr sy'n gallu ei newid, oherwydd ei bod yn rhan o'r {{PLURAL:$1|dudalen ganlynol|dudalen ganlynol|tudalennau canlynol}} sydd wedi {{PLURAL:$1|ei sgydol-ddiogelu|ei sgydol-ddiogelu|eu sgydol-diogelu}}.",
 'titleprotectedwarning'            => "'''RHYBUDD:  Mae'r dudalen hon wedi ei chloi; dim ond rhai defnyddwyr sydd â'r [[Special:ListGroupRights|gallu]] i'w chreu.'''
 Dyma'r cofnod lòg diweddaraf, er gwybodaeth:",
 'templatesused'                    => 'Defnyddir y {{PLURAL:$1|nodyn hwn|nodyn hwn|nodiadau hyn|nodiadau hyn|nodiadau hyn|nodiadau hyn}} yn y dudalen hon:',
@@ -831,7 +831,7 @@ Dyma'r cofnod lòg diweddaraf, er gwybodaeth:",
 'nocreate-loggedin'                => "Nid yw'r gallu gennych i greu tudalennau.",
 'sectioneditnotsupported-title'    => 'Dim modd golygu fesul adran',
 'sectioneditnotsupported-text'     => "Nid oes modd golygu'r dudalen hon fesul adran",
-'permissionserrors'                => 'Gwallau Caniatâd',
+'permissionserrors'                => 'Gwall caniatâd',
 'permissionserrorstext'            => "Nid yw'r gallu ganddoch i weithredu yn yr achos yma, am y {{PLURAL:$1|rheswm|rheswm|rhesymau|rhesymau|rhesymau|rhesymau}} canlynol:",
 'permissionserrorstext-withaction' => "Nid yw'r gallu hwn ($2) ganddoch, am y {{PLURAL:$1|rheswm|rheswm|rhesymau|rhesymau|rhesymau|rhesymau}} canlynol:",
 'recreate-moveddeleted-warn'       => "'''Dalier sylw: Rydych yn ail-greu tudalen a ddilewyd rhywdro.'''
@@ -853,7 +853,7 @@ Mae ar gael yn barod.',
 # Parser/template warnings
 'expensive-parserfunction-warning'        => "'''Rhybudd:''' Mae gormod o alwadau ar ffwythiannau dosrannu sy'n dreth ar adnoddau yn y dudalen hon.
 
-Dylai fod llai na $2 {{PLURAL:$2|galwad|alwad|alwad|galwad|galwad|galwad}} yn y dudalen, ond ar hyn o bryd mae $1 {{PLURAL:$1|galwad|alwad|alwad|galwad|galwad|galwad}} ynddi.",
+Dylai fod llai na $2 {{PLURAL:$2|galwad|alwad|alwad|galwad}} yn y dudalen, ond ar hyn o bryd mae $1 {{PLURAL:$1|galwad|alwad|alwad|galwad}} ynddi.",
 'expensive-parserfunction-category'       => "Tudalennau a gormod o alwadau ar ffwythiannau dosrannu sy'n dreth ar adnoddau",
 'post-expand-template-inclusion-warning'  => "'''Rhybudd:''' Mae maint y nodiadau ar ôl eu chwyddo yn rhy fawr.
 Ni chaiff rhai nodiadau eu cynnwys.",
@@ -897,8 +897,8 @@ Eglurhad: '''({{int:cur}})''' = gwahaniaethau rhyngddo a'r fersiwn cyfredol,
 '''({{int:last}})''' = gwahaniaethau rhyngddo a'r fersiwn cynt, '''({{int:minoreditletter}})''' = golygiad bychan",
 'history-fieldset-title' => "Chwilio drwy'r hanes",
 'history-show-deleted'   => 'Y rhai a ddilëwyd yn unig',
-'histfirst'              => 'Cynharaf',
-'histlast'               => 'Diweddaraf',
+'histfirst'              => 'cynharaf',
+'histlast'               => 'diweddaraf',
 'historysize'            => '({{PLURAL:$1|$1 beit|$1 beit|$1 feit|$1 beit|$1 beit|$1 beit}})',
 'historyempty'           => '(gwag)',
 
@@ -958,18 +958,19 @@ Serch hyn, gallwch eu cymharu o hyd; cewch weld y manylion ar y [{{fullurl:{{#Sp
 Fe fydd gweinyddwyr eraill {{SITENAME}} o hyd yn gallu gweld yr hyn a guddiwyd. Fe allant ei ddatguddio trwy ddefnyddio'r dudalen arbennig hon, cyhyd ag nad oes cyfyngiadau ychwanegol wedi eu gosod.",
 'revdelete-confirm'           => "Byddwch gystal â chadarnhau eich bod yn bwriadu gwneud hyn, eich bod yn deall yr effaith a gaiff, a'ch bod yn ei wneud yn ôl y [[{{MediaWiki:Policy-url}}|y polisi]].",
 'revdelete-suppress-text'     => "'''Dim ond''' yn yr achosion sy'n dilyn y dylech fentro cuddio gwybodaeth:
+* Gwybodaeth a all fod yn enllib
 * Gwybodaeth bersonol anaddas
 *: ''cyfeiriad cartref, rhif ffôn, rhif yswiriant cenedlaethol, ayb.''",
 'revdelete-legend'            => 'Gosod cyfyngiadau ar y gallu i weld',
-'revdelete-hide-text'         => 'Cuddio testun y diwygiad',
+'revdelete-hide-text'         => 'Testun y diwygiad',
 'revdelete-hide-image'        => 'Cuddio cynnwys y ffeil',
 'revdelete-hide-name'         => "Cuddio'r weithred a'r targed",
-'revdelete-hide-comment'      => 'Cuddio sylwad golygu',
-'revdelete-hide-user'         => 'Cuddio enw defnyddiwr/IP y golygydd',
+'revdelete-hide-comment'      => 'Sylw golygu',
+'revdelete-hide-user'         => 'Enw defnyddiwr/IP y golygydd',
 'revdelete-hide-restricted'   => 'Gosod y cyfyngiadau gweld data ar weinyddwyr yn ogystal ag eraill',
 'revdelete-radio-same'        => '(peidier â newid)',
-'revdelete-radio-set'         => 'Cuddier',
-'revdelete-radio-unset'       => 'Na chuddier',
+'revdelete-radio-set'         => 'Cudd',
+'revdelete-radio-unset'       => 'Gweladwy',
 'revdelete-suppress'          => 'Atal data oddi wrth Weinyddwyr yn ogystal ag eraill',
 'revdelete-unsuppress'        => "Tynnu'r cyfyngiadau ar y golygiadau a adferwyd",
 'revdelete-log'               => 'Rheswm:',
@@ -1081,7 +1082,7 @@ Pan yn gwneud hyn dylid sicrhau nad yw dilyniant hanes tudalennau yn cael ei ddi
 'searchprofile-articles-tooltip'   => 'Chwilio drwy $1',
 'searchprofile-project-tooltip'    => 'Chwilio drwy $1',
 'searchprofile-images-tooltip'     => 'Chwilio am ffeiliau',
-'searchprofile-everything-tooltip' => "Chwilio'r cynnwys gyfan (gan gynnwys tudalennau sgwrs)",
+'searchprofile-everything-tooltip' => "Chwilio'r cynnwys cyfan (gan gynnwys tudalennau sgwrs)",
 'searchprofile-advanced-tooltip'   => 'Chwilio drwy parthau dewisol',
 'search-result-size'               => '$1 ({{PLURAL:$2|dim geiriau|$2 gair|$2 air|$2 gair|$2 gair|$2 gair|}})',
 'search-result-category-size'      => '{{PLURAL:$1|$1 aelod}} ({{PLURAL:$2|$2 is-gategori}}, {{PLURAL:$3|$3 ffeil}})',
@@ -1139,7 +1140,7 @@ Cofiwch y gall mynegeion Google o gynnwys {{SITENAME}} fod ar ei hôl hi.",
 'prefs-beta'                    => 'Nodweddion Beta',
 'prefs-datetime'                => 'Dyddiad ac amser',
 'prefs-labs'                    => 'Nodweddion Labs',
-'prefs-personal'                => 'Data defnyddiwr',
+'prefs-personal'                => 'Data personol',
 'prefs-rc'                      => 'Newidiadau diweddar',
 'prefs-watchlist'               => 'Rhestr wylio',
 'prefs-watchlist-days'          => "Nifer y diwrnodau i'w dangos yn y rhestr wylio:",
@@ -1155,7 +1156,7 @@ Cofiwch y gall mynegeion Google o gynnwys {{SITENAME}} fod ar ei hôl hi.",
 'prefs-rendering'               => 'Ymddangosiad',
 'saveprefs'                     => 'Cadwer y dewisiadau',
 'resetprefs'                    => "Clirio'r darpar newidiadau",
-'restoreprefs'                  => 'Adfer yr holl osodiadau diofyn',
+'restoreprefs'                  => 'Adfer yr holl osodiadau diofyn (ymhob adran)',
 'prefs-editing'                 => 'Golygu',
 'prefs-edit-boxsize'            => 'Maint y blwch testun.',
 'rows'                          => 'Rhesi:',
@@ -1216,11 +1217,12 @@ Ni allwch ddadwneud y weithred hon.",
 'badsig'                        => 'Llofnod crai annilys; gwiriwch y tagiau HTML.',
 'badsiglength'                  => "Mae'ch llysenw'n rhy hir.
 Gall fod hyd at $1 {{PLURAL:$1|llythyren|lythyren|lythyren|llythyren|llythyren|llythyren}} o hyd.",
-'yourgender'                    => 'Rhyw:',
-'gender-unknown'                => 'Heb ei nodi',
-'gender-male'                   => 'Gwryw',
-'gender-female'                 => 'Benyw',
-'prefs-help-gender'             => "Heb rheidrwydd: mae'r meddalwedd yn defnyddio hwn i gyfeirio atoch ac i'ch cyfarch yn ôl eich rhyw.
+'yourgender'                    => 'Sut yr hoffech chi gael eich disgrifio:',
+'gender-unknown'                => "Mae'n well gennyf beidio nodi",
+'gender-male'                   => "Mae e'n golygu tudalennau wici",
+'gender-female'                 => "Mae hi'n golygu tudalennau wici",
+'prefs-help-gender'             => "Nid oes rhaid llanw'r dewis yma. 
+Mae'r meddalwedd yn defnyddio hwn i gyfeirio atoch ac i'ch cyfarch yn ôl eich rhyw.
 Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'email'                         => 'E-bost',
 'prefs-help-realname'           => '* Enw iawn (dewisol): Os ydych yn dewis ei roi, fe fydd yn cael ei ddefnyddio er mwyn rhoi cydnabyddiaeth i chi am eich gwaith.',
@@ -1232,7 +1234,7 @@ Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'prefs-signature'               => 'Llofnod',
 'prefs-dateformat'              => 'Fformat dyddiad',
 'prefs-timeoffset'              => 'Atred amser',
-'prefs-advancedediting'         => 'Dewisiadau uwch',
+'prefs-advancedediting'         => 'Dewisiadau cyffredinol',
 'prefs-advancedrc'              => 'Dewisiadau uwch',
 'prefs-advancedrendering'       => 'Dewisiadau uwch',
 'prefs-advancedsearchoptions'   => 'Dewisiadau uwch',
@@ -1264,7 +1266,7 @@ Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'userrights-no-interwiki'      => "Nid yw'r gallu ganddoch i newid galluoedd defnyddwyr ar wicïau eraill.",
 'userrights-nodatabase'        => "Nid yw'r bas data $1 yn bod neu nid yw'n un lleol.",
 'userrights-nologin'           => 'Rhaid i chi [[Special:UserLogin|fewngofnodi]] ar gyfrif gweinyddwr er mwyn pennu galluoedd defnyddwyr.',
-'userrights-notallowed'        => 'Nid oes gan eich cyfrif y caniatâd priodol i ychwanegu neu dynnu hawliau defnyddwyr.',
+'userrights-notallowed'        => 'Nid oes ganiatâd priodol gennych i ychwanegu neu dynnu hawliau defnyddwyr.',
 'userrights-changeable-col'    => 'Grwpiau y gallwch eu newid',
 'userrights-unchangeable-col'  => 'Grwpiau na allwch eu newid',
 
@@ -1310,7 +1312,7 @@ Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'right-reupload-shared'       => "Uwchlwytho ffeil ar wici lleol, gyda'r un teitl â ffeil ar y storfa cyfrannol",
 'right-upload_by_url'         => 'Uwchlwytho ffeil oddi ar gyfeiriad URL',
 'right-purge'                 => 'Carthu celc y safle o ryw dudalen heb gadarnhau',
-'right-autoconfirmed'         => 'Golygu tudalennau sydd wedi eu lled-ddiogelu',
+'right-autoconfirmed'         => 'Bod heb gyfyngiad ar gyflymder yn seiliedig ar IP',
 'right-bot'                   => 'Cael ei drin fel proses awtomataidd',
 'right-nominornewtalk'        => "Gallu dewis peidio â derbyn hysbysiad bod gennych neges newydd pan ddigwydd mân newidiadau i'ch tudalen sgwrs",
 'right-apihighlimits'         => 'Defnyddio terfynau uwch mewn ymholiadau API',
@@ -1329,9 +1331,9 @@ Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'right-hideuser'              => "Atal enw defnyddiwr rhag i'r cyhoedd ei weld",
 'right-ipblock-exempt'        => 'Mynd heibio i flociau IP, blociau awtomatig a blociau amrediad',
 'right-proxyunbannable'       => 'Mynd heibio i flociau awtomatig gan weinyddion dirprwyol',
-'right-unblockself'           => 'Dad-flocio eu hunain',
-'right-protect'               => 'Newid lefelau diogelu a golygu tudalennau wedi eu diogelu',
-'right-editprotected'         => 'Golygu tudalennau sydd wedi eu diogelu (ond bod hebddynt ddiogelu sgydol)',
+'right-unblockself'           => 'Dad-flocio ei hunan',
+'right-protect'               => 'Newid lefelau diogelu a golygu tudalennau a sgydol-ddiogelwyd',
+'right-editprotected'         => 'Golygu tudalennau wedi eu diogelu (heb eu sgydol-diogelu)',
 'right-editinterface'         => "Golygu'r rhyngwyneb",
 'right-editusercssjs'         => 'Golygu ffeiliau CSS a JS yn perthyn i ddefnyddwyr eraill',
 'right-editusercss'           => 'Golygu ffeiliau CSS yn perthyn i ddefnyddwyr eraill',
@@ -1386,8 +1388,8 @@ Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'action-block'                => 'atal y defnyddiwr hwn rhag golygu',
 'action-protect'              => 'newid lefelau gwarchod y dudalen hon',
 'action-rollback'             => 'gwrthdroi golygiadau defnyddiwr diwethaf rhyw dudalen, yn sydyn',
-'action-import'               => "mewnforio'r dudalen hon o wici arall",
-'action-importupload'         => "mewnforio'r dudalen hon drwy uwchlwytho ffeil XML",
+'action-import'               => 'mewnforio tudalennau o wici arall',
+'action-importupload'         => 'mewnforio tudalennau drwy uwchlwytho ffeil',
 'action-patrol'               => 'marcio bod golygiad defnyddiwr arall wedi derbyn ymweliad patrôl',
 'action-autopatrol'           => 'cael derbyn marc ymweliad patrôl ar eich golygiad',
 'action-unwatchedpages'       => 'gweld rhestr y tudalennau heb neb yn eu gwylio',
@@ -1429,7 +1431,7 @@ Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'rc_categories_any'                 => 'Unrhyw un',
 'rc-change-size-new'                => "$1 {{PLURAL:$1|beit}} wedi'r newid",
 'newsectionsummary'                 => '/* $1 */ adran newydd',
-'rc-enhanced-expand'                => 'Dangos y manylion (angen JavaScript)',
+'rc-enhanced-expand'                => 'Dangos y manylion',
 'rc-enhanced-hide'                  => "Cuddio'r manylion",
 'rc-old-title'                      => 'yr enw gwreiddiol oedd "$1"',
 
@@ -1449,7 +1451,7 @@ Mae'r wybodaeth hon ar gael i'r cyhoedd.",
 'reuploaddesc'                => "Dileu'r uwchlwytho a dychwelyd i'r ffurflen uwchlwytho",
 'upload-tryagain'             => "Uwchlwyther disgrifiad newydd o'r ffeil",
 'uploadnologin'               => 'Nid ydych wedi mewngofnodi',
-'uploadnologintext'           => "Mae'n rhaid i chi [[Special:UserLogin|fewngofnodi]] er mwyn uwchlwytho ffeiliau.",
+'uploadnologintext'           => 'Rhaid i chi [[Special:UserLogin|fewngofnodi]] er mwyn uwchlwytho ffeiliau.',
 'upload_directory_missing'    => "Mae'r cyfeiriadur uwchlwytho ($1) yn eisiau, ac ni allai'r gweinydd gwe ei greu.",
 'upload_directory_read_only'  => "Ni all y gweinydd ysgrifennu i'r cyfeiriadur uwchlwytho ($1).",
 'uploaderror'                 => "Gwall tra'n uwchlwytho ffeil",
@@ -1676,8 +1678,7 @@ Efallai yr hoffech rhoi cynnig arni ar adeg llai prysur.',
 'upload_source_file' => ' (ffeil ar eich cyfrifiadur)',
 
 # Special:ListFiles
-'listfiles-summary'     => "Rhestr yr holl ffeiliau sydd wedi eu huwchlwytho sydd ar y dudalen hon.
-Pan hidlir y rhestr yn ôl defnyddiwr, yr unig rhai a ddangosir o blith y ffeiliau a uwchlwythwyd gan y defnyddiwr, yw'r rhai sydd yn parhau i fod yn ddiwygiad diweddaraf o'r ffeil i gael ei huwchlwytho.",
+'listfiles-summary'     => 'Rhestr yr holl ffeiliau sydd wedi eu huwchlwytho sydd ar y dudalen hon.',
 'listfiles_search_for'  => "Chwilio am enw'r ddelwedd:",
 'imgfile'               => 'ffeil',
 'listfiles'             => "Rhestr o'r holl ffeiliau",
@@ -1926,7 +1927,7 @@ Sylwer bod llythrennau mawr neu fach o bwys i'r chwiliad.",
 'allnotinnamespace' => 'Pob tudalen (heblaw am y parth $1)',
 'allpagesprev'      => 'Gynt',
 'allpagesnext'      => 'Nesaf',
-'allpagessubmit'    => 'Eler',
+'allpagessubmit'    => 'Rhestrer',
 'allpagesprefix'    => 'Dangos pob tudalen mewn parth gan ddechrau o:',
 'allpagesbadtitle'  => 'Roedd y darpar deitl yn annilys oherwydd bod ynddo naill ai:<p> - rhagddodiad rhyngwici neu ryngieithol, neu </p>- nod neu nodau na ellir eu defnyddio mewn teitlau.',
 'allpages-bad-ns'   => 'Nid oes gan {{SITENAME}} barth o\'r enw "$1".',
@@ -1978,8 +1979,9 @@ Protocoliau sy\'n cael eu cynnal: <code>$1</code> (yn neidio i http:// os na rod
 # Special:ListGroupRights
 'listgrouprights'                      => 'Galluoedd grwpiau defnyddwyr',
 'listgrouprights-summary'              => "Dyma restr o'r grwpiau defnyddwyr sydd i'w cael ar y wici hon, ynghyd â galluoedd aelodau'r gwahanol grwpiau. Cewch wybodaeth pellach am y gwahanol alluoedd ar y [[{{MediaWiki:Listgrouprights-helppage}}|dudalen gymorth]].",
-'listgrouprights-key'                  => '* <span class="listgrouprights-granted">Gallu sydd wedi ei roi</span>
-* <span class="listgrouprights-revoked">Gallu sydd wedi ei dynnu yn ei ôl</span>',
+'listgrouprights-key'                  => 'Allwedd:
+* <span class="listgrouprights-granted">Gallu sydd wedi ei roi</span>
+* <span class="listgrouprights-revoked">Gallu sydd wedi ei dynnu yn ôl</span>',
 'listgrouprights-group'                => 'Grŵp',
 'listgrouprights-rights'               => 'Galluoedd',
 'listgrouprights-helppage'             => 'Help:Galluoedd yn ôl grŵp',
@@ -2051,8 +2053,8 @@ Pan fydd y dudalen hon, neu ei thudalen sgwrs, yn newid, fe fyddant yn ymddangos
 'notvisiblerev'        => 'Y diwygiad wedi cael ei ddileu',
 'watchnochange'        => "Ni olygwyd dim o'r erthyglau yr ydych yn cadw golwg arnynt yn ystod y cyfnod uchod.",
 'watchlist-details'    => '{{PLURAL:$1|Nid oes dim tudalennau|Mae $1 dudalen|Mae $1 dudalen|Mae $1 tudalen|Mae $1 thudalen|Mae $1 o dudalennau}} ar eich rhestr wylio, heb gynnwys tudalennau sgwrs.',
-'wlheader-enotif'      => '* Galluogwyd hysbysiadau trwy e-bost.',
-'wlheader-showupdated' => "* Mae tudalennau sydd wedi newid ers i chi ymweld ddiwethaf wedi'u '''hamlygu'''.",
+'wlheader-enotif'      => '* Galluogwyd eich hysbysu drwy e-bost.',
+'wlheader-showupdated' => "* Dangosir y tudalennau a newidiwyd ers i chi eu gweld ddiwethaf mewn testun '''cryf'''",
 'watchmethod-recent'   => "yn chwilio'r diwygiadau diweddar am dudalennau ar y rhestr wylio",
 'watchmethod-list'     => "yn chwilio'r tudalennau ar y rhestr wylio am ddiwygiadau diweddar",
 'watchlistcontains'    => '{{PLURAL:$1|Nid oes dim tudalennau|Mae $1 dudalen|Mae $1 dudalen|Mae $1 tudalen|Mae $1 thudalen|Mae $1 o dudalennau}} ar eich rhestr wylio.',
@@ -2129,9 +2131,11 @@ Gwelwch y $2 am gofnod o\'r dileuon diweddar.',
 'deleteotherreason'      => 'Rheswm arall:',
 'deletereasonotherlist'  => 'Rheswm arall',
 'deletereason-dropdown'  => "*Rhesymau arferol dros ddileu
-** Ar gais yr awdur
+** Sbam
+** Fandaliaeth
 ** Torri'r hawlfraint
-** Fandaliaeth",
+** Ar gais yr awdur
+** Ailgyfeiriad wedi torri",
 'delete-edit-reasonlist' => 'Golygu rhestr y rhesymau dros ddileu',
 'delete-toobig'          => "Cafwyd dros $1 {{PLURAL:$1|o olygiadau}} i'r dudalen hon.
 Cyfyngwyd ar y gallu i ddileu tudalennau sydd wedi eu golygu cymaint â hyn, er mwyn osgoi amharu ar weithrediad databas {{SITENAME}} yn ddamweiniol.",
@@ -2150,7 +2154,7 @@ mae rhywun arall eisoes wedi dadwneud y golygiad neu wedi golygu'r dudalen.
 [[User:$3|$3]] ([[User talk:$3|Sgwrs]]{{int:pipe-separator}}[[Special:Contributions/$3|{{int:contribslink}}]]) a wnaeth y golygiad diwethaf.",
 'editcomment'       => "Crynodeb y golygiad oedd: \"''\$1''\".",
 'revertpage'        => 'Wedi gwrthdroi golygiadau gan [[Special:Contributions/$2|$2]] ([[User talk:$2|Sgwrs]]); wedi adfer y golygiad diweddaraf gan [[User:$1|$1]]',
-'revertpage-nouser' => 'Wedi gwrthdroi golygiadau gan (enw wedi ei guddio); wedi adfer y golygiad diweddaraf gan [[User:$1|$1]]',
+'revertpage-nouser' => 'Wedi gwrthdroi golygiadau gan ddefnyddiwr cudd; wedi adfer y golygiad diweddaraf gan {{GENDER:$1|[[User:$1|$1]]}}',
 'rollback-success'  => "Gwrthdrowyd y golygiadau gan $1;
 wedi gwrthdroi i'r golygiad olaf gan $2.",
 
@@ -2286,9 +2290,9 @@ $1',
 
 # Contributions
 'contributions'       => "Cyfraniadau'r defnyddiwr",
-'contributions-title' => "Cyfraniadau'r defnyddiwr am $1",
+'contributions-title' => "Cyfraniadau'r defnyddiwr $1",
 'mycontris'           => 'Cyfraniadau',
-'contribsub2'         => 'Dros $1 ($2)',
+'contribsub2'         => 'Gan $1 ($2)',
 'nocontribs'          => "Heb ddod o hyd i newidiadau gyda'r meini prawf hyn.",
 'uctop'               => '(cyfredol)',
 'month'               => 'Cyfraniadau hyd at fis (ac yn gynharach):',
@@ -2602,7 +2606,7 @@ Yn achos yr ail ddewis, mae modd defnyddio cyswllt, e.e. [[{{#Special:Export}}/{
 'allmessagesdefault'            => 'Testun rhagosodedig',
 'allmessagescurrent'            => 'Testun cyfredol',
 'allmessagestext'               => "Dyma restr o'r holl negeseuon yn y parth MediaWici.
-Os ydych am gyfrannu at y gwaith o gyfieithu ar gyfer holl prosiectau MediaWiki ar y cyd, mae croeso i chi ymweld â [//www.mediawiki.org/wiki/Localisation MediaWiki Localisation] a [//translatewiki.net translatewiki.net].",
+Os ydych am gyfrannu at y gwaith o gyfieithu ar gyfer holl prosiectau MediaWiki ar y cyd, mae croeso i chi ymweld â [https://www.mediawiki.org/wiki/Localisation MediaWiki Localisation] a [//translatewiki.net translatewiki.net].",
 'allmessagesnotsupportedDB'     => "Nid yw '''{{ns:special}}:PobNeges''' yn cael ei gynnal gan fod '''\$wgUseDatabaseMessages''' wedi ei ddiffodd.",
 'allmessages-filter-legend'     => 'Hidl',
 'allmessages-filter'            => 'Hidlo yn ôl eu cyflwr addasu:',
@@ -2739,7 +2743,7 @@ Mae ffolder dros dro yn eisiau.',
 'tooltip-ca-nstab-main'               => 'Gweld y dudalen bwnc',
 'tooltip-ca-nstab-user'               => 'Gweld tudalen y defnyddiwr',
 'tooltip-ca-nstab-media'              => 'Gweld y dudalen gyfrwng',
-'tooltip-ca-nstab-special'            => "Mae hwn yn dudalen arbennig; ni allwch olygu'r dudalen ei hun",
+'tooltip-ca-nstab-special'            => "Mae hon yn dudalen arbennig; ni allwch olygu'r dudalen ei hun",
 'tooltip-ca-nstab-project'            => 'Gweld tudalen y wici',
 'tooltip-ca-nstab-image'              => 'Gweld tudalen y ffeil',
 'tooltip-ca-nstab-mediawiki'          => 'Gweld neges y system',
@@ -2846,7 +2850,7 @@ Mae'n bosib y bydd eich cyfrifiadur yn cael ei danseilio wrth ddefnyddio'r ffeil
 'file-info-size-pages'   => '$1 × $2 picsel, maint ffeil: $3, math MIME: $4, $5 {{PLURAL:$5|tudalen|tudalen}}',
 'file-nohires'           => 'Wedi ei chwyddo hyd yr eithaf.',
 'svg-long-desc'          => 'Ffeil SVG, maint mewn enw $1 × $2 picsel, maint y ffeil: $3',
-'show-big-image'         => 'Maint llawn',
+'show-big-image'         => 'Y ffeil gwreiddiol',
 'show-big-image-preview' => 'Maint y rhagolwg: $1.',
 'show-big-image-other'   => '{{PLURAL:$2|Datrysiad arall|Datrysiad arall|Datrysiadau eraill|Datrysiadau eraill|Datrysiadau eraill|Datrysiadau eraill}}: $1.',
 'show-big-image-size'    => '$1 × $2 picsel',
@@ -3091,7 +3095,7 @@ Cuddir y meysydd eraill trwy ragosodiad.
 'exif-compression-4' => 'Amgodio ffacs Grŵp 4 CCITT',
 
 'exif-copyrighted-true'  => 'Hawlfraint',
-'exif-copyrighted-false' => 'Parth y cyhoedd',
+'exif-copyrighted-false' => 'Statws yr hawlfraint heb ei osod',
 
 'exif-unknowndate' => 'Dyddiad anhysbys',
 
@@ -3297,7 +3301,7 @@ Cuddir y meysydd eraill trwy ragosodiad.
 
 # External editor support
 'edit-externally'      => 'Golygwch y ffeil gyda rhaglen allanol',
-'edit-externally-help' => '(Gwelwch y [//www.mediawiki.org/wiki/Manual:External_editors cyfarwyddiadau gosod] am fwy o wybodaeth)',
+'edit-externally-help' => '(Gwelwch y [https://www.mediawiki.org/wiki/Manual:External_editors cyfarwyddiadau gosod] am fwy o wybodaeth)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'holl',
@@ -3348,7 +3352,7 @@ $5
 Bydd y côd cadarnhau yn dod i ben am $4.',
 'confirmemail_body_set'     => 'Mae rhywun (chi, yn fwy na thebyg, o\'r cyfeiriad IP $1) wedi gosod cyfeiriad e-bost y cyfrif "$2" ar {{SITENAME}} i\'r cyfeiriad e-bost hwn.
 
-I gadarnhau mai chi yn wir yw perchennog y cyfrif hwn, ac i ail-alluogi nodweddion e-bost ar {{SITENAME}}, agorwch y cyswllt hwn yn eich porwr:
+I gadarnhau mai chi yn wir yw perchennog y cyfrif hwn, ac i alluogi nodweddion e-bost ar {{SITENAME}}, agorwch y cyswllt hwn yn eich porwr:
 
 $3
 
@@ -3469,7 +3473,7 @@ Gallwch hefyd [[Special:EditWatchlist|ddefnyddio\'r rhestr arferol]].',
 'version-hook-subscribedby'     => 'Tanysgrifwyd gan',
 'version-version'               => '(Fersiwn $1)',
 'version-license'               => 'Trwydded',
-'version-poweredby-credits'     => "Mae'r wici hwn wedi'i nerthu gan '''[//www.mediawiki.org/ MediaWiki]''', hawlfraint © 2001 - $1 $2.",
+'version-poweredby-credits'     => "Mae'r wici hwn wedi'i nerthu gan '''[https://www.mediawiki.org/ MediaWiki]''', hawlfraint © 2001 - $1 $2.",
 'version-poweredby-others'      => 'eraill',
 'version-license-info'          => "Meddalwedd rhydd yw MediaWiki; gallwch ei ddefnyddio a'i addasu yn ôl termau'r GNU General Public License a gyhoeddir gan Free Software Foundation; naill ai fersiwn 2 o'r Drwydded, neu unrhyw fersiwn diweddarach o'ch dewis.
 
@@ -3523,7 +3527,7 @@ Dangosir delweddau ar eu maint llawn, dechreuir ffeiliau o fathau eraill yn unio
 
 # External image whitelist
 'external_image_whitelist' => " #Leave this line exactly as it is<pre>
-#Gosodwch darnau o ymadroddion rheolaidd (y rhan sy'n cael ei osod rhwng y //) isod
+#Gosodwch ddarnau o ymadroddion rheolaidd (y rhan sy'n cael ei osod rhwng y //) isod
 #Caiff y rhain eu cysefeillio gyda URL y delweddau allanol (a chyswllt poeth atynt)
 #Dangosir y rhai sy'n cysefeillio fel delweddau; dangosir cyswllt at y ddelwedd yn unig ar gyfer y lleill
 #Caiff y llinellau sy'n dechrau gyda # eu trin fel sylwadau
@@ -3585,12 +3589,12 @@ Dangosir delweddau ar eu maint llawn, dechreuir ffeiliau o fathau eraill yn unio
 'logentry-delete-delete'              => 'Dileodd $1 y dudalen $3',
 'logentry-delete-restore'             => 'Adferodd $1 y dudalen $3',
 'logentry-delete-event'               => 'Newidiodd $1 ymddangosiad {{PLURAL:$5||cofnod lòg|$5 gofnod lòg|$5 chofnod lòg|$5 chofnod lòg|$5 cofnod lòg}} ar $3: $4',
-'logentry-delete-revision'            => "Newidiodd $1 ymddangosiad {{PLURAL:$5||diwygiad|$5 ddiwygiad|$5 diwygiad|$5 diwygiad|$5 diwygiad}} o'r dudalen $3: $4",
+'logentry-delete-revision'            => "Newidiodd $1 ymddangosiad {{PLURAL:$5||diwygiad|$5 ddiwygiad|$5 diwygiad}} o'r dudalen $3: $4",
 'logentry-delete-event-legacy'        => 'Newidiodd $1 welededd cofnodion lòg ar $3',
 'logentry-delete-revision-legacy'     => "Newidiodd $1 welededd diwygiadau o'r dudalen $3",
 'logentry-suppress-delete'            => 'Cuddiodd $1 y dudalen $3',
 'logentry-suppress-event'             => 'Yn y dirgel, newidiodd $1 ymddangosiad {{PLURAL:$5||cofnod lòg|$5 gofnod lòg|$5 chofnod lòg|$5 chofnod lòg|$5 cofnod lòg}} ar $3: $4',
-'logentry-suppress-revision'          => "Yn y dirgel, newidiodd $1 ymddangosiad {{PLURAL:$5||diwygiad|$5 ddiwygiad|$5 diwygiad|$5 diwygiad|$5 diwygiad}} o'r dudalen $3: $4",
+'logentry-suppress-revision'          => "Yn y dirgel, newidiodd $1 ymddangosiad {{PLURAL:$5||diwygiad|$5 ddiwygiad|$5 diwygiad}} o'r dudalen $3: $4",
 'logentry-suppress-event-legacy'      => 'Newidiodd $1 welededd cofnodion lòg ar $3, yn y dirgel',
 'logentry-suppress-revision-legacy'   => "Newidiodd $1 welededd diwygiadau o'r dudalen $3, yn y dirgel",
 'revdelete-content-hid'               => 'cuddiwyd y cynnwys',

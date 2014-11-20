@@ -10,6 +10,7 @@
  * @author Hazard-SJ
  * @author Ukabia
  * @author Yocahuna
+ * @author គីមស៊្រុន
  */
 
 $messages = array(
@@ -246,7 +247,7 @@ $1',
 
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
 'aboutsite'            => 'Habowt {{SITENAME}}',
-'aboutpage'            => 'Project: About',
+'aboutpage'            => 'Project: អំពី',
 'copyright'            => 'Kantent avielobl anda $1.',
 'copyrightpage'        => '{{ns:project}}:Kapirait',
 'currentevents'        => 'Korant ivent',
@@ -1091,7 +1092,7 @@ Ada wandem wi aid bai difaalt.
 
 # External editor support
 'edit-externally'      => 'Yuuz extoernal aplikieshan fi edit dis fail',
-'edit-externally-help' => '(Si di [//www.mediawiki.org/wiki/Manual:External_editors setop inschrokshan] fi muo infamieshan)',
+'edit-externally-help' => '(Si di [https://www.mediawiki.org/wiki/Manual:External_editors setop inschrokshan] fi muo infamieshan)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'aal',
