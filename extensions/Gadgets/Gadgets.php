@@ -2,7 +2,6 @@
 /**
  * Gadgets extension - lets users select custom javascript gadgets
  *
- *
  * For more info see http://mediawiki.org/wiki/Extension:Gadgets
  *
  * @file
@@ -12,7 +11,7 @@
  * @license GNU General Public Licence 2.0 or later
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
 	die( 1 );
 }
@@ -25,7 +24,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Gadgets',
 	'author' => array( 'Daniel Kinzler', 'Max Semenik' ),
-	'url' => 'http://mediawiki.org/wiki/Extension:Gadgets',
+	'url' => 'https://mediawiki.org/wiki/Extension:Gadgets',
 	'descriptionmsg' => 'gadgets-desc',
 );
 
@@ -36,9 +35,9 @@ $wgHooks['GetPreferences'][]                = 'GadgetHooks::getPreferences';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'GadgetHooks::registerModules';
 $wgHooks['UnitTestsList'][]                 = 'GadgetHooks::unitTestsList';
 
-$dir = dirname(__FILE__) . '/';
+$dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['Gadgets'] = $dir . 'Gadgets.i18n.php';
-$wgExtensionAliasesFiles['Gadgets'] = $dir . 'Gadgets.alias.php';
+$wgExtensionMessagesFiles['GadgetsAlias'] = $dir . 'Gadgets.alias.php';
 
 $wgAutoloadClasses['ApiQueryGadgetCategories'] = $dir . 'ApiQueryGadgetCategories.php';
 $wgAutoloadClasses['ApiQueryGadgets'] = $dir . 'ApiQueryGadgets.php';
