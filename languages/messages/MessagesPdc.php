@@ -9,6 +9,7 @@
  *
  * @author Kaganer
  * @author Krinkle
+ * @author Shirayuki
  * @author Xqt
  * @author לערי ריינהארט
  */
@@ -951,7 +952,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 
 # Separators for various lists, etc.
 'ellipsis' => '…',
-'percent'  => '$1&nbsp;%',
+'percent'  => '$1&#160;%',
 
 # Multipage image navigation
 'imgmultipageprev' => '← letscht Blatt',

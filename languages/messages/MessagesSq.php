@@ -205,7 +205,7 @@ $messages = array(
 'tog-hidepatrolled'           => 'Fshih redaktimet e vrojtuara në ndryshimet e fundit',
 'tog-newpageshidepatrolled'   => 'Fshih faqet e vrojtuara nga lista e faqeve të reja',
 'tog-extendwatchlist'         => "Zgjero listën e faqeve të vëzhguara që t'i tregojë të gjitha ndryshimet, jo vetëm më të fundit.",
-'tog-usenewrc'                => 'Përdor ndryshimet e fundit në mënyrë të zgjeruar (kërkon JavaScript)',
+'tog-usenewrc'                => 'Grupo ndryshimet sipas faqeve në ndryshime së fundmi dhe listën mbikqyrëse (kërkon JavaScript)',
 'tog-numberheadings'          => 'Numëro automatikish titujt',
 'tog-showtoolbar'             => 'Trego mjetet e redaktimit (kërkon JavaScript)',
 'tog-editondblclick'          => 'Redakto faqet me dopio-klik (kërkon JavaScript)',
@@ -213,17 +213,17 @@ $messages = array(
 'tog-editsectiononrightclick' => 'Lejo redaktimin e seksioneve duke klikuar me të djathtën mbi titullin e seksionit (kërkon JavaScript)',
 'tog-showtoc'                 => 'Trego tabelën e përmbajtjes (për faqet me më shume se 3 tituj)',
 'tog-rememberpassword'        => 'Mbaj mend fjalëkalimin tim në këtë shfletues (më së shumti për $1 {{PLURAL:$1|ditë|ditë}})',
-'tog-watchcreations'          => 'Shtoi faqet e krijuara prej meje tek lista e faqeve që unë vëzhgoj',
-'tog-watchdefault'            => 'Shto faqet e redaktuara prej meje tek lista e faqeve që unë vëzhgoj',
-'tog-watchmoves'              => 'Shto faqet e zhvendosura prej meje tek lista e faqeve që unë vëzhgoj',
-'tog-watchdeletion'           => 'Shto faqet e fshira prej meje tek lista e faqeve që unë vëzhgoj',
+'tog-watchcreations'          => 'Shtoi faqet e krijuara dhe skedat e ngarkuara prej meje tek lista e faqeve nën mbikqyrje',
+'tog-watchdefault'            => 'Shto faqet dhe skedat e redaktuara prej meje tek lista e faqeve nën mbikqyrje',
+'tog-watchmoves'              => 'Shto faqet dhe skedat e zhvendosura prej meje tek lista e faqeve nën mbikqyrje',
+'tog-watchdeletion'           => 'Shto faqet dhe skedat e grisura prej meje tek lista e faqeve  nën mbikqyrje',
 'tog-minordefault'            => 'Shëno të gjitha redaktimet si të vogla automatikisht',
 'tog-previewontop'            => 'Vendose kutinë e bocetit sipër kutisë së redaktimeve',
 'tog-previewonfirst'          => 'Tregoje bocetin në redaktimin e parë',
 'tog-nocache'                 => "Ç'aktivizo ruajtjen e faqeve të vizituara",
-'tog-enotifwatchlistpages'    => 'Më njofto me e-mail kur ndryshohet një faqe nga lista ime e faqeve të vëzhguara',
+'tog-enotifwatchlistpages'    => 'Më njofto me e-mail kur ndryshohet një faqe apo skedaë nga lista ime e faqeve nën mbikqyrje',
 'tog-enotifusertalkpages'     => 'Më njofto me e-mail kur faqja ime e dikutimeve të përdoruesit ndryshohet',
-'tog-enotifminoredits'        => 'Më njofto me e-mail edhe kur ka redaktime të vogla në faqe',
+'tog-enotifminoredits'        => 'Më njofto me e-mail edhe kur ka redaktime të vogla në faqe dhe skedave',
 'tog-enotifrevealaddr'        => 'Tregoje adresën time të e-mail-it në e-mail-et njoftuese',
 'tog-shownumberswatching'     => 'Trego numrin e përdoruesve që vëzhgojnë këtë faqe',
 'tog-oldsig'                  => 'Nënshkrimi ekzistues:',
@@ -246,7 +246,7 @@ $messages = array(
 
 'underline-always'  => 'Gjithmonë',
 'underline-never'   => 'Asnjëherë',
-'underline-default' => 'Sipas rregullit në shfletues',
+'underline-default' => 'Parapërcaktuar nga shfletuesi',
 
 # Font style option in Special:Preferences
 'editfont-style'     => 'Zgjidh stilin e gërmave të hapsirës:',
@@ -331,7 +331,7 @@ $messages = array(
 'newwindow'     => '(hapet në një dritare të re)',
 'cancel'        => 'Anulo',
 'moredotdotdot' => 'Më shumë...',
-'mypage'        => 'Faqja ime',
+'mypage'        => 'Faqja',
 'mytalk'        => 'Diskutimet',
 'anontalk'      => 'Diskutimet për këtë IP',
 'navigation'    => 'Shfleto',
@@ -355,7 +355,7 @@ $messages = array(
 'vector-action-protect'          => 'Mbroje',
 'vector-action-undelete'         => 'Anullo fshirjen',
 'vector-action-unprotect'        => 'Ndrysho mbrojtjen',
-'vector-simplesearch-preference' => 'Aktivizo kërkimin e zgjeruar (vetëm për veshjen Vector)',
+'vector-simplesearch-preference' => 'Aktivizo kërkimin e thjeshtëzuar (vetëm për veshjen Vector)',
 'vector-view-create'             => 'Krijo',
 'vector-view-edit'               => 'Redakto',
 'vector-view-history'            => 'Shiko historikun',
@@ -2717,7 +2717,7 @@ Për të eksportuar faqe, thjesht shtypni një emër për çdo rresht, ose krijo
 'allmessagesdefault'            => 'Teksti i parazgjedhur',
 'allmessagescurrent'            => 'Teksti i tanishëshm',
 'allmessagestext'               => 'Kjo është një listë e të gjitha faqeve në hapësirën MediaWiki:
-Ju lutemi vizitoni [//www.mediawiki.org/wiki/Localisation MediaWiki Localisation] dhe [//translatewiki.net translatewiki.net] nëse dëshironi të kontribuoni në lokalizimin e përgjithshëm MediaWiki',
+Ju lutemi vizitoni [https://www.mediawiki.org/wiki/Localisation MediaWiki Localisation] dhe [//translatewiki.net translatewiki.net] nëse dëshironi të kontribuoni në lokalizimin e përgjithshëm MediaWiki',
 'allmessagesnotsupportedDB'     => "Kjo faqe nuk mund të përdoret sepse '''\$wgUseDatabaseMessages''' është çaktivizuar.",
 'allmessages-filter-legend'     => 'Filtër',
 'allmessages-filter'            => 'Filtroni nga shteti',
@@ -3411,7 +3411,7 @@ Në qoftë se skeda është ndryshuar nga gjendja origjinale, disa hollësira mu
 
 # External editor support
 'edit-externally'      => 'Ndryshoni këtë skedë me një mjet të jashtëm',
-'edit-externally-help' => '(Shikoni [//www.mediawiki.org/wiki/Manual:External_editors udhëzimet e instalimit] për më shumë informacion)',
+'edit-externally-help' => '(Shikoni [https://www.mediawiki.org/wiki/Manual:External_editors udhëzimet e instalimit] për më shumë informacion)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'të gjitha',
@@ -3592,7 +3592,7 @@ Ju gjithashtu mund [[Special:EditWatchlist|të përdorni redaktuesin standart]].
 'version-hook-subscribedby'     => 'Abonuar nga',
 'version-version'               => '(Versioni $1)',
 'version-license'               => 'Licensa',
-'version-poweredby-credits'     => "Ky wiki është mundësuar nga '''[//www.mediawiki.org/ MediaWiki]''', copyright © 2001-$1 $2.",
+'version-poweredby-credits'     => "Ky wiki është mundësuar nga '''[https://www.mediawiki.org/ MediaWiki]''', copyright © 2001-$1 $2.",
 'version-poweredby-others'      => 'të tjerë',
 'version-license-info'          => 'MediaWiki është një softuer i lirë; ju mund ta shpërndani dhe redakatoni atë nën kushtet GNU General Public License si e publikuar nga fondacioni Free Software; ose versioni 2 i licensës, ose çdo version më i vonshëm.
 
@@ -3680,8 +3680,7 @@ Figurat tregohen me madhësi të plotë, skedat e tjera hapen me programet përk
 
 # Database error messages
 'dberr-header'      => 'Kjo wiki ka një problem',
-'dberr-problems'    => 'Na vjen keq! 
-Kjo faqe është duke përjetuar vështirësi teknike.',
+'dberr-problems'    => 'Na vjen keq! Kjo faqe po has vështirësi teknike.',
 'dberr-again'       => 'Pritni disa minuta dhe provoni të ringarkoni faqen.',
 'dberr-info'        => '(Nuk mund të lidhet me serverin bazë e të dhënave : $1)',
 'dberr-usegoogle'   => 'Ju mund të provoni të kërkoni përmes Googles në ndërkohë.',

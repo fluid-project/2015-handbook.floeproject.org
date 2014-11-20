@@ -301,9 +301,9 @@ Bu sahypany ulanmak üçin MediaWikiniň $1 wersiýasy talap edilýär. [[Specia
 'ok'                      => 'OK',
 'retrievedfrom'           => '"$1" adresinden alyndy.',
 'youhavenewmessages'      => 'Size $1 bar. ($2)',
-'newmessageslink'         => 'täze habarlaşyk',
+'newmessageslink'         => 'täze habar',
 'newmessagesdifflink'     => 'soňky üýtgeşme',
-'youhavenewmessagesmulti' => 'Size $1-de täze habarlaşyk bar.',
+'youhavenewmessagesmulti' => 'Size $1-de täze habar bar.',
 'editsection'             => 'redaktirle',
 'editold'                 => 'redaktirle',
 'viewsourceold'           => 'çeşmäni gör',
@@ -792,8 +792,8 @@ $3 tarapyndan görkezilen sebäp: ''$2''",
 '''({{int:last}})''' = öňündäki wersiýadan tapawudy, '''{{int:minoreditletter}}''' = ujypsyzja özgerdiş.",
 'history-fieldset-title' => 'Geçmişe göz aýla',
 'history-show-deleted'   => 'Diňe öçürilenler',
-'histfirst'              => 'Iň irki',
-'histlast'               => 'Ýaňy-ýakyndaky',
+'histfirst'              => 'iň köne',
+'histlast'               => 'iň täze',
 'historysize'            => '({{PLURAL:$1|1 baýt|$1 baýt}})',
 'historyempty'           => '(boş)',
 
@@ -1311,7 +1311,7 @@ $1 {{PLURAL:$1|simwoldan|simwoldan}} köp bolmaly däl.',
 'rc_categories'                     => 'Kategoriýalar bilen çäklendir ("|" bilen aýyr)',
 'rc_categories_any'                 => 'Islendik',
 'newsectionsummary'                 => '/* $1 */ täze bölüm',
-'rc-enhanced-expand'                => 'Jikme-jiklikleri görkez (JavaScript gerekli)',
+'rc-enhanced-expand'                => 'Jikme-jikligi görkez',
 'rc-enhanced-hide'                  => 'Jikme-jiklikleri gizle',
 
 # Recent changes linked
@@ -2101,7 +2101,7 @@ $1',
 'mycontris'           => 'Goşantlar',
 'contribsub2'         => '$1 ($2)',
 'nocontribs'          => 'Bu kriteriýlere gabat gelýän üýtgeşme ýok.',
-'uctop'               => '(iň soňky)',
+'uctop'               => '(häzirki)',
 'month'               => 'Aý:',
 'year'                => 'Ýyl:',
 
@@ -2374,7 +2374,7 @@ Ikinji ýagdaýy saýlap alan halatyňyzda, ýörite bir çykgyt hem ulanyp bile
 'allmessagesdefault'            => 'Gaýybana habarlaşyk teksti',
 'allmessagescurrent'            => 'Häzirki habarlaşyk teksti',
 'allmessagestext'               => 'Bu sanaw MediaWiki at giňişliginde bar bolan ulgam habarlaşyklarynyň sanawydyr.
-Umumy MediaWiki lokalizasiýasyna goşan goşmak isleýän bolsaňyz, [//www.mediawiki.org/wiki/Localisation MediaWiki lokalizasiýasy] we [//translatewiki.net translatewiki.net] sahypalaryna baryp görmegiňizi haýyş edýäris.',
+Umumy MediaWiki lokalizasiýasyna goşan goşmak isleýän bolsaňyz, [https://www.mediawiki.org/wiki/Localisation MediaWiki lokalizasiýasy] we [//translatewiki.net translatewiki.net] sahypalaryna baryp görmegiňizi haýyş edýäris.',
 'allmessagesnotsupportedDB'     => "'''\$wgUseDatabaseMessages''' ýapykdygy zerarly bu sahypany ulanyp bolmaýar.",
 'allmessages-filter-legend'     => 'Filtr',
 'allmessages-filter'            => 'Üýtgediş statusy boýunça filtr:',
@@ -2883,7 +2883,7 @@ Ondan soňraky çykgyt(lar) kadadan çykma hökmünde kabul edilýär, meselem: 
 
 # External editor support
 'edit-externally'      => 'Bu faýly daşarky programmalary ulanyp redaktirläň',
-'edit-externally-help' => '(Has köp maglumat üçin metadaky [//www.mediawiki.org/wiki/Manual:External_editors gurmak boýunça gollanma] sahypasyna göz aýlaň)',
+'edit-externally-help' => '(Has köp maglumat üçin metadaky [https://www.mediawiki.org/wiki/Manual:External_editors gurmak boýunça gollanma] sahypasyna göz aýlaň)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'Ählisini görkez',
@@ -3046,7 +3046,7 @@ Bolanyňyzdan soňra "{{int:Watchlistedit-raw-submit}}" düwmesine basyň.
 'version-hook-subscribedby'     => 'Abuna ýazylan',
 'version-version'               => '(Wersiýa $1)',
 'version-license'               => 'Ygtyýarnama',
-'version-poweredby-credits'     => "Bu wiki '''[//www.mediawiki.org/ MediaWiki]''' arkaly üpjün edilýär, awtorlyk hukugy © 2001-$1 $2.",
+'version-poweredby-credits'     => "Bu wiki '''[https://www.mediawiki.org/ MediaWiki]''' arkaly üpjün edilýär, awtorlyk hukugy © 2001-$1 $2.",
 'version-poweredby-others'      => 'beýlekiler',
 'version-license-info'          => 'MediaWiki erkin programmadyr; MediaWiki-ni Erkin programma fondy tarapyndan çazp edilen GNU General Public License lisenziýasynyň ikini wersiýasynyň ýa-da (islegiňize görä) has täzeki bir wersiýasynyň şertlerine laýyklykda täzeden paýlap we/ýa-da üýtgedip bilersiňiz.
 

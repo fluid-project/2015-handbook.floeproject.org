@@ -8,6 +8,7 @@
  * @file
  *
  * @author Als-Holder
+ * @author Geitost
  * @author Jens Liebenau
  * @author Jonny84
  * @author Kaganer
@@ -383,7 +384,7 @@ Vergiss nä, denne [[Special:Preferences|{{SITENAME}}-Eistellunga]] oazupoassa.'
 'logout'                     => 'Oabmelda',
 'userlogout'                 => 'Oabmelda',
 'notloggedin'                => 'Nä oangemeldet',
-'nologin'                    => "Du hast keen Benutzerkonto? '''$1'''.",
+'nologin'                    => 'Du hast keen Benutzerkonto? $1.',
 'nologinlink'                => 'Neues Benutzerkonto oanleega',
 'createaccount'              => 'Benutzerkonto oanlega',
 'gotaccount'                 => "Du hast bereits a Benutzerkonto? '''$1'''.",
@@ -1103,11 +1104,11 @@ Bitte gieb dar Datei an'n Noama, dar dann Inhalt besser beschreibt.",
 'upload-proto-error'        => 'Foalsches Protokoll',
 'upload-proto-error-text'   => 'De URL muuß miet <code>http://</code> oder <code>ftp://</code> beginna.',
 'upload-file-error-text'    => "Bei dar Erstellung a'r temporären Datei uff'd Server ies a interner Fahler uffgetreta.
-Bitte informiere an'n [[Special:ListUsers/sysop|System-Administrator]].",
+Bitte informiere an'n [[Special:ListUsers/sysop|Administrator]].",
 'upload-misc-error'         => 'Unbekennter Fahler beim Huchloada',
 'upload-misc-error-text'    => "Beim Huchloada ies a unbekennter Fahler uffgetreta.
 Priefe de URL uff Fahler, dann Online-Status der Seite und versuche 's erneut.
-Wenn doas Problem wetter bestieht, informiere anna [[Special:ListUsers/sysop|System-Administrator]].",
+Wenn doas Problem wetter bestieht, informiere anna [[Special:ListUsers/sysop|Administrator]].",
 'upload-too-many-redirects' => 'De URL beinhaltete zu viele Wetterleitunga',
 'upload-unknown-size'       => 'Unbekennte Grieße',
 'upload-http-error'         => 'A HTTP-Fahler ies uffgetreta: $1',
@@ -1842,7 +1843,7 @@ Alternativ ies der Export au miet der Syntax [[{{#Special:Export}}/{{MediaWiki:M
 'allmessagesname'           => 'Noame',
 'allmessagesdefault'        => 'Standardtext',
 'allmessagestext'           => 'Dies ies anne Liste dar MediaWiki-Systemtexte.
-Besiche de Seyta [//www.mediawiki.org/wiki/Localisation MediaWiki-Lokalisierung] und [//translatewiki.net translatewiki.net], wenn du diech oa dar Lokalisierung vu MediaWiki beteiliga mechtest.',
+Besiche de Seyta [https://www.mediawiki.org/wiki/Localisation MediaWiki-Lokalisierung] und [//translatewiki.net translatewiki.net], wenn du diech oa dar Lokalisierung vu MediaWiki beteiliga mechtest.',
 'allmessagesnotsupportedDB' => 'Diese Spezialseyte stieht ne zur Verfigung, do se ieber dann Parameter <tt>$wgUseDatabaseMessages</tt> deaktiviert wurde.',
 'allmessages-filter-all'    => 'Olle',
 'allmessages-language'      => 'Sproache:',
@@ -2181,7 +2182,7 @@ Weitere werden standardmäßig nicht angezeigt.
 
 # External editor support
 'edit-externally'      => 'Diese Datei mit annem externen Programm bearbta',
-'edit-externally-help' => '(Siehe de [//www.mediawiki.org/wiki/Manual:External_editors Installationsoaweisunga] fier weitere Informationen)',
+'edit-externally-help' => '(Siehe de [https://www.mediawiki.org/wiki/Manual:External_editors Installationsoaweisunga] fier weitere Informationen)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'olle',

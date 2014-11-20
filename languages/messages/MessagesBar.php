@@ -9,6 +9,7 @@
  *
  * @author Als-Holder
  * @author Bua333
+ * @author Geitost
  * @author Malafaya
  * @author Man77
  * @author Merlissimo
@@ -436,7 +437,7 @@ Vagiss bittscheh néd, deine [[Special:Preferences|{{SITENAME}}-Eishtellungen]] 
 'logout'                     => 'Obmöden',
 'userlogout'                 => 'Auslogga',
 'notloggedin'                => 'Ned ågmödt',
-'nologin'                    => "Du host koa Nutzakonto? '''$1'''.",
+'nologin'                    => 'Du host koa Nutzakonto? $1.',
 'nologinlink'                => 'A neichs Nutzakonto olegn',
 'createaccount'              => 'Nutzakonto olegn',
 'gotaccount'                 => "Hosd scho a Nutzakonto? '''$1'''.",
@@ -1423,7 +1424,7 @@ Bittschee gib außadem druntn in '''neichn''' Nãm vu da Seitn ei und schreib ku
 'allmessagesdefault'        => 'Standardtext',
 'allmessagescurrent'        => 'Aktuella Text',
 'allmessagestext'           => 'Des is a Listen vo de MediaWiki-Systemtextt.
-Bsuach bittschee de Saiten [//www.mediawiki.org/wiki/Localisation MediaWiki-Lokalisiarung] und [//translatewiki.net translatewiki.net], wånn du de ån da Lokalisiarung vo MediaWiki betailing mechadst.',
+Bsuach bittschee de Saiten [https://www.mediawiki.org/wiki/Localisation MediaWiki-Lokalisiarung] und [//translatewiki.net translatewiki.net], wånn du de ån da Lokalisiarung vo MediaWiki betailing mechadst.',
 'allmessagesnotsupportedDB' => "'''Special:Allmessages''' is im Moment net möglich, wei de Datenbank offline is.",
 
 # Thumbnails
@@ -1568,7 +1569,7 @@ Weidane wean standardmassi ned ozoagt.
 
 # External editor support
 'edit-externally'      => 'De Datei mid am externa Programm beorbatn',
-'edit-externally-help' => '(Schaug unter [//www.mediawiki.org/wiki/Manual:External_editors Installationsoweisunga] fia weidane Infos)',
+'edit-externally-help' => '(Schaug unter [https://www.mediawiki.org/wiki/Manual:External_editors Installationsoweisunga] fia weidane Infos)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'olle',
@@ -1655,7 +1656,7 @@ Bittscheh d' noraale Vurschau bnutzen.",
 'version-hook-subscribedby'     => 'Aufruaff voh',
 'version-version'               => '(Versión $1)',
 'version-license'               => 'Lizenz',
-'version-poweredby-credits'     => "Dé Nétzseiten braucht '''[//www.mediawiki.org/wiki/MediaWiki/de MediaWiki]''', Copyright © 2001–$1 $2.",
+'version-poweredby-credits'     => "Dé Nétzseiten braucht '''[https://www.mediawiki.org/wiki/MediaWiki/de MediaWiki]''', Copyright © 2001–$1 $2.",
 'version-poweredby-others'      => 'åndre',
 
 # Special:FileDuplicateSearch

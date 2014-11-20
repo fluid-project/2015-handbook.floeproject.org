@@ -798,8 +798,8 @@ Mugomad argumentad čutihe.",
 Znamoičendad: '''({{int:cur}})''' = erod nügüdläižes versijaspäi, '''({{int:last}})''' = erod enččes vepsijaspäi, '''{{int:minoreditletter}}''' = pen' toižetuz.",
 'history-fieldset-title' => 'Lehtelta istorii',
 'history-show-deleted'   => 'Vaiše čutud',
-'histfirst'              => 'Kaikiš vanhembad',
-'histlast'               => 'Tantoižed',
+'histfirst'              => 'vanhembad',
+'histlast'               => 'udembad',
 'historysize'            => '({{PLURAL:$1|1 bait|$1 baitad}})',
 'historyempty'           => "(pall'az)",
 
@@ -1278,7 +1278,7 @@ Ku tö kirjutat sen, nece nimi kävutadas, miše ozutada lehtpolen toižetajad.'
 'rc-change-size'                    => '$1',
 'rc-change-size-new'                => "$1 {{PLURAL:$1|bait|baitad}} jäl'ges toižetamišt",
 'newsectionsummary'                 => "/* $1 */ uz' jaguz",
-'rc-enhanced-expand'                => 'Ozutada detalid (JavaScript)',
+'rc-enhanced-expand'                => 'Ozutada detalid',
 'rc-enhanced-hide'                  => 'Peitta detalid',
 'rc-old-title'                      => 'Om sätud ezmässai kut "$1"',
 
@@ -1974,7 +1974,7 @@ $1',
 'contributions-title' => '$1-kävutajan tond',
 'mycontris'           => 'Minun tond',
 'contribsub2'         => '$1-kävutajan ($2) tond',
-'uctop'               => "(jäl'gmäine)",
+'uctop'               => '(nügüdläine)',
 'month'               => 'Ku:',
 'year'                => 'Voz’:',
 
@@ -2813,7 +2813,7 @@ Ku fail redaktiruidihe sändan polhe, erased parametrad voidas erineda nügüdl�
 
 # External editor support
 'edit-externally'      => 'Redaktiruida nece fail irdprogrammal',
-'edit-externally-help' => '(Kc. [//www.mediawiki.org/wiki/Manual:External_editors seižutamižinstrukcijoid])',
+'edit-externally-help' => '(Kc. [https://www.mediawiki.org/wiki/Manual:External_editors seižutamižinstrukcijoid])',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'kaik',
