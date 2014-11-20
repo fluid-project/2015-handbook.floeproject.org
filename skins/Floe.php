@@ -132,6 +132,7 @@ class FloeTemplate extends QuickTemplate {
                                                                  "Media overlays (narrations) and text-to-speech" => array("is_link" => true),
                                                                  "Accessibility metadata" => array("is_link" => true),
                                                                  "Testing and validation" => array("is_link" => true),
+                                                                 "Case study: Exemplar" => array("is_link" => true),
                                                                  "EPUB 3 resources" => array("is_link"=> true)
                                                                 )
                                              )
