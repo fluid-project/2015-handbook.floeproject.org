@@ -125,8 +125,8 @@ class FloeTemplate extends QuickTemplate {
                                        array("is_link" => true,
                                              "children" => array("General guidelines" => array("is_link" => true),
                                                                  "Functional considerations" => array("is_link" => true),
-                                                                 "Standardized testing types" => array("is_link" => true),
-                                                                 "Standardized testing tools" => array("is_link" => true)
+                                                                 "Standardized test types" => array("is_link" => true),
+                                                                 "Standardized test tools" => array("is_link" => true)
                                                                 )
                                              ),
                                     "Inclusive EPUB 3" =>
