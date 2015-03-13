@@ -121,6 +121,14 @@ class FloeTemplate extends QuickTemplate {
                                                                  "Cognitive considerations" => array("is_link" => true)
                                                                 )
                                              ),
+                                   "Accessible standardized testing" =>
+                                       array("is_link" => true,
+                                             "children" => array("General guidelines" => array("is_link" => true),
+                                                                 "Functional considerations" => array("is_link" => true),
+                                                                 "Standardized test types" => array("is_link" => true),
+                                                                 "Standardized test tools" => array("is_link" => true)
+                                                                )
+                                             ),
                                     "Inclusive EPUB 3" =>
                                        array("is_link" => true,
                                              "children" => array("Semantic markup - HTML 5 semantics and epub type" => array("is_link" => true),
