@@ -13,8 +13,10 @@
  * @return string
  */
 function wfOutputHandler( $s ) {
-	global $wgDisableOutputCompression, $wgValidateAllHtml;
+	global $wgDisableOutputCompression, $wgValidateAllHtml, $wgMangleFlashPolicy;
+	if ( $wgMangleFlashPolicy ) {
 	$s = wfMangleFlashPolicy( $s );
+	}
 	if ( $wgValidateAllHtml ) {
 		$headers = apache_response_headers();
 		$isHTML = true;
